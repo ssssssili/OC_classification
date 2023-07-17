@@ -96,10 +96,10 @@ for i in range(num_test_batches1):
     end_idx = start_idx + batch_size
 
     batch_texts = x_val[start_idx:end_idx]
-    test_labels1.extend(y_val[start_idx:end_idx])
+    val_labels1.extend(y_val[start_idx:end_idx])
 
     batch_embeddings = embedding_model.sentence_embedding(batch_texts)
-    test_embedding1.append(batch_embeddings)
+    val_embedding1.append(batch_embeddings)
 
 val_embedding1 = np.concatenate(val_embedding1, axis=0)
 val_labels1 = np.array(val_labels1)
