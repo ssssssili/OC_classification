@@ -164,7 +164,6 @@ print("first: Accuracy, f1, cohen:", accuracy1)
 print("second: Accuracy, f1, cohen:", accuracy2)
 
 
-
 param_test1 = {
 'max_depth':[i for i in range(3,10,2)],
 'min_child_weight':[i for i in range(1,6,2)]
