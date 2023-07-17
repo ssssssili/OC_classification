@@ -202,7 +202,6 @@ f1score1 = f1_score(labels_test1, predictions1, average='micro')
 f1score2 = f1_score(labels_test2, predictions2, average='micro')
 cohen1 = cohen_kappa_score(labels_test1, predictions1)
 cohen2 = cohen_kappa_score(labels_test2, predictions2)
-
 print("first: Accuracy, f1, cohen:", accuracy1, f1score1, cohen1)
 print("second: Accuracy, f1, cohen:", accuracy2, f1score2, cohen2)
 
