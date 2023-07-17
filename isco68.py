@@ -40,17 +40,12 @@ isco68_feature = data_preprocess.CombineFeature(isco68_prep, column=['bjobcoder'
 x = isco68_feature['feature']
 y = isco68_feature['label']
 
-texts_train1, texts_test1, labels_train1, labels_test1 = train_test_split(x, y, test_size=0.3, random_state=42)
-texts_train1, texts_val1, labels_train1, labels_val1 = train_test_split(texts_train1, labels_train1, test_size=0.14, random_state=42)
-
-x_train, y_train = data_preprocess.aggdata(isco68_feature, texts_train1, labels_train1)
-x_test, y_test = data_preprocess.aggdata(isco68_feature, texts_test1, labels_test1)
-x_val, y_val = data_preprocess.aggdata(isco68_feature, texts_val1, labels_val1)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
+x_train, x_val, y_train, y_val = train_test_split(x_train, y_train, test_size=0.25, random_state=42)
 
 embedding_model = data_preprocess.EmbeddingModel("pdelobelle/robbert-v2-dutch-base")
 # Define batch size for processing
 batch_size = 128
-
 
 num_batches1 = len(x_train) // batch_size + 1
 embeddings1 = []
@@ -87,11 +82,11 @@ for i in range(num_test_batches1):
 test_embedding1 = np.concatenate(test_embedding1, axis=0)
 test_labels1 = np.array(test_labels1)
 
-num_test_batches1 = len(x_val) // batch_size + 1
+num_val_batches1 = len(x_val) // batch_size + 1
 val_embedding1 = []
 val_labels1 = []
 
-for i in range(num_test_batches1):
+for i in range(num_val_batches1):
     start_idx = i * batch_size
     end_idx = start_idx + batch_size
 
@@ -103,6 +98,8 @@ for i in range(num_test_batches1):
 
 val_embedding1 = np.concatenate(val_embedding1, axis=0)
 val_labels1 = np.array(val_labels1)
+x_train, y_train = data_preprocess.aggdata(isco68_feature, embeddings1, labels1)
+x_val, y_val = data_preprocess.aggdata(isco68_feature, val_embedding1, val_labels1)
 
 
 """
@@ -144,18 +141,20 @@ model1 = xgb.XGBClassifier(objective='multi:softmax',
                             num_class=len(np.unique(y)),
                             gamma=0,
                             learning_rate=0.1,
+                            missing=0,
                             max_depth=5,
                             reg_lambda=1,
                             early_stopping_rounds=10,
                             scale_pos_weight= 5,
                             tree_method= 'gpu_hist',
                             eval_metric=['merror','mlogloss'],
-                            seed=42)
+                            seed=42
+                            )
 
-model1.fit(embeddings1,
-            labels1,
+model1.fit(x_train,
+            y_train,
             verbose=0, # set to 1 to see xgb training round intermediate results
-            eval_set=[(embeddings1, labels1), (val_embedding1, val_labels1)])
+            eval_set=[(x_train, y_train), (x_val, y_val)])
 
 results = model1.evals_result()
 epochs = len(results['validation_0']['mlogloss'])
@@ -164,20 +163,20 @@ x_axis = range(0, epochs)
 # xgboost 'mlogloss' plot
 fig, ax = plt.subplots(figsize=(9,5))
 ax.plot(x_axis, results['validation_0']['mlogloss'], label='Train')
-ax.plot(x_axis, results['validation_1']['mlogloss'], label='Test')
+ax.plot(x_axis, results['validation_1']['mlogloss'], label='Val')
 ax.legend()
 plt.ylabel('mlogloss')
 plt.title('GridSearchCV XGBoost mlogloss')
-plt.savefig('mlogloss.png')
+plt.show()
 
 # xgboost 'merror' plot
 fig, ax = plt.subplots(figsize=(9,5))
 ax.plot(x_axis, results['validation_0']['merror'], label='Train')
-ax.plot(x_axis, results['validation_1']['merror'], label='Test')
+ax.plot(x_axis, results['validation_1']['merror'], label='Val')
 ax.legend()
 plt.ylabel('merror')
 plt.title('GridSearchCV XGBoost merror')
-plt.savefig('merror.png')
+plt.show()
 
 y_pred = model1.predict(test_embedding1)
 
