@@ -137,8 +137,8 @@ evals_result2 = {}
 # Train the XGBoost model
 params = {
     #'objective': 'multi:softprob',
-    #'num_class': num_class,
     'objective': 'multi:softmax',
+    'num_class': num_class,
     'eval_metric': 'mlogloss',
     'seed': 42,
     'tree_method': 'gpu_hist',
