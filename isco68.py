@@ -185,9 +185,9 @@ plt.show()
 
 # Perform inference on the test set
 predictions1 = model1.predict(X_test1)
-predictions1 = np.argmax(predictions1, axis=1)
+predictions1 = np.argmax(predictions1, axis=0)
 predictions2 = model2.predict(X_test2)
-predictions2 = np.argmax(predictions2, axis=1)
+predictions2 = np.argmax(predictions2, axis=0)
 
 # Calculate accuracy
 accuracy1 = accuracy_score(labels_test1, predictions1)
