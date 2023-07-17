@@ -10,7 +10,10 @@ from sklearn.metrics import cohen_kappa_score
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn import preprocessing
+import os
 
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
 
 lifew = pd.read_csv('data/(Dutch - ISCO-68) AMIGO_t - Copy.csv', encoding='latin-1')
 
@@ -164,7 +167,7 @@ plt.title('loss1')
 plt.plot(x_scale1,train_loss1,label='train',color='r')
 plt.plot(x_scale1,valid_loss1,label='valid',color='b')
 plt.legend()
-plt.show()
+plt.savefig('loss_result_1.png')
 
 model2 = xgb.train(params, X_train2,
                    evals=[(X_train2, 'Train'), (X_test2, 'Valid')],
@@ -182,14 +185,15 @@ plt.title('loss2')
 plt.plot(x_scale2,train_loss2,label='train',color='r')
 plt.plot(x_scale2,valid_loss2,label='valid',color='b')
 plt.legend()
-plt.show()
+plt.savefig('loss_result_2.png')
 
 # Perform inference on the test set
 predictions1 = model1.predict(X_test1)
-predictions1 = np.argmax(predictions1, axis=0)
+predictions1 = np.argmax(predictions1, axis=1)
+np.savetxt('predictions_1.txt', predictions1, delimiter=',')
 predictions2 = model2.predict(X_test2)
-predictions2 = np.argmax(predictions2, axis=0)
-
+predictions2 = np.argmax(predictions2, axis=1)
+np.savetxt('predictions_2.txt', predictions2, delimiter=',')
 # Calculate accuracy
 accuracy1 = accuracy_score(labels_test1, predictions1)
 accuracy2 = accuracy_score(labels_test2, predictions2)
