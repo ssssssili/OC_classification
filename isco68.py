@@ -112,7 +112,7 @@ for i in range(num_test_batches1):
 
     test_embedding1.append(batch_embeddings)
 
-X_test1 = xgb.DMatrix(test_embedding1)
+X_test1 = xgb.DMatrix(test_embedding1, label=labels_test1)
 
 for i in range(num_test_batches2):
     start_idx = i * batch_size
@@ -123,7 +123,7 @@ for i in range(num_test_batches2):
 
     test_embedding2.append(batch_embeddings)
 
-X_test2 = xgb.DMatrix(test_embedding2)
+X_test2 = xgb.DMatrix(test_embedding2, label=labels_test2)
 
 
 num_class = len(isco68_feature['label'].value_counts())
