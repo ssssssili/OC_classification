@@ -107,7 +107,7 @@ def aggdata(dataset, data, label):
             df.loc[len(df.index)] = [np.nan, i]
 
     print('datashape&type:', data.shape, type(data))
-    print('labelshape&type:', label.shape, type(label))
     print('dfshape&type:', df.shape, type(df), df.info())
+    print('labelshape&type:', label.shape, type(label))
     #return np.array(df[0], dtype=object), np.array(df[1])
 
