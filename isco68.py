@@ -168,7 +168,7 @@ ax.plot(x_axis, results['validation_1']['mlogloss'], label='Test')
 ax.legend()
 plt.ylabel('mlogloss')
 plt.title('GridSearchCV XGBoost mlogloss')
-plt.show()
+plt.savefig('mlogloss.png')
 
 # xgboost 'merror' plot
 fig, ax = plt.subplots(figsize=(9,5))
@@ -177,7 +177,7 @@ ax.plot(x_axis, results['validation_1']['merror'], label='Test')
 ax.legend()
 plt.ylabel('merror')
 plt.title('GridSearchCV XGBoost merror')
-plt.show()
+plt.savefig('merror.png')
 
 y_pred = model1.predict(test_embedding1)
 
