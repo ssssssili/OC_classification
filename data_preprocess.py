@@ -106,5 +106,8 @@ def aggdata(dataset, data, label):
         if i not in np.unique(label):
             df.loc[len(df.index)] = ['nan', i]
 
+    print(df[1].value_counts())
+    print(len(df[df[0]=='nan']))
+
     return df[0], df[1]
 
