@@ -150,7 +150,7 @@ params = {
 """
 
 model1 = xgb.XGBClassifier(objective='multi:softmax',
-                            num_class=np.unique(y),
+                            num_class=len(np.unique(y)),
                             gamma=0,
                             learning_rate=0.1,
                             max_depth=5,
