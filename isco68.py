@@ -134,9 +134,10 @@ predictions2 = np.array(predictions2)
 binary_predictions2 = np.round(predictions2)
 
 # Calculate accuracy
-accuracy = accuracy_score(labels_test1, binary_predictions1)
-accuracy = accuracy_score(labels_test2, binary_predictions2)
-print("Accuracy:", accuracy)
+accuracy1 = accuracy_score(labels_test1, binary_predictions1)
+accuracy2 = accuracy_score(labels_test2, binary_predictions2)
+print("Accuracy1:", accuracy1)
+print("Accuracy2:", accuracy2)
 
 
 
