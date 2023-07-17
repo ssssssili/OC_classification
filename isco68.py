@@ -141,15 +141,14 @@ model1 = xgb.XGBClassifier(objective='multi:softmax',
                             num_class=len(np.unique(y)),
                             gamma=0,
                             learning_rate=0.1,
-                            missing=0,
+                            #missing=0,
                             max_depth=5,
                             reg_lambda=1,
                             early_stopping_rounds=10,
                             scale_pos_weight= 5,
                             tree_method= 'gpu_hist',
                             eval_metric=['merror','mlogloss'],
-                            seed=42
-                            )
+                            seed=42)
 
 model1.fit(x_train,
             y_train,

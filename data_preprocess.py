@@ -104,7 +104,7 @@ def aggdata(dataset, data, label):
     df = pd.DataFrame(list(zip(data, label)))
     for i in np.unique(dataset['label']):
         if i not in np.unique(label):
-            df.loc[len(df.index)] = [np.NAN, i]
+            df.loc[len(df.index)] = [np.nan, i]
 
-    return np.array(df[0]), np.array(df[1])
+    return np.array(df[0], dtype=object), np.array(df[1])
 
