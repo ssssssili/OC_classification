@@ -3,13 +3,11 @@ import numpy as np
 import data_preprocess
 import matplotlib.pyplot as plt
 import xgboost as xgb
-from xgboost import XGBClassifier
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score
-from sklearn.metrics import cohen_kappa_score
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import GridSearchCV
 from sklearn import preprocessing
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.metrics import confusion_matrix, classification_report
+from sklearn.metrics import balanced_accuracy_score, accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
+from sklearn.utils.class_weight import compute_sample_weight
 import os
 
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
@@ -130,15 +128,15 @@ for i in range(num_test_batches2):
 test_embedding2 = np.concatenate(test_embedding2, axis=0)
 X_test2 = xgb.DMatrix(test_embedding2, label=labels_test2)
 
-num_class = len(isco68_feature['label'].value_counts())
+"""
 evals_result1 = {}
 evals_result2 = {}
 
 # Train the XGBoost model
 params = {
     #'objective': 'multi:softprob',
-    'objective': 'multi:softmax',
-    'num_class': num_class,
+    'objective': 'multi:softprob',
+    'num_class': np.unique(y),
     'eval_metric': 'mlogloss',
     'seed': 42,
     'tree_method': 'gpu_hist',
@@ -149,7 +147,74 @@ params = {
     'gamma': 0,
     'eta': 0.1
 }
+"""
 
+model1 = xgb.XGBClassifier(objective='multi:softmax',
+                            num_class=np.unique(y),
+                            gamma=0,
+                            learning_rate=0.1,
+                            max_depth=5,
+                            reg_lambda=1,
+                            early_stopping_rounds=10,
+                            tree_method= 'gpu_hist',
+                            eval_metric=['merror','mlogloss'],
+                            seed=42)
+
+model1.fit(embeddings1,
+            labels_train1,
+            verbose=0, # set to 1 to see xgb training round intermediate results
+            eval_set=[(embeddings1, labels_train1), (test_embedding1, np.array(labels_test1))])
+
+results = model1.evals_result()
+epochs = len(results['validation_0']['mlogloss'])
+x_axis = range(0, epochs)
+
+# xgboost 'mlogloss' plot
+fig, ax = plt.subplots(figsize=(9,5))
+ax.plot(x_axis, results['validation_0']['mlogloss'], label='Train')
+ax.plot(x_axis, results['validation_1']['mlogloss'], label='Test')
+ax.legend()
+plt.ylabel('mlogloss')
+plt.title('GridSearchCV XGBoost mlogloss')
+plt.show()
+
+# xgboost 'merror' plot
+fig, ax = plt.subplots(figsize=(9,5))
+ax.plot(x_axis, results['validation_0']['merror'], label='Train')
+ax.plot(x_axis, results['validation_1']['merror'], label='Test')
+ax.legend()
+plt.ylabel('merror')
+plt.title('GridSearchCV XGBoost merror')
+plt.show()
+
+## ---------- Model Classification Report ----------
+## get predictions and create model quality report
+
+y_pred = model1.predict(test_embedding1)
+
+print('\n------------------ Confusion Matrix -----------------\n')
+print(confusion_matrix(np.array(labels_test1), y_pred))
+
+print('\nAccuracy: {:.2f}'.format(accuracy_score(np.array(labels_test1), y_pred)))
+print('Balanced Accuracy: {:.2f}\n'.format(balanced_accuracy_score(np.array(labels_test1), y_pred)))
+
+print('Micro Precision: {:.2f}'.format(precision_score(np.array(labels_test1), y_pred, average='micro')))
+print('Micro Recall: {:.2f}'.format(recall_score(np.array(labels_test1), y_pred, average='micro')))
+print('Micro F1-score: {:.2f}\n'.format(f1_score(np.array(labels_test1), y_pred, average='micro')))
+
+print('Macro Precision: {:.2f}'.format(precision_score(np.array(labels_test1), y_pred, average='macro')))
+print('Macro Recall: {:.2f}'.format(recall_score(np.array(labels_test1), y_pred, average='macro')))
+print('Macro F1-score: {:.2f}\n'.format(f1_score(np.array(labels_test1), y_pred, average='macro')))
+
+print('Weighted Precision: {:.2f}'.format(precision_score(np.array(labels_test1), y_pred, average='weighted')))
+print('Weighted Recall: {:.2f}'.format(recall_score(np.array(labels_test1), y_pred, average='weighted')))
+print('Weighted F1-score: {:.2f}'.format(f1_score(np.array(labels_test1), y_pred, average='weighted')))
+
+print('\n--------------- Classification Report ---------------\n')
+print(classification_report(np.array(labels_test1), y_pred))
+print('---------------------- XGBoost ----------------------') # unnecessary fancy styling
+
+"""
 num_rounds = 100
 model1 = xgb.train(params, X_train1,
                    evals=[(X_train1, 'Train'), (X_test1, 'Valid')],
@@ -205,6 +270,7 @@ cohen2 = cohen_kappa_score(labels_test2, predictions2)
 print("first: Accuracy, f1, cohen:", accuracy1, f1score1, cohen1)
 print("second: Accuracy, f1, cohen:", accuracy2, f1score2, cohen2)
 
+"""
 
 """
 param_test1 = {
