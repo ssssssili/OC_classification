@@ -127,7 +127,6 @@ for i in range(num_test_batches2):
 test_embedding2 = np.concatenate(test_embedding2, axis=0)
 X_test2 = xgb.DMatrix(test_embedding2, label=labels_test2)
 
-
 num_class = len(isco68_feature['label'].value_counts())
 evals_result1 = {}
 evals_result2 = {}
