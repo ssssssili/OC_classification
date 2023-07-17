@@ -206,25 +206,26 @@ plt.show()
 y_pred = model1.predict(test_embedding1)
 
 print('\n------------------ Confusion Matrix -----------------\n')
-print(confusion_matrix(np.array(labels_test1), y_pred))
+#print(confusion_matrix(np.array(labels_test1), y_pred))
 
-print('\nAccuracy: {:.2f}'.format(accuracy_score(np.array(labels_test1), y_pred)))
-print('Balanced Accuracy: {:.2f}\n'.format(balanced_accuracy_score(np.array(labels_test1), y_pred)))
+print('\nAccuracy: {:.2f}'.format(accuracy_score(test_labels1, y_pred)))
+#print('Balanced Accuracy: {:.2f}\n'.format(balanced_accuracy_score(np.array(labels_test1), y_pred)))
 
-print('Micro Precision: {:.2f}'.format(precision_score(np.array(labels_test1), y_pred, average='micro')))
-print('Micro Recall: {:.2f}'.format(recall_score(np.array(labels_test1), y_pred, average='micro')))
-print('Micro F1-score: {:.2f}\n'.format(f1_score(np.array(labels_test1), y_pred, average='micro')))
+print('Micro Precision: {:.2f}'.format(precision_score(test_labels1, y_pred, average='micro')))
+print('Micro Recall: {:.2f}'.format(recall_score(test_labels1, y_pred, average='micro')))
+print('Micro F1-score: {:.2f}\n'.format(f1_score(test_labels1, y_pred, average='micro')))
+print('Cohens Kappa: {:.2f}\n'.format(cohen_kappa_score(test_labels1, y_pred)))
 
-print('Macro Precision: {:.2f}'.format(precision_score(np.array(labels_test1), y_pred, average='macro')))
-print('Macro Recall: {:.2f}'.format(recall_score(np.array(labels_test1), y_pred, average='macro')))
-print('Macro F1-score: {:.2f}\n'.format(f1_score(np.array(labels_test1), y_pred, average='macro')))
+#print('Macro Precision: {:.2f}'.format(precision_score(np.array(labels_test1), y_pred, average='macro')))
+#print('Macro Recall: {:.2f}'.format(recall_score(np.array(labels_test1), y_pred, average='macro')))
+#print('Macro F1-score: {:.2f}\n'.format(f1_score(np.array(labels_test1), y_pred, average='macro')))
 
-print('Weighted Precision: {:.2f}'.format(precision_score(np.array(labels_test1), y_pred, average='weighted')))
-print('Weighted Recall: {:.2f}'.format(recall_score(np.array(labels_test1), y_pred, average='weighted')))
-print('Weighted F1-score: {:.2f}'.format(f1_score(np.array(labels_test1), y_pred, average='weighted')))
+#print('Weighted Precision: {:.2f}'.format(precision_score(np.array(labels_test1), y_pred, average='weighted')))
+#print('Weighted Recall: {:.2f}'.format(recall_score(np.array(labels_test1), y_pred, average='weighted')))
+#print('Weighted F1-score: {:.2f}'.format(f1_score(np.array(labels_test1), y_pred, average='weighted')))
 
 print('\n--------------- Classification Report ---------------\n')
-print(classification_report(np.array(labels_test1), y_pred))
+print(classification_report(test_labels1, y_pred))
 print('---------------------- XGBoost ----------------------') # unnecessary fancy styling
 
 """
