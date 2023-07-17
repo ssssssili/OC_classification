@@ -96,9 +96,11 @@ X_train2 = xgb.DMatrix(embeddings2, label=labels_train2)
 # Perform inference on the test set
 
 num_test_batches1 = len(texts_test1) // batch_size + 1
+test_embedding1 = []
 predictions1 = []
 
 num_test_batches2 = len(texts_test2) // batch_size + 1
+test_embedding2 = []
 predictions2 = []
 
 for i in range(num_test_batches1):
@@ -108,7 +110,9 @@ for i in range(num_test_batches1):
     batch_texts = texts_test1[start_idx:end_idx]
     batch_embeddings = embedding_model.sentence_embedding(batch_texts)
 
-    X_test1 = xgb.DMatrix(batch_embeddings)
+    test_embedding1.append(batch_embeddings)
+
+X_test1 = xgb.DMatrix(test_embedding1)
 
 for i in range(num_test_batches2):
     start_idx = i * batch_size
@@ -117,7 +121,10 @@ for i in range(num_test_batches2):
     batch_texts = texts_test2[start_idx:end_idx]
     batch_embeddings = embedding_model.sentence_embedding(batch_texts)
 
-    X_test2 = xgb.DMatrix(batch_embeddings)
+    test_embedding2.append(batch_embeddings)
+
+X_test2 = xgb.DMatrix(test_embedding2)
+
 
 num_class = len(isco68_feature['label'].value_counts())
 evals_result1 = {}
@@ -177,17 +184,9 @@ plt.legend()
 plt.show()
 
 # Perform inference on the test set
-
-for i in range(num_test_batches1):
-    batch_predictions = model1.predict(X_test1)
-    predictions1.extend(batch_predictions)
-
-for i in range(num_test_batches2):
-    batch_predictions = model2.predict(X_test2)
-    predictions2.extend(batch_predictions)
-
+predictions1 = model1.predict(X_test1)
 predictions1 = np.argmax(predictions1, axis=1)
-
+predictions2 = model2.predict(X_test2)
 predictions2 = np.argmax(predictions2, axis=1)
 
 # Calculate accuracy
