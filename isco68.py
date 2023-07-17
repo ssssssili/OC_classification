@@ -113,7 +113,7 @@ for i in range(num_test_batches1):
     test_embedding1.append(batch_embeddings)
 
 test_embedding1 = np.concatenate(test_embedding1, axis=0)
-X_test1 = xgb.DMatrix(test_embedding1)
+X_test1 = xgb.DMatrix(test_embedding1, label=labels_test1)
 
 for i in range(num_test_batches2):
     start_idx = i * batch_size
@@ -125,7 +125,7 @@ for i in range(num_test_batches2):
     test_embedding2.append(batch_embeddings)
 
 test_embedding2 = np.concatenate(test_embedding2, axis=0)
-X_test2 = xgb.DMatrix(test_embedding2)
+X_test2 = xgb.DMatrix(test_embedding2, label=labels_test2)
 
 
 num_class = len(isco68_feature['label'].value_counts())
@@ -134,7 +134,7 @@ evals_result2 = {}
 
 # Train the XGBoost model
 params = {
-    'objective': 'multi:softmax',
+    'objective': 'multi:softprob',
     'num_class': num_class,
     'eval_metric': 'mlogloss',
     'seed': 42,
@@ -203,6 +203,7 @@ print("first: Accuracy, f1, cohen:", accuracy1, f1score1, cohen1)
 print("second: Accuracy, f1, cohen:", accuracy2, f1score2, cohen2)
 
 
+"""
 param_test1 = {
 'max_depth':[i for i in range(3,10,2)],
 'min_child_weight':[i for i in range(1,6,2)]
@@ -242,3 +243,5 @@ print('gsearch1.best_score_', gsearch.best_score_)
 # 获得最好参数组合后降低学习率至0.03尝试
 
 #le.inverse_transform()
+
+"""
