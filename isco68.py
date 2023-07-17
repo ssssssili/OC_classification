@@ -7,7 +7,6 @@ from xgboost import XGBClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.metrics import f1_score
 from sklearn.metrics import cohen_kappa_score
-
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn import preprocessing
@@ -94,29 +93,7 @@ labels_train2 = np.array(batch_labels2)
 X_train1 = xgb.DMatrix(embeddings1, label=labels_train1)
 X_train2 = xgb.DMatrix(embeddings2, label=labels_train2)
 
-num_class = len(isco68_feature['label'].value_counts())
-
-# Train the XGBoost model
-params = {
-    'objective': 'multi:softmax',
-    'num_class': num_class,
-    'eval_metric': 'error',
-    'seed': 42,
-    'tree_method': 'gpu_hist',
-    'min_child_weight': 1,
-    'max_depth': 3,
-    'scale_pos_weight': 1,
-    'max_delta_step': 0,
-    'gamma': 0,
-    'eta': 0.1
-}
-
-num_rounds = 100
-model1 = xgb.train(params, X_train1, num_rounds)
-model2 = xgb.train(params, X_train2, num_rounds)
-
 # Perform inference on the test set
-batch_size = 256
 
 num_test_batches1 = len(texts_test1) // batch_size + 1
 predictions1 = []
@@ -131,10 +108,7 @@ for i in range(num_test_batches1):
     batch_texts = texts_test1[start_idx:end_idx]
     batch_embeddings = embedding_model.sentence_embedding(batch_texts)
 
-    dtest = xgb.DMatrix(batch_embeddings)
-    batch_predictions = model1.predict(dtest)
-
-    predictions1.extend(batch_predictions)
+    X_test1 = xgb.DMatrix(batch_embeddings)
 
 for i in range(num_test_batches2):
     start_idx = i * batch_size
@@ -143,9 +117,73 @@ for i in range(num_test_batches2):
     batch_texts = texts_test2[start_idx:end_idx]
     batch_embeddings = embedding_model.sentence_embedding(batch_texts)
 
-    dtest = xgb.DMatrix(batch_embeddings)
-    batch_predictions = model2.predict(dtest)
+    X_test2 = xgb.DMatrix(batch_embeddings)
 
+num_class = len(isco68_feature['label'].value_counts())
+evals_result1 = {}
+evals_result2 = {}
+
+# Train the XGBoost model
+params = {
+    'objective': 'multi:softmax',
+    'num_class': num_class,
+    'eval_metric': 'mlogloss',
+    'seed': 42,
+    'tree_method': 'gpu_hist',
+    'min_child_weight': 1,
+    'max_depth': 3,
+    'scale_pos_weight': 1,
+    'max_delta_step': 0,
+    'gamma': 0,
+    'eta': 0.1
+}
+
+num_rounds = 100
+model1 = xgb.train(params, X_train1,
+                   evals=[(X_train1, 'Train'), (X_test1, 'Valid')],
+                   num_boost_round=num_rounds,
+                   evals_result=evals_result1,
+                   verbose_eval=True,
+                   early_stopping_rounds=10)
+
+print(evals_result1)
+
+train_loss1=list(evals_result1['Train'].values())[0]
+valid_loss1=list(evals_result1['Valid'].values())[0]
+x_scale1=[i for i in range(len(train_loss1))]
+plt.figure(figsize=(10,10))
+plt.title('loss1')
+plt.plot(x_scale1,train_loss1,label='train',color='r')
+plt.plot(x_scale1,valid_loss1,label='valid',color='b')
+plt.legend()
+plt.show()
+
+model2 = xgb.train(params, X_train2,
+                   evals=[(X_train2, 'Train'), (X_test2, 'Valid')],
+                   num_boost_round=num_rounds,
+                   evals_result=evals_result2,
+                   verbose_eval=True,
+                   early_stopping_rounds=10)
+print(evals_result2)
+
+train_loss2=list(evals_result2['Train'].values())[0]
+valid_loss2=list(evals_result2['Valid'].values())[0]
+x_scale2=[i for i in range(len(train_loss2))]
+plt.figure(figsize=(10,10))
+plt.title('loss2')
+plt.plot(x_scale2,train_loss2,label='train',color='r')
+plt.plot(x_scale2,valid_loss2,label='valid',color='b')
+plt.legend()
+plt.show()
+
+# Perform inference on the test set
+
+for i in range(num_test_batches1):
+    batch_predictions = model1.predict(X_test1)
+    predictions1.extend(batch_predictions)
+
+for i in range(num_test_batches2):
+    batch_predictions = model2.predict(X_test2)
     predictions2.extend(batch_predictions)
 
 predictions1 = np.argmax(predictions1, axis=1)
@@ -160,8 +198,8 @@ f1score2 = f1_score(labels_test2, predictions2)
 cohen1 = cohen_kappa_score(labels_test1, predictions1)
 cohen2 = cohen_kappa_score(labels_test2, predictions2)
 
-print("first: Accuracy, f1, cohen:", accuracy1)
-print("second: Accuracy, f1, cohen:", accuracy2)
+print("first: Accuracy, f1, cohen:", accuracy1, f1score1, cohen1)
+print("second: Accuracy, f1, cohen:", accuracy2, f1score2, cohen2)
 
 
 param_test1 = {
@@ -177,7 +215,7 @@ gsearch = GridSearchCV(
 estimator = XGBClassifier(
     objective= 'multi:softmax',
     num_class= num_class,
-    eval_metric= 'error',
+    eval_metric= 'mlogloss',
     n_estimators= 140,
     seed= 42,
     tree_method= 'gpu_hist',
@@ -194,7 +232,7 @@ estimator = XGBClassifier(
 
 
 # 我假设使用第二组数据效果比较好，如果使用第一组效果更好的话把下列的2都改成1就行
-gsearch.fit(X_train2,labels_train2)
+gsearch.fit(X_train2,labels_train2,early_stopping_rounds=10)
 print('gsearch1.grid_scores_', gsearch.grid_scores_)
 print('gsearch1.best_params_', gsearch.best_params_)
 print('gsearch1.best_score_', gsearch.best_score_)
