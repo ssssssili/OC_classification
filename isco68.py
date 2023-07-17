@@ -136,8 +136,9 @@ evals_result2 = {}
 
 # Train the XGBoost model
 params = {
-    'objective': 'multi:softprob',
-    'num_class': num_class,
+    #'objective': 'multi:softprob',
+    #'num_class': num_class,
+    'objective': 'multi:softmax',
     'eval_metric': 'mlogloss',
     'seed': 42,
     'tree_method': 'gpu_hist',
@@ -189,16 +190,16 @@ plt.savefig('loss_result_2.png')
 
 # Perform inference on the test set
 predictions1 = model1.predict(X_test1)
-predictions1 = np.argmax(predictions1, axis=1)
+predictions1 = np.argmax(predictions1, axis=0)
 np.savetxt('predictions_1.txt', predictions1, delimiter=',')
 predictions2 = model2.predict(X_test2)
-predictions2 = np.argmax(predictions2, axis=1)
+predictions2 = np.argmax(predictions2, axis=0)
 np.savetxt('predictions_2.txt', predictions2, delimiter=',')
 # Calculate accuracy
 accuracy1 = accuracy_score(labels_test1, predictions1)
 accuracy2 = accuracy_score(labels_test2, predictions2)
-f1score1 = f1_score(labels_test1, predictions1)
-f1score2 = f1_score(labels_test2, predictions2)
+f1score1 = f1_score(labels_test1, predictions1, average='micro')
+f1score2 = f1_score(labels_test2, predictions2, average='micro')
 cohen1 = cohen_kappa_score(labels_test1, predictions1)
 cohen2 = cohen_kappa_score(labels_test2, predictions2)
 
