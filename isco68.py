@@ -29,13 +29,6 @@ isco68_prep = pd.read_csv('isco68_prep.csv')
 le = preprocessing.LabelEncoder()
 isco68_prep['label'] = le.fit_transform(isco68_short['obsseqnr'])
 
-drop = []
-for i in np.unique(isco68_prep['label']):
-    if isco68_prep['label'].value_counts()[i]==1:
-        drop.append(i)
-
-isco68_prep = isco68_prep[isco68_prep['label'].apply(lambda x: x not in drop)]
-
 isco68_feature = data_preprocess.CombineFeature(isco68_prep, column=['bjobcoder', 'bwhsID', 'bjobnm', 'bjobdes',
                                                                  'bjobco', 'bjobcode', 'bjobcertain'], withname= True)
 
@@ -44,87 +37,73 @@ isco68_feature = data_preprocess.CombineFeature(isco68_prep, column=['bjobcoder'
 
 #data_preprocess.PlotData(isco68_prep, column='obsseqnr')
 
-#x = isco68_feature['feature']
-#y = isco68_feature['label']
 x = isco68_feature['feature']
 y = isco68_feature['label']
 
-texts_train1, texts_test1, labels_train1, labels_test1 = train_test_split(x, y, test_size=0.3, random_state=42, stratify=y)
-#texts_train2, texts_test2, labels_train2, labels_test2 = train_test_split(x_name, y_name, test_size=0.3, random_state=42)
+texts_train1, texts_test1, labels_train1, labels_test1 = train_test_split(x, y, test_size=0.3, random_state=42)
+texts_train1, texts_val1, labels_train1, labels_val1 = train_test_split(texts_train1, labels_train1, test_size=0.14, random_state=42)
 
+x_train, y_train = data_preprocess.aggdata(isco68_feature, texts_train1, labels_train1)
+x_test, y_test = data_preprocess.aggdata(isco68_feature, texts_test1, labels_test1)
+x_val, y_val = data_preprocess.aggdata(isco68_feature, texts_val1, labels_val1)
 
 embedding_model = data_preprocess.EmbeddingModel("pdelobelle/robbert-v2-dutch-base")
 # Define batch size for processing
 batch_size = 128
 
-# Calculate the number of batches
-num_batches1 = len(texts_train1) // batch_size + 1
-#num_batches2 = len(texts_train2) // batch_size + 1
 
-# Initialize empty arrays for storing embeddings and labels
+num_batches1 = len(x_train) // batch_size + 1
 embeddings1 = []
 labels1 = []
 
-#embeddings2 = []
-#batch_labels2 = []
-
-# Process data in batches
 for i in range(num_batches1):
     start_idx = i * batch_size
     end_idx = start_idx + batch_size
 
-    batch_texts = texts_train1[start_idx:end_idx]
-    labels1.extend(labels_train1[start_idx:end_idx])
+    batch_texts = x_train[start_idx:end_idx]
+    labels1.extend(y_train[start_idx:end_idx])
 
     batch_embeddings = embedding_model.sentence_embedding(batch_texts)
     embeddings1.append(batch_embeddings)
 
-"""
-for i in range(num_batches2):
-    start_idx = i * batch_size
-    end_idx = start_idx + batch_size
-
-    batch_texts = texts_train2[start_idx:end_idx]
-    batch_labels2.extend(labels_train2[start_idx:end_idx])
-
-    batch_embeddings = embedding_model.sentence_embedding(batch_texts)
-    embeddings2.append(batch_embeddings)
-"""
-# Concatenate embeddings and labels
 embeddings1 = np.concatenate(embeddings1, axis=0)
 labels1 = np.array(labels1)
 
-#embeddings2 = np.concatenate(embeddings2, axis=0)
-#labels_train2 = np.array(batch_labels2)
 
-# Convert the embeddings and labels to NumPy arrays
-#X_train1 = xgb.DMatrix(embeddings1, label=labels_train1)
-#X_train2 = xgb.DMatrix(embeddings2, label=labels_train2)
-
-# Perform inference on the test set
-
-num_test_batches1 = len(texts_test1) // batch_size + 1
+num_test_batches1 = len(x_test) // batch_size + 1
 test_embedding1 = []
 test_labels1 = []
-#predictions1 = []
-
-#num_test_batches2 = len(texts_test2) // batch_size + 1
-#test_embedding2 = []
-#predictions2 = []
 
 for i in range(num_test_batches1):
     start_idx = i * batch_size
     end_idx = start_idx + batch_size
 
-    batch_texts = texts_test1[start_idx:end_idx]
-    test_labels1.extend(labels_train1[start_idx:end_idx])
+    batch_texts = x_test[start_idx:end_idx]
+    test_labels1.extend(y_test[start_idx:end_idx])
 
     batch_embeddings = embedding_model.sentence_embedding(batch_texts)
     test_embedding1.append(batch_embeddings)
 
 test_embedding1 = np.concatenate(test_embedding1, axis=0)
 test_labels1 = np.array(test_labels1)
-#X_test1 = xgb.DMatrix(test_embedding1, label=labels_test1)
+
+num_test_batches1 = len(x_val) // batch_size + 1
+val_embedding1 = []
+val_labels1 = []
+
+for i in range(num_test_batches1):
+    start_idx = i * batch_size
+    end_idx = start_idx + batch_size
+
+    batch_texts = x_val[start_idx:end_idx]
+    test_labels1.extend(y_val[start_idx:end_idx])
+
+    batch_embeddings = embedding_model.sentence_embedding(batch_texts)
+    test_embedding1.append(batch_embeddings)
+
+val_embedding1 = np.concatenate(val_embedding1, axis=0)
+val_labels1 = np.array(val_labels1)
+
 
 """
 for i in range(num_test_batches2):
@@ -176,7 +155,7 @@ model1 = xgb.XGBClassifier(objective='multi:softmax',
 model1.fit(embeddings1,
             labels1,
             verbose=0, # set to 1 to see xgb training round intermediate results
-            eval_set=[(embeddings1, labels1), (test_embedding1, test_labels1)])
+            eval_set=[(embeddings1, labels1), (val_embedding1, val_labels1)])
 
 results = model1.evals_result()
 epochs = len(results['validation_0']['mlogloss'])
@@ -200,29 +179,16 @@ plt.ylabel('merror')
 plt.title('GridSearchCV XGBoost merror')
 plt.show()
 
-## ---------- Model Classification Report ----------
-## get predictions and create model quality report
-
 y_pred = model1.predict(test_embedding1)
 
 print('\n------------------ Confusion Matrix -----------------\n')
-#print(confusion_matrix(np.array(labels_test1), y_pred))
 
 print('\nAccuracy: {:.2f}'.format(accuracy_score(test_labels1, y_pred)))
-#print('Balanced Accuracy: {:.2f}\n'.format(balanced_accuracy_score(np.array(labels_test1), y_pred)))
 
 print('Micro Precision: {:.2f}'.format(precision_score(test_labels1, y_pred, average='micro')))
 print('Micro Recall: {:.2f}'.format(recall_score(test_labels1, y_pred, average='micro')))
 print('Micro F1-score: {:.2f}\n'.format(f1_score(test_labels1, y_pred, average='micro')))
 print('Cohens Kappa: {:.2f}\n'.format(cohen_kappa_score(test_labels1, y_pred)))
-
-#print('Macro Precision: {:.2f}'.format(precision_score(np.array(labels_test1), y_pred, average='macro')))
-#print('Macro Recall: {:.2f}'.format(recall_score(np.array(labels_test1), y_pred, average='macro')))
-#print('Macro F1-score: {:.2f}\n'.format(f1_score(np.array(labels_test1), y_pred, average='macro')))
-
-#print('Weighted Precision: {:.2f}'.format(precision_score(np.array(labels_test1), y_pred, average='weighted')))
-#print('Weighted Recall: {:.2f}'.format(recall_score(np.array(labels_test1), y_pred, average='weighted')))
-#print('Weighted F1-score: {:.2f}'.format(f1_score(np.array(labels_test1), y_pred, average='weighted')))
 
 print('\n--------------- Classification Report ---------------\n')
 print(classification_report(test_labels1, y_pred))

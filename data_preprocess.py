@@ -1,4 +1,6 @@
 import string
+import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 import nltk
 nltk.download('stopwords')
@@ -96,3 +98,13 @@ class EmbeddingModel:
             sentence_embeddings = outputs.last_hidden_state.mean(dim=1)
 
         return sentence_embeddings.cpu().numpy()
+
+
+def aggdata(dataset, data, label):
+    df = pd.DataFrame(list(zip(data, label)))
+    for i in np.unique(dataset['label']):
+        if i not in np.unique(label):
+            df.loc[len(df.index)] = ['nan', i]
+
+    return df[0], df[1]
+
