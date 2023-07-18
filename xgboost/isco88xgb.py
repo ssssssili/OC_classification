@@ -30,8 +30,6 @@ isco88_prep['label'] = le.fit_transform(isco88_prep['isco88_cg_4'])
 isco88_feature = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en',
                                                                      'product_en'], withname=True)
 
-isco88_data = isco88_feature[['feature', 'label']]
-
 x = isco88_feature['feature']
 y = isco88_feature['label']
 isco88_data = isco88_feature[['feature', 'label']]
