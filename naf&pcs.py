@@ -1,30 +1,142 @@
-import pandas as pd
-import numpy as np
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jul  4 19:01:25 2023
+
+@author: Xinhao Lan
+"""
 import data_preprocess
-import matplotlib.pyplot as plt
-import xgboost as xgb
+from transformers import BertModel,BertTokenizer
+import pandas as pd
 from sklearn import preprocessing
-from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.metrics import confusion_matrix, classification_report
-from sklearn.metrics import balanced_accuracy_score, accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
-from sklearn.utils.class_weight import compute_sample_weight
-import os
+import torch
+import numpy as np
+from transformers import logging
+from torch.optim import Adam
+from tqdm import tqdm
+from torch import nn
 
+class Dataset(torch.utils.data.Dataset):
+    def __init__(self, df):
+        self.labels = [labels[label] for label in df['label']]
+        self.texts = [tokenizer(text,
+                               padding='max_length', 
+                               max_length = 512, # 这里bert最多是512，改小不会太影响，只要大于总的句子长度就可以
+                               truncation=True,
+                               return_tensors="pt")
+                      for text in df['feature']]
+    def classes(self):
+        return self.labels
 
+    def __len__(self):
+        return len(self.labels)
+
+    def get_batch_labels(self, idx):
+        return np.array(self.labels[idx])
+
+    def get_batch_texts(self, idx):
+        return self.texts[idx]
+
+    def __getitem__(self, idx):
+        batch_texts = self.get_batch_texts(idx)
+        batch_y = self.get_batch_labels(idx)
+        return batch_texts, batch_y
+
+class BertClassifier(nn.Module):
+    def __init__(self, dropout=0.5):
+        super(BertClassifier, self).__init__()
+        #self.bert = BertModel.from_pretrained('roberta-base')
+        #self.bert = BertModel.from_pretrained('bert-base-uncased')
+        #self.bert = BertModel.from_pretrained('bert-base-cased')
+        self.bert = BertModel.from_pretrained('bert-base-multilingual-uncased')
+        
+        self.dropout = nn.Dropout(dropout)
+        self.linear = nn.Linear(768, 495)#*******此处的389改为类的数量即可，一定记得需要改变如果切换数据集的话!!!!!!********
+        self.relu = nn.ReLU()
+
+    def forward(self, input_id, mask):
+        _, pooled_output = self.bert(input_ids= input_id, attention_mask=mask,return_dict=False)
+        dropout_output = self.dropout(pooled_output)
+        linear_output = self.linear(dropout_output)
+        final_layer = self.relu(linear_output)
+        return final_layer
+
+def train(model, train_data, val_data, learning_rate, epochs):
+    train, val = Dataset(train_data), Dataset(val_data)
+    #shuffle为Ture训练时打乱样本的结果更好，但是如果自己比较可以选同样的情况不打乱
+    train_dataloader = torch.utils.data.DataLoader(train, batch_size=2, shuffle=True)
+    val_dataloader = torch.utils.data.DataLoader(val, batch_size=2)
+    #使用gpu
+    use_cuda = torch.cuda.is_available()
+    device = torch.device("cuda" if use_cuda else "cpu")
+    criterion = nn.CrossEntropyLoss() # 损失函数
+    optimizer = Adam(model.parameters(), lr=learning_rate)# 优化器
+
+    if use_cuda:
+            model = model.cuda()
+            criterion = criterion.cuda()
+    for epoch_num in range(epochs):
+            total_acc_train = 0
+            total_loss_train = 0
+            for train_input, train_label in tqdm(train_dataloader):
+                train_label = train_label.type(torch.LongTensor)
+                train_label = train_label.to(device)
+                mask = train_input['attention_mask'].type(torch.LongTensor).to(device)
+                input_id = train_input['input_ids'].squeeze(1).type(torch.LongTensor).to(device)
+                output = model(input_id, mask)
+                batch_loss = criterion(output, train_label)
+                total_loss_train += batch_loss.item()
+                acc = (output.argmax(dim=1) == train_label).sum().item()
+                total_acc_train += acc
+                model.zero_grad()
+                batch_loss.backward()
+                optimizer.step()
+            total_acc_val = 0
+            total_loss_val = 0
+            with torch.no_grad():
+                for val_input, val_label in val_dataloader:
+                    val_label = val_label.to(device)
+                    mask = val_input['attention_mask'].to(device)
+                    input_id = val_input['input_ids'].squeeze(1).to(device)
+  
+                    output = model(input_id, mask)
+
+                    batch_loss = criterion(output, val_label)
+                    total_loss_val += batch_loss.item()
+                    
+                    acc = (output.argmax(dim=1) == val_label).sum().item()
+                    total_acc_val += acc
+            
+            print(
+                f'''Epochs: {epoch_num + 1} 
+              | Train Loss: {total_loss_train / len(train_data): .3f} 
+              | Train Accuracy: {total_acc_train / len(train_data): .3f} 
+              | Val Loss: {total_loss_val / len(val_data): .3f} 
+              | Val Accuracy: {total_acc_val / len(val_data): .3f}''') 
+              
+def evaluate(model, test_data):
+
+    test = Dataset(test_data)
+    test_dataloader = torch.utils.data.DataLoader(test, batch_size=2)
+    use_cuda = torch.cuda.is_available()
+    device = torch.device("cuda" if use_cuda else "cpu")
+    if use_cuda:
+        model = model.cuda()
+
+    total_acc_test = 0
+    with torch.no_grad():
+        for test_input, test_label in test_dataloader:
+              test_label = test_label.to(device)
+              mask = test_input['attention_mask'].to(device)
+              input_id = test_input['input_ids'].squeeze(1).to(device)
+              output = model(input_id, mask)
+              acc = (output.argmax(dim=1) == test_label).sum().item()
+              total_acc_test += acc   
+    print(f'Test Accuracy: {total_acc_test / len(test_data): .3f}')      
+    
 const = pd.read_csv('data/(French - PCS-NAF) Constances_CPro_MG_Operas_012021.csv')
 
 pcs_short = const[~const['code_pcs'].apply(lambda x: type(x) is float or x.find('#') != -1)]
 naf_short = const[~const['code_naf'].apply(lambda x: type(x) is float or x.find('#') != -1)]
-
-#pcs_prep = data_preprocess.PrepData(pcs_short, column=['numep', 'profession_txt', 'secteur_txt'],
- #                                     lan='french', lower=True, punc=True, stop_word=True, stemming=True)
-#print(pcs_prep.head())
-#pcs_prep.to_csv('pcs_prep.csv', index=False)
-
-#naf_prep = data_preprocess.PrepData(naf_short, column=['numep', 'profession_txt', 'secteur_txt'],
- #                                     lan='french', lower=True, punc=True, stop_word=True, stemming=True)
-#print(naf_prep.head())
-#naf_prep.to_csv('naf_prep.csv', index=False)
 
 pcs_prep = pd.read_csv('pcs_prep.csv')
 naf_prep = pd.read_csv('naf_prep.csv')
@@ -42,21 +154,38 @@ naf_feature = data_preprocess.CombineFeature(naf_prep, column=['numep', 'profess
 pcs_data = pcs_feature[['feature', 'label']]
 naf_data = naf_feature[['feature', 'label']]
 
-"""
-data_preprocess.PlotData(pcs_prep, column='code_pcs')
-pcs_index = data_preprocess.DataSplit(pcs_prep, column='code_pcs', thershold=5, num=4)
+data = pcs_data #495
+#data = naf_data #732
+#去除一个warning的提示
+logging.set_verbosity_error()
+#读取预训练模型
+BERT_PATH = 'bert-base-cased'
+tokenizer = BertTokenizer.from_pretrained(BERT_PATH)
+#读取dataframe
+#data = pd.read_csv('/home/bme001/20225898/ISCO-88.csv', sep = ',')
+#以下代码设置labels为词典
+labels = dict()
+col = data.iloc[:,1]
+arrs = col.values
+label = set(arrs)
+i = 0
+for temp in label:
+    labels[temp] = i 
+    i = i + 1
+#以下代码为df添加新的一列，为text几行的集合
 
-pcs_1 = pcs_prep.loc[pcs_prep['code_pcs'].isin(pcs_index[0])]
-pcs_2 = pcs_prep.loc[pcs_prep['code_pcs'].isin(pcs_index[1])]
-pcs_3 = pcs_prep.loc[pcs_prep['code_pcs'].isin(pcs_index[2])]
-pcs_4 = pcs_prep.loc[pcs_prep['code_pcs'].isin(pcs_index[3])]
-
-naf_index = data_preprocess.DataSplit(naf_prep, column='code_naf', thershold=5, num=5)
-
-naf_1 = naf_prep.loc[naf_prep['code_naf'].isin(naf_index[0])]
-naf_2 = naf_prep.loc[naf_prep['code_naf'].isin(naf_index[1])]
-naf_3 = naf_prep.loc[naf_prep['code_naf'].isin(naf_index[2])]
-naf_4 = naf_prep.loc[naf_prep['code_naf'].isin(naf_index[3])]
-naf_5 = naf_prep.loc[naf_prep['code_naf'].isin(naf_index[4])]
-
-"""
+data['text'] = ''
+for i in range(data.shape[0]):
+    data['text'][i] = str(data['occupation_en'][i]) + ', ' + str(data['task_en'][i]) + ', '+str(data['employer_en'][i]) + ', ' + str(data['product_en'][i])             
+np.random.seed(112)
+#按0.8，0.1，0.1划分数据集为训练集，验证集，测试集
+df_train, df_val, df_test = np.split(data.sample(frac=1, random_state=42), 
+                                     [int(.8*len(data)), int(.9*len(data))])
+#print(len(df_train),len(df_val), len(df_test))   
+EPOCHS = 10
+# EPOCHS = 15
+model = BertClassifier()
+LR = 1e-5
+# LR = 1e-4
+train(model, df_train, df_val, LR, EPOCHS) 
+evaluate(model, df_test)
