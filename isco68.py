@@ -17,10 +17,6 @@ lifew = pd.read_csv('data/(Dutch - ISCO-68) AMIGO_t - Copy.csv', encoding='latin
 
 isco68_short = lifew[lifew['obsseqnr'].astype(str).str.len()==4]
 
-x = [np.nan]*768
-print(x)
-print(np.array(x).reshape(1,768).shape)
-
 #pcs_short = const[~const['code_pcs'].apply(lambda x: type(x) is float or x.find('#') != -1)]
 
 #isco68_prep = data_preprocess.PrepData(isco68_short, column=['bjobcoder', 'bwhsID', 'bjobnm', 'bjobdes',
