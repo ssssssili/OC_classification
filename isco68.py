@@ -141,10 +141,11 @@ model1 = xgb.XGBClassifier(objective='multi:softmax',
                             num_class=len(np.unique(y)),
                             gamma=0,
                             learning_rate=0.1,
+                            n_estimators=500,
                             #missing=0,
                             max_depth=5,
                             reg_lambda=1,
-                            early_stopping_rounds=10,
+                            #early_stopping_rounds=10,
                             scale_pos_weight= 5,
                             tree_method= 'gpu_hist',
                             eval_metric=['merror','mlogloss'],
@@ -178,11 +179,15 @@ plt.title('GridSearchCV XGBoost merror')
 plt.show()
 
 y_pred = model1.predict(test_embedding1)
-
+#print(y_pred)
+#np.savetxt('y_pred.txt', y_pred)
+#y_pred = model1.predict(x_train)
+#np.savetxt('y_pred.txt', y_pred)
+#np.savetxt('y_train.txt', y_train)
 print('\n------------------ Confusion Matrix -----------------\n')
 
 print('\nAccuracy: {:.2f}'.format(accuracy_score(test_labels1, y_pred)))
-
+"""
 print('Micro Precision: {:.2f}'.format(precision_score(test_labels1, y_pred, average='micro')))
 print('Micro Recall: {:.2f}'.format(recall_score(test_labels1, y_pred, average='micro')))
 print('Micro F1-score: {:.2f}\n'.format(f1_score(test_labels1, y_pred, average='micro')))
@@ -191,7 +196,7 @@ print('Cohens Kappa: {:.2f}\n'.format(cohen_kappa_score(test_labels1, y_pred)))
 print('\n--------------- Classification Report ---------------\n')
 print(classification_report(test_labels1, y_pred))
 print('---------------------- XGBoost ----------------------') # unnecessary fancy styling
-
+"""
 """
 num_rounds = 100
 model1 = xgb.train(params, X_train1,

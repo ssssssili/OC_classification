@@ -1,47 +1,50 @@
 [nltk_data] Downloading package stopwords to
 [nltk_data]     /home/bme001/20225898/nltk_data...
 [nltk_data]   Package stopwords is already up-to-date!
-Some weights of the model checkpoint at pdelobelle/robbert-v2-dutch-base were not used when initializing RobertaModel: ['lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.layer_norm.weight', 'lm_head.decoder.bias', 'lm_head.dense.bias', 'lm_head.dense.weight', 'lm_head.bias']
+Some weights of the model checkpoint at pdelobelle/robbert-v2-dutch-base were not used when initializing RobertaModel: ['lm_head.bias', 'lm_head.decoder.weight', 'lm_head.dense.weight', 'lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.layer_norm.weight', 'lm_head.decoder.bias']
 - This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-Some weights of RobertaModel were not initialized from the model checkpoint at pdelobelle/robbert-v2-dutch-base and are newly initialized: ['roberta.pooler.dense.bias', 'roberta.pooler.dense.weight']
+Some weights of RobertaModel were not initialized from the model checkpoint at pdelobelle/robbert-v2-dutch-base and are newly initialized: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
 You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
-TypeError: only size-1 arrays can be converted to Python scalars
+(5083392,)
+(6619, 768)
+[[ 0.19774491 -0.11375033 -0.35134035 ...  0.09053558 -0.31689
+  -0.39348906]
+ [ 0.20343664  0.06941716 -0.17285021 ...  0.00562025 -0.36917147
+  -0.22990063]
+ [ 0.44944137  0.20359018 -0.21134549 ...  0.12629783 -0.2569868
+  -0.30944264]
+ ...
+ [        nan         nan         nan ...         nan         nan
+          nan]
+ [        nan         nan         nan ...         nan         nan
+          nan]
+ [        nan         nan         nan ...         nan         nan
+          nan]]
+(3359232,)
+(4374, 768)
+[[ 0.36418664  0.21116292 -0.09719139 ...  0.09701424 -0.1986478
+  -0.39413971]
+ [ 0.41361502  0.18301626 -0.07530039 ...  0.08033924 -0.37997586
+  -0.42811358]
+ [ 0.3334406   0.06845444 -0.09575585 ...  0.17138156 -0.46928763
+  -0.40299857]
+ ...
+ [        nan         nan         nan ...         nan         nan
+          nan]
+ [        nan         nan         nan ...         nan         nan
+          nan]
+ [        nan         nan         nan ...         nan         nan
+          nan]]
+[08:27:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
 
-The above exception was the direct cause of the following exception:
 
-Traceback (most recent call last):
-  File "isco68.py", line 154, in <module>
-    model1.fit(x_train,
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/core.py", line 620, in inner_f
-    return func(**kwargs)
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/sklearn.py", line 1471, in fit
-    train_dmatrix, evals = _wrap_evaluation_matrices(
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/sklearn.py", line 448, in _wrap_evaluation_matrices
-    train_dmatrix = create_dmatrix(
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/sklearn.py", line 903, in _create_dmatrix
-    return QuantileDMatrix(
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/core.py", line 620, in inner_f
-    return func(**kwargs)
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/core.py", line 1386, in __init__
-    self._init(
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/core.py", line 1445, in _init
-    it.reraise()
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/core.py", line 488, in reraise
-    raise exc  # pylint: disable=raising-bad-type
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/core.py", line 469, in _handle_exception
-    return fn()
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/core.py", line 534, in <lambda>
-    return self._handle_exception(lambda: self.next(input_data), 0)
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/data.py", line 1172, in next
-    input_data(**self.kwargs)
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/core.py", line 620, in inner_f
-    return func(**kwargs)
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/core.py", line 519, in input_data
-    new, cat_codes, feature_names, feature_types = _proxy_transform(
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/data.py", line 1197, in _proxy_transform
-    data, _ = _ensure_np_dtype(data, data.dtype)
-  File "/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/xgboost/data.py", line 160, in _ensure_np_dtype
-    data = data.astype(np.float32, copy=False)
-ValueError: setting an array element with a sequence.
-srun: error: bme-gpuC001: task 0: Exited with exit code 1
+------------------ Confusion Matrix -----------------
+
+
+Accuracy: 0.03
+isco68.py:170: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
+isco68.py:179: UserWarning: Matplotlib is currently using agg, which is a non-GUI backend, so cannot show the figure.
+  plt.show()
