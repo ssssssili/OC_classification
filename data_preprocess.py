@@ -101,13 +101,14 @@ class EmbeddingModel:
 
 
 def aggdata(dataset, data, label):
+    x = [np.nan] * 768
     df = pd.DataFrame(list(zip(data, label)))
     for i in np.unique(dataset['label']):
         if i not in np.unique(label):
-            df.loc[len(df.index)] = [np.nan, i]
+            df.loc[len(df.index)] = [np.array(x).reshape(1, 768), i]
 
-    print('datashape&type:', data.shape, type(data))
-    print('dfshape&type:', df.shape, type(df), df.info())
-    print('labelshape&type:', label.shape, type(label))
-    #return np.array(df[0], dtype=object), np.array(df[1])
+    print(df[0].shape)
+    print(type(df[0]))
+
+    return np.array(df[0], dtype=object), np.array(df[1])
 
