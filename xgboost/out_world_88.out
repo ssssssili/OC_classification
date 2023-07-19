@@ -2452,3 +2452,5 @@ Some weights of the model checkpoint at roberta-base were not used when initiali
   x_tem = x_tem.append(x[[index]])
 /home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
   y_tem = y_tem.append(pd.Series(label))
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 11785902 ON bme-gpuC001 CANCELLED AT 2023-07-19T10:15:16 ***
