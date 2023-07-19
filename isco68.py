@@ -8,10 +8,12 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.metrics import balanced_accuracy_score, accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
 from sklearn.utils.class_weight import compute_sample_weight
-import os
+import warnings
 
-os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
+#import os
+
+#os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+#os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
 
 """
 lifew = pd.read_csv('data/(Dutch - ISCO-68) AMIGO_t - Copy.csv', encoding='latin-1')
@@ -24,7 +26,7 @@ isco68_prep = data_preprocess.PrepData(isco68_short, column=['bjobcoder', 'bwhsI
        'bjobco', 'bjobcode', 'bjobcertain'], lan='dutch', lower=True, punc=True, stop_word=True, stemming=True)
 isco68_prep.to_csv('isco68_prep.csv', index=False)
 """
-
+warnings.filterwarnings("ignore")
 isco68_prep = pd.read_csv('isco68_prep.csv')
 
 le = preprocessing.LabelEncoder()
