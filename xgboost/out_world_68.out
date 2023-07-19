@@ -1026,3 +1026,1025 @@ You should probably TRAIN this model on a down-stream task to be able to use it 
   x_tem = x_tem.append(x[[index]])
 /home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
   y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+/home/bme001/20225898/OC_classification/data_preprocess.py:139: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  x_tem = x_tem.append(x[[index]])
+/home/bme001/20225898/OC_classification/data_preprocess.py:140: FutureWarning: The series.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+  y_tem = y_tem.append(pd.Series(label))
+srun: error: bme-gpuC001: task 0: Killed
+srun: Force Terminated job step 11786188.0
