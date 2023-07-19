@@ -8,6 +8,8 @@ from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 import torch
 from transformers import RobertaModel, RobertaTokenizer
+from sklearn.model_selection import train_test_split
+import pandas as pd
 
 
 def remove_rarewords(text, lan):
@@ -52,27 +54,6 @@ def PlotData(dataset, column):
     plt.plot(range(len(s)), s.values)
     plt.show()
 
-def DataSplit(dataset, column, thershold, num):
-    s = dataset[column].value_counts()
-    split = s.index[0]
-    cnt = 1
-    index = []
-    tmp = []
-    for idx in s.index:
-        if cnt < num:
-            if s[split]/s[idx] < thershold:
-                tmp.append(idx)
-            else:
-                index.append(tmp)
-                tmp = []
-                split = idx
-                cnt += 1
-        else:
-            tmp.append(idx)
-    index.append(tmp)
-
-    return index
-
 
 class EmbeddingModel:
     def __init__(self, model_name):
@@ -116,3 +97,72 @@ def aggdata(dataset, data, label):
 
     return data,label
 
+def DataSplit(y, thershold, num):
+    s = pd.Series(y).value_counts()
+    split = s.index[0]
+    cnt = 1
+    index = []
+    tmp = []
+    for val in s.index:
+        if cnt < num:
+            if s[split]/s[val] < thershold:
+                idx = np.where(y == val)[0]
+                tmp.extend(list(idx))
+            else:
+                index.append(tmp)
+                tmp = []
+                split = val
+                cnt += 1
+        else:
+            idx = np.where(y == val)[0]
+            tmp.extend(list(idx))
+    index.append(tmp)
+
+    for i in range(num-cnt):
+        index.append([])
+
+    return index
+
+
+def splitDataset(x, y, training, test):
+    x = pd.DataFrame(x)
+    y = pd.Series(y)
+    tem = []
+    x_tem = pd.DataFrame()
+    y_tem = pd.Series()
+    for l in np.unique(y):
+        if y.value_counts()[l] == 1:
+            tem.append(l)
+
+    for index, label in y.iteritems():
+        if label not in tem:
+            x_tem = x_tem.append(x[index])
+            y_tem = y_tem.append(pd.Series(label))
+
+    x_train, x_test, y_train, y_test = train_test_split(x_tem, y_tem, test_size=(1 - training),
+                                                        stratify=y_tem, random_state=42)
+    x_val, x_test, y_val, y_test = train_test_split(x_test, y_test, test_size=(test / (1 - training)),
+                                                    random_state=42)
+
+    for class_label in tem:
+        class_index = np.where(y == class_label)[0][0]
+        x_train= x_train.append(pd.Series(x[class_index]))
+        y_train = y_train.append(pd.Series(class_label))
+
+    x_train = np.array(x_train)
+    x_test = np.array(x_test)
+    x_val = np.array(x_val)
+    y_train = np.array(y_train)
+    y_test = np.array(y_test)
+    y_val = np.array(y_val)
+
+    return x_train, x_test, x_val, y_train, y_test, y_val
+
+def ensemble_predict(models, x_test):
+    # Perform predictions using each XGBoost model
+    predictions = [model.predict(x_test) for model in models]
+
+    # Choose the class with the highest score as the final prediction
+    ensemble_predictions = np.argmax(predictions, axis=1)
+
+    return ensemble_predictions

@@ -14,30 +14,19 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
 
 
-"""
-asial = pd.read_csv('data/(English - ISCO-88) AL_allcodes(AsiaLymph) - Copy.csv')
-
-isco88_short = asial[~asial['isco88_cg_4'].str.contains('z')]
-
-isco88_prep = data_preprocess.PrepData(isco88_short, column=['occupation_en', 'task_en', 'employer_en', 'product_en'],
-                                      lan='english', lower=True, punc=True, stop_word=True, stemming=True)
-print(isco88_prep.head())
-isco88_prep.to_csv('isco88_prep.csv', index=False)
-"""
-
-isco88_prep = pd.read_csv('isco88_prep.csv')
+naf_prep = pd.read_csv('naf_prep.csv')
 
 le = preprocessing.LabelEncoder()
-isco88_prep['label'] = le.fit_transform(isco88_prep['isco88_cg_4'])
+naf_prep['label'] = le.fit_transform(naf_prep['code_naf'])
 
-isco88_feature = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en',
-                                                                     'product_en'], withname=True)
+naf_feature = data_preprocess.CombineFeature(naf_prep, column=['numep', 'profession_txt',
+                                                                  'secteur_txt'], withname= True)
 
-isco88_data = isco88_feature[['feature', 'label']]
+naf_data = naf_feature[['feature', 'label']]
 
-embedding_model = data_preprocess.EmbeddingModel("roberta-base")
+embedding_model = data_preprocess.EmbeddingModel("roberta-base-wechsel-french")
 batch_size = 256
-num_batches = len(isco88_data) // batch_size + 1
+num_batches = len(naf_data) // batch_size + 1
 embeddings = []
 labels = []
 
@@ -45,8 +34,8 @@ for i in range(num_batches):
     start_idx = i * batch_size
     end_idx = start_idx + batch_size
 
-    batch_texts = isco88_data['feature'][start_idx:end_idx]
-    labels.extend(isco88_data['label'][start_idx:end_idx])
+    batch_texts = naf_data['feature'][start_idx:end_idx]
+    labels.extend(naf_data['label'][start_idx:end_idx])
 
     batch_embeddings = embedding_model.sentence_embedding(batch_texts)
     embeddings.append(batch_embeddings)
@@ -56,7 +45,7 @@ labels = np.array(labels)
 
 
 all_parameters = {'objective': 'multi:softmax',
-                    'num_class': len(np.unique(isco88_data['label'])),
+                    'num_class': len(np.unique(naf_data['label'])),
                     'gamma': 0,
                     'learning_rate': 0.1,
                     'n_estimators': 500,

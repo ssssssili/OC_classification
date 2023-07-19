@@ -13,28 +13,110 @@ import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
 
+"""
 lifew = pd.read_csv('data/(Dutch - ISCO-68) AMIGO_t - Copy.csv', encoding='latin-1')
 
 isco68_short = lifew[lifew['obsseqnr'].astype(str).str.len()==4]
 
-#pcs_short = const[~const['code_pcs'].apply(lambda x: type(x) is float or x.find('#') != -1)]
+pcs_short = const[~const['code_pcs'].apply(lambda x: type(x) is float or x.find('#') != -1)]
 
-#isco68_prep = data_preprocess.PrepData(isco68_short, column=['bjobcoder', 'bwhsID', 'bjobnm', 'bjobdes',
- #      'bjobco', 'bjobcode', 'bjobcertain'], lan='dutch', lower=True, punc=True, stop_word=True, stemming=True)
-#print(isco68_prep.head())
-#isco68_prep.to_csv('isco68_prep.csv', index=False)
+isco68_prep = data_preprocess.PrepData(isco68_short, column=['bjobcoder', 'bwhsID', 'bjobnm', 'bjobdes',
+       'bjobco', 'bjobcode', 'bjobcertain'], lan='dutch', lower=True, punc=True, stop_word=True, stemming=True)
+isco68_prep.to_csv('isco68_prep.csv', index=False)
+"""
 
 isco68_prep = pd.read_csv('isco68_prep.csv')
 
 le = preprocessing.LabelEncoder()
-isco68_prep['label'] = le.fit_transform(isco68_short['obsseqnr'])
+isco68_prep['label'] = le.fit_transform(isco68_prep['obsseqnr'])
 
 isco68_feature = data_preprocess.CombineFeature(isco68_prep, column=['bjobnm', 'bjobdes', 'bjobcertain'], withname= True)
 
 #isco68_namefeature = data_preprocess.CombineFeature(isco68_prep, column=['bjobnm', 'bjobdes', 'bjobcertain'], withname= True)
 
 #data_preprocess.PlotData(isco68_prep, column='obsseqnr')
+isco68_data = isco68_feature[['feature', 'label']]
 
+embedding_model = data_preprocess.EmbeddingModel("pdelobelle/robbert-v2-dutch-base")
+batch_size = 256
+num_batches = len(isco68_data) // batch_size + 1
+embeddings = []
+labels = []
+
+for i in range(num_batches):
+    start_idx = i * batch_size
+    end_idx = start_idx + batch_size
+
+    batch_texts = isco68_data['feature'][start_idx:end_idx]
+    labels.extend(isco68_data['label'][start_idx:end_idx])
+
+    batch_embeddings = embedding_model.sentence_embedding(batch_texts)
+    embeddings.append(batch_embeddings)
+
+embeddings = np.concatenate(embeddings, axis=0)
+labels = np.array(labels)
+
+
+all_parameters = {'objective': 'multi:softmax',
+                    'num_class': len(np.unique(isco68_data['label'])),
+                    'gamma': 0,
+                    'learning_rate': 0.1,
+                    'n_estimators': 500,
+                    'max_depth': 5,
+                    'early_stopping_rounds': 10,
+                    'scale_pos_weight': 5,
+                    'tree_method': 'gpu_hist',
+                    'eval_metric': ['merror','mlogloss'],
+                    'seed': 42}
+
+x_train, x_test, x_val, y_train, y_test, y_val = data_preprocess.splitDataset(embeddings, labels, 0.6, 0.2)
+
+xgbtree = xgb.XGBClassifier(**all_parameters)
+
+xgbtree.fit(x_train,
+            y_train,
+            verbose=0, # set to 1 to see xgb training round intermediate results
+            eval_set=[(x_train, y_train), (x_val, y_val)])
+
+results = xgbtree.evals_result()
+epochs = len(results['validation_0']['mlogloss'])
+x_axis = range(0, epochs)
+
+# xgboost 'mlogloss' plot
+fig, ax = plt.subplots(figsize=(9,5))
+ax.plot(x_axis, results['validation_0']['mlogloss'], label='Train')
+ax.plot(x_axis, results['validation_1']['mlogloss'], label='Val')
+ax.legend()
+plt.ylabel('mlogloss')
+plt.title('GridSearchCV XGBoost mlogloss')
+plt.show()
+
+# xgboost 'merror' plot
+fig, ax = plt.subplots(figsize=(9,5))
+ax.plot(x_axis, results['validation_0']['merror'], label='Train')
+ax.plot(x_axis, results['validation_1']['merror'], label='Val')
+ax.legend()
+plt.ylabel('merror')
+plt.title('GridSearchCV XGBoost merror')
+plt.show()
+
+y_pred = xgbtree.predict(x_test)
+print(y_pred)
+np.savetxt('y_pred.txt', y_pred)
+
+print('\n------------------ Confusion Matrix -----------------\n')
+
+print('\nAccuracy: {:.2f}'.format(accuracy_score(y_test, y_pred)))
+print('Micro Precision: {:.2f}'.format(precision_score(y_test, y_pred, average='macro')))
+print('Micro Recall: {:.2f}'.format(recall_score(y_test, y_pred, average='macro')))
+print('Micro F1-score: {:.2f}\n'.format(f1_score(y_test, y_pred, average='macro')))
+print('Cohens Kappa: {:.2f}\n'.format(cohen_kappa_score(y_test, y_pred)))
+
+print('\n--------------- Classification Report ---------------\n')
+print(classification_report(y_test, y_pred))
+print('---------------------- XGBoost ----------------------')
+
+"""
 x = isco68_feature['feature']
 y = isco68_feature['label']
 
@@ -98,7 +180,7 @@ val_embedding1 = np.concatenate(val_embedding1, axis=0)
 val_labels1 = np.array(val_labels1)
 x_train, y_train = data_preprocess.aggdata(isco68_feature, embeddings1, labels1)
 x_val, y_val = data_preprocess.aggdata(isco68_feature, val_embedding1, val_labels1)
-
+"""
 
 """
 for i in range(num_test_batches2):
@@ -133,7 +215,6 @@ params = {
     'gamma': 0,
     'eta': 0.1
 }
-"""
 
 model1 = xgb.XGBClassifier(objective='multi:softmax',
                             num_class=len(np.unique(y)),
@@ -185,6 +266,7 @@ y_pred = model1.predict(test_embedding1)
 print('\n------------------ Confusion Matrix -----------------\n')
 
 print('\nAccuracy: {:.2f}'.format(accuracy_score(test_labels1, y_pred)))
+"""
 """
 print('Micro Precision: {:.2f}'.format(precision_score(test_labels1, y_pred, average='micro')))
 print('Micro Recall: {:.2f}'.format(recall_score(test_labels1, y_pred, average='micro')))
