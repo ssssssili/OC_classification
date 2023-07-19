@@ -56,6 +56,7 @@ for i in range(num_batches):
 embeddings = np.concatenate(embeddings, axis=0)
 labels = np.array(labels)
 
+print(embeddings.shape)
 
 all_parameters = {'objective': 'multi:softmax',
                     'num_class': len(np.unique(isco68_data['label'])),
@@ -70,12 +71,15 @@ all_parameters = {'objective': 'multi:softmax',
                     'seed': 42}
 
 x_train, x_test, x_val, y_train, y_test, y_val = data_preprocess.splitDataset(embeddings, labels, 0.6, 0.2)
+print(x_train.shape)
+print(len(y_train))
+
 
 xgbtree = xgb.XGBClassifier(**all_parameters)
 
 xgbtree.fit(x_train,
             y_train,
-            verbose=0, # set to 1 to see xgb training round intermediate results
+            verbose=1, # set to 1 to see xgb training round intermediate results
             eval_set=[(x_train, y_train), (x_val, y_val)])
 
 results = xgbtree.evals_result()
