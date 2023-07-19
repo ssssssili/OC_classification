@@ -1,0 +1,8 @@
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /home/bme001/20225898/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Traceback (most recent call last):
+  File "naf_pcs_22.py", line 181, in <module>
+    pcs_prep['label'] = le.fit_transform(pcs_prep['code_pcs'])
+NameError: name 'le' is not defined
+srun: error: bme-gpuC001: task 0: Exited with exit code 1
