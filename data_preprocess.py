@@ -136,7 +136,7 @@ def splitDataset(x, y, training, test):
 
     for index, label in y.iteritems():
         if label not in tem:
-            x_tem = x_tem.append(x[index])
+            x_tem = x_tem.append(x[[index]])
             y_tem = y_tem.append(pd.Series(label))
 
     x_train, x_test, y_train, y_test = train_test_split(x_tem, y_tem, test_size=(1 - training),
@@ -146,7 +146,7 @@ def splitDataset(x, y, training, test):
 
     for class_label in tem:
         class_index = np.where(y == class_label)[0][0]
-        x_train= x_train.append(pd.Series(x[class_index]))
+        x_train = x_train.append(pd.Series(x[[class_index]]))
         y_train = y_train.append(pd.Series(class_label))
 
     x_train = np.array(x_train)
