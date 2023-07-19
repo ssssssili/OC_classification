@@ -56,7 +56,7 @@ for i in range(num_batches):
 
 embeddings = np.concatenate(embeddings, axis=0)
 labels = np.array(labels)
-print(embedding.shape)
+print(embeddings.shape)
 print(len(labels))
 
 all_parameters = {'objective': 'multi:softmax',
