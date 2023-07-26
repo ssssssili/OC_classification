@@ -2,7 +2,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2278102,3712,am,1,nan,verpleegopleid,nan,0-71.10,zeker duidelijk
 2854541,4754,am,1,activiteit begeleider intensiev begeleid,begeleid client,instell mens verstand beperk,1-93.10,zeker duidelijk
 2464583,4058,am,3,directiesecretares,secretaresseorganisatorisch,diver bedrijv,3-21.20,zeker duidelijk
-2760207,4563,am,1,flo militair combinatie onderwijs assistent,onderwijs assistent,vmboschol,1-31,onzeker onduid beschrijv
 2138575,3459,am,1,interim marktonderzoeker,nan,zelfstand,0-90.30,zeker duidelijk
 2452551,4033,am,3,leerling verpleegkund,verpleg,ziekenhuis,0-71.10,zeker duidelijk
 2176872,3528,am,5,leerling automonteur,autos reparer,garag,8-43.20,zeker duidelijk
@@ -11,7 +10,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2553617,4185,am,7,leerlingziekenverzorg,verzorg bewoner verpleegtechnisch handel medicijn uitzet toedien rapportages schrijv,verpleeghuis,0-72.10,zeker duidelijk
 1712622,2917,am,1,porject coordinator,coordinator autismewerknl project coordinator werkschol,zorginstell ggz,2-11.10,zeker duidelijk
 2455872,4040,am,2,senior technisch consultant,mak softwar applicaties,ict,0-84.20,zeker duidelijk
-2053111,3319,am,2,vrijwill brandweerman,all tak waarvan laatst 12 jar commandant,gemeent brandweerorganisatie,X,zeker duidelijk
 2132532,3445,am,3,,zag giet kunststof,qwadrant almelo,9-01.70,onzeker duidelijk beschrijv
 2816318,4670,am,1,0ndernemer horeca,eigenar all werkzam inkop tm verkop personeelszak ed,cafetarialunchrom,5-00.90,zeker duidelijk
 2731283,4511,am,1,1 ste medewerkster horeca,inkop leiding gevend tak,speelpark,5-32.10,zeker duidelijk
@@ -476,7 +474,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2726231,4500,am,4,afdelingssecretares,secretariel werkzam verpleegafdel,ziekenhuis,3-21.20,zeker duidelijk
 2752180,4540,am,1,afdelingssecretares,administratief,ziekenhuis,3-21.20,zeker duidelijk
 2381820,3907,am,4,afdelingsverantwoordelijkeverkoopmedewerker,klantafhandelingverkoopinkop,doeland bouwmarkt,4-51.30,zeker duidelijk
-2601458,4267,am,6,afstuder onderzoek,communicatie onderzoek nieuw markt,consumer electronic,X,zeker duidelijk
 2378648,3903,am,1,after sales manager,sales after sales,deeltjes versneller,2-11.10,onzeker onduid beschrijv
 2164220,3500,am,1,afvul medewerker,afvull inpak lijm enz,chemies bedrijf,9-71.55,zeker duidelijk
 1532151,2627,am,1,afwashulp,afwas,hotel,9-99.10,zeker duidelijk
@@ -521,7 +518,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1560555,2684,am,1,algemen medewerker,bedien schoonmak,dorpshuis,5-52.20,zeker duidelijk
 1560555,2684,am,2,algemen medewerker,schoonmak,horeca,5-52.20,zeker duidelijk
 2882702,4827,am,1,algemen medewerker,lassenmonter,transformator,8-72.10,zeker duidelijk
-2508236,4113,am,1,algemen medewerker hyper geneeskund,administratie werk hyper omstand bedien panel hyper apparatur,gezondheidszorg,,nan
 2878124,4812,am,7,algemen medewerker kippenbedrijf,eier rap schoonmak werkzam,kipp bedrijf,6-21.05,zeker duidelijk
 1725278,2945,am,1,algemeenmedewerker groothandel,order pick pakketjes verzendklar mak order inpak,groothandel,9-71.45,zeker duidelijk
 2676157,4430,am,4,algemeenmedewerkster,verkop betal schoonmak,benzinepompstation,4-51.90,zeker duidelijk
@@ -622,7 +618,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2872630,4796,am,3,antennebouwer,bouw zendinstallaties,kpn telecom,8-54.20,zeker duidelijk
 2872630,4796,am,6,antennebouwer,installer zendinstallaties,telecombedrijf,8-54.20,zeker duidelijk
 1752530,2995,am,3,antropologisch journalist,mak documentaires schrijv artikel,eig project,1-59.15,zeker duidelijk
-2166283,3501,am,1,aow,nan,nan,X,zeker duidelijk
 1623763,2782,am,1,apk keurmeester,apk keur,autoband kroonband,8-43.20,zeker duidelijk
 2055864,3324,am,1,apotheekassistent,distributieaflever medicatiecomputerwerkmedicijn klaarzet,stadsapothek,0-68.10,zeker duidelijk
 1524347,2605,am,1,apotheekassistent,invoer medicatieopdracht medicatiebewak aflever geneesmiddel,ziekenhuisapothek,0-68.10,zeker duidelijk
@@ -643,7 +638,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2585733,4252,am,1,apparatuurbeheerder,onderhoud,medisch laboratorium,8-52.30,zeker duidelijk
 2803024,4632,am,1,applicatibeheerder inkoper,inkop system werkbar houd,ziekenhuis,0-83.10,zeker duidelijk
 2720152,4494,am,1,applicatie beheerder,roosterplanningssystem up to dat houd,gezondheidsinstell proteion thuis,0-84.20,zeker duidelijk
-2138003,3458,am,3,applicatie specialist stork,demonstrer druk apparatur,metal bedrijf verkop textieldruk machines,,nan
 3071276,4988,am,3,applicatiebegeleider,begeleid applicaties automatiser,detacheringsbedrijf,0-84.20,zeker duidelijk
 1478367,2535,am,1,applicatiebeheerder,beher softwar applicaties,zorginstell,0-84.20,zeker duidelijk
 1478367,2535,am,2,applicatiebeheerder,beher softwar applicaties,woningcooperatie,0-84.20,zeker duidelijk
@@ -656,7 +650,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2012034,3256,am,1,application specialist,2e lijn helpdesk project ondersteun bedrijf,metaalindustrie,3-94.10,zeker duidelijk
 2357524,3867,am,3,aquariumplantenkwekerijmedewerkster,allerlei,aquariumplantenkwekerij,6-27.40,zeker duidelijk
 2476573,4080,am,3,arbeider,,steenfabriek,9-51.20,zeker duidelijk
-2071477,3359,am,1,arbeid ongeschikt,thuis zit,thuis,X,zeker duidelijk
 2802743,4631,am,2,arbeidsbemiddelar,laagopgeleid bemiddel werk,stichting rob,1-94.20,zeker duidelijk
 3050176,4948,am,1,arbeidsdeskund,claimbeoordel reintegratieinspann werkgever beoordel deskundigeoordel werkplekonderzoek,uwv,0-71.40,zeker duidelijk
 2605210,4277,am,1,archiefinspecteur,inspectiebezoek gemeent beleidsadviez opstell,overheidprovincie,3-10.10,zeker duidelijk
@@ -1033,21 +1026,13 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2782475,4614,am,2,beleidsmedewerker teamleider,bureauonderzoek ed,stichting,3-10.10,zeker duidelijk
 1802243,3078,am,2,beleidsondersteun medewerker fin personel,ondersteun locatiedirecteur financien po,vo schol,3-10.10,zeker duidelijk
 2782475,4614,am,1,beleidsontwikkelar,beleidsmat,over,3-10.10,zeker duidelijk
-2260863,3679,am,2,bemiddelar vrijwillerswerkdocent informatica,bemiddelinglesgev,stichting,1-32,zeker duidelijk
 2137201,3456,am,2,bemiddelingsfunctionaris,verhur woning,gemeent nijmeg,3-93.10,zeker duidelijk
 1524081,2603,am,2,bemiddelingsmedewerker,bemiddel tuss vrag gastouder,bemiddelingsbureau,1-93.10,zeker duidelijk
 2785255,4619,am,1,bemiddelingsmedewerker,bemiddel tuss vrag gastouder kinderopvang prober regel,gastouderbureau,1-93.10,zeker duidelijk
 2576664,4234,am,4,bemiddelingsmedewerkster gastouderbureau,bemiddel gesprek administratie,kinderopvangorganisatie,1-93.10,zeker duidelijk
 2676157,4430,am,3,benzinepomphoudster,tank administratie schoonmak,zelfstandigondernemer,4-51.90,zeker duidelijk
 3012337,4876,am,2,beoordelar vliegbrevet,administratief,inspectie verker waterstat,3-93.10,zeker duidelijk
-2717163,4491,am,1,bergingsinspecteur,berg zee schep,maritiem,,nan
 2381820,3907,am,1,beroep brandweerman,brand bluss hulp ongevall brandweerduiker,gemeenteover,5-81.10,zeker duidelijk
-2760207,4563,am,2,beroep militair,aktief verbindin organisatie oa instructeur verbind,konink luchtmacht,A,zeker duidelijk
-2145551,3468,am,3,beroepsmilitair compagniescommandant,leidinggev,defensie,A,zeker duidelijk
-2145551,3468,am,5,beroepsmilitair compagniescommandant,leidinggev,defensie,A,zeker duidelijk
-2145551,3468,am,7,beroepsmilitair pelotonscommandant,leidinggev,defensie,A,zeker duidelijk
-2145551,3468,am,4,beroepsmilitair staffunctie,adviser werk,defensie,A,zeker duidelijk
-2145551,3468,am,6,beroepsmilitair staffunctie,advieswerk,defensie,A,zeker duidelijk
 2830458,4708,am,1,beroepsvisser,visser visverwerk machinist schipper,zelfstand beroepsvisserij,6-41.20,zeker duidelijk
 2368520,3886,am,3,besteller,computersystem bestell fabriek,electronica,4-22.20,zeker duidelijk
 2304103,3743,am,3,bestur managementondersteuner,ambtelijk secretariaat schoolbestur management,onderwijs,3-93.10,zeker duidelijk
@@ -1189,7 +1174,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2811475,4654,am,2,call center medewerker,helpdesk medewerker,internet provider contact center,3-94.10,zeker duidelijk
 2674158,4420,am,3,callcenter,telefoonaannam computerwerkzam,uwv,3-94.10,zeker duidelijk
 2467220,4064,am,1,callcenter medewerker,telefonischmail activiteit,call center,3-94.10,zeker duidelijk
-2278823,3715,am,1,capiciteitsverdeler,verdel spor,prorail,,nan
 2155311,3485,am,1,caravanmonteur,uiteenlop werkzam caravan,caravanbedrijf,8-43.20,zeker duidelijk
 1830564,3129,am,2,cardiologieverpleegkund,cardiologie,ziekenhuis,0-71.20,zeker duidelijk
 2774268,4595,am,2,carrosserie opbouw,opbouw vrachtwagen,berdex carrosseriebedrijf,8-43.30,zeker duidelijk
@@ -1313,7 +1297,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2758631,4560,am,3,coach,coaching,eig bedrijf,2-11.10,zeker duidelijk
 3050176,4948,am,5,coach,coach adviser motiver bemiddel klant werk,reintegratiebedrijf kliq,2-11.10,zeker duidelijk
 2241753,3639,am,1,coach adviseur,begeleid advies gev,eig bedrijf,2-11.10,zeker duidelijk
-2616667,4302,am,2,coating inspector,inspecter begeleid ondergrond voorbehandel verf applikaties,verf fabriek,,nan
 1770835,3036,am,1,combi gastvrouw 2de assistent back offic,facilitair,theater,5-32.90,zeker duidelijk
 3004377,4851,am,2,comm medewerkster,balie zak,snsbank,3-31.30,zeker duidelijk
 2480833,4089,am,1,commmedewerker,verkop receptie,uitgeverij,4-51.30,zeker duidelijk
@@ -1444,7 +1427,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1567360,2694,am,1,contract beheerder,beher begeleid inkop contract,dienstverlen,3-39.40,zeker duidelijk
 1882682,3230,am,2,contract manager,facilitair management,installatie bedrijf,2-11.10,zeker duidelijk
 2157104,3489,am,2,contractmanager,relatiebeher contractbeher ict leverancier,uwv,2-11.10,zeker duidelijk
-1867427,3201,am,1,control operator,verschil,industrie,,nan
 1460577,2508,am,5,controleur,controler vakantiehuisjes,exclusief bemiddel,3-10.10,zeker duidelijk
 2748684,4535,am,1,controleur,instell boekenonderzoek ondernemingenondernemer,belastingdienst,1-10.20,zeker duidelijk
 2326762,3797,am,2,controleur aid,control meststoffenwet,ministerie landbouw visserij,0-79.40,zeker duidelijk
@@ -1490,7 +1472,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2622534,4315,am,1,coordinator verzorg,coordiner werkzam leerlingenstagiaires begeleid,quarijn,3-00.10,zeker duidelijk
 3003648,4848,am,1,coordinator vrijwill terminal zorg,begeleid vrijwilliger terminal zorg huisbezoek aflegg terminal ziek patient,st vrijwilligerscentral,3-00.10,zeker duidelijk
 2287751,3733,am,2,coordinator zomerkampenjeugdwerkadviseur,jeugdwerk,jongerenorganisatie,1-93.10,zeker duidelijk
-2280733,3719,am,1,coordinatorteamleider,leiding gev lesgev,onderwijs instell,1-31,onzeker onduid beschrijv
 1572328,2708,am,1,coordiner begeleidster opd,ondersteun begeleid verstand gehadnicapt kinder ouder zorg drag goed verlop binn groepsgebeur inwerk,dichterbij kleur opd,1-93.90,zeker duidelijk
 1571460,2707,am,2,coordiner servicetechnicus,technisch beher aanstur medewerker,installatiebedrijf servic onderhoud,0-84.20,onzeker duidelijk beschrijv
 2230048,3620,am,3,correctric,correctiewerk drukwerk,uitgeverij,3-99.40,zeker duidelijk
@@ -1556,18 +1537,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2032416,3290,am,5,dialys verpleegkund,tak dialyseverpleegkund,ziekenhuis,0-71.20,zeker duidelijk
 2204536,3572,am,2,dieetkeuk kokkin,aaalles aangaand dieet klaarmak ziekenhuis verpleegtehuis,ziekenhuis verpleegtehuis,5-31.30,zeker duidelijk
 2812534,4657,am,3,dienstmeisj,huishoud werk kinderoppas,priv gezin,5-52.20,zeker duidelijk
-1566860,2692,am,3,dienstplicht,monteur,luchtmacht,A,zeker duidelijk
-1568302,2698,am,3,dienstplicht,opleid sergeant,landmacht,A,zeker duidelijk
-2213826,3590,am,4,dienstplicht korporal,leidinggev functie binn defensie,defensie,A,zeker duidelijk
-1506687,2571,am,3,dienstplicht militair,organiser,over,A,zeker duidelijk
-1537104,2642,am,3,dienstplicht militair,geleid wapen luchtmacht,luchtmachtdefensie,A,zeker duidelijk
-1568167,2697,am,4,dienstplicht militair,rekek met soldat,landmacht,A,zeker duidelijk
-1762503,3016,am,4,dienstplicht militair,hulpadministrateur,landmacht,A,zeker duidelijk
-2076152,3368,am,3,dienstplicht militair,militair,dienstplicht,A,zeker duidelijk
-2388737,3929,am,6,dienstplicht militair,artillerie,min defensie,A,zeker duidelijk
-2685000,4449,am,6,dienstplicht militair,wachtlokal bemann,raketbasis deutsland,A,zeker duidelijk
-3062222,4972,am,2,dienstplicht militair,bevoorrad,leger,A,zeker duidelijk
-1726171,2949,am,2,dienstplicht soldat,huzar werkend audio radar,leger,A,zeker duidelijk
 1876030,3213,am,1,dierenart,curatiev preventiev gezondheidszorg rundvee paard,gemengd dierenartsenpraktijk,0-65.10,zeker duidelijk
 2808243,4647,am,4,dierenart,veterinair werk afghanistan,verenigd naties,0-65.10,zeker duidelijk
 2832811,4710,am,1,dierenart,zer diver,zer diver,0-65.10,zeker duidelijk
@@ -1686,7 +1655,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1686336,2880,am,3,div,administratief,uitzendorganisatie,3-93.10,zeker duidelijk
 1763615,3020,am,1,div medewerker,administratief archief,gemeent,3-93.10,zeker duidelijk
 2666504,4399,am,2,div,div adm secr tak,energiebedrijf,3-93.10,zeker duidelijk
-1548440,2659,am,2,div functies comp operator productieanalist,aansturencontroler mainfram computer,defensie luchtmacht,A,zeker duidelijk
 2031677,3289,am,1,diver automatiser senior test kwaliteitsmanager,project afdelingsorganisatie test kwaliteitsactiviteit,detacher automatiser,2-11.10,zeker duidelijk
 1545881,2654,am,2,diver administratief,administratief uitvoer administratief leidinggev,marin inlicht dienst,3-93.10,zeker duidelijk
 2705818,4465,am,4,diver functie buitenland,verkop productie management,product bouw,4-51.30,zeker duidelijk
@@ -1695,53 +1663,15 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1518155,2593,am,3,diver functies financieel terrein,financiel administratie leiding gev afd,verzekeringsbedrijf uitgeverij,3-39.40,zeker duidelijk
 2786021,4620,am,8,diver commercieel administratief,diver,bank,3-93.10,zeker duidelijk
 2778788,4609,am,3,diver werkzam bouw,tekenar timmerman,bouwbedrijf,9-54.10,zeker duidelijk
-1458707,2506,am,1,docent,lesgev,schol,1-32,onzeker onduid beschrijv
-1461676,2509,am,2,docent,les voorbereid lesgev,schol,1-32,onzeker onduid beschrijv
-1471764,2524,am,1,docent,docent mbo,roc,1-32,zeker duidelijk
-1586576,2736,am,1,docent,lesgev incompany training projectwerk,hogerberoepsonderwijs,1-31,zeker duidelijk
-1603067,2744,am,1,docent,zie a,onderwijs,1-31,onzeker onduid beschrijv
 1606848,2756,am,1,docent,engel less gev,roc,1-32.15,zeker duidelijk
 1617758,2772,am,1,docent,lesgev bijbehor tak,middel schol,1-32.15,zeker duidelijk
-1654001,2821,am,2,docent,les gev,diver onderwijsinstell,1-32,onzeker onduid beschrijv
-1671185,2854,am,1,docent,lesgev mentorschap stagebezoek,beroepsopleid,1-32,zeker duidelijk
-1704664,2897,am,1,docent,lesgev tak,onderwijsinstell,1-32,onzeker onduid beschrijv
-1704804,2898,am,3,docent,docent,mbo institut,1-32,zeker duidelijk
-1800252,3073,am,1,docent,lesgev stagebegeleid leerling begeleid,roc amsterdam,1-32,zeker duidelijk
-1847623,3155,am,3,docent,lesgev staebeleid,schol middel onderwijs,1-32,zeker duidelijk
-1856761,3183,am,3,docent,lesgev,schol,1-32,onzeker onduid beschrijv
 2024737,3281,am,3,docent,less training bedrijv particulier,tal institut,1-32.15,zeker duidelijk
-2041254,3300,am,3,docent,godsdienstless gev,scholengemeenschap,1-32,zeker duidelijk
-2064118,3340,am,1,docent,docer,schol,1-32,onzeker onduid beschrijv
-2075155,3366,am,1,docent,les gev,schol,1-32,onzeker onduid beschrijv
 2115808,3421,am,2,docent,docent,nederland politieacademie apeldoorn,5-82.20,zeker duidelijk
-2116470,3423,am,1,docent,lesgev volwassen,roc nijmeg,1-32,zeker duidelijk
-2134237,3449,am,1,docent,lesgev voorbereid,onderwijsinstell,1-32,onzeker onduid beschrijv
-2158630,3492,am,1,docent,lesgev coordinatie ontwikkel,hbo,1-31,zeker duidelijk
-2210465,3583,am,2,docent,lesgev,diver schol havovwo mavo vooral vmbo,1-32,zeker duidelijk
-2220776,3601,am,1,docent,lesgev,schol,1-32,onzeker onduid beschrijv
-2236370,3633,am,1,docent,lesgev organisatie,scholengemeenschap vmbo vwo,1-32,zeker duidelijk
-2281160,3720,am,4,docent,gev less drutechniekenmentorat,middel schol,1-32,zeker duidelijk
-2306844,3753,am,1,docent,onderwijzenleidinggev,middel schol,1-32,zeker duidelijk
-2345250,3840,am,1,docent,lerares,scholengemeenschap mhv,1-32,zeker duidelijk
-2383502,3915,am,1,docent,docent mavohavo,scholengemeenschap,1-32,zeker duidelijk
 2387631,3925,am,1,docent,tek schilderless,diver organisaties beeldend werk aanbied,1-32.50,zeker duidelijk
 2431774,3997,am,1,docent,lesgev basisschol,ggd,1-33.20,zeker duidelijk
-2465381,4060,am,1,docent,lesgev,ziekenhuis,1-32,onzeker onduid beschrijv
-2508518,4114,am,1,docent,lesgev coach assessment,hogeschol,1-31,zeker duidelijk
-2583574,4247,am,5,docent,vak ontwikkel docer,hbo opleid,1-31,zeker duidelijk
-2584866,4249,am,1,docent,les gev,onderwijs instell roc,1-32,zeker duidelijk
-2613480,4296,am,6,docent,lesgev,universiteit,1-31,zeker duidelijk
-2613480,4296,am,7,docent,lesgev,mbo schol,1-32,zeker duidelijk
-2631366,4336,am,1,docent,lesgev,schol,1-32,onzeker onduid beschrijv
-2675266,4426,am,1,docent,lesgev coach,schol,1-32,onzeker onduid beschrijv
-2713272,4482,am,1,docent,lesgev,schol middel onderwijs havovwo,1-32,zeker duidelijk
-2741303,4528,am,1,docent,lesgev,onderwijs,1-32,onzeker onduid beschrijv
 2758713,4562,am,1,docent,onderwijz examengered mak,taalinstitut,1-32.15,zeker duidelijk
-2787576,4626,am,3,docent,lesgev,onderwijsinstell,1-32,onzeker onduid beschrijv
 3003078,4846,am,4,docent,docent initiel opleid ambulanceverpleegkund,medical assistanc international,5-99.40,zeker duidelijk
 3021288,4887,am,2,docent,begeleid huisarst opleid,huisartsenopleid,0-61.05,zeker duidelijk
-3052677,4952,am,1,docent,lesgev coach,hbo opleid,1-31,zeker duidelijk
-1541821,2648,am,1,docent leerlingbegeleider project,stagebegeleid zorg counsel studievaard less communicatie social vaardig nt2 beroepskeuz projectleider ander,mbo roc eindhov,1-32,zeker duidelijk
 3003078,4846,am,1,docent ontwikkelar,ontwikkel afnem assessment ambulancehulpverlener,umcg ambulancezorg,5-99.40,zeker duidelijk
 3003078,4846,am,2,docent ontwikkelar,ontwikkelar docent initiel opleid ambulanceverpleegkund,academie ambulancezorg,5-99.40,zeker duidelijk
 1486233,2552,am,2,docent basisschol,lesgev kinder,basisschol helmond gorinchem,1-33.20,zeker duidelijk
@@ -1756,7 +1686,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1736726,2972,am,2,docent handvaard,onderwijs,schol,1-32.90,zeker duidelijk
 2144382,3464,am,1,docent levensbeschouw havovwo gymnasiium,lesgevenvoorbereid nakijkenleerlingbegeleidingvergader,voortgezet onderwijs,1-32.90,zeker duidelijk
 1736726,2972,am,1,docent beweg,bewegingsdocent,gymouder,1-32.90,zeker duidelijk
-1527447,2612,am,2,docent middel onderwijs,lesgev,scholengemeenschap vmbohavovwo,1-32,zeker duidelijk
 1505483,2567,am,3,docent natuurkund scheikund,docer begeleid,schol,1-32.30,zeker duidelijk
 1657803,2829,am,1,docent nederland,lesgev examen mak vakbondswerk,onderwijs,1-32.15,zeker duidelijk
 2722473,4497,am,2,docent nederland,lesgev,hogeschol,1-31.70,zeker duidelijk
@@ -1767,24 +1696,14 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2722473,4497,am,1,docent nt2,lesgevenopleid,opleidingsinstitut,1-32.15,zeker duidelijk
 1752530,2995,am,1,docent nt2 inburger,nederland inburgeringsless verzorg migrant,taalinstell welzijnsorganisatie,1-32.15,zeker duidelijk
 3056214,4961,am,1,docent politie,les gev,politie kennemerland,5-82.20,zeker duidelijk
-2807774,4645,am,2,docent praktijkonderwijs,lesgev mentorat coordinatie onderwijs zorg lid management team,praktijkonderwijs,1-32,onzeker onduid beschrijv
 1586576,2736,am,2,docent praktisch toepass,begeleid chemie practica,hoger beroepsonderwijs,1-31.20,zeker duidelijk
 2133277,3446,am,1,docent scheikund,lesgev middel scholier begeleid stagiaires,open regional schol,1-32.30,zeker duidelijk
 2506133,4109,am,1,docent scheikund,docer,voortgezet onderwijs,1-32.30,zeker duidelijk
 2613480,4296,am,3,docent span,lesgev,middel schol havovwo,1-32.15,zeker duidelijk
 1741567,2981,am,1,docent tai chi tao,lesgev chines bewegingsler,freelanc,1-32.90,zeker duidelijk
 1830564,3129,am,5,docent verpleegkund,lesgev verpleegkund roc,roc,0-71.10,zeker duidelijk
-1574233,2712,am,1,docent vmbo,lesgev aanverwant tak,schol,1-32,zeker duidelijk
-1686074,2878,am,1,docent vo,lesgev zorg welzijn,vmbo schol,1-32,zeker duidelijk
 2323840,3788,am,2,docent voortgezet onderwijs,lerar ak ml,scholengemeenschap,1-32.40,zeker duidelijk
-2166536,3504,am,1,docent zeevaartschol,lesgevenstagecoordinator,hog schol,1-31,onzeker onduid beschrijv
-3035278,4922,am,2,docentleerlingbegeleider,lesgev leerling begeleid sociaalemotionel gebied,vo schol international schakelklass,1-32,onzeker onduid beschrijv
-2722473,4497,am,5,docentpraktijkopleider,lesgevenopleid,opleidingsinstitut,1-32,onzeker onduid beschrijv
-3035278,4922,am,1,docentzorgcoordinator,lesgev enbeleid mak uitvoer gebied leerlingenzorg,vo schol international schakelklass,1-32,onzeker onduid beschrijv
-1580572,2729,am,1,docent,lesgev,voortgezetonderwijs,1-32,zeker duidelijk
 2313351,3766,am,1,docent,les gev bedrijv lesmateriaal ontwikkel,taalinstitut,1-32.15,zeker duidelijk
-2737275,4521,am,1,docent,lesgev stag bezoek etc etec,roc,1-32,zeker duidelijk
-2844473,4738,am,4,docent,docer,onderwijs,1-32,onzeker duidelijk beschrijv
 1557777,2677,am,6,docent elektronisch orgel,les gev,muziekschol,1-71.40,zeker duidelijk
 1602466,2742,am,2,docent piano,pianoles gev theorieless verzorg ensemblespel leid,muziekschol,1-71.40,zeker duidelijk
 3024541,4898,am,3,docent spw opleid,lesgev,mbo opleid id colleg,1-32.90,zeker duidelijk
@@ -1812,8 +1731,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3071353,4990,am,1,doktersassistent,administratief medisch,ziekenhuishuisart,0-62.10,zeker duidelijk
 2824276,4695,am,1,doktersassitent,manegement,huisartsenpraktijk,0-62.10,zeker duidelijk
 2275514,3704,am,2,donatiefunktionaris,spil binn zkhs rondom organ weefseldonatie,zkhs,3-93.10,zeker duidelijk
-1474488,2529,am,1,doncent vo,lesgev,middel schol,1-32,zeker duidelijk
-2501874,4103,am,1,doorpasmodel,doorpas,textiel,,nan
 1855053,3179,am,2,douan,control buitengren,belastingdienst,3-59.50,zeker duidelijk
 2354766,3863,am,1,douan,grenscontrol,over,3-59.50,zeker duidelijk
 2070877,3357,am,4,douaneambtenar,douanewerkzam,ministerie financien,3-59.50,zeker duidelijk
@@ -1821,7 +1738,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2758315,4558,am,1,douaneambtenar,,douan,3-59.50,zeker duidelijk
 2580101,4242,am,2,douanebeambt,control goeder reiziger,min fin,3-59.50,zeker duidelijk
 1734648,2964,am,2,douanedeclarant,declarant,douaneexpeditie,3-59.50,zeker duidelijk
-2778788,4609,am,2,dpl tankcommandant,onderofficier,leger,A,zeker duidelijk
 1736180,2970,am,1,draadtrekker,leidinggev,gaasweverij,7-27.30,zeker duidelijk
 2188870,3559,am,1,draadtrekker,draadtrek drad gloei,metaalgaasweverij,7-27.30,zeker duidelijk
 1813341,3093,am,1,drogist,werkneemster later eigenar,drogisterij,4-51.30,zeker duidelijk
@@ -2075,9 +1991,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3072641,4994,am,2,gediplomeerd ziekenverzorgster,medicijn uitdel injectie gev wondverzorgingleidinggev,geriatrisch inricht beekberg,0-72.10,zeker duidelijk
 2050584,3312,am,2,gedragsadviseur hond,mens buitenshuis begeleid probleemgedrag hond,eig bedrijf,6-12.40,zeker duidelijk
 1643340,2807,am,5,,boekhoud laswerkzam,eigenbedrijf constructie bedr,3-31.20,zeker duidelijk
-2580045,4240,am,1,,huisvrouw,,X,zeker duidelijk
-2836327,4716,am,1,,nan,nan,X,zeker duidelijk
-2776372,4601,am,3,,vervaardigenreperatie vangymnastiek atrebutenbv teurnmat,paardensport artikel,X,zeker duidelijk
 2144382,3464,am,2,geestelijk verzorger,gesprek stervensbegeleidingmaandsluit leid activiteit organiser vergader adveser ziekenbezoek,serviceflat ouder,1-49.20,zeker duidelijk
 2155334,3486,am,1,geestelijk verzorger,voorgan kerkdienst individuel groepsgesprek,instell geestelijk gezondheidszorg psychatrisch kliniek,1-49.20,zeker duidelijk
 2522313,4131,am,2,geestelijk verzorger,pastorat,jeugdzorg,1-49.20,zeker duidelijk
@@ -2165,7 +2078,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2062514,3336,am,3,groepleider ultra precision technology groep,werkzam coordiner kwaliteit bevorder,klein series 1 50 stuk philip acht,2-11.10,zeker duidelijk
 2217660,3596,am,1,groepleidster ggz 1 1 begeleid,organiser dagbested rapportereninformer,gezinsvervang tehuis,1-93.10,zeker duidelijk
 2435383,4004,am,3,groepsbegeleidster,begeleid verstand gehandicapt moeilijk opvoede jonger groep lev,verstand gehandicaptenzorg,1-93.90,zeker duidelijk
-2357477,3866,am,2,groepscommandant,leid groep 9 person,konink landmacht national reserv,A,zeker duidelijk
 1556247,2672,am,1,groepsleerkracht,les gev,basisonderwijs,1-33.20,zeker duidelijk
 1556247,2672,am,2,groepsleerkracht,les gev,basisonderwijs,1-33.20,zeker duidelijk
 1602466,2742,am,1,groepsleerkracht,lesgev onderbouw middenbouw ictcoordinator,basisschol,1-33.20,zeker duidelijk
@@ -2315,11 +2227,9 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2866524,4780,am,1,hoofdcaissierr,wag loss kassawerkzam achter scherm,ca,3-31.60,zeker duidelijk
 2878402,4815,am,2,hoofdcorrespondent export,spin web buitenland importeur,verfproducent,1-59.20,onzeker onduid beschrijv
 2108450,3410,am,5,hoofdgroepsopvoeder,aanstur afdelingsgroep,astmacentrum,2-11.10,zeker duidelijk
-2308062,3757,am,1,hoofdinsructeur,leerlingbegeleid,praktijcentrum bouw,1-32,onzeker onduid beschrijv
 2257554,3674,am,3,hoofdleidster peuterspeelzal,leiding gev peuter tuss 2 4 jar,stichting peuterspeelzal,1-34.20,zeker duidelijk
 2564485,4208,am,2,hoofdopleidng,opleidingsspectrum vormgev,institut gehandicaptensector,1-93.90,onzeker onduid beschrijv
 2473240,4074,am,9,hoofdverpleegkund,eindverantwoord avond nacht weekend zorg,ggz,0-71.20,zeker duidelijk
-2500417,4101,am,1,hooglerar,onderwijs onderzoek organisatie,universiteit maastricht universiteit twent,1-31,zeker duidelijk
 1535624,2638,am,3,horeca,horeca,vergader congrescentrum,5-32.10,zeker duidelijk
 2024737,3281,am,4,horeca,verkop servic,restaurant,5-32.10,zeker duidelijk
 2050584,3312,am,8,horeca,barmedewerker,sportcentrum,5-32.50,zeker duidelijk
@@ -2407,16 +2317,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2110150,3412,am,2,huispersonel,slaapoppasdienst hoogbejaard dam 2200 1000ur wek,partikulier,5-99.90,zeker duidelijk
 1700875,2891,am,1,huisschilder,meeschilder eigenar,schildersbedrijf,9-31.20,zeker duidelijk
 1567360,2694,am,2,huisschilderverkoper verfbehang winkel,schilder verkop advies gev,groothandel,9-31.20,zeker duidelijk
-1533431,2628,am,4,huisvrouw,manag gezin,gezin,X,zeker duidelijk
-1758353,3007,am,1,huisvrouw,,thuis,X,zeker duidelijk
-1770356,3035,am,1,huisvrouw,huishoud activiteit,nan,X,zeker duidelijk
-2001047,3240,am,1,huisvrouw,huishoud tak,,X,zeker duidelijk
-2251657,3659,am,1,huisvrouw,huishoud werk,nan,X,zeker duidelijk
-2256052,3669,am,1,huisvrouw,,huis,X,zeker duidelijk
-2312860,3763,am,1,huisvrouw,,woning,X,zeker duidelijk
-2320075,3777,am,1,huisvrouw,veelomvat,thuis,X,zeker duidelijk
-2204536,3572,am,3,huisvrouw moeder,huishoud erbij komt,gezin,X,zeker duidelijk
-2740307,4525,am,1,huisvrouw administratie thuis,,loonwerk,X,zeker duidelijk
 2525175,4139,am,1,huisvrouwvarkensboer,eerst stal administratie,varkensbedrijf,6-24.40,zeker duidelijk
 1465185,2515,am,4,huiswerkbegeleider,help middel scholier mak huiswerk,huiswerkbegeleidingscentrum,1-32.90,zeker duidelijk
 1725751,2947,am,3,hulp huishoud,run huishoud,art,5-52.20,zeker duidelijk
@@ -2631,7 +2531,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2032813,3292,am,2,jongerenwerk,jongerenactiviteit ondersteun bestur jongerenorg jeugdbeleid,welzijn,1-93.10,zeker duidelijk
 1767022,3030,am,3,jongerenwerker,contact mak jonger buitenruimt war nodig toeleid dagbested ontwikkel uitvor activiteitenproject,welzijn,1-93.10,zeker duidelijk
 2780340,4611,am,2,jongerenwerker,jonger begeleidensecretarieel,jongerencentrum,1-93.10,zeker duidelijk
-1866385,3199,am,4,jongst bediend,allerhand klusjes,handelmaatschappij,,nan
 1654804,2823,am,2,journalist,artikel schrijv,free lanc,1-59.15,zeker duidelijk
 2181426,3541,am,5,journalist,schrijv,krant,1-59.15,zeker duidelijk
 2872700,4797,am,3,journalist,schrijv medisch voorlichtingstijdschrift,gezondheidszorg,1-59.15,zeker duidelijk
@@ -2771,7 +2670,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2068547,3352,am,11,kok assistent,nagerecht klaarmak,restaurant,5-31.30,zeker duidelijk
 2857656,4766,am,1,kok barman,,tapas bar,5-31.30,zeker duidelijk
 2203743,3570,am,1,kokchefkok,kok schoonmak leidinggev,restaurant congres centrum zorginstell,5-31.30,zeker duidelijk
-2823602,4692,am,2,konink marin,operationel dienst operaties,konink marin,A,zeker duidelijk
 2607651,4283,am,1,konstruktie bankwerker,lassenwalsenslijpenenz,rvskonstruktie bedrijf,8-34.20,zeker duidelijk
 2256183,3670,am,1,kookdam instell,kok,instell gehandicapt,5-31.30,zeker duidelijk
 2188477,3557,am,1,koster,schoonmak koffie zettenoplet allerhand tak,kerkelijk,5-51.40,zeker duidelijk
@@ -2781,7 +2679,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1483464,2548,am,1,kosterbeheerder,beheerder kerkgebouw,kerk,5-51.40,zeker duidelijk
 2680710,4441,am,1,kosterbeheerder,beher kerkgebouw cater verzorg schoonmaakwerk etc,kerk,5-51.40,zeker duidelijk
 1531266,2622,am,2,kottervisser,vissersman,tx33,6-41.20,zeker duidelijk
-1762831,3018,am,4,koudglasbewerker,opleid betaald koudglasbewerk,philip eindhov philipsbedrijfsschol,,nan
 2842411,4733,am,3,kraamverzorg,kraamverzorg,thuiszorg,0-74.10,zeker duidelijk
 1861566,3189,am,2,kraamverzorgster,verzorg moeder kindassistentie bevall,groen kruis,0-74.10,zeker duidelijk
 2304526,3745,am,1,kraamverzorgster,partusassistent zorg moeder kind gezinhuishoud,yunio kraamzorg,0-74.10,zeker duidelijk
@@ -2817,7 +2714,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2020705,3273,am,4,kweker,bedrijfsleider kwekerij,kwekerij,6-12.70,zeker duidelijk
 1634827,2798,am,2,kwekerij medewerker,opkwek verpak plant,pot plant kwekerij,6-21.05,zeker duidelijk
 2304526,3745,am,4,llziekenverzorgster,opleid kinder revalidatie,kinderrevalidatie ziekenhuis,0-72.10,zeker duidelijk
-2774714,4596,am,1,laadschop maschinist,grondwerk,loongrondverzettransportbedrijf,,nan
 1724670,2944,am,3,laborant,uitvoer chemisch analises,chv v eghel veevoer bedrijf,0-14.20,zeker duidelijk
 1757413,3004,am,3,laborant,kleurstoff kunsstoffenindustrie test,kleurstoffenfabrikant,0-14.20,zeker duidelijk
 1757413,3004,am,4,laborant,control oa asfaltmonster wegenbouw,wegenbouwlaboratorium,0-14.20,zeker duidelijk
@@ -2843,8 +2739,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2244626,3646,am,4,lasserplaatwerker,plaatwerk lass,scheepswerf,8-72.10,zeker duidelijk
 2225423,3609,am,1,layout enginer,tekenwerk,machinefabriek,0-32.20,zeker duidelijk
 2408032,3947,am,1,ler werk begeleider,begeleid mens beperk,vixia,1-93.90,zeker duidelijk
-2346442,3842,am,2,leerar,les gev lesontwikkel,schol verpleg,1-33,onzeker onduid beschrijv
-1851161,3163,am,2,leerkraacht,docer lesgev leiding gev,onderwijs,1-33,onzeker onduid beschrijv
 1502412,2563,am,2,leerkracht,lesgev,basisschol,1-33.20,zeker duidelijk
 1512586,2585,am,1,leerkracht,groepsleider,baisschol,1-33.20,zeker duidelijk
 1565172,2690,am,1,leerkracht,lesgev groep 12,basisschol,1-33.20,zeker duidelijk
@@ -2853,13 +2747,8 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1666223,2849,am,2,leerkracht,onderwijs gev basisonderwijs,schol,1-33.20,zeker duidelijk
 1700333,2890,am,1,leerkracht,les gev hoort,basisschol,1-33.20,zeker duidelijk
 1758370,3008,am,1,leerkracht,lesgev,basisonderwijs,1-33.20,zeker duidelijk
-1852631,3167,am,2,leerkracht,les gev,schol,1-33,onzeker onduid beschrijv
-1884748,3234,am,1,leerkracht,lesgev,onderwijs,1-33,onzeker onduid beschrijv
-1884748,3234,am,2,leerkracht,les gev,onderwijs,1-33,onzeker onduid beschrijv
 2164046,3499,am,1,leerkracht,lesgev,basisschol,1-33.20,zeker duidelijk
 2170108,3513,am,1,leerkracht,lesgev,basisschol,1-33.20,zeker duidelijk
-2188211,3556,am,1,leerkracht,nan,nan,1-33,onzeker onduid beschrijv
-2218106,3597,am,1,leerkracht,lesgev,schol,1-33,onzeker onduid beschrijv
 2231258,3623,am,2,leerkracht,primair onderwijs,basisschol,1-33.20,zeker duidelijk
 2235107,3629,am,1,leerkracht,leerkracht basisonderwijs,basisschol,1-33.20,zeker duidelijk
 2251331,3657,am,2,leerkracht,lesgev,basisschol,1-33.20,zeker duidelijk
@@ -2867,18 +2756,12 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2305372,3749,am,1,leerkracht,groepsleerkracht,rijksover,1-33.20,zeker duidelijk
 2324127,3789,am,1,leerkracht,les gev,basisschol,1-33.20,zeker duidelijk
 2328251,3804,am,1,leerkracht,lesgebond lesgebond tak,basisschol,1-33.20,zeker duidelijk
-2448543,4024,am,2,leerkracht,lesgev,centrum volwassenenonderwijs belgie,1-32,onzeker onduid beschrijv
-2448543,4024,am,4,leerkracht,lesgev,mbo,1-32,onzeker onduid beschrijv
 2470555,4067,am,3,leerkracht,groepsleerkracht,basisschol,1-33.20,zeker duidelijk
 2536866,4162,am,1,leerkracht,klas,basisschol,1-33.20,zeker duidelijk
 2570647,4221,am,1,leerkracht,remedial teacher,basisschol,1-33.20,zeker duidelijk
 2746603,4532,am,1,leerkracht,lesgev beleid uitzet,basisschol,1-33.20,zeker duidelijk
 2746603,4532,am,2,leerkracht,lesgev,basisschol,1-33.20,zeker duidelijk
-2758565,4559,am,1,leerkracht,coach begeleid,onderwijs,1-33,onzeker onduid beschrijv
-2804148,4638,am,1,leerkracht,speciaal onderwijs middenbouwgroep,schol speciaal onderwijs,1-35,onzeker onduid beschrijv
-2868377,4789,am,2,leerkracht,lesgeefster,onderwijs,1-33,onzeker onduid beschrijv
 3002028,4842,am,2,leerkracht,onderwijz,basisonderwijs,1-33.20,zeker duidelijk
-3030248,4911,am,2,leerkracht,leerkracht diver vak voortgezet speciaal onderwijs,thomas a kempiscolleg zwoll,1-35,onzeker onduid beschrijv
 3030248,4911,am,3,leerkracht,leerkracht onderbouw kleuter,bs hartkamp raalt,1-33.20,zeker duidelijk
 3031322,4915,am,1,leerkracht,lesgev,basisschol,1-33.20,zeker duidelijk
 2508884,4115,am,1,leerkracht bo,lesgev,basisschol,1-33.20,zeker duidelijk
@@ -2904,12 +2787,8 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1688565,2887,am,1,leerkracht basisonderwijs bovenbouw,lesgev kinder leeftijd 9 11 jar,basisschol,1-33.20,zeker duidelijk
 1702142,2892,am,1,leerkracht basisschol,leerkracht,schol,1-33.20,zeker duidelijk
 1831235,3130,am,2,leerkracht basisschol,lesgev,basisschol,1-33.20,zeker duidelijk
-1702142,2892,am,5,leerkracht lts,leerkracht,schol,1-35,onzeker onduid beschrijv
 2758631,4560,am,2,leerkracht invalbasis,leerkracht,basisonderwijs,1-33.20,zeker duidelijk
 2340223,3825,am,4,leerkracht pscyhologiepedagogiek,lesgev volwassen mbo ded,avondonderwijs,1-32.90,zeker duidelijk
-1851642,3164,am,1,leerkracht speciaal basisonderwijs,groep 4,schol esmsh onderdel kentalis,1-35,onzeker onduid beschrijv
-2251331,3657,am,1,leerkracht speciaal onderwijs,lesgevenstagebegeleid,schol speciaal onderwijs,1-35,onzeker onduid beschrijv
-3031064,4913,am,1,leerkracht speciaal onderwijs,leerkracht reboundvoorzien,schol,1-35,onzeker onduid beschrijv
 2555444,4193,am,1,leerkrachtbovenbouwcoordinatorremedial teacher,onderwijz manag,basisschol,1-33.20,zeker duidelijk
 2013821,3259,am,3,leerling averpleegkund,verpleg patient,ziekenhuis,0-71.10,zeker duidelijk
 1874716,3210,am,4,leerling bejaard verzorgster,bejaardenzorg,verzorginshuis ocht,5-99.40,zeker duidelijk
@@ -2954,20 +2833,11 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1724216,2942,am,3,leidster internat,opvoed verzorg begeleid kinder 6 tm 12 internat woond zoal schipperskinder kermiskinder kinder zakenmens,internat kinder 6 tm 12 jar jingen meisjes,1-33.20,zeker duidelijk
 1541821,2648,am,3,leidster peuterspeelzal,begeleid verzorg peuter voorwaard tak,peuterspeelzal,1-34.20,zeker duidelijk
 2018558,3269,am,4,lekecontroleur,bezoek ziegemeld person eerstedagscontrol,bedrijfsveren,3-93.10,onzeker duidelijk beschrijv
-1578436,2725,am,4,lerar,onderwijs gev,onderwijs,1-32,onzeker onduid beschrijv
-1714622,2922,am,1,lerar,lesgev beroepsgericht vak,vmbo schol,1-32,zeker duidelijk
-1846784,3152,am,1,lerar,les gev organisatie,onderwijsinstell mbo,1-32,zeker duidelijk
 1865828,3198,am,1,lerar,lesgev,basisschol,1-33.20,zeker duidelijk
 2126715,3438,am,1,lerar,basisonderwijs,schol,1-33.20,zeker duidelijk
 2253764,3663,am,1,lerar,praktijkleerkracht theorieless,chemisch industrie regulier onderwijs,1-32.30,zeker duidelijk
 2281606,3721,am,1,lerar,docentadjunct,voortgezet speciaal onderwijs,1-39.40,zeker duidelijk
 2558457,4197,am,1,lerar,lesgev,basisonderwijs,1-33.20,zeker duidelijk
-2567537,4214,am,1,lerar,les gev,havovwoschol,1-32,zeker duidelijk
-2664803,4396,am,1,lerar,lesgev,schol,1-32,onzeker onduid beschrijv
-2712630,4477,am,1,lerar,lesgev,regional opleidingscentrum,1-32,onzeker onduid beschrijv
-2806077,4642,am,1,lerar,lesgev nakijk voorbereid vergader organiser diver activiteit mentorat etc,vmbo schol,1-32,zeker duidelijk
-2820824,4683,am,1,lerar,lesgev,schol,1-32,onzeker onduid beschrijv
-2850387,4748,am,1,lerar,les gev,vmbo schol,1-32,zeker duidelijk
 1515770,2589,am,2,lerar adjunctdirecteur basisonderwijs,lesgev manag basisschol,basisschol,1-39.40,zeker duidelijk
 1738377,2975,am,1,lerar basisonderwijs,lesgev kinder basisschoolleeftijd,basisschol,1-33.20,zeker duidelijk
 3062222,4972,am,1,lerar basisonderwijs,klassenmanagement,schol,1-33.20,zeker duidelijk
@@ -2977,43 +2847,29 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2786646,4624,am,2,lerar licham opvoed,lesgev,thomas mor colleg,1-32.90,zeker duidelijk
 1538826,2645,am,1,lerar primair onderwijs,lerar mid bovenbouw basisonderwijs,basisschol,1-33.20,zeker duidelijk
 1850375,3159,am,6,lerar scienc,lesgev middel schol png,vrijwilliger organisatie,1-32.30,zeker duidelijk
-1636360,2803,am,1,lerar vo,lesgev team docent leid,vo schol,1-32,zeker duidelijk
 2208214,3580,am,2,lerar wis natuurkund,lesgev,middel schol,1-32.20,zeker duidelijk
-1563773,2688,am,1,leraarcoordinator,onderwijs organisatie,schol havovwo,1-32,zeker duidelijk
 1500808,2558,am,2,lerares,lesgev,schol zmok,1-35.40,zeker duidelijk
-1581424,2730,am,1,lerares,lesgev,voortgezet onderwijs,1-32,zeker duidelijk
-1610441,2760,am,1,lerares,nan,schol,1-32,onzeker onduid beschrijv
 1655260,2825,am,6,lerares,maatschapijler nederland gev,mbo schol,1-32.40,zeker duidelijk
 1657882,2831,am,1,lerares,lesgev machineschrijventoetsenbordvaard,onderwijs,1-32.90,zeker duidelijk
-1765480,3024,am,1,lerares,lesgev,middel schol,1-32,zeker duidelijk
 2007610,3249,am,4,lerares,fran,schol,1-32.15,zeker duidelijk
 2107783,3409,am,1,lerares,workshop gev mbt teken handvaard vormgever,zelfstand ondernemer basisschol,1-33.20,zeker duidelijk
 2238580,3634,am,5,lerares,lerares span,volwassenenonderwijk,1-32.15,zeker duidelijk
-2244211,3645,am,1,lerares,docent trajectbegeleider stagecoordinator,mbo diver opleid,1-32,zeker duidelijk
-2314847,3770,am,1,lerares,lesgev,schol,1-32,onzeker onduid beschrijv
-2314847,3770,am,3,lerares,lesgev,schol,1-32,onzeker onduid beschrijv
-2387103,3922,am,2,lerares,docer,schol,1-32,onzeker onduid beschrijv
 2426688,3990,am,1,lerares,groepsleerkracht,basisonderwijs,1-33.20,zeker duidelijk
 2478548,4087,am,1,lerares,les gev,basisschol,1-33.20,zeker duidelijk
-2626800,4329,am,1,lerares,lesgev organiser begeleid studer voorbereid vergader,middel schol,1-32,zeker duidelijk
 2344082,3835,am,1,lerares bo,begeleid kinder,basisschol,1-33.20,zeker duidelijk
 2442745,4017,am,1,lerares basisspeciaal onderwijs,groepslerares,schol kinder communicatiev beperk,1-35.40,zeker duidelijk
 1484042,2549,am,1,lerares basisonderwijs,les gev,basisschol,1-33.20,zeker duidelijk
 1621020,2780,am,3,lerares basisonderwijs,lerares,basisschol,1-33.20,zeker duidelijk
 2838255,4723,am,1,lerares basisonderwijs,lesgev,basisschol,1-33.20,zeker duidelijk
 3022451,4891,am,1,lerares lich opvoed,lesgev lich opvoed leerling basisonderwijs,schol primair onderwijs,1-33.20,zeker duidelijk
-2168370,3510,am,1,lerares middel onderwijs,lesgev,schol,1-32,zeker duidelijk
-2466432,4062,am,1,lerares middel schol,lesgev,middel schol havovwo,1-32,zeker duidelijk
 1758373,3009,am,4,lerares naaldvak,lesgev naaldvak,huishoudschol woudenberg,7-95.10,zeker duidelijk
 1758373,3009,am,5,lerares naaldvak,lesgev naaldvak,chr huishoudschol staphorst,7-95.10,zeker duidelijk
 1758373,3009,am,7,lerares naaldvak,lesgev naaldvak ihno lhno mbo,chr huishoudschol amersfoort,7-95.10,zeker duidelijk
-2711172,4473,am,1,lerares speciaal onderwijs,lesgev,0nderwijsinstell,1-35,zeker duidelijk
 3030248,4911,am,6,lerares teken,tekenjuf volwassen,vrijwilligerswerk,1-32.50,zeker duidelijk
 2478465,4086,am,4,letselschaderegelar,regel letselschadesvoer kantongerechtsprocedures,federatie vakbond,3-93.40,zeker duidelijk
 1868882,3203,am,1,licht kantoorwerk,orderverzamel,wehkamp,3-93.10,zeker duidelijk
 2262366,3683,am,4,lid dagelijk bestur,bestuurstak,samenwerkingsverband gewest helmond over,2-11.10,zeker duidelijk
 2343318,3832,am,5,liftmonteur,onderhoud reparatie lift,technisch dienstverlen,8-51.60,zeker duidelijk
-1837122,3142,am,2,lijmblok lijmer,lijm kalkzandsteenblok,bouwbedrijf,,nan
 2731325,4512,am,2,lin manager,leidinggev,ict softwar development,2-11.10,zeker duidelijk
 2335358,3818,am,3,ll verpleegkund,leerlingverpleegkund,algemen ziekenhuis,0-71.10,zeker duidelijk
 1876054,3214,am,1,lo docent,lesgev,voortgezet onderwijs,1-32.90,zeker duidelijk
@@ -3083,10 +2939,8 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2343318,3832,am,3,machinesteller,produktie machines bedrijf houd,tl lampenfabriek,8-53.20,onzeker onduid beschrijv
 3074003,4995,am,2,machinesteller,machines instell werknemer begeleid,social werkvoorzien,1-93.10,onzeker onduid beschrijv
 2037701,3295,am,1,machinist,onderhoud all motor rand apparatur,baggerbedrijf,0-32.50,zeker duidelijk
-2107613,3407,am,3,machinist,machinist,defensie,,nan
 2175055,3524,am,2,machinist,wacht lop machinekamer,scheepvaart,9-81.90,zeker duidelijk
 2436072,4005,am,1,machinist,rijd trein,nederland spoorweg,9-83.20,zeker duidelijk
-2167223,3507,am,1,machinist ijsmeester,ijs mak verzorgenverantwoord preventief oh rep 1e lijnsstoringenhet begeleid project coordiner controler v,sport,,nan
 1762814,3017,am,1,machinist nsr,personentrein rijd,reizigersvervoer,9-83.20,zeker duidelijk
 2486514,4096,am,1,machiniststuurman,var schip onderhoud motor etc machinekamer,nederland loodswez bv,0-42.50,zeker duidelijk
 1535212,2635,am,2,magazeinmedewerker,inpakbezorgenhal enz goeder,groothandel sierglas,9-71.45,zeker duidelijk
@@ -3103,7 +2957,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2568645,4218,am,1,magazijn medewerker,magazijn draaiend houd,autobedrijf dealer,9-71.45,zeker duidelijk
 2685000,4449,am,3,magazijn medewerker,opberg opzoek verpak onderdel,technisch importeur,9-71.45,zeker duidelijk
 3057213,4968,am,2,magazijn medewerker,orderpick,metaalbedrijf,9-71.45,zeker duidelijk
-2577456,4235,am,1,magazijn medewerker buitenopslag,baanbas,buizenhandel,,nan
 2704808,4462,am,1,magazijn meester,goeder beher,detailhandel,9-71.45,zeker duidelijk
 2856460,4761,am,2,magazijn meester,fysiek werk,productiebedrijf,9-71.45,zeker duidelijk
 2778788,4609,am,1,magazijnexpeditiechef,leidinggev logistiek process,grafisch bedrijf,2-11.10,zeker duidelijk
@@ -3237,8 +3090,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2050584,3312,am,14,mantelzorger,verzorg inwon moeder,pgb,5-99.40,zeker duidelijk
 2385654,3920,am,5,manufactur enginer,organiser productie elektr component,ontwikkel bouw waferstepper,0-23.10,zeker duidelijk
 2753761,4545,am,2,marcom professional,campagn manager project leid,bank,2-11.10,zeker duidelijk
-2326762,3797,am,3,marinier,gevechtstrain,ministerie defensie,A,zeker duidelijk
-2225665,3610,am,10,marinier eerst klas,training all voorkom oorlog situaties special opleid uitschakel vijand,korp marinier,A,zeker duidelijk
 2855050,4758,am,1,markeringverkop director,verkop market activiteit europa vvor amerikan bedr,papierwar,4-21.20,zeker duidelijk
 2382761,3910,am,1,marketer,campagn markeetimgacties onderzoek,museum,1-31.90,onzeker onduid beschrijv
 2753761,4545,am,1,marketer hypothek,anlyses mak onderzoek project,verzekerar intermediair,3-39.40,zeker duidelijk
@@ -3257,7 +3108,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2875867,4807,am,6,marktonderzoeker,marktonderzoek,openluchtmuseum,0-90.30,zeker duidelijk
 2077773,3374,am,2,marktverkoopster,markt snoep koek verkop,kraamwag markt,4-52.20,zeker duidelijk
 2353386,3859,am,2,maroff hoofdmachinist,technisch onderhoud koopvaardijchep,scheepvaart,0-42.15,zeker duidelijk
-1820653,3111,am,3,marva,verbindingsdienst gevar lesgegev,konmarin min defensie,A,zeker duidelijk
 2176872,3528,am,3,maschinenbankwerker,maschines monter,maschinenfabriek,8-34.20,zeker duidelijk
 2305242,3748,am,1,massag therapeut,begeleid mens,eig bedrijf,0-76.40,zeker duidelijk
 2832106,4709,am,2,materiaalplanner buitenstation,plann bevoorrad international afsprak mak,luchtvaart,3-92.20,zeker duidelijk
@@ -3443,7 +3293,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2758642,4561,am,1,meldkamer mederwerker allround,telefon,anwb,3-94.10,zeker duidelijk
 1845132,3149,am,5,melkboer,bezorg melkproduct huis,melkfabriek,4-52.20,zeker duidelijk
 2442724,4016,am,2,melkboer,ambulant handel,detailhandel,4-52.20,zeker duidelijk
-1535212,2635,am,5,melkertban,,sort uitzent werk,,nan
 1780752,3058,am,4,melkmonsternemeradm ki voorbereid,melkmonsternemeradm ki voorbereid,wao periodeor overijsel rundvee syndicat,3-93.10,onzeker onduid beschrijv
 1684842,2877,am,2,melkveehouder,,zelfstand,6-12.50,zeker duidelijk
 2070848,3356,am,1,melkveehouder,all voorkom werkzam,melkveebedrijf,6-12.50,zeker duidelijk
@@ -3495,36 +3344,7 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1850375,3159,am,4,milieuambtenar,vergunn controler verlen,gemeent,3-10.10,zeker duidelijk
 2880311,4818,am,1,milieukund begeleider,toezicht houd uitvoer bodemsaner,milieukund adviesbureau,0-79.40,zeker duidelijk
 2631035,4335,am,1,milieutechnisch medewerker,bedrijfsbezoek,gemeent noordbeveland,0-79.40,zeker duidelijk
-1528573,2615,am,3,militair,messbedi,nederland leger,A,zeker duidelijk
-1580505,2727,am,4,militair,hulplanceerder geleid wapen hawk,konink luchtmacht,A,zeker duidelijk
-1655207,2824,am,3,militair,chauffeur,ministerie defensie,A,zeker duidelijk
-1746662,2986,am,8,militair,militair,defensie,A,zeker duidelijk
-1784570,3063,am,2,militair,veprlegergewondenverzorger,leger,A,zeker duidelijk
-1826687,3117,am,2,militair,marinier automonteur,marinier,A,zeker duidelijk
-1865381,3196,am,6,militair,onderhoud pompinstallaties verpomp vliegtuigbrandstof,konink luchtmacht,A,zeker duidelijk
-2225423,3609,am,7,militair,dienstplicht,defensie,A,zeker duidelijk
-2271840,3699,am,3,militair,tankcommandant leopard i v,defensie,A,zeker duidelijk
-2334528,3814,am,3,militair,radio radar technicus,marin,A,zeker duidelijk
-2335337,3817,am,7,militair,chauffeur onderhoudmonteur agregat zendinstallaties,landmacht,A,zeker duidelijk
-2348718,3849,am,5,militair,kaderopleid klu,klu,A,zeker duidelijk
-2410704,3952,am,3,militair,telefooncentral,landmacht,A,zeker duidelijk
-2442026,4015,am,3,militair,telefonist,leger,A,zeker duidelijk
 2606054,4278,am,3,militair,financiel administratie,konink marin,3-39.40,zeker duidelijk
-2628555,4332,am,3,militair,militair,nederland leger,A,zeker duidelijk
-2816318,4670,am,2,militair,technisch specialist,defensie,A,zeker duidelijk
-2843025,4734,am,3,militair,militairr werkzam,defensie,A,zeker duidelijk
-2848168,4745,am,4,militair,korporal luchtmacht,defensie,A,zeker duidelijk
-2878124,4812,am,5,militair,diver werkzam,defensie,A,zeker duidelijk
-3063021,4973,am,1,militair,diver uitvoer leidinggev afgewisseld bureaudienst,ministerie defensie,A,zeker duidelijk
-3075822,4998,am,5,militair,dienstplicht,leger,A,zeker duidelijk
-2458853,4047,am,6,militair dienstplicht,opleid postcommandant straalzenderdraaggolf apparatur,leger verbindingsdienst,A,zeker duidelijk
-2051146,3313,am,2,militair ambtenar,vliegtuig wapentechniek,luchtmacht,A,zeker duidelijk
-2461041,4050,am,4,militair diensplicht,militair,over,A,zeker duidelijk
-2348718,3849,am,4,militair klu,spec ebt,klu,A,zeker duidelijk
-2680710,4441,am,13,militair verplicht,bestur artillerie tank,leger,A,zeker duidelijk
-1740212,2977,am,2,militair dienst,geneeskund troep,landmacht,A,zeker duidelijk
-2446811,4021,am,2,militair dienst,verbindingsdiensttelexist,defensie,A,zeker duidelijk
-2766611,4579,am,3,militair dienst dienstplicht,soldat,ministerie defensie,A,zeker duidelijk
 1528573,2615,am,1,mobiel operator,onderhoud koffieautomat,mas international,8-49.70,zeker duidelijk
 2238580,3634,am,1,modeadviseus,verkop damesmod,mkb,4-51.30,zeker duidelijk
 2238580,3634,am,3,modeadviseus,collectieverkop detaillist,agentur,4-10.30,zeker duidelijk
@@ -3535,7 +3355,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2343486,3834,am,2,modinet,naaister,macintosch,7-91.30,zeker duidelijk
 3030081,4910,am,1,modinet,naaiwerk,confectiebedrijf,7-91.30,zeker duidelijk
 1463770,2513,am,3,modinettecoupeus,bedrijfskled mak controler,textielbedrijf,7-91.30,zeker duidelijk
-1867537,3202,am,3,moeder huisvrouw,verzorg huishoud tak,thuis,X,zeker duidelijk
 2372700,3890,am,1,molenar,mengvoedres mak,molenaarsbedrijf,7-71.20,zeker duidelijk
 2337214,3822,am,3,montag inspecteur,leiding gevenwerkvoorbereid,installatie bedrijf,2-11.10,zeker duidelijk
 2873848,4801,am,2,montag medewerker,gebied montag werkzam heden machinebouw,gebied montag werkzam heden machinebouw,0-35.20,zeker duidelijk
@@ -3572,7 +3391,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2304878,3747,am,2,muziekvakleerkracht,muziekless gev klass kinder leeftijd varier 4 12 jar,basisschol,1-33.20,zeker duidelijk
 2101828,3400,am,2,muzikant,muziek mak,zelfstand,1-71.45,zeker duidelijk
 2240472,3636,am,3,muzikant,componer muziek uitvoer gitaristbassist,muziektheater gezelschap,1-71.45,zeker duidelijk
-1558253,2680,am,1,nvt,nan,nan,X,zeker duidelijk
 1582427,2733,am,3,naaister,naai her costum,confectie atelier,7-95.10,zeker duidelijk
 1874716,3210,am,1,naaister,achter naaimachin her costum mak,naaiatelier,7-95.10,zeker duidelijk
 1874716,3210,am,3,naaister,naaister,particulier,7-95.10,zeker duidelijk
@@ -3672,8 +3490,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2808157,4646,am,1,ondernemer directeur,directievoer,mbk installatiebedrijf,2-11.10,zeker duidelijk
 1810753,3088,am,1,ondernemer alarmcentral,directeur eigenar all voorkom werkzam,alarmcentral verzekeringswez,2-11.10,zeker duidelijk
 2330170,3807,am,1,ondernemerbeautymanager,managenschoonheidsspecialistnagelstylist,beautysalon,5-70.40,zeker duidelijk
-1603067,2744,am,2,onderofficier konlandmacht,groepscommandant infanterie,landmacht,A,zeker duidelijk
-2554251,4189,am,1,onderwijs,les gev,schol,1-33,onzeker onduid beschrijv
 2183765,3547,am,1,onderwijsadviseur,training begeleid leerkrachtenpeuterleidster ontwikkelwerk,onderwijsbegeleidingsdienst,1-39.20,zeker duidelijk
 2670582,4407,am,1,onderwijsadviseur,gev training advies,educatiev dienstverlen,1-39.20,zeker duidelijk
 2511653,4119,am,3,onderwijsassistent,rugzakbegeleider,speciaal basis onderwijs,1-39.20,zeker duidelijk
@@ -3716,8 +3532,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2642086,4359,am,1,oop,huishoudelijkedienst,schol metamer,5-52.20,zeker duidelijk
 2168725,3511,am,2,opbouwwerker,opbouwwerk,sociaal culturel instell,1-93.10,zeker duidelijk
 2583574,4247,am,6,opbouwwerker,begeleid inspraakprocedures,stichting opbouwwerk,1-93.10,zeker duidelijk
-1732703,2962,am,1,operater machinevoerder,procesverbal product,diepdruk,,nan
-1732703,2962,am,2,operater machinevoerder,procesverbal product,diepdruk,,nan
 1673630,2858,am,1,operatie assisstent,instrumenter assister omlop,ziekenhuis,0-62.10,zeker duidelijk
 2821325,4685,am,2,operatie assistent,assister operaties,ziekenhuis,0-62.10,zeker duidelijk
 1760603,3014,am,1,operatie assistent,assister ok s,cwz,0-62.10,zeker duidelijk
@@ -3734,18 +3548,14 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2007200,3248,am,1,operator,assemblag scanapparatur,key tec,8-41.45,zeker duidelijk
 2100203,3398,am,5,operator,bedien mechanisch system,uitgeverij,8-49.10,zeker duidelijk
 2373351,3892,am,2,operator,werk machin,electronic,8-51.10,zeker duidelijk
-2471631,4070,am,3,operator,productie,vitrit,,nan
 2563633,4206,am,1,operator,bijvull onderhoud koffieapparat,douw egbert,8-49.10,onzeker duidelijk beschrijv
 2563633,4206,am,6,operator,bedruk girobetaalkaart overschrijvingsboekjes ed,postbank,9-10.60,zeker duidelijk
-2754870,4550,am,1,operator,meetkamer bewak,chemisch,,nan
 2845312,4740,am,1,operator,afvull frisdrank blik,vrumona,9-71.55,zeker duidelijk
 1522318,2599,am,5,operator troubleshooter voorman magazijn,vervaard electriciteit magazijnwerkzam,chemie,8-51.10,zeker duidelijk
 2775847,4600,am,1,operator metaalbewerk machin,bewerk stal product,vervaard spuitgietmachines,8-41.10,zeker duidelijk
 1712501,2915,am,1,operator chemie,oa demineralisatieproces nabehandel afvalwater,energiesector,9-69.90,zeker duidelijk
 2132532,3445,am,4,operator mixing,fabricer schoonmaakmiddel,diversey ensched,7-56.40,zeker duidelijk
 1855053,3179,am,3,operator pigmentindustrie,vervaard verfstoff,ten horn verfindustrie,7-56.25,zeker duidelijk
-2612172,4290,am,1,operator tankterminal,aansluit slang bijkom werkzam,tankopslag eetbar olie vet,,nan
-1702142,2892,am,3,operator vertinn zonnecell,vertinn zonnecell doping cel tinbad,zonnecellenfabriel holecsol,,nan
 1762814,3017,am,3,ophanger,ijzer ophang verzink opruim,metaalgieterij,8-32.40,zeker duidelijk
 1864017,3194,am,2,opleider,opleid klantencontactsentrum,semiover,3-94.10,onzeker onduid beschrijv
 2732127,4515,am,2,opleider,opleid cursusorganisatie leerplanontwikkel,academie grot toplklinisch ziekenhuis,0-71.10,onzeker onduid beschrijv
@@ -3843,9 +3653,7 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3044455,4941,am,2,pedicur,behandelenpedicur,gewon thuis,0-79.90,zeker duidelijk
 1820653,3111,am,2,penitentiair inrichtingswerker,gevangenisbewaardster,min justitie,5-89.30,zeker duidelijk
 2401486,3934,am,1,penitentiair inricht werker,begeleid gevangen,dienst justiel inricht,5-89.30,zeker duidelijk
-1725473,2946,am,1,pensioen,nan,nan,X,zeker duidelijk
 2764253,4572,am,3,pensioenadviseur,pesnioenadvies,detacher,2-11.10,zeker duidelijk
-2625755,4325,am,1,pensionado,,,X,zeker duidelijk
 1577858,2721,am,1,personal trainer,coach begeleid doelstell bv afvall fitter,eenmansbedrijf,1-80.50,zeker duidelijk
 2674364,4422,am,5,personel planner,personel plann locatie,eurestcompas,3-92.30,zeker duidelijk
 2674364,4422,am,6,personel planner,rooster mak personel,belastingdienst,3-92.30,zeker duidelijk
@@ -3989,7 +3797,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2362664,3875,am,1,proces operator,machines bedien proces controler,voeding industrie melkpoederverpapp,7-00.65,zeker duidelijk
 3057213,4968,am,1,proces operator,gat houd proces,chemisch fabriek,7-00.40,zeker duidelijk
 1658000,2832,am,1,proces operator n regelkamer,bijregel via computer process,dsm,7-00.40,zeker duidelijk
-2561633,4201,am,1,proces oprerator,aanvoer grondstoff,papier fabriek,,nan
 3036207,4928,am,1,procescontroller,controller,bankwez,3-31.20,zeker duidelijk
 1850467,3160,am,1,procesmanager,aanstur medewerker bedenk process,ict organisatie,2-11.10,zeker duidelijk
 2786021,4620,am,2,procesmanager,adviseur process controles uitvoer,bank,2-11.10,zeker duidelijk
@@ -4020,11 +3827,9 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2882006,4824,am,3,product specialist,commerciel aanbied mak portfolio gericht onderhoud,machin fabriek,3-93.10,zeker duidelijk
 1577316,2720,am,1,productie management,regelgev initier overlegg,staalindustir,2-11.10,zeker duidelijk
 3015565,4880,am,6,productie mederwerkster,assambler tvonderdel werk perchloorethylen,philip electronica,8-54.20,zeker duidelijk
-1860003,3187,am,1,productie medewerker,machin voerder,papierfabriek,,nan
 1870388,3204,am,3,productie medewerker,achter machines zit machinefabriek stans bor enz,machin fabriek,9-10.50,zeker duidelijk
 2213765,3589,am,3,productie medewerker,productie,poedercoat,7-34.50,onzeker onduid beschrijv
 2127478,3439,am,1,productie medewerkster,sticker inpak,social werkplat,9-71.50,zeker duidelijk
-2600273,4262,am,4,productie medewerkster,all voorkom werkzam,soort uitzendorganisatie,,nan
 2758642,4561,am,2,productie medewerkster,lopend band,philip,9-71.55,zeker duidelijk
 2600273,4262,am,5,productie medewerkster naaiatelier,productie werk naai overlock machin,naaiatelier kleding gordijn,7-95.10,zeker duidelijk
 1522318,2599,am,2,productieleider,leid productie,productie handzepenshampooscar claening product,7-00.60,zeker duidelijk
@@ -4064,13 +3869,11 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3070367,4984,am,1,produktie medewerker,,bedrijfskled,7-95.10,onzeker onduid beschrijv
 2385654,3920,am,2,produktielleider,nan,productie elektriciteit kabelsleid,7-00.55,zeker duidelijk
 1487825,2555,am,2,produktiemedewerker,assemblagemedewerker,volvo,8-73.70,zeker duidelijk
-1678378,2868,am,1,produktiemedewerker,vull feeder verzamelmachin folder,postbedrijf,,nan
 2214223,3592,am,6,produktiemedewerker,fabrcer shuntweerstand,electrotechnisch produktiebedrijf,8-51.10,zeker duidelijk
 2816104,4669,am,4,produktiemedewerker,plastic artikel inpak,produktiebedrijf,9-71.50,zeker duidelijk
 2878124,4812,am,4,produktiemedewerker,produktie werk,produktiebedrijf massief kartonn verpak,9-10.50,zeker duidelijk
 3028508,4908,am,3,produktiemedewerker,produktie,slachterij,7-73.10,zeker duidelijk
 1786173,3066,am,1,produktiemedewerker,machin bediend,sigarenensigaret fabriek,7-83.20,zeker duidelijk
-1678378,2868,am,2,produktiemedewerker nabewerk drukkerij,feeder vull hechtmachines bijvull stapel bundel produkt,drukkerij,,nan
 2353608,3860,am,1,produktiemedewerster,lampenkapp makem,verlichtingindustrie,7-96.20,zeker duidelijk
 1820355,3110,am,4,produktmanager,produktmanagement,bevestigingsartikel,2-11.10,zeker duidelijk
 2334717,3815,am,2,proefdierverzorger,verzorg varkenskipp stier,proefbedrijf hendrix voeder,5-99.60,zeker duidelijk
@@ -4219,8 +4022,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2385654,3920,am,4,rd projectmanager,projectmanager research development,ontwikkel bouw elektron microscop,2-19.20,zeker duidelijk
 1711100,2912,am,6,rd projectmedewerker,productontwikkel copier,producent copier printer,0-24.10,zeker duidelijk
 2624524,4320,am,1,raadsonderzoeker,onderzoek,rad kinderbescherm,3-93.40,zeker duidelijk
-2332135,3810,am,2,radarcontroleur,radarcontroles,korp landelijk politiedienst,A,zeker duidelijk
-3044215,4940,am,3,radarspecialist,onderhoud grondradar apparatur,konink luchtmacht,A,zeker duidelijk
 1764144,3021,am,2,radiateurenservie monteur,radiateur autos vrachtautos reper vervang,serviceverlen bedrijf,0-35.50,zeker duidelijk
 2451302,4029,am,2,radio officier,marconist koopvaardij,radio holland,3-80.60,zeker duidelijk
 3041071,4936,am,1,radiodiagnostisch laborant,uitvoer enof radiologisch onderzoek,ziekenhuis,0-77.10,zeker duidelijk
@@ -4328,7 +4129,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2170733,3517,am,2,relatiemanager,adviser klant agrarisch sector,accountantskantor,2-11.10,zeker duidelijk
 2537523,4164,am,2,relatiemanager,klant bezoek,sidn,2-11.10,zeker duidelijk
 2764253,4572,am,2,relatiemanager,relatie maneg,verzekerar,2-11.10,zeker duidelijk
-1615834,2767,am,1,remedial teacher,les gev,eig praktijk,1-32,zeker duidelijk
 2841701,4729,am,3,rental representativ,autoverhur schiphol,autoverhuurbedrijf,8-43.20,zeker duidelijk
 2841701,4729,am,5,rental representativ,autoverhur schiphol,autoverhuurbedrijf,8-43.20,zeker duidelijk
 2028267,3285,am,1,rentmeester,grondverwerv,rentmeesterskantor,3-39.40,zeker duidelijk
@@ -4356,7 +4156,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3054778,4957,am,2,rijinstrucrtuer,rijless verzorg,holmersma,9-85.90,zeker duidelijk
 2373351,3892,am,1,rijinstructeur,rijles gev,autorijschol,9-85.90,zeker duidelijk
 1557830,2678,am,1,rijksambtenar,controler boekhoud ondernem,belastingdienst,1-10.10,zeker duidelijk
-1862827,3192,am,1,rijksambtenar,logistiek,beroepsmilitair konink marin,A,zeker duidelijk
 1865511,3197,am,2,rijksambtenar,kostendeskund,rijksover,3-93.10,zeker duidelijk
 2040130,3296,am,1,rijksambtenar,douan,douan,3-93.10,zeker duidelijk
 2053111,3319,am,1,rijksambtenar,rapportages opmak tbv aanstur bedrijfsvoer,personel salarisadministratie,3-93.10,zeker duidelijk
@@ -4710,18 +4509,10 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3044215,4940,am,1,softwar specialist,softwar ondersteun klant computerapparatur,computerbedrijf,0-84.20,zeker duidelijk
 1814338,3096,am,2,softwar tester,test softwar begeleid gebruiker implemenatii,bank,0-84.20,zeker duidelijk
 2740528,4526,am,1,softwar testspecialist,functionel test softwar,automatiseringsbedrijf,0-84.20,zeker duidelijk
-2134560,3450,am,2,soldat,radarrist,defensie,A,zeker duidelijk
-2176872,3528,am,4,soldat,veldoefn schiet wacht stan,stat,A,zeker duidelijk
-2183444,3546,am,7,soldat,zandhas vred bewar libanon,defensie,A,zeker duidelijk
-2202288,3563,am,2,soldat,bediend,defensie,A,zeker duidelijk
-2343318,3832,am,2,soldat,wapenhersteller,landmacht,A,zeker duidelijk
-2444728,4019,am,7,soldat,motorfiets test onderhoud,defensie,A,zeker duidelijk
 2558241,4196,am,2,sorteermedewerkster,post sorterenvideocoderensorteermachin klein bedien uitvoer,sorteercentrum tnt,3-70.20,zeker duidelijk
 2324578,3792,am,1,souschef,leiding keuk,hotelrestaurant,5-31.20,zeker duidelijk
 2604872,4276,am,1,souschef,zorgdrag draai restaurant zalencentrum,horeca,5-31.20,zeker duidelijk
 2604872,4276,am,2,souschef,zorgdrag restaurant zalencentrum,horeca,5-31.20,zeker duidelijk
-2348718,3849,am,3,spec simulator f104f16,onderhoud simulator complex,klu,A,zeker duidelijk
-1548440,2659,am,3,specialist gronduitrust,behereninspecterenreparer werk noodstrom app,defensie konluchtmacht,A,zeker duidelijk
 2850741,4749,am,2,specialist opleid,poli kliniek seh intensiv car,ziekenhuis,0-61.20,zeker duidelijk
 2400648,3931,am,1,specialist ouderengeneeskund,artsenwerk,verpleeghuis,0-61.20,zeker duidelijk
 2614630,4298,am,1,specialist ouderengeneeskund,patientgebond administratie beleidsmanagement ondersteun,zorggroep,0-61.20,zeker duidelijk
@@ -4735,7 +4526,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1550810,2664,am,5,spilfunctionaris,planningproductie weefselkwek media hoofd productiekwaliteit administratie sales,groothandel pharmaceutisch grondstoff productie bedrijf biochemicalien weefselkwek media,0-14.20,zeker duidelijk
 2425120,3986,am,1,spilleiderbinn buit dienst,leiding ploeg havenmadewerker binn buitendienst,overslagbedrijf kol erts veevoer gesteent schrot enz,2-11.10,zeker duidelijk
 2420182,3972,am,2,spinninginstructric,spinning les,sportschol,1-80.50,zeker duidelijk
-1885128,3235,am,1,spoelingscontroleur,kontroler,n a m,,nan
 1622008,2781,am,1,sportambtenar,beher expl gem sportzal,gemeent,5-51.30,zeker duidelijk
 2878684,4816,am,1,sportfysiotherapeut,sportrevalidatie wedstrijdbegeleid,betaald voetbal organisatie,0-76.20,zeker duidelijk
 2307486,3754,am,1,sporthalbeheerder,schoonmaakplanninghoreca,stichting,5-52.20,zeker duidelijk
@@ -4849,7 +4639,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2157644,3490,am,1,teamleider,leiding gev mee werk,detailhandel,2-11.10,zeker duidelijk
 2437167,4007,am,2,teamleider,groepschef,energiebedrijf,2-11.10,zeker duidelijk
 2461041,4050,am,1,teamleider,coordiner servicedesk ict,gemeent,2-11.10,zeker duidelijk
-3002838,4845,am,1,teamleider docent,oa organiser beleid mak personeelsbeleid uitvoer conflictbeheers lesgev,onderwijs vo,1-33,onzeker onduid beschrijv
 2312574,3762,am,1,teamleider intensiv car,aanstur verpleg personel,ziekenhuis,2-11.10,zeker duidelijk
 2818605,4678,am,1,teamleider jeugdgezondheidszorg,leidinggev team 25 medewerker,ggd mid nederland,2-11.10,zeker duidelijk
 2281160,3720,am,1,teamleider middel schol,organisatie schoolpersoneelsbeleidleerlingbegeleid,middel schol,1-33.20,zeker duidelijk
@@ -4871,7 +4660,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1481457,2539,am,3,technical support,technisch ondersteun softwar,itbedrijf,0-84.20,zeker duidelijk
 2415261,3965,am,2,technical support,support gebouwautomatiser apparatur,techniek,8-49.70,zeker duidelijk
 1536527,2639,am,2,technician,printplat reparer,technologie,9-24.20,zeker duidelijk
-1483306,2545,am,1,technicus,onderhoud installatie ct mri scanner,zelfstand,,nan
 1570363,2706,am,1,technicus,hel,railinfra,8-49.70,zeker duidelijk
 2873163,4798,am,1,technicus,opzichter td 12 person,chemie,2-11.10,onzeker onduid beschrijv
 1857485,3186,am,2,technicus onderhoudsdienst,onderhoud werkzam,aluminium smelter,8-73.30,zeker duidelijk
@@ -4897,7 +4685,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3071276,4988,am,1,technisch onderhoudsmedewerker,technisch onderhoudswerk,conglomerat middel schol,8-49.70,zeker duidelijk
 2160663,3494,am,1,technisch projectleider,organiser bell teken regel computerwerkzam bouwbezoek overleg gemeent,architectenbureau,2-11.10,zeker duidelijk
 1522318,2599,am,6,technisch specialist,chauffeur pantserrupsvoertu,konink landmacht,9-85.90,zeker duidelijk
-2233874,3627,am,2,technisch specialist,technisch gewet ploegendienst,productiebedrijf,,nan
 2248616,3655,am,1,technisch tekenar,tekenaarassitent projectleider,central verwarm ventilatie,0-32.70,zeker duidelijk
 2838067,4722,am,3,technisch tekenar,technisch teken,installatiebedrijf,0-32.70,zeker duidelijk
 2867203,4785,am,2,technisch tekenar,tekenar,ingineur bureau,0-32.70,zeker duidelijk
@@ -4979,7 +4766,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1750044,2992,am,5,telefon operator,doorschakel lijn,organisatiebureau,3-94.10,zeker duidelijk
 2862831,4774,am,3,telefoonreceptionisteadmmedewerker,all voorkom werkzam,verzekeringskantor,3-94.10,zeker duidelijk
 1476237,2531,am,1,telefoonist receptionist,aanem telefon administratie,installatie bedrjf,3-94.10,zeker duidelijk
-3037613,4932,am,4,telefoonverbind,telefoonverbind stand breng,konink luchtmacht,A,zeker duidelijk
 2407657,3946,am,3,telemarket,bedrijvenparticulier telefonisch benader,telemarket organisatie,3-94.10,zeker duidelijk
 2407657,3946,am,2,telemarketingacquisitiereceptionistesecretares,receptieacquisitieetc,bedrijfauto inbouwbranch,3-94.10,zeker duidelijk
 2050584,3312,am,11,telepathie consultant,telepatisch contact mak dier hierover telefonisch contact eigenar,eig bedrijf,3-94.20,zeker duidelijk
@@ -4994,7 +4780,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2637776,4349,am,1,theater technicus,rijzend theater technicus,theater,8-55.50,onzeker duidelijk beschrijv
 1770835,3036,am,2,theatertechniek,bouw brek voorstell,theater,8-55.50,onzeker duidelijk beschrijv
 1812820,3090,am,2,thuis zorg,poest ouder mevrouw,thuiszorg organisatie,5-52.20,zeker duidelijk
-2107783,3409,am,3,thuisfrontmanager,opvoed begeleid coach etcetcetc,thuis,X,onzeker onduid beschrijv
 1532151,2627,am,2,thuishulp,huishoud,omring,5-52.20,zeker duidelijk
 2287363,3731,am,1,thuishulp,huishoud werk,thuiszorg instell,5-52.20,zeker duidelijk
 2464583,4058,am,1,thuishulp,schoonmaakwerkzam,sensir,5-52.20,zeker duidelijk
@@ -5067,11 +4852,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1601624,2740,am,2,traffic officer,afhandel vliegtuig,air holland,3-59.70,zeker duidelijk
 2875867,4807,am,5,trainee,aanstur schoonmaakpersonel relatiebeher,schoonmaakbedrijf,2-11.10,zeker duidelijk
 1527447,2612,am,1,trainer schriftelijk communicatie,lesgev rediger tekschrijv,trainingsorganisatietekstbureau,3-99.40,zeker duidelijk
-1508823,2577,am,3,trainer soc vaardig,train medewerker,telefonisch hulpdienst,1-32,zeker duidelijk
-1761373,3015,am,3,trainer vutcursuss,incidentel weektrain afroep,zelfstand ondernemer eig eenmanszak,1-32,zeker duidelijk
-1458044,2503,am,1,trainercoach,trainercoach,opleid,1-32,zeker duidelijk
-2750488,4536,am,1,trainercoach,training coaching,coachingorganisatie,1-32,zeker duidelijk
-1680562,2870,am,3,traineropleideradviseur,managementopleid advieswerk,telecombedrijf ptt,1-32,zeker duidelijk
 2024737,3281,am,2,trainercoach,personel training coaching,zelfstand,2-11.10,zeker duidelijk
 1827755,3122,am,3,trainsterbegeleidster,begeleid groep gebied verander zingev,st devoord particulier,1-93.10,zeker duidelijk
 2828158,4702,am,4,trajectbegeleider,begeleid asielzoeker,vluchtelingenwerk,1-93.10,zeker duidelijk
@@ -5118,7 +4898,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2005142,3246,am,5,uitzendconsulent,onderhoud verzorg all contact tuss uitzendorganisatie klant uitzendmedwerker,uitzendbureau,1-94.20,zeker duidelijk
 1834305,3134,am,4,uitzendkracht,metal pes machin bedein,stafier,8-39.60,zeker duidelijk
 2838036,4721,am,4,uitzendkracht,vnl administratief,diver,3-93.10,zeker duidelijk
-2314225,3768,am,4,ultrasonist,ultrason nietdestructief onderzoek industrie enz,rontg technisch dienst,,nan
 1810863,3089,am,2,unit manager,leiding gev inkop magazijn 5 medewerker,recreatiepart centerparc,2-11.10,zeker duidelijk
 1464747,2514,am,1,universitair docent,wetenschapp onderwijs onderzoek adviser,universiteit,1-31.90,zeker duidelijk
 1522316,2598,am,3,universitair docent,universitair onderzoek onderwijs,universiteit,1-31.90,zeker duidelijk
@@ -5487,7 +5266,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3015348,4878,am,1,vervang filiaalleidster aldi,leiding gev vracht verwerk bestell winkel ord houd problem oplossenenz,supermarkt,4-00.30,zeker duidelijk
 3021512,4888,am,2,vervang leidinggev cater,vervang leidinggev adminstratie uitserver directeur koffie thee lunch,cater,5-32.10,zeker duidelijk
 1766486,3028,am,5,vervang waarnem zorgmanager,manager,verzorgingshuis,2-11.10,zeker duidelijk
-1477817,2534,am,5,vervang moeder,huishoud verzorg ouder broer 2zuss,gezin,X,zeker duidelijk
 2533483,4155,am,2,verwarmingloodgieter,verwarm loodgieterswerk,installatiebedrijf,0-35.50,zeker duidelijk
 1818457,3105,am,2,verwarm monteur,aanlegg verwarmingsinstallaties,instalaltie bedrijf,0-35.50,zeker duidelijk
 2268031,3693,am,5,verwarmingsmonteur,aanlegg verwarmingssystem,verwarmingsbedrijf,0-35.50,zeker duidelijk
@@ -5588,7 +5366,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3046035,4944,am,1,voedingsassistent,maaltijd verzorg,ziekenhuis,5-32.90,zeker duidelijk
 2446864,4022,am,1,voedingsdienst,bereid maaltijd uitserver,verzorgingshuis,5-32.90,zeker duidelijk
 1471773,2525,am,2,voetbaltrainer,trainenbegeleid voetbalteam,club,1-80.30,zeker duidelijk
-2304526,3745,am,5,voltim moederhuisvrouw,volled zorg,thuiswerk,X,zeker duidelijk
 2357477,3866,am,3,voorlichterwerver,voorlicht gev werv potentiel kandidat,konink landmacht korp national reserv,1-94.20,zeker duidelijk
 2158288,3491,am,1,voorman montag afdel,monter,toeleveringsbedrijf,8-49.70,zeker duidelijk
 1522318,2599,am,4,voorman productie plv productie manager,productieleid,vervaard kleurstoff tbv verfindustrie,2-11.10,zeker duidelijk
@@ -5597,7 +5374,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3004231,4849,am,2,voorwerkster eierinpakbedrijf,inpak broedeier export noordjem,broedeierenkwekery,9-71.50,zeker duidelijk
 1758373,3009,am,6,vormingsleidster,jonger perspectief bied allerlei facet motiver positiev houding tov schol enof werk,vormingscentrum raalt,1-93.10,zeker duidelijk
 2340223,3825,am,5,vormingsleidster,opzet textielwerkplat woonwagenmeisjes,vormingscentrum,1-93.10,zeker duidelijk
-2340223,3825,am,3,vormingsleidstertrajectbegeleidster,begeleid leerling,vo mbo schol,1-32,zeker duidelijk
 1632447,2795,am,1,vormingswerker educatief medewerker emancipatiewerker,training deskundigheidsbevorderin vos kursuss speelzaalbegeleid enz,welzijnsinstell basiseducatieinstell,1-93.10,zeker duidelijk
 1655260,2825,am,5,vormingswerkeradjunctdirecteur,cursusleidingprojectontwikkel managementtak,vormingscentrum,1-93.10,zeker duidelijk
 2110150,3412,am,3,vormingswerkster werkend jonger,less gev ontwikkel vormingscentrum,vormingscentrum,1-93.10,zeker duidelijk
@@ -5624,15 +5400,12 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3038871,4935,am,2,vrachtwagenmonteur,monteur,transportbedrijf dealer,8-43.30,zeker duidelijk
 2774714,4596,am,2,vrachtwagenschafeurmonteur,brandstoff wegbreng,olie handel,9-85.50,zeker duidelijk
 2472750,4072,am,2,vrijwill politie ambtenar,politie tak uitvoer,politie,5-82.20,zeker duidelijk
-1580505,2727,am,2,vulcaniseur,loopvlak vernieuw,dabo deld,,nan
 1747565,2988,am,2,vulploegmedewerker,vullenverkoopschoonmaakleid vulploeg,supermarkt,4-51.30,zeker duidelijk
-2878308,4813,am,1,vut vervroegd pensioen,vrijwilligerswerk tuinier hobbys contact bedrijv opstart 1 man bedrijf proefinstallatie bouw ontwikkel test,innovatie milieu energie,X,zeker duidelijk
 1483314,2546,am,1,waardetransporteur,hal breng geld,g4s,9-85.50,zeker duidelijk
 1842572,3147,am,3,waarnem hoofd,plaatsvervang verantwoord bescherm woonvorm,ribw,1-93.10,zeker duidelijk
 2838734,4725,am,3,waarnem hoofd huishoud,leidng gev personel,dement bejaard vieracker ass,2-11.10,zeker duidelijk
 2108450,3410,am,4,waarnem hoofd kinderdagverblijf,pas opgestart kinderdagverblijf uitbreid,particulier kinderdagverblijf,1-34.20,zeker duidelijk
 2722764,4498,am,2,wachtcommandant,groepsoudst,regiopolitie groning,5-82.20,zeker duidelijk
-2460818,4049,am,7,wachtmeester weermeetdienst dienstplicht,verzorg weerkund informatie luchtdoelartillerie,landmacht,A,zeker duidelijk
 2524350,4137,am,3,warehous manager,management,logistiek dienstverlen,2-11.10,zeker duidelijk
 2524350,4137,am,4,warehous manager,management,retail,2-11.10,zeker duidelijk
 1670633,2853,am,1,warehousemanager,zorg goed snel verloopt,vrieshuis,2-11.10,zeker duidelijk
@@ -5669,7 +5442,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1881427,3227,am,3,werktuigbouwkund ingenieur,bureauwerk,onderzoeksinstel,0-24.10,zeker duidelijk
 3037613,4932,am,2,werktuigbouwkund werkvoorbereider,technisch werkzam voorbereid begeleid,geestelijk gezond zorg,0-24.10,zeker duidelijk
 1706073,2902,am,1,werkvoorbereider,machin voorschrift schrijv,machineindustrie,1-59.65,zeker duidelijk
-1746662,2986,am,2,werkvoorbereider,werk voorbereid,nedap,,nan
 1760181,3012,am,3,werkvoorbereider,constructies uitwerk,ingenieursbureau,0-32.20,zeker duidelijk
 1857485,3186,am,3,werkvoorbereider,stuklijst mak onderdel daarin plaats sap,aluminium smelter,8-73.30,zeker duidelijk
 1882288,3228,am,3,werkvoorbereider,vanaf technisch teken inkop material produktirdocument vervaard,machinefabriek,0-32.40,zeker duidelijk
@@ -5698,7 +5470,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1664041,2845,am,2,wetenschapp medewerker onderzoeker,wetenschapp onderzoek implementer innovaties direct verpleegkundigt zorg,loth verpleegkund,1-31.90,zeker duidelijk
 1610115,2758,am,4,wetenschapp medewerkermethodolog,onderzoek,universiteit,1-31.90,zeker duidelijk
 2183765,3547,am,4,wetenschapp onderzoeker,uitvoer wetenschapp onderzoek ontwikkelwerk,universiteit,1-31.90,zeker duidelijk
-2761113,4566,am,2,wetenschapp onderzoeker,ondezoek oa radioisotop,onderzoekinstitut,,nan
 2761113,4566,am,1,wetenschapp onderzoeker consultant,bureauwerk,onderzoekinstitut,1-31.90,zeker duidelijk
 1524006,2602,am,1,wethouder,betsur,gemeent,2-11.10,zeker duidelijk
 1578436,2725,am,1,wethouder,bestur,gemeent,2-11.10,zeker duidelijk
@@ -5779,8 +5550,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2477016,4081,am,1,woonaccessoir meubel verkop,inkop verkop,meubel,4-51.30,zeker duidelijk
 2276871,3709,am,4,woonmaatschapp werker,verhur woning bemiddel burenruziesbegeleid renovatie project,woningsticht,1-93.10,zeker duidelijk
 2453808,4036,am,2,wvg consulent,verstrek voorzien gehandicapt,gemeent,3-10.10,zeker duidelijk
-1756071,2999,am,4,wwen ioaw,vrijwilliger mantelzorg,fctwent,X,zeker duidelijk
-2024471,3280,am,1,x,x,x,X,zeker duidelijk
 2118763,3428,am,2,z verpleegkund,groepsleider,inricht,0-71.10,zeker duidelijk
 2166472,3503,am,3,z verpleegkund,verzorg begeleid verstand gehandicapt bewoner,sint augustinus stichting,0-71.10,zeker duidelijk
 2811550,4655,am,1,z verpleegkund,verpleg bewoner,maria roepan,0-71.10,zeker duidelijk
@@ -5835,7 +5604,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 2246613,3654,am,1,zelfstand,directeur,uitgeverij,2-11.10,zeker duidelijk
 2604261,4274,am,1,zelfstand,directeur,uitvaartorganisatie,2-11.10,zeker duidelijk
 2634871,4341,am,1,zelfstand,verkop,levensmiddelenbedrijf,4-10.30,zeker duidelijk
-2844473,4738,am,1,zelfstand,freelanc meewerker interim,onderwijs,1-32,zeker duidelijk
 3052677,4952,am,2,zelfstand,webdesign trainer,ict,0-84.20,zeker duidelijk
 3008185,4864,am,2,zelfstand eig bedrijf partner,goeder inklar distribuer administratie,import export tropisch groent fruit,9-71.45,zeker duidelijk
 3041728,4937,am,1,zelfstandigondernemer,nan,winkel,4-10.30,zeker duidelijk
@@ -5943,13 +5711,11 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 710286,1327,am,3,leerling verpleegkund,zorgtak,algemen psychiatrisch ziekenhuis,0-71.10,zeker duidelijk
 1216433,2036,am,5,leerling verpleegkund,all verpleegkund handel dienst,ziekenhuis,0-71.10,zeker duidelijk
 1385328,2379,am,1,oncologie verpleegkund,cytostatica toedien antibiotica klaarmak toedien participer dagelijk patin0074enzorg,ziekenhuis,0-71.20,zeker duidelijk
-436824,836,am,2,semie beroepsmilitair,instructeur miltair vak,landmacht,A,zeker duidelijk
 1034124,1710,am,5,telreceptionist binnendienst medewerkster,bedien telcentral ontvang klantenleverancier admtak invoer verkopenklacht behandelingtelverkop,horeca groothandel,3-94.20,zeker duidelijk
 1371648,2347,am,1,notarieelmedewerkster,notarieelwerk,notariskantor,1-29.10,zeker duidelijk
 800373,1487,am,4,1e assistentmanager,ondersteun restaurantmanager leidingev,horeca mcdonald,5-32.10,zeker duidelijk
 1034124,1710,am,3,1e bedieningsmedewerkster,horecabedienenschoonmakenbarbestellingenorganiserengastvrouw,horeca,5-32.10,zeker duidelijk
 276211,555,am,2,1e medewerker transferpunt,regel nazorg ziekenhuispatient inhoud aanstur team,ziekenhuis,0-62.10,onzeker duidelijk beschrijv
-71222,160,am,5,1e procesoperator,bewak bestur werkvoorbereid fabrieksinstallaties,dsm,,nan
 475457,910,am,1,3d cad tekenar,teken computer,commercieel bedrijf,0-32.50,onzeker onduid beschrijv
 184222,364,am,12,a verpleegkund,verpleegkund tak,ziekenhuis,0-71.10,zeker duidelijk
 736407,1393,am,2,a verpleegkund,verpleg,amc ziekenhuis,0-71.10,zeker duidelijk
@@ -6592,7 +6358,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 131885,252,am,1,analist medisch microbiologie,analist,ziekenhuis,0-54.30,zeker duidelijk
 462213,885,am,1,analist,laboratorium analysis bloedurinefaeces bloedafnames kliniek polikliniek,ziekenhuis,0-54.30,zeker duidelijk
 1223813,2055,am,1,analist,laboratorium medisch microbiologie,umc,0-54.30,zeker duidelijk
-308130,609,am,1,aow,nan,nan,X,zeker duidelijk
 300282,588,am,2,apotheekassistent,,apothek,0-68.10,zeker duidelijk
 373115,731,am,1,apotheker,algemen leiding apothek farmaceutisch sparringpartner ketenzorg,apothek,0-68.10,zeker duidelijk
 1188734,1995,am,1,apotheker industrie,qamanager qualified person lid mtdirectie,farma medisch hulpmiddel,0-67.10,zeker duidelijk
@@ -6637,7 +6402,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 667762,1257,am,4,arbeidsdeskund,beoordel inzet arbeid,gak,0-71.40,zeker duidelijk
 887374,1635,am,1,arbeidsdeskund coach,belastingbelast passend functie beoordel coach werknemer balan klacht,arbodienstverlen,0-71.40,zeker duidelijk
 857107,1594,am,4,arbeidstherapeut,client begeled arbeidsmat werkzam,vrederust ggz,0-71.40,zeker duidelijk
-661217,1242,am,2,arbeidsverled,diver,diver,X,zeker duidelijk
 147228,291,am,1,arbocoordinator,vooral regl voorlicht gev,scheepsmotorenfabriek,0-71.40,zeker duidelijk
 1124826,1860,am,2,arbocoordinator,uitvoer arbconvenant,umc nijmeg,0-71.40,zeker duidelijk
 1152418,1915,am,1,archiefambtenar,archiefbeher historisch onderzoek dienstverlen internextern,gemeent,1-91.30,zeker duidelijk
@@ -6651,7 +6415,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 255503,501,am,1,area human resources manager,gebied personeelsdienst,hotellerie,2-19.80,zeker duidelijk
 513276,955,am,1,area manager,leiding bedrijfsonderdel,offshor olie gas,2-11.10,zeker duidelijk
 1186725,1990,am,2,area manager,area manager india africa,automotiv,2-11.10,zeker duidelijk
-787444,1479,am,1,arkenopbouwer,voorman opbouw,arkenbouwbedrijf,,nan
 1424651,2432,am,1,art director,concept vormgev,reclamebureau,1-62.20,zeker duidelijk
 135484,258,am,1,art,patientenzorg onderwijs onderzoek,universiteit,0-61.05,zeker duidelijk
 1262888,2137,am,1,art,ouderengeneeskund,gezondheidszorg,0-61.05,zeker duidelijk
@@ -6971,8 +6734,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1121615,1851,am,3,beoordel beambt social verzeker,uitker bereken uitbetal,uwv,3-10.10,zeker duidelijk
 773560,1458,am,1,bereidingsspecialist,mak diergeneesmiddel steriel spull voorbereid,diergeneesmiddel bedrijf,0-67.10,onzeker onduid beschrijv
 1262755,2136,am,2,beroepskeuzeadviseur,adviser person gebied studie beroepskeuz,diver beroepskeuz bureaus,1-94.30,zeker duidelijk
-138126,267,am,4,beroepsmilitair,calibratie specialist,luchtmacht,A,zeker duidelijk
-155040,306,am,2,beroepsmilitair,nan,ministerie defensie,A,zeker duidelijk
 1427478,2437,am,1,bestelster,pakjes bezorg,selekt vracht,9-85.50,zeker duidelijk
 648445,1227,am,2,bestuurder,aanstur organisaties zorg ca,greopspraktijk zorggrop bvs,2-11.10,zeker duidelijk
 586630,1124,am,2,bestuursfunktie beroepsveren,vergaderenledenbijeenkomst,nedveren manuel therapie,2-11.10,zeker duidelijk
@@ -7105,7 +6866,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1380754,2369,am,2,bronsgieter,smelt giet bron mall uitpak beeld ciseler,gieterij klei haytsma utrecht,8-32.40,zeker duidelijk
 1123881,1856,am,3,brod bezorger,brod bezorg,brod bakkerij,4-52.20,zeker duidelijk
 248551,478,am,2,broodbanketbakker,bakkerij werkzam,bakkerij,7-76.10,zeker duidelijk
-655810,1237,am,1,brouwer,uitvoer beher,2 person,7-78,onzeker onduid beschrijv
 673216,1273,am,3,bruinwitgoedmonteur,monter div apparatur,witgoed bruingoed handel,8-41.10,zeker duidelijk
 358757,704,am,2,budgetcoach,cursuss coaching klant ler omgan geld,gemeent,3-39.40,zeker duidelijk
 358757,704,am,5,budgetconsulent,klant help financiel problem schuld regel budgetbegeleid,stichting,3-39.40,zeker duidelijk
@@ -7390,7 +7150,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 550042,1028,am,1,controleur,inspectiewerk zaamheid,vwa,0-65.20,zeker duidelijk
 887443,1636,am,2,controleur,onderzoek visuel control monsternames,zuivel,0-65.20,onzeker duidelijk beschrijv
 1022024,1682,am,2,controleur speeltoestell,controler speelplaats fiet,speelvoorzien,0-22.50,onzeker onduid beschrijv
-431706,827,am,4,controller,control verpak laarz,laarzenindustrie,,nan
 445575,853,am,2,controller,financiel rapportag,finaciel dienstverlen,3-31.20,zeker duidelijk
 522183,972,am,1,controller,financieel managemenrt,bank,3-31.20,zeker duidelijk
 734460,1386,am,1,controller,financieel administratief,zorg organisatie,3-31.20,zeker duidelijk
@@ -7504,17 +7263,8 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 538717,1004,am,1,dga,directie,dienstverlen,2-11.10,zeker duidelijk
 846602,1579,am,1,dialyseverpleegkund,research thuisdialys,gezondheidszorg,0-71.20,zeker duidelijk
 51878,117,am,3,didactisch medewerker,ontwikkel verzorg training,vakbond,1-32.90,zeker duidelijk
-88004,188,am,3,dienstplicht,dienstplicht,militair dienst,A,zeker duidelijk
-668341,1258,am,5,dienstplicht,oa radiocentralist,defensielandmacht,A,zeker duidelijk
-167680,336,am,2,dienstplicht militair,infanteristbureauwerkzam,leger,A,zeker duidelijk
 424285,808,am,4,dienstplicht militair,kok,defensie,5-31.30,zeker duidelijk
-712042,1335,am,5,dienstplicht militair,radarbedi,leger,A,zeker duidelijk
-838002,1563,am,2,dienstplicht militair,afvoertoep,defensie,A,zeker duidelijk
-1165371,1939,am,2,dienstplicht militair,lb,luchtmacht,A,zeker duidelijk
 1237778,2084,am,4,dienstplicht militair,administratief medewerker,konink landmacht,3-93.10,zeker duidelijk
-1415850,2419,am,6,dienstplicht militair,dienstplicht,defensie,A,zeker duidelijk
-248551,478,am,3,dienstplicht millitair,lm,luchtmacht,A,zeker duidelijk
-704238,1315,am,6,dienstplicht sergeant leger,verantwoord berichtenkantor tijden oefen,leger,A,zeker duidelijk
 214416,413,am,4,dienstplicht soldat,computeroperator,luchtmacht,0-84.20,zeker duidelijk
 732373,1378,am,4,dienstplicht,onderhoud ketel scheepsmotor,konink marin,8-49.70,zeker duidelijk
 546378,1024,am,1,dierenart,gezelschapsdier,maatschap,0-65.10,zeker duidelijk
@@ -7561,7 +7311,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 725766,1366,am,1,directeur bv,algemen leiding,welnes berdijf,2-11.10,zeker duidelijk
 55514,132,am,2,directeur vmbo schol,leiding gev schol,onderwijs,1-39.40,zeker duidelijk
 366833,719,am,5,directeur wijkverpleg,dagelijk leiding werkorganisatie wijkverpleg,stichting kruiswerk,2-11.10,zeker duidelijk
-325142,638,am,1,directeureigenar,allesomvat,vakantieboerderij,,nan
 1171204,1952,am,1,directeureigenar,directie werkzam,opleid training institut,2-11.10,zeker duidelijk
 1238857,2089,am,1,directeureigenar bedrijf plaatbewerk,algemen bedrijfsvoer,hout interieurbouw bouw,2-11.10,zeker duidelijk
 714752,1338,am,2,directie chauffeur,chauffeursdienst,groothandel,9-85.30,zeker duidelijk
@@ -7593,11 +7342,9 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 657665,1239,am,5,directiesecretaressehoofd personeelszak,dirsecretares werkzam wervingselectie tm vaststell arbeidscontract evt ontslagprocedures,bouwmaterialenhandelkeukenshowrom,3-21.20,zeker duidelijk
 747864,1414,am,5,directiesecretaris,adviez mbt ouderenzorg ontwikkelencultuuromslag bewerkstellign,pg verpleeghuis,3-21.20,zeker duidelijk
 1142152,1895,am,1,directievoerder,toezicht aannemer coordinatie werkzam,waterzuiver,2-11.10,zeker duidelijk
-1186725,1990,am,3,director customer support,europamid oost afrika,automotiv,,nan
 113676,211,am,5,director rom division,leidinggev,hotel,5-00.20,zeker duidelijk
 113676,211,am,8,director rom division,leidinggev,hotel,5-00.20,zeker duidelijk
 788540,1482,am,1,directric administratief medewerkster,directric administratief medewerkster,recycl bedrijf,3-93.10,onzeker duidelijk beschrijv
-1110022,1826,am,1,direkteur,all soort werk,veetrasport,,nan
 283883,570,am,2,dirigent,cantor,pkn kerk,1-71.35,zeker duidelijk
 157370,311,am,5,discjockey,praatprogrammas,horeca,1-79.20,onzeker duidelijk beschrijv
 1176272,1966,am,2,discjockey,draai grammofoonplat,horeca,1-79.20,onzeker duidelijk beschrijv
@@ -7608,52 +7355,15 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1451181,2483,am,1,districtleider,aantal winkel leid,discounter supermarkt,2-11.10,zeker duidelijk
 764600,1445,am,2,districtsbeheerder,beher natuurterrein landgoeder,natuurbeschermingsorganisatie,6-32.20,zeker duidelijk
 764600,1445,am,3,districtshoofd,aanleg boss atuurterrein,rijksover,0-53.40,zeker duidelijk
-113676,211,am,9,diver,diver,hotel,X,zeker duidelijk
-1124826,1860,am,4,diver,social,over,X,zeker duidelijk
-485075,924,am,2,diver automatiser,diver,diver,X,zeker duidelijk
-714752,1338,am,16,diver beroep,diver ban,diver bedrijv,X,zeker duidelijk
 254747,498,am,2,diver systeemontwikkelingsfuncties,algemen systeemontwikkelingstak,grot hardwar multi national,0-84.20,zeker duidelijk
-1453077,2489,am,6,diver tijdelijk functies,technisch commercieel ea,uitzendbureau ea,X,zeker duidelijk
-125236,235,am,3,divers,nan,nan,X,zeker duidelijk
-117607,220,am,1,docent,docer zorg,agrarisch schol,1-32,zeker duidelijk
-144150,284,am,1,docent,lesgev,vmbo schol,1-32,zeker duidelijk
-150141,292,am,1,docent,docer onderwijstak,schol voortgezet onderwijs,1-32,zeker duidelijk
-157370,311,am,1,docent,instructie gev begeleid,mbo,1-32,zeker duidelijk
-176623,351,am,2,docent,klassikal lesgev,schol,1-32,onzeker onduid beschrijv
-180184,357,am,1,docent,cursus gev,roc,1-32,zeker duidelijk
-188412,371,am,1,docent,lesgev,voortgezet onderwijs,1-32,zeker duidelijk
-188412,371,am,2,docent,lesgev,voortgezet onderwijs,1-32,zeker duidelijk
-272474,543,am,1,docent,lesgev ict coordinator mentor,schol vo,1-32,zeker duidelijk
 287261,580,am,1,docent,docerenelearn,zlm bethesda scheper ziekenhuis,1-32.90,zeker duidelijk
-301073,590,am,5,docent,lesgev,middel schol,1-32,zeker duidelijk
-320084,628,am,1,docent,lesgev ontwikkel,mbo,1-32,zeker duidelijk
-344447,678,am,4,docent,ontwikkel cuuriculum opleid aanstur docent lesgev,hogeschol,1-31,zeker duidelijk
-370354,725,am,1,docent,docer coordiner,roc,1-32,zeker duidelijk
 382470,746,am,1,docent,russisch tal literatur,open schol,1-32.15,zeker duidelijk
-422530,805,am,1,docent,docer,roc,1-32,zeker duidelijk
 438188,840,am,4,docent,docent teken handvaard kunstgeschiedenis,middel schol,1-32.50,zeker duidelijk
-584710,1114,am,1,docent,lesgev,colleg privaatles,1-32,zeker duidelijk
-643183,1215,am,1,docent,lesgev,middel schol,1-32,zeker duidelijk
-670214,1261,am,3,docent,docer,schol,1-32,onzeker onduid beschrijv
 752754,1423,am,2,docent,docent,schol speciaal voortgezet onderwijs,1-35.40,zeker duidelijk
-800018,1483,am,1,docent,lesgev,middel onderwijs,1-32,zeker duidelijk
-810812,1508,am,1,docent,lesgev incl correctievoorbereid,onderwijs,1-32,onzeker onduid beschrijv
 837827,1562,am,1,docent,les gev terreinonderhoud,onderdel gemeent den hag,6-29.60,zeker duidelijk
-837827,1562,am,5,docent,les gev terreinbeher,stichting,1-32,onzeker onduid beschrijv
-1006700,1654,am,1,docent,verzorg lessenmentorschapbegeleidingopvoed,schol praktijkonderwijs,1-32,zeker duidelijk
 1036652,1719,am,1,docent,onderwijs biologie,middel schol,1-32.30,zeker duidelijk
-1075301,1785,am,1,docent,les gev,open scholengemeenschap,1-32,zeker duidelijk
-1122464,1853,am,1,docent,lesgev ontwikkel studieloopbaanbegeleid,hogeschol,1-31,zeker duidelijk
-1155151,1921,am,1,docent,docer ontwikkelingstak,opleid hbo,1-31,zeker duidelijk
-1155151,1921,am,3,docent,docer,toneelacademie,1-31,zeker duidelijk
-1227760,2063,am,1,docent,lesgev staf activiteit,schol,1-32,onzeker onduid beschrijv
-1232203,2068,am,1,docent,lesgev,voortgezet onderwijs,1-32,zeker duidelijk
 1280080,2177,am,1,docent,lesgevenvakgroep coordinerenstagebegeleidenmediathek beher,rocmbo,1-94.30,zeker duidelijk
-1304470,2200,am,1,docent,onderwijs,universiteit,1-31,zeker duidelijk
-1316186,2227,am,11,docent,docent economisch vak,mbo onderwijs,1-32,zeker duidelijk
-1316186,2227,am,12,docent,docent economisch vak,mbo onderwijs,1-32,zeker duidelijk
 1354058,2309,am,4,docent,opleid,opleidingsinstitut landmacht,1-31.90,zeker duidelijk
-1441762,2459,am,2,docent,onderwijs verzorg,onderwijsinstell,1-32,onzeker onduid beschrijv
 524118,977,am,1,docent bewegingsonderwijsbsm,bewegingsonderwijs gev kinder,schol vo,1-32.90,onzeker duidelijk beschrijv
 747864,1414,am,2,docent biologie,lesgevencoachenschoolactiviteit,christelijk scholengemeenschap,1-32.30,zeker duidelijk
 753878,1427,am,1,docent biologie,les gev,middel schol,1-32.30,zeker duidelijk
@@ -7661,26 +7371,21 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 138518,268,am,1,docent dwarsfluit,les gev,gemeent,1-71.40,zeker duidelijk
 138518,268,am,2,docent dwarsfluit,les gev,zelfstand thuis,1-71.40,zeker duidelijk
 247364,473,am,2,docent economie,economie less gev havovwo,onderwijsinstell,1-32.40,zeker duidelijk
-837827,1562,am,3,docent onderzoeker beid parttim,halftinm docent halftim onderzoeker,gemeent universiteit,1-31,zeker duidelijk
 683046,1293,am,2,docent engel,lesgev,particulier institut,1-32.15,zeker duidelijk
 543526,1019,am,2,docent fran,lesgev,middel schol,1-32.15,zeker duidelijk
 1380665,2368,am,3,docent geschiedenis,lesgev vwo havo,scholengemeenschap,1-32.40,zeker duidelijk
 1133154,1880,am,3,docent ict,les gev training schrijv,commercieel opleidingscentrum,0-84.20,zeker duidelijk
 1133154,1880,am,4,docent maatschappijler,lesgev mavo havo vwo eindexam trainging,freelanc invalkracht open schol,1-32.40,zeker duidelijk
-564262,1062,am,1,docent mbo,uitvoer onderwijs,roc,1-32,zeker duidelijk
-301073,590,am,1,docent middel schol,lesgev mentorschap,middel schol,1-32,zeker duidelijk
 523511,975,am,1,docent muziek,lesgev voorbereid teamverband werk,basisschol,1-33.20,zeker duidelijk
 1373621,2350,am,1,docent nederland,lesgev less voorbereid nakijk vergader,middel schol,1-32.15,zeker duidelijk
 715057,1339,am,6,docent recht bestuurskund,les gev,hogeschol rotterdam hoger economisch schol,1-31.45,zeker duidelijk
 1046241,1736,am,2,docent saxofon,lesgev,kunstencentrum non profit,1-32.50,zeker duidelijk
 1287340,2191,am,1,docent scheikund,onderwijs,scholengemeenschap,1-32.30,zeker duidelijk
 651067,1230,am,1,docent teken schilder,les gegev scholennu cursuss 55 plus,stichting,1-32.50,zeker duidelijk
-227523,438,am,3,docent vo,lesgev,middel schol,1-32,zeker duidelijk
 57707,138,am,1,docent voortgezet onderwijs,lesgev engel nedelrand coaching nieuw docent,scholengemeenschap vo markland colleg oudenbosch,1-32.15,zeker duidelijk
 182732,363,am,1,docent voortgezet onderwijs,docent biologie,schol voortgezet onderwijs,1-32.30,zeker duidelijk
 80605,175,am,1,docent wiskund,lesgev,schol,1-32.20,zeker duidelijk
 343422,672,am,1,docent wiskund,lesgev,schol,1-32.20,zeker duidelijk
-235281,450,am,1,docent verkoopmedewerkster,docer verkop,volksuniversiteit detailhandel,1-31,zeker duidelijk
 762083,1439,am,2,docent ergotherapie,lesgev ziekenverzorg verpleegkund opleid,trias apeldoorn deventer,1-31.75,zeker duidelijk
 762083,1439,am,3,docent hulpmiddelenergotherapie,lesgev apotheker apotheker assistent,brocacef,1-31.75,zeker duidelijk
 1110344,1828,am,2,docent licham opvoed,lesgev mooi vak licham opvoed,middel schol,1-32.90,zeker duidelijk
@@ -7842,7 +7547,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 706887,1321,am,2,extern accountant,extern jaarrekeningcontrol,grot accountantskantor,1-10.10,zeker duidelijk
 716256,1341,am,1,extruder medewerker,operator,verpakkingsmaterial productie,9-01.60,onzeker onduid beschrijv
 1455446,2496,am,3,fabriek medewerkster,zak vull v rachtautos loss,vriesven,9-79.20,zeker duidelijk
-804083,1498,am,2,fabrieksarbeider,,zakkenhandel,,nan
 1227681,2062,am,5,fabrieksarbeider,zom handoek,textielfabriek,7-95.90,zeker duidelijk
 1352401,2308,am,2,fabrieksarbeider,divers,metaalbedrijf,7-27.30,onzeker onduid beschrijv
 581358,1104,am,5,fabrieksmedewerker,verv varkenshar,textielveredelingsbedrijf,7-56.20,onzeker duidelijk beschrijv
@@ -7988,7 +7692,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1201241,1999,am,1,gediplomeerd gezinsverzorgster,huishoud enverzorg,strm,5-40.35,zeker duidelijk
 147228,291,am,2,gedragstherapeut,mens begeleid,psychiatrisch ziekenhuis,1-92.30,zeker duidelijk
 1368286,2343,am,1,gedragswetenschapperorthopedagog,psychologisch onderzoek begeleid groepsleid trainer projectcoordinatie,instell blind slechtziend,0-76.30,zeker duidelijk
-1171322,1954,am,1,,,,X,zeker duidelijk
 217020,420,am,1,gemeent administratie,administratie,gemeent,3-93.10,zeker duidelijk
 748050,1415,am,1,gemeent ambtenar,administratief,gemeent,3-93.10,zeker duidelijk
 1123881,1856,am,1,gemeent ambtenar,technisch onderhoud,bejaardenhuis,9-59.20,zeker duidelijk
@@ -8124,7 +7827,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 466720,894,am,3,gymnastiek docent,nan,nan,1-32.90,zeker duidelijk
 62771,149,am,3,gzpsycholog,diagnsotiek indicatiestell behandel,azm,1-92.30,zeker duidelijk
 188824,375,am,1,h h1 carinova,huishoudelijkwerk,carinova,5-52.30,zeker duidelijk
-1327110,2248,am,7,hva international,telex medewerker,handelsveren ontwikkelingsland,,nan
 1038534,1725,am,1,handelar veevoerder,diver,veevoederhandel,4-43.20,zeker duidelijk
 504182,944,am,1,handelsagent,handel,energetix,4-10.20,zeker duidelijk
 187621,370,am,1,handhavertoezichthouder wet werk bijstand,fraud bestrijd,gemeent,3-10.10,onzeker duidelijk beschrijv
@@ -8191,7 +7893,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1271570,2153,am,2,hoofd poli kaakchirurgie,okassistent leidinggev,ziekenhuis,0-63.20,zeker duidelijk
 274402,546,am,1,hoofd productie laboratorium microbiologie,inplann uitvoer lab tak mmicroorganism,mkb,0-54.30,zeker duidelijk
 572515,1081,am,1,hoofd productie planning,planning productie leidinggev,metal,3-92.30,zeker duidelijk
-60185,142,am,2,hoofd produktie operaties,nan,shell,,nan
 1137233,1890,am,6,hoofd rd,onderzoek experiment onderzoeksleid,fotografisch industrie,0-54.30,onzeker duidelijk beschrijv
 47010,110,am,1,hoofd secretariaat,administratie,ziekenhuis,3-21.20,zeker duidelijk
 1443634,2466,am,1,hoofd secretetariaat,leiding gev secretariaat receptie administratiev ondersteun manager,middel schol vo,3-21.20,zeker duidelijk
@@ -8204,7 +7905,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 643620,1216,am,1,hoofd verkop buitendienst,commerciel buitendienst activiteit aanstur klein buitendienst,fabrikantdistributeur amerk,2-11.10,zeker duidelijk
 470866,901,am,4,hoofd verkoopsecretariaat,leidinggev functie,machinefabriek,2-11.10,zeker duidelijk
 56801,135,am,3,hoofd voedingsassistent,begeleid voedingsassistent,ziekenhuis,2-11.10,zeker duidelijk
-513276,955,am,7,hoofd werkplat vrijwilliger tanzania,leiding gev werkplat onderhoud pompstation,watervoorzien,X,zeker duidelijk
 1336226,2264,am,2,hoofdagent generalist,verkeerscontroles algemen surveillanc noodhulpradarcontrolesopnem aangiftes enz,regiopolitie amsterdam amstelland,5-82.20,zeker duidelijk
 862451,1601,am,1,hoofdagent politie,noodhulp,politie nhn,5-82.20,zeker duidelijk
 372211,730,am,1,hoofdagent politie,incidentafhandelingbehandel 112 melding,politie,5-82.20,zeker duidelijk
@@ -8221,7 +7921,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 538717,1004,am,4,hoofduitvoerder,leidinggev,aannemersbedrijf,2-11.10,zeker duidelijk
 412340,790,am,2,hoofdverkoopster,verkop,brod banketbakkerij,4-51.30,zeker duidelijk
 366833,719,am,4,hoofdwijkverpleegkund,leidinggev team wijkverpleg,stichting kruiswerk,0-71.10,zeker duidelijk
-1378248,2362,am,1,hooglerar,onderzoek onderwijs management,universiteit,1-31,zeker duidelijk
 1112720,1833,am,1,hor beslismedewerker,hor besliss asielaanvrag,immigratie naturalisatiedienst over,3-10.10,onzeker onduid beschrijv
 1281608,2180,am,2,hoorbeslismedewerker,interview tekstverwerk besluitvorm,rijksover,3-10.10,onzeker onduid beschrijv
 157765,312,am,1,horeca,kok,cater,5-31.30,zeker duidelijk
@@ -8322,23 +8021,12 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1213178,2028,am,1,huishoudelijkwerk,schoonmak,hotel,5-52.20,zeker duidelijk
 512055,952,am,1,huishouder,schoonmak bedien,horeca,5-52.20,zeker duidelijk
 326377,641,am,3,huishoudkund,hoofd dieetkeuk,ziekenhuis weezenland zwoll,5-31.90,onzeker duidelijk beschrijv
-821473,1519,am,1,huisman,huishoud,thuis,X,zeker duidelijk
 1323508,2241,am,1,huismeester bejaardencomplek,beher servic flat,bejaard zorg,5-51.30,zeker duidelijk
 1058408,1756,am,1,huisnaaister,invoersingel waszaksluit naai,thuiswerk,7-79.50,zeker duidelijk
 446883,856,am,6,huisouder,naastwon eindverantw team tbv zorg groep verst geh,instell verst geh zorg,1-93.90,zeker duidelijk
 433368,830,am,2,huisschilder,schilder werkzam,schildersberdrijf annex spuiterij,9-31.20,zeker duidelijk
 815635,1514,am,1,huisschilder,schilder behang klein timmerwerk,eenmanszak,9-31.20,zeker duidelijk
-365523,714,am,1,huisvrouw,nan,nan,X,zeker duidelijk
-574247,1088,am,1,huisvrouw,nan,nan,X,zeker duidelijk
-710605,1330,am,1,huisvrouw,allerleeeei,bedrijf,X,zeker duidelijk
-837776,1560,am,1,huisvrouw,nvt,nvt,X,zeker duidelijk
-1171312,1953,am,1,huisvrouw,verzorg man gezin bedrijf,landbouwbedrijf,X,zeker duidelijk
-1207787,2017,am,2,huisvrouw,zorg huis kinder,thuis,X,zeker duidelijk
-1313305,2219,am,1,huisvrouw,huishoud werk,thuis,X,zeker duidelijk
-1351768,2303,am,3,huisvrouw,huishoud bezig,priv,X,zeker duidelijk
-1370322,2345,am,2,huisvrouw,huishoud,gezin,X,zeker duidelijk
 1351768,2303,am,1,huisvrouw bed and breakfast,huishoud bezig bb runn,huishoud bb,5-10.40,zeker duidelijk
-560742,1054,am,3,huisvrouw moeder,manag huishoud kinderverzorg echtgenot,thuissituatie,X,zeker duidelijk
 1182011,1982,am,4,hulp houshoud,huishoud tak,thuiszorg,5-52.20,zeker duidelijk
 1433432,2444,am,4,hulp huishoud,huishoud artsengezin,gezin,5-52.20,zeker duidelijk
 155010,305,am,3,hulp huishoud,huishoud werk verzorg kinder,particulier,5-52.20,zeker duidelijk
@@ -8383,7 +8071,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1263385,2139,am,1,implementatie manager,vergader lesgev procedures verbeter softwar uitroll,ict,3-42.20,zeker duidelijk
 1443232,2464,am,4,implementatric instapj project welzijnswerker,coordiner ontwikkelingsstimuler samenspel moeder kind,alcides adam,1-93.10,zeker duidelijk
 60337,143,am,3,kruidernier winkel plus melklop,nan,zus,4-51.30,zeker duidelijk
-324670,635,am,4,verkop binnendienst,inkop verkop,toeleverancier olie gas product,4-22,onzeker duidelijk beschrijv
 1032761,1706,am,3,inbound callcentermedewerker accheerl,helpdesk medewerker inbound call,accheerl,3-94.10,zeker duidelijk
 1032761,1706,am,2,inbound callcentermedewerker twenty4help,helpdesk medewerker inbound call,twenty4help,3-94.10,zeker duidelijk
 1340245,2270,am,1,incassomedewerkster,binnekom post beantwoordenbehandel,deurwaarderskantor,3-21.20,zeker duidelijk
@@ -8753,7 +8440,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 555666,1041,am,1,kunststof schilderspecialist luchtmacht,onderhoud helicopter,defensieluchtmacht,8-44.20,zeker duidelijk
 356466,696,am,3,kunststof medewerker,fabriek arbeider,vicon landbouw werktuigenfabriek,9-01.80,zeker duidelijk
 356466,696,am,4,kunststof medewerker,fabrieksarbeider,fokker vliegtuig fabriek,9-01.80,zeker duidelijk
-1386440,2384,am,5,kunststof technolog,deelnemer stimuler netwerkcontact tbv nieuw job,talentplus deelnemer regio voorzitter sittard,,nan
 1386440,2384,am,7,kunststof technolog product ontwikkel,toegepast onderzoek kennisontwikkel nieuw kunststof,research ontwikkel,0-25.10,zeker duidelijk
 1386440,2384,am,8,kunststof technolog verwerkingstechniek,toegepast onderzoek verwerkingstechniek kunstatoff,market polymer technisch afdel,0-25.10,zeker duidelijk
 264227,523,am,4,kvjv,verzorgenbegeleid kinder,diver,1-34.20,onzeker onduid beschrijv
@@ -8788,7 +8474,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1168112,1945,am,1,landmeter,landmeetkund werkzam,ingenieur bureau,0-31.20,zeker duidelijk
 1416736,2420,am,3,landmeter,landmeetkund tak buitendienst,gemeent,0-31.20,zeker duidelijk
 1416736,2420,am,5,landmeter,landmeetkund werkzam buitendienst,ingenieursbureau,0-31.20,zeker duidelijk
-1257446,2126,am,7,laseroperator,productie ontwikkelwerkzam laser,industrie,,nan
 1356028,2314,am,1,lasertherapeut,patient behandel laser hirsutism,privekliniek,0-71.20,onzeker duidelijk beschrijv
 428641,821,am,2,lasrobotoperator lasser,samenstell kachel haard onderdel,kachel haard fabriek,8-72.10,zeker duidelijk
 411611,787,am,2,lass,lass,metal,8-72.20,zeker duidelijk
@@ -8800,14 +8485,9 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1341830,2276,am,1,lasser,medewerker,scheepsbouw,8-72.10,zeker duidelijk
 105266,192,am,1,learning knowledg leader sw europa,management tak,it ibm,2-11.10,zeker duidelijk
 372211,730,am,5,leering onderhoudsmonteur,onderhoudsrevisie werkzam,ministerie defensie,8-49.70,zeker duidelijk
-54538,127,am,3,leerkracht,les gev,speciaal onderwijs,1-35,zeker duidelijk
 73276,165,am,1,leerkracht,lesgev,basisschol,1-33.20,zeker duidelijk
-87150,184,am,1,leerkracht,lesgev training gev leerlingbegeleid,onderwijs,1-33,onzeker onduid beschrijv
-121368,225,am,1,leerkracht,nan,nan,1-33,onzeker onduid beschrijv
 130834,250,am,1,leerkracht,leerkracht,basisschol,1-33.20,zeker duidelijk
 145086,287,am,1,leerkracht,lesgev,basisschol,1-33.20,zeker duidelijk
-216283,418,am,1,leerkracht,leerkracht locatiehoofd,schol speciaal basisonderwijs,1-35,zeker duidelijk
-242771,466,am,1,leerkracht,lesgev voorbereid evaluer begeleid vergader,stichting 14 schol,1-32,onzeker onduid beschrijv
 441834,844,am,1,leerkracht,lesgev,basisschol,1-33.20,zeker duidelijk
 452007,864,am,1,leerkracht,lesgev handelingsplann mak contact ouder ander,cluster 3 onderwijs,1-33.20,zeker duidelijk
 520417,965,am,1,leerkracht,les gev,basisschol,1-33.20,zeker duidelijk
@@ -8815,13 +8495,9 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 585742,1119,am,1,leerkracht,onderwijs,basisschol,1-33.20,zeker duidelijk
 607103,1148,am,1,leerkracht,onderwijs gev,basisschol,1-33.20,zeker duidelijk
 673855,1275,am,1,leerkracht,individueel begeleid 2 zorgleerl lgf,basisschol,1-33.20,zeker duidelijk
-673855,1275,am,2,leerkracht,lesgev,praktijkschol,1-32,onzeker onduid beschrijv
-708468,1325,am,1,leerkracht,les gev administratie bijhoud verslag schrijv,schol,1-33,onzeker onduid beschrijv
 725613,1364,am,1,leerkracht,lesgev,basisschol,1-33.20,zeker duidelijk
 742764,1399,am,2,leerkracht,invalkracht,basisschol,1-33.20,zeker duidelijk
 845085,1578,am,1,leerkracht,les gev less voorbereid informatie material zoek internet weblog bijhoud uitstapjes viering organiser oudergesprek v,basisschol,1-33.20,zeker duidelijk
-1072843,1782,am,1,leerkracht,lesgev tak,onderwijs,1-33,onzeker onduid beschrijv
-1126447,1865,am,1,leerkracht,nan,onderwijs,1-33,onzeker onduid beschrijv
 1177800,1969,am,1,leerkracht,les gev,basisschol,1-33.20,zeker duidelijk
 1213612,2029,am,2,leerkracht,les gev,basisschol,1-33.20,zeker duidelijk
 1305886,2205,am,1,leerkracht,les gev kinder,schol,1-33.20,zeker duidelijk
@@ -8829,24 +8505,17 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1352024,2304,am,2,leerkracht,lesgev individuel leerhulp leerkracht begeleid onderwijsontwikkel,regulier basisschol,1-33.20,zeker duidelijk
 1354058,2309,am,5,leerkracht,lesgev,basischol,1-33.20,zeker duidelijk
 1355068,2311,am,1,leerkracht,groepsleerkracht vakleerkracht gymonderwijs,basisschol,1-33.20,zeker duidelijk
-1368282,2342,am,1,leerkracht,les gev,schol,1-33,onzeker onduid beschrijv
 1376644,2358,am,2,leerkracht,lesgev basisschol,schoolbestur,1-33.20,zeker duidelijk
 117215,217,am,2,leerkracht basisonderwijs,verzorg onderwijs kinder 4 tm 12 jar,baisonderwijs,1-33.20,zeker duidelijk
 285288,575,am,1,leerkracht basisonderwijs,lesgev kinder 412 jar,basisschol,1-33.20,zeker duidelijk
-311722,613,am,2,leerkracht basisonderwijs,lesgev tak,onderwijs,1-33,zeker duidelijk
 315426,621,am,1,leerkracht basisonderwijs,groepsleerkracht,basisschol,1-33.20,zeker duidelijk
 427874,818,am,1,leerkracht basisonderwijs,leerkracht kleutergroep,basisschol,1-33.20,zeker duidelijk
-472826,906,am,1,leerkracht basisonderwijs,leerkracht,schol,1-33,zeker duidelijk
 607828,1150,am,1,leerkracht basisonderwijs,lesgev,basisonderwijs,1-33.20,zeker duidelijk
 701600,1311,am,1,leerkracht basisonderwijs,onderwijs gev,basisschol,1-33.20,zeker duidelijk
 750120,1417,am,1,leerkracht basisonderwijs,lesgev ict werkzam,basisonderwijs,1-33.20,zeker duidelijk
 752754,1423,am,3,leerkracht basisonderwijs,leerkracht,basisschol,1-33.20,zeker duidelijk
-771541,1453,am,1,leerkracht basisonderwijs,lesgev,schol,1-33,zeker duidelijk
 1007680,1657,am,1,leerkracht basisonderwijs,groepsleerkracht groep 123 bassischol,basisonderwijs,1-33.20,zeker duidelijk
-1071706,1780,am,1,leerkracht basisonderwijs,les gev,onderwijs,1-33,zeker duidelijk
-1074376,1783,am,1,leerkracht basisonderwijs,lesgev,schol,1-33,zeker duidelijk
 1101611,1814,am,1,leerkracht basisonderwijs,lesgeveninvalkracht,basisschol,1-33.20,zeker duidelijk
-1168133,1946,am,2,leerkracht basisonderwijs,les gev,schol,1-33,zeker duidelijk
 1408264,2402,am,1,leerkracht basisonderwijs,intern begeleider,basisonderwijs,1-33.20,zeker duidelijk
 1414582,2414,am,2,leerkracht basisonderwijs,lessgev basisschoolkinder,basis onderwijs,1-33.20,zeker duidelijk
 1087310,1812,am,1,leerkracht basisonderwijsintern begeleider,lesgev kinder leeftijd 4 tm 12 jar zorgcoordinatie schol,basisschol,1-33.20,zeker duidelijk
@@ -8856,7 +8525,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 347644,683,am,1,leerkracht po,groepsleerkracht kleuter,onderwijs,1-33.20,zeker duidelijk
 330256,646,am,1,leerkracht primair onderwijs,leerkracht groep 1 tm 4,schol,1-33.20,zeker duidelijk
 1161145,1929,am,1,leerkracht primair onderwijs,lesgev mee samenhangt,basisschol,1-33.20,zeker duidelijk
-1274248,2166,am,1,leerkracht speciaal basisonderwijs,groepsleerkracht,vgpo ooshoek scholencluster,1-35,zeker duidelijk
 1286142,2188,am,1,leerkrachtintern begeleider,lesgevenleerl zorg,basisschol,1-33.20,zeker duidelijk
 446883,856,am,15,leerling averpleegkund,verzorg patient,algemen ziekenhuis,0-71.10,zeker duidelijk
 540231,1007,am,1,leerling bejaardenverzorgster,verzorg bejaard,bejaardenhuis,5-99.40,zeker duidelijk
@@ -8891,7 +8559,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 605558,1144,am,4,leesmap bezorger,leesmap bezorg noordholland,leesmapp bedrijf,3-70.30,zeker duidelijk
 1277566,2173,am,3,leesmap bezorger,bezorg colporter,isandra ijzendoorn,3-70.30,zeker duidelijk
 530874,992,am,1,legal technologist,analyser recept smaakstoffenprodukspecificaties mak vervaard dounepapier,fabrikant smaakstoff,0-29.40,onzeker duidelijk beschrijv
-1188151,1994,am,3,leger,diensplicht,leger,A,zeker duidelijk
 706075,1319,am,3,leider productie bonbon,productie bonbon begeleid lopend bandmedewerker,cacaofabriek drost,7-76.50,zeker duidelijk
 313268,616,am,1,leiding gevend schoonmak,mens werk,schon mak bedrijf,2-11.10,zeker duidelijk
 72504,163,am,1,leidinggev gewon electromonteur,leidinggev project uitvoer aanstur,installatietechniek,8-51.10,zeker duidelijk
@@ -8910,20 +8577,10 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 105710,193,am,1,lerar,coaching beleid ontwikkel implementer slechtnieuwsgesprek ouder diver overlegorgan,schol primair onderwijs,1-33.20,zeker duidelijk
 140852,272,am,1,lerar,onderwijsdirectie,schol,1-39.40,zeker duidelijk
 317808,626,am,4,lerar,wiskund docent,middel schol,1-32.20,zeker duidelijk
-331024,649,am,1,lerar,organiser verzorg cursuss,middel beroepsonderwijs,1-32,zeker duidelijk
 364103,712,am,1,lerar,directievoeringlestak,basisschol,1-33.20,zeker duidelijk
-551882,1032,am,1,lerar,nan,schol,1-33,onzeker onduid beschrijv
-617171,1160,am,1,lerar,lesgev,middel schol mavo havo vwo,1-32,zeker duidelijk
-632516,1191,am,4,lerar,lerar,schol,1-33,onzeker onduid beschrijv
-684248,1296,am,1,lerar,lesgev,schol middel beroep onderwijs,1-32,zeker duidelijk
 1063071,1764,am,1,lerar,begeleid lesgev kinder,basisschol,1-33.20,zeker duidelijk
-1128272,1868,am,1,lerar,docer teamcoordinator,roc mbo,1-32,zeker duidelijk
 1235330,2077,am,1,lerar,groepsleerkracht,onderwijs,1-33.20,zeker duidelijk
-1274228,2165,am,3,lerar,lesgev,schol,1-33,onzeker onduid beschrijv
-1324784,2243,am,1,lerar,lesgev,schol,1-33,onzeker onduid beschrijv
 1341887,2277,am,1,lerar,docent bouwkund,vmbo schol,1-32.80,onzeker duidelijk beschrijv
-1354480,2310,am,3,lerar,lesgev moeilijk opvoed kinder,speciaal basisonderwijs,1-35,zeker duidelijk
-702553,1312,am,3,lerar aardrijkskund,les gev,onderwijsinstell vmbohavovwo,1-32,zeker duidelijk
 242134,462,am,2,lerar basisonderwijs,leerkracht,basisschol,1-33.20,zeker duidelijk
 317626,624,am,2,lerar basisonderwijs,les gev,primair onderwijs,1-33.20,zeker duidelijk
 1042208,1731,am,2,lerar basisonderwijs,lesgev,basisschol,1-33.20,zeker duidelijk
@@ -8931,20 +8588,13 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 433368,830,am,1,lerar beroepsonderwijs schilder,lesgev schilderspraktijk,technisch schol,1-32.90,zeker duidelijk
 1030454,1701,am,3,lerar instructeur,instructies houtbewerk machines veilig,vakschol,1-32.80,onzeker duidelijk beschrijv
 363684,711,am,1,lerar techniek,les gev,groen schol vmboschol,1-32.80,zeker duidelijk
-1042208,1731,am,3,lerar voortgezet onderwijs,lesgev,lbo eb mhno,1-32,zeker duidelijk
 401142,762,am,1,lerares,lesgev daarbij all werkzam,basisschol,1-33.20,zeker duidelijk
 464878,892,am,2,lerares,gymnastiekless leerling lhbo mbo,rk huishoud industrieschol meisjes helmond eo,1-32.90,zeker duidelijk
-634243,1200,am,1,lerares,lesgev,onderwijs,1-33,onzeker onduid beschrijv
-686542,1302,am,1,lerares,groepsleerkracht speciaal basis onderwijs groep 3tm6,speciaalbasisonderwijs,1-35,zeker duidelijk
 686542,1302,am,2,lerares,groepsleerkracht groep 1tm5,basisonderwijs,1-33.20,zeker duidelijk
 728227,1371,am,2,lerares,lesgev,basisschol,1-33.20,zeker duidelijk
 728227,1371,am,3,lerares,lesgev,basisschol,1-33.20,zeker duidelijk
 728227,1371,am,5,lerares,lesgev,basisschol,1-33.20,zeker duidelijk
-758867,1434,am,1,lerares,lesgev,vmbo schol,1-32,zeker duidelijk
-760158,1435,am,2,lerares,les gev,schol,1-33,onzeker onduid beschrijv
 1117723,1844,am,1,lerares,les gev,basisschol,1-33.20,zeker duidelijk
-1205542,2011,am,1,lerares,lesgev,schol,1-33,onzeker onduid beschrijv
-1325351,2244,am,1,lerares,lesgev,middel schol,1-32,zeker duidelijk
 443182,848,am,1,lerares basisonderwijs,groepsleerkracht remedial teacher,basisschol,1-33.20,zeker duidelijk
 584010,1111,am,1,lerares basisonderwijs,leerkracht zorgcoordinator,montessorischol,1-33.20,zeker duidelijk
 1033358,1708,am,1,lerares basisonderwijs,groepsleerkracht bouwcoordinator,basisschol,1-33.20,zeker duidelijk
@@ -8963,7 +8613,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 710552,1329,am,3,liason officer,verkop technisch dienst commercieel administratief,luchtvaart,4-31.20,zeker duidelijk
 1172006,1956,am,1,lichtreclam monteur,mak plaats reclam,reclam bedrijf,8-55.90,zeker duidelijk
 256622,506,am,1,lijmer,lijm,bouw,9-71.60,zeker duidelijk
-812007,1509,am,2,lijntechnicus,productielijn beher ombouw,blikverpak,,nan
 883183,1627,am,2,linnendienst medewerkster,sorter binnengekom schon goed,waalbog,5-60.90,zeker duidelijk
 61240,146,am,2,lithograf,vlakdrukmontag,platenmaatschappij,9-24.15,zeker duidelijk
 603058,1138,am,2,livio huishoud hulp,huishoud hulp,dienstverlen,5-52.20,zeker duidelijk
@@ -9009,8 +8658,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1263888,2143,am,3,loopbaanadviseur,mens adviser nem stapp loopban,bankinstell,1-94.30,zeker duidelijk
 1136153,1887,am,1,loopbaancoach,coach train,mobiliteitsbureau,1-94.30,zeker duidelijk
 1136153,1887,am,2,loopbaancoach,coach train,regional loopbaancentrum,1-94.30,zeker duidelijk
-455176,873,am,1,losarbeider,diver,diver,9-71,onzeker onduid beschrijv
-1184256,1986,am,2,luchtmachtmilitair,bewak,konklijk luchtmacht,A,zeker duidelijk
 1376342,2357,am,1,maatschap akkerbouwbedrijf,administratie,akkerbouwbedrijf,3-93.10,zeker duidelijk
 617566,1163,am,1,maatschapp dienstverlener,materiel hulpverlen,geestelijk gezondheidszorg,1-93.50,zeker duidelijk
 408085,778,am,2,maatschapp werker,psychosocial begeleid,maatschapp dienstverlen verslavingszorg,1-93.50,zeker duidelijk
@@ -9107,7 +8754,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1362645,2326,am,3,management informatie,verkoopinformatie statistiek,retail,4-21.30,zeker duidelijk
 1050804,1743,am,2,management secretares,pz secretarieel,filterfabriek randstad,3-21.20,zeker duidelijk
 821635,1521,am,4,management trainee,trainee,rabobank,3-39.40,zeker duidelijk
-1352140,2305,am,6,management trainee,traineeship,schoonmaakorganisatie,,nan
 126108,239,am,1,managementassistent,volled ondersteun colleg bestur mn voorzitter,vrij universiteit,3-93.10,zeker duidelijk
 326875,643,am,1,managementassistent,ondersteun international betrek,politie,3-93.10,zeker duidelijk
 1183315,1985,am,1,managementassistent,kerntak financieel communicatie algemen bedrijfsvoer,gezondheidszorg instell,3-39.40,zeker duidelijk
@@ -9178,9 +8824,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 400887,761,am,1,mantelzorger,huishoud werk person verzorg person begeleid,eig ouder,5-99.40,zeker duidelijk
 756353,1431,am,2,mantelzorger,verpleg,thuis,5-99.40,zeker duidelijk
 350470,688,am,1,mantelzorgster,zorg,nan,5-99.40,zeker duidelijk
-1332243,2262,am,7,marechaussee,politiedienst dienstplicht,defensie,A,zeker duidelijk
-161554,319,am,2,marinier,diver,konink marin,A,zeker duidelijk
-1044202,1735,am,4,marinier,militair ter land zee lucht,defensie,A,zeker duidelijk
 157370,311,am,2,marketer,promotionel activiteit,fabrikant,0-90.30,zeker duidelijk
 217366,423,am,6,market assistant,secretarieel,autoimporteur,3-21.20,zeker duidelijk
 1144652,1900,am,1,market communicatie medewerker,market communicatie activiteit,wavin nederland,0-90.30,zeker duidelijk
@@ -9200,7 +8843,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1446004,2473,am,2,maschin operator,zie a,verpak material industrie,0-23.10,onzeker onduid beschrijv
 1337415,2267,am,2,masseur,verschill massages,praktijk huis,0-76.40,zeker duidelijk
 1423333,2428,am,1,masseur,gev diver massages,welzijn,0-76.40,zeker duidelijk
-668341,1258,am,4,materieelbeheerder,beher defensie materiaal,defensielandmacht,,nan
 325142,638,am,3,matrijzenmaker,epoxyhar modell mak,kunststofmatrijz,9-01.55,onzeker duidelijk beschrijv
 1254554,2123,am,2,matros,vanalles,css,9-81.40,zeker duidelijk
 745501,1407,am,6,matros konink marin,diver plaatsing oa zuiderkruis,konnink marin,9-81.40,zeker duidelijk
@@ -9492,35 +9134,14 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 105773,195,am,4,militair,chauffeur,landmacht,9-85.30,zeker duidelijk
 110401,205,am,3,militair,chauffer,leger,9-85.30,zeker duidelijk
 112883,210,am,5,militair,luchtmacht bewak,defensie,5-89.40,zeker duidelijk
-161585,320,am,3,militair,ordenan,militair dienst,A,zeker duidelijk
 218013,426,am,3,militair,chauffeur administratie garag veldwerk,defensie,9-85.30,zeker duidelijk
-454025,869,am,2,militair,militair,defensie,A,zeker duidelijk
-607284,1149,am,3,militair,diver,korp marinier,A,zeker duidelijk
-630718,1188,am,4,militair,landverded,defensie,A,zeker duidelijk
-684248,1296,am,2,militair,miltair training,defensie,A,zeker duidelijk
 724755,1362,am,5,militair,chauffeur,leger,9-85.30,zeker duidelijk
 781836,1471,am,2,militair,radar control,radar nw millig,8-52.20,zeker duidelijk
-1143633,1897,am,3,militair,groep geleid wapen raket,luchtmacht,A,zeker duidelijk
-1172006,1956,am,4,militair,divers,landmacht,A,zeker duidelijk
 1174525,1963,am,2,militair,motorvoertu hersteller,leger,8-55.40,zeker duidelijk
-1186725,1990,am,5,militair,verbindingsdienst landmacht,kl,A,zeker duidelijk
-1384615,2374,am,2,militair,verbindingsdienst,defensie,A,zeker duidelijk
 702826,1313,am,6,militair dienstplicht,vrachtwag chauffeur,defensie,9-85.60,zeker duidelijk
 677568,1283,am,2,militair dienstplicht,vrachtwagenchauffeur,landmacht,9-85.60,zeker duidelijk
 300360,589,am,3,militair geneeskund dienst,gewondenverzorger doktersassistent hid,gzhz defensie,0-62.10,zeker duidelijk
-687042,1306,am,4,militair special eenheid korp marinier,zwar gevecht training,leger,A,zeker duidelijk
 1002023,1647,am,1,militair verpleegkund,algemen militair activiteit verpleegkund diver militair zorginstell,min defensie,0.71.20,zeker duidelijk
-520865,968,am,2,militair officier,management reiz buitenwerk verschill omstand leiding gev,landmacht,A,zeker duidelijk
-57707,138,am,2,militair dienst,telexist,konink landmacht,A,zeker duidelijk
-710552,1329,am,6,militair dienst,militair dienst,over,A,zeker duidelijk
-725766,1366,am,4,militair dienst,sergeant landmacht,over,A,zeker duidelijk
-1440301,2454,am,4,militair dienst,militair,defensie,A,zeker duidelijk
-1008781,1661,am,3,militair dienstplicht,militair gezondheidszorg,konink landmacht,A,zeker duidelijk
-1063307,1766,am,3,militair dienstplicht,militair,defensie,A,zeker duidelijk
-107786,201,am,3,militair inlicht dienst,communicatie,defensie,A,zeker duidelijk
-52014,118,am,2,millitair dienst,terreinmeetdienst veldartillerie,landmacht,A,zeker duidelijk
-745822,1408,am,2,mlitair,hoofd lasserij hoofd communicatie hoofd orthopedisch instrumentmakerij,defensie,A,zeker duidelijk
-521566,971,am,1,modelmakermeettechnicus,namet produkt,ijzergieterij,,nan
 724755,1362,am,2,modelmaker leerling,hout modell mak,houtverwerk,8-19.40,zeker duidelijk
 225575,436,am,1,modinet,kleding mak,textiel,7-91.30,zeker duidelijk
 287752,584,am,3,modinet,naaister,confectie,7-91.30,zeker duidelijk
@@ -9533,7 +9154,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1034578,1713,am,1,modinet,naai,confectieatelier,7-91.30,zeker duidelijk
 1415480,2417,am,5,modinet,mak kleding,atelier,7-91.30,zeker duidelijk
 450016,859,am,1,modinet,naai,naaiatellier,7-91.30,zeker duidelijk
-1345763,2290,am,2,moeder ongenes ziek kind,douchenaankledenoverleg arts,thuissituatie,X,zeker duidelijk
 738513,1396,am,1,mondhygienist,,eig zelfstand praktijk,0-63.20,zeker duidelijk
 1361554,2322,am,1,montag medewerkster,assembelern koffie zet apperat,metal bedrijf,8-49.90,zeker duidelijk
 437614,839,am,1,montagelass,montagelass,voedingsindustriehydrolic,8-72.10,zeker duidelijk
@@ -9602,7 +9222,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 276015,552,am,3,netwerk beheerder ict,netwerk telefon beher,computer technologie,0-84.20,zeker duidelijk
 276015,552,am,1,netwerk specialist ict,ontwikkel beher infrastructur,financiel sector,0-84.20,zeker duidelijk
 667762,1257,am,6,netwerkagent,intermediair tuss burger politieorganisatie,politie,5-82.20,zeker duidelijk
-61240,146,am,1,,,,X,zeker duidelijk
 138126,267,am,5,noordzeevisser,visverwerk,noordzeevisserij,6-41.20,zeker duidelijk
 1207887,2018,am,1,notarieel medewerkster,systeembeheeradministratief,notariskantor,3-93.40,zeker duidelijk
 568053,1069,am,3,notaris,nan,nan,1-29.10,zeker duidelijk
@@ -9634,8 +9253,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 723785,1361,am,1,onafhank herbalif distributeur,coaching mens,welzijnssector vanuit oa huis,1-93.10,onzeker duidelijk beschrijv
 833578,1551,am,1,oncologieverpleegkund,toedien cytostatica begeleid verzorg,ziekenhuis,0-71.20,zeker duidelijk
 1141026,1893,am,1,oncologieverpleegkund,praktijkbegeleid verpleg werkgroep intakegesprek deskundigheidsbevorder chemotherapie,algemen ziekenhuis,0-71.20,zeker duidelijk
-867345,1605,am,4,officier,sergeant infanterie,militair dienst,A,zeker duidelijk
-867345,1605,am,5,officier,sergeant infanterie,militair dienst,A,zeker duidelijk
 810334,1506,am,2,onderhoud lasser bankwerker,lass stal onderdel,construktie bedrijf,8-72.30,zeker duidelijk
 1123881,1856,am,2,onderhoud monteur,onderhoudt antenn system,electrotechnisch bureau,8-55.60,zeker duidelijk
 880854,1624,am,2,onderhoud monteur bediener onderwater robot,bedienenonderhoud onderwater robot,duik bedrijf,8-49.70,zeker duidelijk
@@ -9677,7 +9294,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1287071,2190,am,1,ondernemer recreatiesector,directeur meewerk,jachthav,2-11.10,zeker duidelijk
 437614,839,am,2,ondernemer taxi,runn bedrijf,taxiondernem,9-85.30,zeker duidelijk
 1363015,2327,am,2,ondernemer bureau productontwikkel,ondernem organiser leidinggev,ingenieursbureau,2-11.10,zeker duidelijk
-1112845,1834,am,6,onderofficier militair dienst,commandant radarbedien,militair dienstplichtvervull,A,zeker duidelijk
 1075452,1786,am,2,ondershoudsmonteur,onderhoud machines,sorter inpakk,8-49.70,zeker duidelijk
 581358,1104,am,2,ondersteun administratief medewerker,notuler kopier hand spandienst,gemeent hengelo,3-93.10,zeker duidelijk
 1104255,1818,am,1,ondersteun verkoopafdel,administratienotuler vergaderingonderhoud klantenbeurz,japan bedrijf scheepsmotor pleziervaart,3-93.10,zeker duidelijk
@@ -9689,13 +9305,8 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1143804,1898,am,1,onderwijsassistent mbo,begeleid leerling mentorschap stagebegeleid intakegesprek,onderwijsinstell mbo roc,1-94.30,zeker duidelijk
 170725,338,am,1,onderwijsassistent,begeleid leerling individueel klassikal,basisonderwijs,1-33.20,zeker duidelijk
 357142,698,am,1,onderwijsassistent,verzorgenbegeleid verstand gehandicapt leerling,schol speciaal onderwijs zml,1-35.40,zeker duidelijk
-644277,1218,am,1,onderwijsgev,lesgev,onderwijsinstell,1-32,zeker duidelijk
-176382,349,am,2,onderwijzer,lesgev,vrij schol rotterdam,1-32,zeker duidelijk
-283883,570,am,1,onderwijzer,les gev levensbeschouw vorming,over,1-32,zeker duidelijk
 283883,570,am,4,onderwijzer,leerkracht groep 678,over,1-33.20,zeker duidelijk
 284655,573,am,1,onderwijzer,lesgev,basisschol,1-33.20,zeker duidelijk
-1374686,2354,am,2,onderwijzer,lesgev,onderwijs,1-32,zeker duidelijk
-1440301,2454,am,3,onderwijzer,onderwijs,onderwijs,1-32,zeker duidelijk
 275435,551,am,1,onderwijzer basisschol,onderwijz opvoed,ambtenar,1-33.20,zeker duidelijk
 156535,310,am,2,onderwijzeres,lesgev basisschol,basisschol,1-33.20,zeker duidelijk
 180184,357,am,3,onderwijzeres,les gev,basisschol,1-33.20,zeker duidelijk
@@ -9703,11 +9314,8 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 316366,622,am,1,onderwijzeres,onderwijz,basis schol,1-33.20,zeker duidelijk
 436371,835,am,1,onderwijzeres,onderwijs lager schol,lager schol,1-33.20,zeker duidelijk
 455511,874,am,3,onderwijzeres,kinder les gev,basisschol,1-33.20,zeker duidelijk
-1131047,1876,am,1,onderwijzeres,lesgev all klass vakdocent mentor,vso schol,1-32,zeker duidelijk
 1181352,1977,am,1,onderwijzeres,groepslerares,basisschol,1-33.20,zeker duidelijk
 1233662,2072,am,1,onderwijzeres,lerares basisonderwijs,koe,1-33.20,zeker duidelijk
-1314448,2221,am,1,onderwijzeres,lesgev,schol,1-33,onzeker onduid beschrijv
-1000075,1643,am,2,onderwijzer,lesgev,schol,1-33,onzeker onduid beschrijv
 401707,764,am,3,onderzoek research medewerkster,opnem gegeven coordiner,hoogovenscorus,1-31.90,zeker duidelijk
 1137233,1890,am,5,onderzoek management,contract research aquisitie verwerv opdracht,dlo kennisinstell,1-31.90,zeker duidelijk
 272110,542,am,2,onderzoeker,klachtendossierbehandel,rijksover,1-31.90,zeker duidelijk
@@ -9756,7 +9364,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 108424,203,am,2,operation officer,voornam kantor,airlin zowel vracht passagier,3-59.70,zeker duidelijk
 476254,912,am,2,operation officer,vluchtvoorbereid,luchtvaartmaatschappij,3-59.70,zeker duidelijk
 255356,499,am,2,operationsmanager callcenter,vier callcenteroperaties 300 medewerker aanstur,callcenter,2-11.10,zeker duidelijk
-448360,858,am,1,operator,productiemedewerker,productie,,nan
 733815,1384,am,4,operator,operator naftakraker,dsm,0-25.10,zeker duidelijk
 1163322,1934,am,1,operator,doz mat mak bedruk,golfkarton fabriek,9-10.60,zeker duidelijk
 1308051,2209,am,3,operator programmeur,it gerelateerd zak,detailhandel,0-84.20,zeker duidelijk
@@ -9984,7 +9591,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 300282,588,am,1,praktijkondersteuner huisart,assistent,huisart,0-62.10,zeker duidelijk
 684351,1297,am,1,praktijkverpleegkunnd,spreekur dmastmacopdrr,huisartsenpraktijk,0-71.10,zeker duidelijk
 1060862,1758,am,1,predikant,prek cateches kerkenrad bezoekwerk kerkverband,gereformeerd kerk v,1-41.20,zeker duidelijk
-553762,1037,am,1,prepensioen,uitrust,thuis,X,zeker duidelijk
 287066,578,am,1,preventie assistent tandart,assister tandart behandel patient,tandartspraktijk,0-64.20,zeker duidelijk
 723710,1360,am,3,preventiemedewerker ggz,voorbereid voorlichtingsprogrammas preventieprogrammas,ggzinstell,1-31.90,zeker duidelijk
 240674,460,am,2,prfunctionaris,public relation schrijv organiser,dienstverlen bedrijf veehouder,1-59.55,zeker duidelijk
@@ -10017,7 +9623,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 823347,1527,am,1,procesregisseur centra jeugd gezin,verantwoord complex zorghulpverleningsprocess mbt gezinn jonger moeizam verlop etc,ggd gemeent alkmar heerhugowar hoorn,1-93.10,zeker duidelijk
 346631,681,am,1,proces enginer,enginer,industrie,0-22.10,zeker duidelijk
 105266,192,am,2,proces operator,bedien machines tbv staalverwerk,hoogoven corus staalbedrijf,7-21.20,zeker duidelijk
-543314,1017,am,1,processoperator,manipulatie werkzam,opslag mineral gemisch product,,nan
 1123832,1855,am,1,processpecialist,adviser tak,energiebedrijf,2-11.10,zeker duidelijk
 1226282,2059,am,1,procestechnolog,onderzoek research,onderzoekinstitut,1-31.90,zeker duidelijk
 1456382,2499,am,2,procestechnolog,optimalisatie pvcprocess,forbo krommenie,0-36.90,zeker duidelijk
@@ -10038,8 +9643,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 567712,1067,am,1,productie medewerker,schur,meubelmakerij,8-19.55,zeker duidelijk
 1113436,1836,am,2,productie medewerker,vleesverwerk,slachthuis,7-73.30,zeker duidelijk
 1113436,1836,am,3,productie medewerker,plant kweker,plantenkwekerij,6-27.30,zeker duidelijk
-1208046,2019,am,3,productie medewerker,afvull verf,coating,,nan
-1210626,2025,am,2,productie medewerker,ombouwprogrammerenbedien 3d draadbuigmachin,metaalwar,,nan
 1361554,2322,am,2,productie medewerkster,sam stell mechanich relais,metal bedrijf,8-41.05,zeker duidelijk
 1152450,1916,am,2,productiechef,aanstur produktie,grafisch,2-11.10,zeker duidelijk
 586602,1123,am,1,productieleider,leidinggev ca 30 per,industrie,2-11.10,zeker duidelijk
@@ -10072,7 +9675,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 500822,938,am,2,productmanager medisch bedrijf,sales product ondersteun daarbij,aantal som fusie medisch bedrijv,2-19.30,zeker duidelijk
 1363015,2327,am,3,productontwikkelar,productontwikkel industriel product ontwerp,industriel ondernem metal,0-35.10,zeker duidelijk
 568224,1071,am,1,produktie medewerker,nan,papier industrie,7-34.20,onzeker onduid beschrijv
-603058,1138,am,1,produktie medewerker,bundel membram,onderdel waterzuiver,,nan
 433485,832,am,2,produktie medewerkster,lopendebandwerk,levensmiddel,9-71.55,zeker duidelijk
 205465,389,am,2,produktie medewerkster drukkerij,inpak order lopendeband werk,enveloprint,9-71.50,zeker duidelijk
 352087,690,am,2,produktie supervisor,manag olie gasproduktie injekter water stom reservoir,produktie olie gaswinn,7-00.80,zeker duidelijk
@@ -10162,7 +9764,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1413456,2410,am,2,projectleider,begeleid uitvoer werkzam,ingenieursburo,2-11.10,zeker duidelijk
 1440044,2453,am,3,projectleider,projectleid,rijkswaterstat,2-11.10,zeker duidelijk
 562706,1060,am,3,projectleider releasecoordinator analist,leid middelgrot project deelnem grot project coordiner releasesupgrades applicaties businessanalys requirement,zorgverzekerar uvit,2-11.10,zeker duidelijk
-326120,640,am,1,projectleider constructeur,nan,constructie bedrijf petrochemisch industrie,,nan
 401828,765,am,3,projectleider adviser,opstell plann projectleid visstandonderzoek,organisatie ter verbeter binnenvisserij ovb,2-11.10,zeker duidelijk
 1238423,2087,am,1,projectleider aannemer,begeleid coordiner bouwproject,aannemersbedrijf,2-11.10,zeker duidelijk
 401828,765,am,1,projectleider communicatie,projectleiderschap communicatie educatie,sportvisserij nederland,2-11.10,zeker duidelijk
@@ -10319,7 +9920,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 336028,655,am,1,remedial teacher,leeling individueel groepjes begeleid,basisschol,1-33.20,zeker duidelijk
 745822,1408,am,3,reproductietekenar,teken grafiek,akzo,0-32.60,zeker duidelijk
 848540,1583,am,2,research analist,uitvoer laboratorium bepal,universitair ziekenhuis,0-54.30,zeker duidelijk
-247364,473,am,7,reserv officier,ontwerp automatiseringssystem,leger,A,zeker duidelijk
 108424,203,am,3,reserver vliegbus reiz,kantor werkzam,touroperator,3-94.40,zeker duidelijk
 113676,211,am,6,resident manager,leidinggev,hotel,5-10.20,zeker duidelijk
 800373,1487,am,3,restauranmanger,runn mcdonald restaurant,horeca mcdonald,5-10.50,zeker duidelijk
@@ -10396,7 +9996,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 582308,1107,am,3,schilderzandstral,schilder,gsb,9-31.20,zeker duidelijk
 1273800,2162,am,1,schipper,varenschoonmakenreparatieondrhoud,scheepvaartbedrijf,9-81.40,zeker duidelijk
 800137,1485,am,4,schipper binnenvaart,onderhouduitvoerenlad loss,chemievervoer,9-81.40,zeker duidelijk
-258058,508,am,2,schippersvrouw meewerk voer international,schip lat var kinder man verzorgenwas woonplek,scheepvaart woonplek buitenland gaf,X,zeker duidelijk
 585732,1118,am,2,schonnmaakster,schoonmak,schoonmaakbedrijf,5-52.20,zeker duidelijk
 1042337,1732,am,2,schol schoonmaakster,schoonmak,schol,5-52.20,zeker duidelijk
 1337007,2266,am,1,schoolassistent,help basisschol,scol groep,1-33.90,zeker duidelijk
@@ -10596,8 +10195,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 773432,1457,am,1,senior wmoconsulent indicatie adviseur,huisbezoek adminstratiev activiteit,gemeentes indicatie instell,3-93.10,zeker duidelijk
 1152823,1917,am,1,senoior beleidsmederwerker financien provincie fryslân,opstell beleidsnotas foinanciel positie begrotingsadviser gs ps,provincie,3-39.40,zeker duidelijk
 1352140,2305,am,5,senoir intercedent,bemiddel beroepskracht uitzendkracht,randstad uitzendbureau,1-94.20,zeker duidelijk
-67008,154,am,3,sergant,transport,leger,A,zeker duidelijk
-506345,948,am,5,sergeant hersteller,leid mobiel herstelpoeg,verbindingsdienst landmacht,A,zeker duidelijk
 171543,340,am,3,serveerster,server,pannenkoekenhuis,5-32.10,zeker duidelijk
 508378,951,am,6,serveerster,server,hotel restaurant,5-32.10,zeker duidelijk
 773432,1457,am,3,serveerster,bedien,restaurant,5-32.10,zeker duidelijk
@@ -10684,11 +10281,7 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 884500,1628,am,1,softwar ontwikkelar,computer programmer,autoleasebedrijf,0-84.20,zeker duidelijk
 526411,985,am,2,softwar specialist,softwar ontwikkel architectur design implementatie,softwar ontwikkel bedrijf zorg sector,0-84.20,zeker duidelijk
 52014,118,am,1,softwareenginer,softwar ontwikkel,nan,0-84.20,zeker duidelijk
-515660,960,am,2,soldat,dienst plicht,lua,A,zeker duidelijk
-1152450,1916,am,4,soldat,leger,landmacht,A,zeker duidelijk
-1305124,2204,am,3,soldat,nan,defensie,A,zeker duidelijk
 1367302,2337,am,3,soldat,vragtwagensjafeur,leger,9-85.50,zeker duidelijk
-1414231,2413,am,2,soldat boordschutter,alg militair tak schiet kanon wapen,defensie,A,zeker duidelijk
 671504,1264,am,3,sorteerster,sorter briev,grot postbedrijf,3-70.20,zeker duidelijk
 1067331,1774,am,1,sourcing production manager,nan,retail kleding,2-11.10,onzeker onduid beschrijv
 430407,824,am,3,souschef,verkop leidinggev,bristol shoes,2-11.10,zeker duidelijk
@@ -10732,7 +10325,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 232242,445,am,1,stafmedewerker zorg kwaliteit,ontwikkel beleid implementatie beleid schol coach medewerker,organisatie thuiszorg verzorginghuis verpleeghuiszorg,3-10.10,zeker duidelijk
 486765,931,am,8,stagiair,ambtelijk stuk schrijv,international over,3-93.10,zeker duidelijk
 450661,861,am,1,stagiair pedagogisch medewerker kinderdagverblijf,stagiair,kinderdagverblijf,1-34.20,zeker duidelijk
-343721,675,am,6,stagiar 3 bedrijv technisch,diver technisch werkzam,oa zwar metal industrie kunstof verwerk blik fabrikag,,nan
 557227,1046,am,6,stalknecht,verzorg paardenvoerenuitmest,maneg,6-24.90,zeker duidelijk
 1340357,2271,am,4,statistisch programmeur,programer softwar,tno,0-84.20,zeker duidelijk
 236714,454,am,1,stedenbouwkund tekenar,cad teken bijbehor werkzam,stedenbouwkund adviesbureau,0-32.50,zeker duidelijk
@@ -10756,9 +10348,7 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1014218,1667,am,1,stratenmaker,straatmaker,wegenbouw,9-51.60,zeker duidelijk
 1201711,2003,am,3,stratenmakergrondwerker,stratenmakergrondwerker,grondverzet,9-51.60,zeker duidelijk
 404026,770,am,4,strijkster,strijk,verzorgingstehuis,5-60.70,zeker duidelijk
-754745,1428,am,1,student,studer,inholland,X,zeker duidelijk
 163768,325,am,5,student assisitent,ondersteun onderzoek data analys organisatie onderzoek,max planck institut psycholinguistiek,1-31.90,zeker duidelijk
-242771,466,am,2,student voltijd moeder,studer moeder,,X,zeker duidelijk
 523003,974,am,5,studentassistent,ondersteun colleges wetenschapp onderzoek,universiteit,1-31.90,zeker duidelijk
 634043,1198,am,4,studentassistent,voorbereid werk taalonderzoek zak uitwerkenverwerk,onderzoeksinstitut,1-31.90,zeker duidelijk
 151345,296,am,2,study director gentoxicologisch onderzoek,leidenuitvoer toets gentoxicologisch eigenschapp stoff,contract research organisation,1-31.90,zeker duidelijk
@@ -10766,7 +10356,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 138550,269,am,2,stuurman,schip lad loss onderhoudswerkzam schip s chip a b var,diver koopvaardij schep,9-71.20,zeker duidelijk
 1178161,1971,am,2,stuurman,wacht houd brug toezicht lad loss,scheepvaart maatschappij,9-71.20,zeker duidelijk
 255356,499,am,1,subsidieadviseur,projectmanagement aanvrag subsidies,consultancy,3-39.20,zeker duidelijk
-812545,1510,am,1,super vision,nee,,X,zeker duidelijk
 540231,1007,am,2,supermarkt medewerkster,cassier brod groenteafdel uitpakk,supermarkt,3-31.60,zeker duidelijk
 1273612,2160,am,2,supermarktmedewerker,vakkenvuller,ah miro supermarkt,4-51.30,zeker duidelijk
 857107,1594,am,2,supervisor,begeleid student curacao,zelfstand,1-31.90,zeker duidelijk
@@ -10890,10 +10479,8 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1440044,2453,am,1,technisch manager,leidinggev,rijkswaterstat,2-11.10,zeker duidelijk
 412464,791,am,1,technisch manager international project,verantwoord uitvoer technisch projecteb,industrieel reinig,2-11.10,zeker duidelijk
 1437582,2451,am,1,technisch medewerker,reparer keur elektrisch handgereedschap,technisch groothandel,0-34.10,zeker duidelijk
-400247,759,am,4,technisch officier klu,beroepsofficier,defensiekonbink luchtmacht,A,zeker duidelijk
 212336,409,am,1,technisch onderzoeker,ontwerp softwar beeldherkenn,logistiek dienstverlen postverwerk,0-83.10,zeker duidelijk
 888481,1642,am,1,technisch oogheelkund assistent,ondersteun spreekur oogart oogheelkund onderzoek,ziekenhuis,0-62.10,zeker duidelijk
-408234,779,am,1,technisch productiemedewerker,productie technisch stat productiemiddel bijhoud,productie incoartikel,,nan
 1210626,2025,am,1,technisch productiemedewerker,bouw watermonster nemer,afvalwatertechniek,9-69.50,zeker duidelijk
 388285,758,am,1,technisch project assistent,leid begeleid technisch project,papier karton producer industrie,2-11.10,zeker duidelijk
 1161855,1930,am,6,technisch tekenar,autocad teken,trappenfabrikant,0-32.70,zeker duidelijk
@@ -11051,7 +10638,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 802248,1489,am,1,tractor chauffeur eig ondernemer,chauffeur monteur,agrarisch loonbedrijf,9-85.60,zeker duidelijk
 202735,380,am,4,tractorchauffeur,productie voorzien,schuimrubber fabriek,9-85.60,zeker duidelijk
 1171177,1951,am,3,trafficmanager,organiser plann,trainingsbureau,0-29.50,zeker duidelijk
-446563,854,am,7,trainee,divers tekenkamer kwaliteitsdienstproject,metaalindustrie,,nan
 264287,524,am,3,traineebeleidsmedewerker,voorbereid uitvoer lokal beleid,gemeent,2-11.10,zeker duidelijk
 242771,466,am,6,trainer,communicatietrainer,bouwsector,1-32.70,onzeker duidelijk beschrijv
 641470,1211,am,2,trainer,gev training iter,itbedrijf,3-42.20,zeker duidelijk
@@ -11136,7 +10722,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 562706,1060,am,5,uitzendkracht,diver functies administratief binnenndienst verkop,via uitzendbureau,3-93.10,zeker duidelijk
 564807,1063,am,4,uitzendkracht,administratie schoonmaker productiewerk,uitzendbureau,5-52.20,onzeker duidelijk beschrijv
 627561,1179,am,1,uitzendkracht wasserij,pers kleding,hokatex,5-60.60,zeker duidelijk
-1316173,2226,am,7,uitzendwerk,diver,hoogoven umuid,,nan
 460814,880,am,3,uizendbureau,telefonist receptionist,verschill,3-94.10,zeker duidelijk
 485287,925,am,4,unit coordinator,leiding unit,open ministerie,2-11.10,zeker duidelijk
 732373,1378,am,1,unitleider werkplaats,leidinggev,gemeent,2-11.10,zeker duidelijk
@@ -11156,15 +10741,12 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1237778,2084,am,2,vakbondsbestuurder,onderhandel arbeidsvoorwaard person kwesties oploss,vakbond middel hoger personel,2-11.10,zeker duidelijk
 780514,1468,am,5,vakbondsmedewerker,led informer gebied soc zekerheidondersteun jurist,vakbond grafisch sector,2-11.10,zeker duidelijk
 270227,538,am,1,vakcoordinator front offic,leiding gev 715 fte,gemeent over,2-11.10,zeker duidelijk
-1446021,2474,am,2,vakntiewerk,werk melkpoeder verpakkingsfabriek,idh heino,,nan
-887443,1636,am,1,vakopleider docent,total organisatie cursuss lesgev,zuivel,1-32,onzeker onduid beschrijv
 472488,905,am,1,vakredacteur,artikel schrijv rediger verslaglegg foto´ mak,uitgeverij,1-59.20,zeker duidelijk
 1025831,1688,am,1,varkensclassificateur,varkensclassificatie,dienstverlen slachterij,0-65.20,zeker duidelijk
 262416,518,am,1,varkenshouder,verzorg varken daarbij hoort,zeugenhouderij,6-24.40,onzeker duidelijk beschrijv
 781161,1469,am,2,varkenshouder,rond varken verzorg,boer,6-24.40,onzeker duidelijk beschrijv
 1001787,1646,am,1,veiligheidskund,ervor zorgdrag arboregelgev nageleefd,arbod detacheringsbureau,0-79.40,zeker duidelijk
 582308,1107,am,1,veilingmedewerker,control,fruit master,9-49.80,onzeker duidelijk beschrijv
-1316173,2226,am,6,veldmedewerker,beheerwerkzam natuurgebied,ministerie soza vervang dienstplicht,,nan
 338486,665,am,2,veredel,bestuiv onderhoud plant,zaadhandel,6-12.70,zeker duidelijk
 252132,489,am,2,vergunningverlener horeca,behandel aanvrag vergunn horeca seksinricht juridisch administratiev procedures bewak adviez derd,gemeent utrecht,3-93.10,zeker duidelijk
 1372208,2349,am,1,verhuurder,boekhoudenschoonmakenplann,verhuurbedrijf,3-31.10,zeker duidelijk
@@ -11600,10 +11182,7 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 871284,1611,am,1,vrachtwagenchauffeur binnenland,bouwmarkt spulol klant breng lad loss,bsd,9-85.50,zeker duidelijk
 1283287,2182,am,4,vrachtwagenmonteur,reparatie onderhoud bedrijfswagen,bedrijfswagendealer,8-43.30,zeker duidelijk
 1330317,2255,am,2,vrachwagenchauffeur,bestur belad vuilniswag,afvalverwerk,9-85.50,zeker duidelijk
-807004,1503,am,3,vrijwilliger coordinator vd kleding,kleding uitsorterenuitprijzenspiegel,terr des hommes,X,zeker duidelijk
-715057,1339,am,7,vrijwilligerswerk,juridisch hulpverlen,rechtswinkel buro slachtofferhulp,X,zeker duidelijk
 1201552,2001,am,2,vuilnisman,vuilnis ophal,dar,9-99.10,zeker duidelijk
-888346,1641,am,2,vulploeg ikea,vull voorrad winkel,ikea,3-91,onzeker duidelijk beschrijv
 1220475,2043,am,3,vvv informatric,toeristisch informatie gev,vvv,3-93.10,zeker duidelijk
 603523,1139,am,2,vwerkoopmedewerkster,verkop artikel,heid smid hall,4-51.30,zeker duidelijk
 537778,1001,am,1,vziekenverzorgster ig,evver,verpleeghuis,0-72.10,zeker duidelijk
@@ -11615,7 +11194,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 412464,791,am,7,wachtchef,verantwoord glasproductie proces,vereenigd glasfabriek schiedam,8-91.40,zeker duidelijk
 526125,984,am,1,wagenparkbeheerplann,planningonderhoud wagenpark regelenschades afwikkelenurencontrol chauffeursbeher terrein gebouwenverantwoord beveil,transportbedrijf,2-19.60,zeker duidelijk
 112883,210,am,1,wandenplafond monteur,wand monter,eenmanszak,9-55.10,zeker duidelijk
-1288421,2192,am,1,wao,nan,nan,X,zeker duidelijk
 54364,125,am,1,warehous manager,leid magazijn,distributie centrum lif scienc,2-11.10,zeker duidelijk
 305648,602,am,4,wasseret,wass drog strijk vouw,wasseret,5-60.10,zeker duidelijk
 685438,1301,am,4,wasserijmedewerker,expeditiewerkzam,wasserij,5-60.10,zeker duidelijk
@@ -11751,7 +11329,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1358280,2318,am,2,winkelmedewerkstercassier,broodafdelingvleeswarenkassa,supermarkt,3-31.60,zeker duidelijk
 446783,855,am,7,winkelmeisj,verkop,bakkerij,4-51.30,zeker duidelijk
 644476,1219,am,2,winkelmeisj,,slagerei,4-51.30,zeker duidelijk
-155010,305,am,5,winkelpersonel,aanvull spull verzorg verkop groent,buurtsuper spar,3-91,onzeker duidelijk beschrijv
 725766,1366,am,5,winkelverkoper,verkop,groter bedrijf vrom dreeesmannpek cloppenburg,4-51.30,zeker duidelijk
 702553,1312,am,1,wirelin field enginer,meting oliegaswater put,servic bedrijf olie gas industrie,7-13.60,onzeker onduid beschrijv
 1208740,2021,am,3,wiskund docent,wiskundeles gev heao middel schol,heao middel schol,1-32.20,zeker duidelijk
@@ -11774,14 +11351,12 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 742876,1400,am,1,zager metaalbedrijf,zager,metaalbedrijf,7-32.10,zeker duidelijk
 523003,974,am,6,zaterdaghulp,zonwer reparatie productie montagebuss wass zonwer monter,zonweringfabrikant,9-01.80,zeker duidelijk
 744135,1403,am,1,zeefdrukker,zeefdruk produktieleider,zeefdrukkerij,9-29.30,zeker duidelijk
-105266,192,am,3,zer diver beroep 3 verschill organisaties,diver tak,staalbedrijf 2 it consultancy bedrijv,,nan
 1248845,2112,am,2,zelfstondernemer,verkop advertenties,nvt,4-10.30,zeker duidelijk
 338350,663,am,1,zelfstand,handel bevestigingsmateriaal machines,groothandel,4-10.20,zeker duidelijk
 1118306,1846,am,3,zelfstand,keuk bedien verbouw inrooster administratie,eetcaf,5-10.50,zeker duidelijk
 1124067,1857,am,2,zelfstand adviseur ict management,adviser directie mbt ict organisatie project,zzp,2-11.10,zeker duidelijk
 723710,1360,am,1,zelfstand adviseurconsultant,adviser project ontwikkel interimmanagement,instell zorg welzijn,2-11.10,zeker duidelijk
 277242,558,am,1,zelfstand agrarisch lon aannemer,grondwerkloonwerk boer,lon aannemersbedrijf,6-12.70,zeker duidelijk
-524123,978,am,1,zelfstand bedrijfsadviseur docent hbo,advieswerk training gev les gev onderwijs ontwikkel,eig adviesbureau hboinstell,1-31,onzeker onduid beschrijv
 357275,699,am,1,zelfstand belastingadviseur,administratief belastingwerkzam computer,zelfstand kantor verder personel,3-93.10,zeker duidelijk
 548356,1026,am,1,zelfstand interim manager projectleider,organiser adviser initier,zzp,2-11.10,zeker duidelijk
 705123,1317,am,1,zelfstand journalist,artikel schrijv,eig ondernem,1-59.15,zeker duidelijk
@@ -11866,7 +11441,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 1171322,1954,am,2,ziekenverzorgster,t verzorg ziek,ziekenhuis,0-72.10,zeker duidelijk
 1362566,2325,am,1,ziekenverzorgster,verzorg,verpleeghuis,0-72.10,zeker duidelijk
 748225,1416,am,1,ziekenverzorgster evb,verzorg pg client eindverantwoord rondom zorg,verpleeghuis client dementie,0-72.10,zeker duidelijk
-302564,593,am,1,beroep,nan,nan,X,zeker duidelijk
 248567,479,am,1,zorg welzijn,cor00640069neert tak zorg activiteit,zorginstell ouder,0-72.10,zeker duidelijk
 673855,1275,am,3,zorgcoordinator,zorg coordiner,praktijkschol,2-11.10,zeker duidelijk
 686688,1304,am,1,zorgcoordinator,plann organiser leidinggev medewerker thuiszorg verplegingverzorg,thuiszorgorganisatie,2-11.10,zeker duidelijk
@@ -11900,7 +11474,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 547,5,am,2,bloem zak kwekerij,all werkzam heden,winkel kwekerij,6-27.30,onzeker duidelijk beschrijv
 677,6,am,1,bedrijfskund,advies,blikemballag industrie,2-19.50,onzeker duidelijk beschrijv
 677,6,am,2,manager,leidinggev uitvoer staf,blikemballag industrie,2-11.10,zeker duidelijk
-677,6,am,3,arbeidskund,arbeidsanalys techniek,blikemballag industrie,,nan
 845,7,am,1,kassier,geld wissel,bank,3-31.60,zeker duidelijk
 1282,8,am,1,consultant,leiding gev project management,bank,1-99.90,onzeker duidelijk beschrijv
 1282,8,am,2,directie,leiding gev beleid mak project management,bank,2-11.10,zeker duidelijk
@@ -11932,8 +11505,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 3775,18,am,1,zelfstand ondernemer,tatoeer pierc,tattoo shop,1-62.90,zeker duidelijk
 4022,19,am,1,schoonmaakster,huishoud ziekenhuis thuiszorg,ziekenhuis thuiszorg,5-52.20,zeker duidelijk
 4022,19,am,2,zelfstand ondernemer,opricht onderhoud verkop inkop schoonmak boekhoud,woondecoratiewinkel eig winkel,4-00.30,zeker duidelijk
-4022,19,am,3,procesoperator,productieproces opstart onderhoud stopp,gelatin fabriek,,nan
-4022,19,am,4,productiemedewerker,productiewerk halfgeleider,semiconductor fabriek,,nan
 4022,19,am,5,verkoper,verkop brod banket,bakkerij,4-51.30,onzeker duidelijk beschrijv
 4022,19,am,6,cassier,kassawerkzam vak vull,supermarkt,4-51.30,onzeker duidelijk beschrijv
 4641,20,am,1,administratiefmedewerkster,boekhoudkund tak,notariskantor,3-93.10,zeker duidelijk
@@ -11944,7 +11515,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 5186,21,am,4,administratief medewerkster,div administratiev werkzam,verzbedrijf arts tandarts dierenarts,3-93.10,zeker duidelijk
 5186,21,am,5,afdel opnam ziekenhuis,inschrijv patient div administratiev bezig,ziekenhuis zeist,3-93.10,zeker duidelijk
 6135,22,am,1,interieurverzorger,schoonmak,bedrijfspand oud,5-52.20,zeker duidelijk
-6135,22,am,2,huisvrouw,opvoed kinderenhuishoud,thuis,,nan
 6222,23,am,1,onderhoud revisie,reviser onderhoud grot kopieerapperat,xerox,8-41.70,onzeker duidelijk beschrijv
 6453,24,am,1,medisch secretares,75 computerwerkzam daarnaast telefon dictatfon papier dossier,audiologisch centrum noorholland noord,3-94.30,zeker duidelijk
 6453,24,am,2,financieel administratief medewerkster,financiel administratie telefon notuler roosterwerkzam all voorkom werkzam,huisartsenpost alkmar,3-39.40,onzeker duidelijk beschrijv
@@ -11963,7 +11533,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 6821,25,am,2,inkoper,inkop electrotechnisch material,electotechnisch installatiebedrijf,4-22.20,zeker duidelijk
 6821,25,am,3,electomonteur,diver installatiewerk productie electronica tbv binnenscheepvaart,producer installatiebedrijf,0-23.05,zeker duidelijk
 7346,26,am,1,auto schadehersteller,plaatwerk spuit auto s,schadeherstel bedrijf,8-43.20,zeker duidelijk
-7731,27,am,1,coordinator documentair informatievoorzien,meewerk divspecialist,gemeent,,nan
 8661,28,am,1,lerar,lesgev,schol,1-33.20,onzeker onduid beschrijv
 8870,29,am,1,kapster,kapp,kaper zak,5-70.20,zeker duidelijk
 8876,30,am,1,medewerker dagbehandel,somatisch psychogeriatisch client dagbested bied,zorginstell,1-93.50,onzeker duidelijk beschrijv
@@ -11974,7 +11543,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 10633,32,am,1,activiteitenbegeleidster,nan,zorgbog,5-40.35,onzeker onduid beschrijv
 10723,33,am,1,docent engel,lesgev,middel schol,1-32.15,zeker duidelijk
 11175,34,am,1,kantinemedewerkster,klaarmak verkop broodjes fritur schoonmak,distributiecentrum kantin,4-51.30,onzeker duidelijk beschrijv
-11608,35,am,1,xxxxxxxxxxx,xxxxxxxxxxxx,xxxxxxxxxx,,nan
 11771,36,am,1,financieel deskund,leidinggev financiel afdel,universiteit,2-19.50,onzeker duidelijk beschrijv
 11771,36,am,2,administratief medewerker,financlel administratie automatiser,produktiebedrijf,3-93.10,zeker duidelijk
 12024,37,am,1,facilitair manager middenkader,maaltijdbereid voedingsdienst,gezondheidszorg,2-11.10,onzeker duidelijk beschrijv
@@ -11983,13 +11551,11 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 12024,37,am,4,kok,maaltijdbereid,horeca,5-31.30,zeker duidelijk
 12027,38,am,1,kapster,eigenares,kapsalon,5-70.20,zeker duidelijk
 12103,39,am,1,leerkracht,lesgev,basisonderwijs,1-33.20,zeker duidelijk
-12344,40,am,1,naaister koffie damm,nan,nan,?,onzinn beschrijv
 12724,41,am,1,automonteur,monteur,autobedrijf,8-43.20,zeker duidelijk
 12724,41,am,2,aanhangwag monteur,monteur,aanhangwag bedrijf,8-43.30,zeker duidelijk
 13275,42,am,1,coordinator gereedschapdienst,leiding gev coordiner,metal,2-11.10,onzeker duidelijk beschrijv
 13275,42,am,2,teamleider,leiding gev,metal,2-11.10,onzeker duidelijk beschrijv
 13275,42,am,3,medewerker,uitgev gereedschap mall beher,metal,4-51.30,onzeker onduid beschrijv
-13275,42,am,4,militair,beheerder,militair dienst,armed forces - code?,nan
 13623,43,am,1,consultant,adviser,advies,1-99.90,onzeker duidelijk beschrijv
 13831,44,am,1,mentor jeugdzorgpedagogisch medewerker,begeleidentrain jonger,altra jeugd opvoedhulp,1-93.50,onzeker duidelijk beschrijv
 13831,44,am,2,pedagogisch medewerker,begeleidenverzorg kinder licham verstand handicap,kdv walnot,1-93.90,onzeker duidelijk beschrijv
@@ -12005,7 +11571,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 16344,48,am,3,listing writer,vertal opstell programmainfo epg,media bureau,1-95.30,onzeker onduid beschrijv
 16507,49,am,1,magazijnmedewerker,order pick,staalkat international aalt,9-71.50,zeker duidelijk
 16507,49,am,2,magazijnmedewerker,order pick aanvull ladenloss,rensa bv didam,9-71.50,zeker duidelijk
-16507,49,am,3,administratief medewerker logistiek medewerker,debiteurencrediteur administratie ladenloss bezorg,hul bv doetinchem,3-93.10/9-71.50,zeker duidelijk
 16601,50,am,1,regulatory affair associat,beelschermwerk,farmaceutisch industrie,3-93.40,onzeker onduid beschrijv
 16601,50,am,2,wetenschapp medewerker registrat,beelschermwerkvergader,farmaceutisch industrie,3-93.40,zeker duidelijk
 16601,50,am,3,registratie,beelschermwerk,farmaceutisch industrie,3-93.40,zeker duidelijk
@@ -12039,7 +11604,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 22600,63,am,2,adviseur,training projectleid coaching presenter,onderwijsverzorgingsinstell,1-39.20,onzeker duidelijk beschrijv
 22600,63,am,3,sociaalwetenschapp onderzoeker,analyser interview schrijv presenter,onderwijsverzorgingsinstell,1-92.20,onzeker duidelijk beschrijv
 22600,63,am,4,sociaalwetenschapp onderzoeker,analyser interview schrijv presenter,verkeerskund adviesbureau,1-92.20,onzeker duidelijk beschrijv
-22600,63,am,5,studentassistent,data invoer analyser schrijv presenter,universiteit,,nan
 22630,64,am,1,timmerman,nieuwbouw,aannemer,9-54.10,zeker duidelijk
 22630,64,am,2,chauffeurkoerier,lectur krant distributie,koeriersdiienst,9-85.50,onzeker duidelijk beschrijv
 22630,64,am,3,loodsmedewerker,loss lad vrachtwagen,transport bedrijf,9-85.50,onzeker duidelijk beschrijv
@@ -12051,8 +11615,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 24836,66,am,2,werkplaatsmanager,plann onderhoud calamiteiten storingenoploss kwaliteit waarborg verduurzam,techndienst open vervoerbedrijf,2-11-10,onzeker duidelijk beschrijv
 24836,66,am,3,automonteur,levensdur verleng onderhoud gev autbuss,techn dienst open vervoerbedrijf,8-43.20,zeker duidelijk
 24836,66,am,4,automonteur,onderhoud rep personenvoertu,autodealer amerikan duit voertuig,8-43.20,zeker duidelijk
-24864,67,am,1,onderzoeker,wetenschapp onderzoek,nonprofit onderzoeksinstitut,,nan
-24864,67,am,2,assistent opleid,wetenschapp onderzoek,universiteit,,nan
 25735,68,am,1,telefonist,storing aannem afsprak mak,energiewacht,3-94.10,onzeker duidelijk beschrijv
 25735,68,am,2,afdelingssecretares,dossier patient bijhoud ziekenhuis,ziekenhuis,3-93.20,zeker duidelijk
 26135,69,am,1,jurist,stuk schrijv administratief computerwerkz,over,1-29.10,zeker duidelijk
@@ -12077,9 +11639,7 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 34201,80,am,1,bibliotheekmedewerker,medewerker klantleenservic,bibliothek,3-95.20,zeker duidelijk
 34201,80,am,2,verkoopster,verkop,boekhandel,4-51.30,zeker duidelijk
 34201,80,am,3,medewerkster thuiszorg,thuiszorg,thuiszorg,5-52.20,zeker duidelijk
-34216,81,am,1,machineoperetor,verwerk,golfkarton,,nan
 34648,82,am,1,financieel beleidsmedewerkercontroller,jaarrekeningbegrotingadviez,gemeent,3-31.10,onzeker duidelijk beschrijv
-34648,82,am,2,onderwijzerambtenar ministerie,lesgevencontrles,schoolministerie landbouw visserij,1-32 of 1-33,onzeker onduid beschrijv
 34726,83,am,1,beleidsmedewerker,beleid schrijv gevraagdongevraagd advies gev overlegg voer,financiel sector,3-10.10,onzeker duidelijk beschrijv
 34726,83,am,2,teamleider,aanstur acceptatiedesk klantenservic,financiel sector,2-11.10,onzeker duidelijk beschrijv
 34863,84,am,1,adviseur,projectleid,over,1-99.90,zeker duidelijk
@@ -12096,7 +11656,6 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 36217,87,am,2,administratief medewerkster,debiteurencrediteur administratie personeelsadministratie,hovenier bedrijf,3-93.10,zeker duidelijk
 36217,87,am,3,ticket agent,ticket uitgev passagier begeleid,ticket agency schiphol,3-94.40,zeker duidelijk
 36683,88,am,1,informatieanalistarchitect,analyser informatiesystem,over,0-21.20,onzeker onduid beschrijv
-36683,88,am,2,systeemontwikkelar,ontwerp programer informatiesystem,softwarehuis,,nan
 36721,89,am,1,leidinggev schoonmak,control,schoonmaakbedrijf ziekenhuis,5-20.20,onzeker duidelijk beschrijv
 36721,89,am,2,horeaca medewerkster,bedien,horeaca,5-32.10,zeker duidelijk
 36885,90,am,1,zelfstand,verkop vis cater,vishandel cater,5-10.50,zeker duidelijk
@@ -12106,16 +11665,13 @@ occid,obsseqnr,bjobcoder,bwhsID,bjobnm,bjobdes,bjobco,bjobcode,bjobcertain
 38072,92,am,1,projectleider,aquisitiewerkvoorbereider projcetleider milieuactiviteit,adviesbureau,2-11.10,nan
 38072,92,am,2,voorlichterprojectleider,voorlicht technisch begeleid,ontwikkelingsorganisatie,3-10.10,onzeker duidelijk beschrijv
 38072,92,am,3,lerar,natur scheikundeles,hbo schol,1-31.20,zeker duidelijk
-38434,93,am,1,systeembeheerder,system netwerkbeher hardwarespacialist,logistiek,,nan
 38434,93,am,2,technisch medewerker,bouw onderzoeksinstallaties wtb electronisch,onderzoek,8-53.30,onzeker duidelijk beschrijv
 38434,93,am,3,buitendienstmonteur,onderhoud bakkerijmachines,technisch,8-41.05,onzeker duidelijk beschrijv
 38628,94,am,1,ziekenverzorgster,verzorg ouder ziek,verpleg verzorgingshuis,0-71.10,onzeker duidelijk beschrijv
 38628,94,am,2,algemen medewerker,interieurverzorgster,hotel,5-20.20,zeker duidelijk
-40276,95,am,1,leerkracht speciaal basis onderwijs,lesgev rapporter,schol,1-35,zeker duidelijk
 41144,96,am,1,huisart,geneeskund bedrijfsvoer,maatschap,0-61.05,zeker duidelijk
 41581,97,am,1,adviseur financiel secretariel dienstverlen,beleid leiding gev uitvoer project adviser,administratiekantor organisatiebureau,1-99.90,onzeker duidelijk beschrijv
 41680,98,am,1,begeleidster,begeleid gehandicapt,siloah goes,5-40.35,onzeker duidelijk beschrijv
 41702,99,am,1,hoofdconducteur nederland spoorweg,control vervoersbewijz,nederland spoorweg,3-60.20,zeker duidelijk
 41702,99,am,2,dienstindeler,indel dienst,nederland spoorweg,3-92.30,onzeker duidelijk beschrijv
 41781,100,am,1,vertaler,tekst vertal,free lanc werk,1-95.30,zeker duidelijk
-41781,100,am,2,softwar specialist,schrijvenonderhoudenverkop softwar,softwarehous,,nan
