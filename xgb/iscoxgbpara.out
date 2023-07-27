@@ -1,0 +1,405 @@
+[nltk_data] Downloading package stopwords to
+[nltk_data]     /home/bme001/20225898/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+Some weights of the model checkpoint at pdelobelle/robbert-v2-dutch-base were not used when initializing RobertaModel: ['lm_head.bias', 'lm_head.decoder.bias', 'lm_head.layer_norm.bias', 'lm_head.layer_norm.weight', 'lm_head.decoder.weight', 'lm_head.dense.bias', 'lm_head.dense.weight']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+Some weights of RobertaModel were not initialized from the model checkpoint at pdelobelle/robbert-v2-dutch-base and are newly initialized: ['roberta.pooler.dense.weight', 'roberta.pooler.dense.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+------------------ isco68 xgb -----------------
+
+[00:53:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.43835219031041484 max_depth: 4 min: 4 gamma: 0.0 learn: 0.05
+[00:56:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4502465912387583 max_depth: 5 min: 4 gamma: 0.0 learn: 0.05
+[01:00:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4525674499564839 max_depth: 6 min: 4 gamma: 0.0 learn: 0.05
+[01:05:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44995648389904264 max_depth: 4 min: 5 gamma: 0.0 learn: 0.05
+[01:10:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.457209167391935 max_depth: 5 min: 5 gamma: 0.0 learn: 0.05
+[01:14:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45662895271250364 max_depth: 6 min: 5 gamma: 0.0 learn: 0.05
+[01:20:09] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45430809399477806 max_depth: 4 min: 6 gamma: 0.0 learn: 0.05
+[01:24:10] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4560487380330722 max_depth: 5 min: 6 gamma: 0.0 learn: 0.05
+[01:28:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4621409921671018 max_depth: 6 min: 6 gamma: 0.0 learn: 0.05
+[01:34:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.43835219031041484 max_depth: 4 min: 4 gamma: 0.1 learn: 0.05
+[01:38:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4464751958224543 max_depth: 5 min: 4 gamma: 0.1 learn: 0.05
+[01:41:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4482158398607485 max_depth: 6 min: 4 gamma: 0.1 learn: 0.05
+[01:46:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4418334783870032 max_depth: 4 min: 5 gamma: 0.1 learn: 0.05
+[01:49:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45082680591818974 max_depth: 5 min: 5 gamma: 0.1 learn: 0.05
+[01:53:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4618508848273861 max_depth: 6 min: 5 gamma: 0.1 learn: 0.05
+[01:58:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44879605454017985 max_depth: 4 min: 6 gamma: 0.1 learn: 0.05
+[02:02:32] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.46040034812880765 max_depth: 5 min: 6 gamma: 0.1 learn: 0.05
+[02:07:15] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4621409921671018 max_depth: 6 min: 6 gamma: 0.1 learn: 0.05
+[02:12:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4354511169132579 max_depth: 4 min: 4 gamma: 0.2 learn: 0.05
+[02:16:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4511169132579054 max_depth: 5 min: 4 gamma: 0.2 learn: 0.05
+[02:20:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45314766463591527 max_depth: 6 min: 4 gamma: 0.2 learn: 0.05
+[02:24:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44618508848273863 max_depth: 4 min: 5 gamma: 0.2 learn: 0.05
+[02:28:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45662895271250364 max_depth: 5 min: 5 gamma: 0.2 learn: 0.05
+[02:32:54] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.46069045546852333 max_depth: 6 min: 5 gamma: 0.2 learn: 0.05
+[02:38:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4514070205976211 max_depth: 4 min: 6 gamma: 0.2 learn: 0.05
+[02:42:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4574992747316507 max_depth: 5 min: 6 gamma: 0.2 learn: 0.05
+[02:47:23] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.463881636205396 max_depth: 6 min: 6 gamma: 0.2 learn: 0.05
+[02:52:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4351610095735422 max_depth: 4 min: 4 gamma: 0.0 learn: 0.1
+[02:54:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4371917609515521 max_depth: 5 min: 4 gamma: 0.0 learn: 0.1
+[02:56:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4470554105018857 max_depth: 6 min: 4 gamma: 0.0 learn: 0.1
+[02:59:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44386422976501305 max_depth: 4 min: 5 gamma: 0.0 learn: 0.1
+[03:02:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4514070205976211 max_depth: 5 min: 5 gamma: 0.0 learn: 0.1
+[03:04:38] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4458949811430229 max_depth: 6 min: 5 gamma: 0.0 learn: 0.1
+[03:07:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4476356251813171 max_depth: 4 min: 6 gamma: 0.0 learn: 0.1
+[03:09:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4548883086742095 max_depth: 5 min: 6 gamma: 0.0 learn: 0.1
+[03:12:01] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45459820133449375 max_depth: 6 min: 6 gamma: 0.0 learn: 0.1
+[03:14:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.43313025819553236 max_depth: 4 min: 4 gamma: 0.1 learn: 0.1
+[03:16:50] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44154337104728747 max_depth: 5 min: 4 gamma: 0.1 learn: 0.1
+[03:19:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44415433710472874 max_depth: 6 min: 4 gamma: 0.1 learn: 0.1
+[03:21:35] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4418334783870032 max_depth: 4 min: 5 gamma: 0.1 learn: 0.1
+[03:23:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45314766463591527 max_depth: 5 min: 5 gamma: 0.1 learn: 0.1
+[03:26:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4563388453727879 max_depth: 6 min: 5 gamma: 0.1 learn: 0.1
+[03:29:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4470554105018857 max_depth: 4 min: 6 gamma: 0.1 learn: 0.1
+[03:31:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45662895271250364 max_depth: 5 min: 6 gamma: 0.1 learn: 0.1
+[03:33:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.46011024078909196 max_depth: 6 min: 6 gamma: 0.1 learn: 0.1
+[03:36:34] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.42761821874093414 max_depth: 4 min: 4 gamma: 0.2 learn: 0.1
+[03:38:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.453437771975631 max_depth: 5 min: 4 gamma: 0.2 learn: 0.1
+[03:43:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4412532637075718 max_depth: 6 min: 4 gamma: 0.2 learn: 0.1
+[03:46:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45198723527705253 max_depth: 4 min: 5 gamma: 0.2 learn: 0.1
+[03:49:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaModel: ['lm_head.bias', 'lm_head.layer_norm.weight', 'lm_head.layer_norm.bias', 'lm_head.decoder.weight', 'lm_head.dense.bias', 'lm_head.dense.weight']
+- This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+score: 0.44850594720046416 max_depth: 5 min: 5 gamma: 0.2 learn: 0.1
+[03:51:52] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45314766463591527 max_depth: 6 min: 5 gamma: 0.2 learn: 0.1
+[03:54:41] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.45082680591818974 max_depth: 4 min: 6 gamma: 0.2 learn: 0.1
+[03:56:51] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4528575572961996 max_depth: 5 min: 6 gamma: 0.2 learn: 0.1
+[03:59:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4511169132579054 max_depth: 6 min: 6 gamma: 0.2 learn: 0.1
+[04:02:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.43777197563098347 max_depth: 4 min: 4 gamma: 0.0 learn: 0.15000000000000002
+[04:04:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.43835219031041484 max_depth: 5 min: 4 gamma: 0.0 learn: 0.15000000000000002
+[04:05:33] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44009283434870905 max_depth: 6 min: 4 gamma: 0.0 learn: 0.15000000000000002
+[04:07:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4299390774586597 max_depth: 4 min: 5 gamma: 0.0 learn: 0.15000000000000002
+[04:08:29] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44270380040615026 max_depth: 5 min: 5 gamma: 0.0 learn: 0.15000000000000002
+[04:10:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4299390774586597 max_depth: 6 min: 5 gamma: 0.0 learn: 0.15000000000000002
+[04:11:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4354511169132579 max_depth: 4 min: 6 gamma: 0.0 learn: 0.15000000000000002
+[04:13:05] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4502465912387583 max_depth: 5 min: 6 gamma: 0.0 learn: 0.15000000000000002
+[04:14:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44966637655932695 max_depth: 6 min: 6 gamma: 0.0 learn: 0.15000000000000002
+[04:16:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.436321438932405 max_depth: 4 min: 4 gamma: 0.1 learn: 0.15000000000000002
+[04:18:12] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.43806208297069915 max_depth: 5 min: 4 gamma: 0.1 learn: 0.15000000000000002
+[04:19:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.43690165361183636 max_depth: 6 min: 4 gamma: 0.1 learn: 0.15000000000000002
+[04:21:45] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4328401508558167 max_depth: 4 min: 5 gamma: 0.1 learn: 0.15000000000000002
+[04:23:00] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4398027270089933 max_depth: 5 min: 5 gamma: 0.1 learn: 0.15000000000000002
+[04:24:36] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.43690165361183636 max_depth: 6 min: 5 gamma: 0.1 learn: 0.15000000000000002
+[04:26:21] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44386422976501305 max_depth: 4 min: 6 gamma: 0.1 learn: 0.15000000000000002
+[04:27:53] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44966637655932695 max_depth: 5 min: 6 gamma: 0.1 learn: 0.15000000000000002
+[04:29:37] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4479257325210328 max_depth: 6 min: 6 gamma: 0.1 learn: 0.15000000000000002
+[04:31:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44850594720046416 max_depth: 4 min: 4 gamma: 0.2 learn: 0.15000000000000002
+[04:33:46] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4302291847983754 max_depth: 5 min: 4 gamma: 0.2 learn: 0.15000000000000002
+[04:35:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44270380040615026 max_depth: 6 min: 4 gamma: 0.2 learn: 0.15000000000000002
+[04:41:47] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.4351610095735422 max_depth: 4 min: 5 gamma: 0.2 learn: 0.15000000000000002
+[04:43:07] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44038294168842473 max_depth: 5 min: 5 gamma: 0.2 learn: 0.15000000000000002
+[04:44:44] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.43835219031041484 max_depth: 6 min: 5 gamma: 0.2 learn: 0.15000000000000002
+[04:46:19] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44270380040615026 max_depth: 4 min: 6 gamma: 0.2 learn: 0.15000000000000002
+[04:47:56] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.44734551784160137 max_depth: 5 min: 6 gamma: 0.2 learn: 0.15000000000000002
+[04:49:25] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.453437771975631 max_depth: 6 min: 6 gamma: 0.2 learn: 0.15000000000000002
+
+------------------ isco88 xgb -----------------
+
+[04:52:16] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5385682574916759 max_depth: 4 min: 4 gamma: 0.0 learn: 0.05
+[05:00:03] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5420828708842027 max_depth: 5 min: 4 gamma: 0.0 learn: 0.05
+[05:07:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5428227894931558 max_depth: 6 min: 4 gamma: 0.0 learn: 0.05
+[05:14:39] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5392156862745098 max_depth: 4 min: 5 gamma: 0.0 learn: 0.05
+[05:21:11] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5413429522752498 max_depth: 5 min: 5 gamma: 0.0 learn: 0.05
+[05:28:04] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5453200147983722 max_depth: 6 min: 5 gamma: 0.0 learn: 0.05
+[05:35:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5426378098409175 max_depth: 4 min: 6 gamma: 0.0 learn: 0.05
+[05:42:20] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5429152793192749 max_depth: 5 min: 6 gamma: 0.0 learn: 0.05
+[05:49:08] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5456899741028487 max_depth: 6 min: 6 gamma: 0.0 learn: 0.05
+[05:56:26] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5409729929707732 max_depth: 4 min: 4 gamma: 0.1 learn: 0.05
+[06:04:06] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5440251572327044 max_depth: 5 min: 4 gamma: 0.1 learn: 0.05
+[06:11:42] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5463374028856826 max_depth: 6 min: 4 gamma: 0.1 learn: 0.05
+[06:19:13] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.536440991490936 max_depth: 4 min: 5 gamma: 0.1 learn: 0.05
+[06:25:30] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.540788013318535 max_depth: 5 min: 5 gamma: 0.1 learn: 0.05
+[06:32:24] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5455049944506104 max_depth: 6 min: 5 gamma: 0.1 learn: 0.05
+[06:39:48] WARNING: ../src/learner.cc:767: 
+Parameters: { "scale_pos_weight" } are not used.
+
+score: 0.5419903810580836 max_depth: 4 min: 6 gamma: 0.1 learn: 0.05
