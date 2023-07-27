@@ -12,7 +12,7 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
 
 isco68_prep = pd.read_csv('../data/isco68_prep.csv')
-isco68_data = data_preprocess.CombineFeature(isco68_prep, column=['bjobnm','bjobdes','bjobco'], withname= False)
+isco68_data = data_preprocess.CombineFeature(isco68_prep, column=['bjobnm'], withname= False)
 isco68_data['label'] = isco68_data['bjobcode']
 isco68_data = isco68_data[['feature', 'label']]
 
