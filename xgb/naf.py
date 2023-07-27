@@ -16,7 +16,7 @@ naf_data = data_preprocess.CombineFeature(naf_prep, column=['numep', 'profession
 naf_data['label'] = naf_data['code_naf']
 naf_data = naf_data[['feature', 'label']]
 
-embedding_model = data_preprocess.EmbeddingModel("bert-base-multilingual-uncased")
+embedding_model = data_preprocess.EmbeddingModelB("bert-base-multilingual-uncased")
 batch_size = 256
 num_batches = len(naf_data) // batch_size + 1
 embeddings = []
@@ -76,11 +76,11 @@ plt.savefig('result/naf merror.png')
 y_pred = xg.predict(x_test)
 
 print('\n------------------ Evaluation Matrix -----------------\n')
-print('\nAccuracy: {:.2f}'.format(accuracy_score(y_test, y_pred)))
-print('Micro Precision: {:.2f}'.format(precision_score(y_test, y_pred, average='macro')))
-print('Micro Recall: {:.2f}'.format(recall_score(y_test, y_pred, average='macro')))
-print('Micro F1-score: {:.2f}\n'.format(f1_score(y_test, y_pred, average='macro')))
-print('Cohens Kappa: {:.2f}\n'.format(cohen_kappa_score(y_test, y_pred)))
+print('\nAccuracy: {:.4f}'.format(accuracy_score(y_test, y_pred)))
+print('Micro Precision: {:.4f}'.format(precision_score(y_test, y_pred, average='macro')))
+print('Micro Recall: {:.4f}'.format(recall_score(y_test, y_pred, average='macro')))
+print('Micro F1-score: {:.4f}\n'.format(f1_score(y_test, y_pred, average='macro')))
+print('Cohens Kappa: {:.4f}\n'.format(cohen_kappa_score(y_test, y_pred)))
 
 print('\n--------------- Classification Report ---------------\n')
 print(classification_report(le.inverse_transform(y_test), le.inverse_transform(y_pred)))
