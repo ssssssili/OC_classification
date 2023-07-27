@@ -2,9 +2,13 @@ import pandas as pd
 import numpy as np
 import data_preprocess
 import xgboost as xgb
+import time
 from sklearn.preprocessing import LabelEncoder
+import os
 
-print('\n------------------ isco68 xgb -----------------\n')
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
+
 isco68_prep = pd.read_csv('../data/isco68_prep.csv')
 isco68_data = data_preprocess.CombineFeature(isco68_prep, column=['bjobnm','bjobdes','bjobco'], withname= False)
 isco68_data['label'] = isco68_data['bjobcode']
@@ -24,6 +28,8 @@ for i in range(num_batches):
     embeddings.append(batch_embeddings)
 embeddings = np.concatenate(embeddings, axis=0)
 
+print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))
+print('\n------------------ isco68 xgb -----------------\n')
 le1 = LabelEncoder()
 labels = le1.fit_transform(isco68_data['label'])
 x_train, x_test, x_val, y_train, y_test, y_val = data_preprocess.SplitDataset(embeddings, labels, 0.6, 0.3)
@@ -36,19 +42,20 @@ gamma = []
 learning_rate = []
 score = []
 
-for learn in times:
+for learn in range(1):
   for gam in times:
     for min in times:
       for max in times:
+        print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
         all_parameters = {'objective': 'multi:softmax',
                     'num_class': num_class,
-                    'gamma': 0.1*gam,
-                    'learning_rate': 0.05*(learn+1),
+                    'gamma': 0.1*(gam+2),
+                    'learning_rate': 0.05,
                     'n_estimators': 500,
-                    'max_depth': max+4,
-                    'min_child_weight': min+4,
+                    'max_depth': max+6,
+                    'min_child_weight': min+6,
                     'early_stopping_rounds': 10,
-                    'scale_pos_weight': 1,
+                    #'scale_pos_weight': 1,
                     'tree_method': 'gpu_hist',
                     'eval_metric': ['merror','mlogloss'],
                     'seed': 42}
@@ -70,9 +77,9 @@ try:
            np.concatenate((np.array(score)[:,np.newaxis],np.array(max_depth)[:,np.newaxis],np.array(min_child)[:,np.newaxis],
                            np.array(gamma)[:,np.newaxis],np.array(learning_rate)[:,np.newaxis]),axis=1),
            fmt = '%f')
-finally:
-    print('\n------------------ isco88 xgb -----------------\n')
-
+except:
+    print('error when saving file')
+"""
 isco88_prep = pd.read_csv('../data/isco88_prep.csv')
 isco88_data = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en', 'product_en'], withname=False)
 isco88_data['label'] = isco88_data['isco88_cg_4']
@@ -92,6 +99,8 @@ for i in range(num_batches):
     embeddings.append(batch_embeddings)
 embeddings = np.concatenate(embeddings, axis=0)
 
+print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))   
+print('\n------------------ isco88 xgb -----------------\n')
 le2 = LabelEncoder()
 labels = le2.fit_transform(isco88_data['label'])
 x_train, x_test, x_val, y_train, y_test, y_val = data_preprocess.SplitDataset(embeddings, labels, 0.6, 0.3)
@@ -108,6 +117,7 @@ for learn in times:
   for gam in times:
     for min in times:
       for max in times:
+        print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))   
         all_parameters = {'objective': 'multi:softmax',
                     'num_class': num_class,
                     'gamma': 0.1*gam,
@@ -116,7 +126,7 @@ for learn in times:
                     'max_depth': max+4,
                     'min_child_weight': min+4,
                     'early_stopping_rounds': 10,
-                    'scale_pos_weight': 1,
+                    #'scale_pos_weight': 1,
                     'tree_method': 'gpu_hist',
                     'eval_metric': ['merror','mlogloss'],
                     'seed': 42}
@@ -138,5 +148,8 @@ try:
            np.concatenate((np.array(score)[:,np.newaxis],np.array(max_depth)[:,np.newaxis],np.array(min_child)[:,np.newaxis],
                            np.array(gamma)[:,np.newaxis],np.array(learning_rate)[:,np.newaxis]),axis=1),
            fmt = '%f')
-finally:
-    print('\n------------------ end -----------------\n')
+except:
+    print('error when saving file')
+
+print('\n------------------ end -----------------\n')
+"""
