@@ -36,23 +36,23 @@ x_train, x_test, x_val, y_train, y_test, y_val = data_preprocess.SplitDataset(em
 num_class = np.unique(labels)
 times = range(3)
 max_depth = []
-min_child = []
+alpha = []
 gamma = []
-learning_rate = []
 score = []
 
-for learn in range(1):
-  for gam in times:
-    for min in times:
+
+for gam in times:
+    for alp in range(2):
       for max in times:
         all_parameters = {'objective': 'multi:softmax',
                     'num_class': num_class,
-                    'gamma': 0.1*(gam+1),
+                    'gamma': 0.1*(gam+2),
                     'learning_rate': 0.05,
-                    'n_estimators': 500,
+                    'n_estimators': 100,
                     'max_depth': max+7,
-                    'min_child_weight': min+3,
+                    'min_child_weight': 6,
                     'early_stopping_rounds': 10,
+                    'alpha': 0+alp,
                     #'scale_pos_weight': 1,
                     'tree_method': 'gpu_hist',
                     'eval_metric': ['merror','mlogloss'],
@@ -63,17 +63,16 @@ for learn in range(1):
               verbose=0, # set to 1 to see xgb training round intermediate results
               eval_set=[(x_train, y_train), (x_val, y_val)])
         s = xg.score(x_test, y_test)
-        max_depth.append(max+4)
-        min_child.append(min+4)
-        gamma.append(0.1*gam)
-        learning_rate.append(0.05*(learn+1))
+        max_depth.append(max+7)
+        alpha.append(0+alp)
+        gamma.append(0.1*(gam+2))
         score.append(s)
-        print('score:', s, 'max_depth:', max + 4, 'min:', min + 4, 'gamma:', 0.1 * gam, 'learn:', 0.05 * (learn + 1))
+        print('score:',s,'max_depth:',max+7,'alpha:',0+alp,'gamma:',0.1*(gam+2))
 
 try:
-    np.savetxt('isco68xgbpara.txt',
-           np.concatenate((np.array(score)[:,np.newaxis],np.array(max_depth)[:,np.newaxis],np.array(min_child)[:,np.newaxis],
-                           np.array(gamma)[:,np.newaxis],np.array(learning_rate)[:,np.newaxis]),axis=1),
+    np.savetxt('result/isco68xgbpara.txt',
+           np.concatenate((np.array(score)[:,np.newaxis],np.array(max_depth)[:,np.newaxis],np.array(alpha)[:,np.newaxis],
+                           np.array(gamma)[:,np.newaxis]),axis=1),
            fmt = '%f')
 except:
     print('error when saving file')
