@@ -9,7 +9,7 @@ import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
 
-naf_prep = pd.read_csv('../data/naf_prep.csv')
+naf_prep = pd.read_csv('../../data/naf_prep.csv')
 naf_data = data_preprocess.CombineFeature(naf_prep, column=['numep', 'profession_txt', 'secteur_txt'], withname= False)
 naf_data['label'] = naf_data['code_naf']
 naf_data = naf_data[['feature', 'label']]

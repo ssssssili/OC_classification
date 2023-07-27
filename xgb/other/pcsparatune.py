@@ -9,7 +9,7 @@ import os
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
 
-pcs_prep = pd.read_csv('../data/pcs_prep.csv')
+pcs_prep = pd.read_csv('../../data/pcs_prep.csv')
 pcs_data = data_preprocess.CombineFeature(pcs_prep, column=['numep', 'profession_txt', 'secteur_txt'], withname= False)
 pcs_data['label'] = pcs_data['code_pcs']
 pcs_data = pcs_data[['feature', 'label']]

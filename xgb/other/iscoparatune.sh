@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --mail-type=FAIL
+#SBATCH --mail-type=ALL
 #SBATCH --mail-user=siliwang94@gmail.com
 #SBATCH --partition=bme.gpustudent.q
 #SBATCH --nodes=1
