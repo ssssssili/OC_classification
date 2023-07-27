@@ -8,6 +8,7 @@ from nltk.corpus import stopwords
 from nltk.stem.snowball import SnowballStemmer
 import torch
 from transformers import RobertaModel, RobertaTokenizer
+from transformers import BertModel, BertTokenizer
 from sklearn.model_selection import train_test_split
 
 
@@ -56,6 +57,32 @@ class EmbeddingModel:
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.tokenizer = RobertaTokenizer.from_pretrained(model_name)
         self.model = RobertaModel.from_pretrained(model_name)
+        self.model.to(self.device)
+        self.model.eval()
+
+    def sentence_embedding(self, sentences):
+        tokens = self.tokenizer.batch_encode_plus(
+            sentences,
+            add_special_tokens=True,
+            padding='longest',
+            truncation=True,
+            return_tensors='pt'
+        )
+        input_ids = tokens['input_ids'].to(self.device)
+        attention_mask = tokens['attention_mask'].to(self.device)
+
+        with torch.no_grad():
+            outputs = self.model(input_ids, attention_mask=attention_mask)
+            sentence_embeddings = outputs.last_hidden_state.mean(dim=1)
+
+        return sentence_embeddings.cpu().numpy()
+
+
+class EmbeddingModelB:
+    def __init__(self, model_name):
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.tokenizer = BertTokenizer.from_pretrained(model_name)
+        self.model = BertModel.from_pretrained(model_name)
         self.model.to(self.device)
         self.model.eval()
 
