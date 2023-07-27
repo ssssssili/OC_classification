@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import data_preprocess
 import xgboost as xgb
-import matplotlib as plt
+import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
