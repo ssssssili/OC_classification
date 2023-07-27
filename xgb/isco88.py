@@ -37,7 +37,7 @@ x_train, x_test, x_val, y_train, y_test, y_val = data_preprocess.SplitDataset(em
 num_class = np.unique(labels)
 all_parameters = {'objective': 'multi:softmax',
                     'num_class': num_class,
-                    'gamma': 0.2,
+                    'gamma': 0.1,
                     'learning_rate': 0.03,
                     'n_estimators': 500,
                     'max_depth': 10,
