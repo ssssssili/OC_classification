@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #SBATCH --mail-type=FAIL
-#SBATCH --mail-user=x.lan@student.tue.nl
+#SBATCH --mail-user=siliwang94@gmail.com
 #SBATCH --partition=bme.gpustudent.q
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
 #SBATCH --time=168:00:0
 #SBATCH --job-name=isco
-#SBATCH --output=/home/bme001/20225898/OC_classification/xgb/iscoxgbpara.out
+#SBATCH --output=/home/bme001/20225898/OC_classification/xgb/result/iscoxgbpara.out
 
 module load cuda11.6/toolkit
 
