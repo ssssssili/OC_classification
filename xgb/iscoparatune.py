@@ -28,7 +28,6 @@ for i in range(num_batches):
     embeddings.append(batch_embeddings)
 embeddings = np.concatenate(embeddings, axis=0)
 
-print(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time())))
 print('\n------------------ isco68 xgb -----------------\n')
 le1 = LabelEncoder()
 labels = le1.fit_transform(isco68_data['label'])
@@ -46,14 +45,13 @@ for learn in range(1):
   for gam in times:
     for min in times:
       for max in times:
-        print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
         all_parameters = {'objective': 'multi:softmax',
                     'num_class': num_class,
-                    'gamma': 0.1*(gam+2),
+                    'gamma': 0.1*(gam+1),
                     'learning_rate': 0.05,
                     'n_estimators': 500,
-                    'max_depth': max+6,
-                    'min_child_weight': min+6,
+                    'max_depth': max+7,
+                    'min_child_weight': min+3,
                     'early_stopping_rounds': 10,
                     #'scale_pos_weight': 1,
                     'tree_method': 'gpu_hist',
