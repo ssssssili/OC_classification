@@ -38,10 +38,11 @@ num_class = np.unique(labels)
 all_parameters = {'objective': 'multi:softmax',
                     'num_class': num_class,
                     'gamma': 0.2,
-                    'learning_rate': 0.05,
+                    'learning_rate': 0.03,
                     'n_estimators': 500,
-                    'max_depth': 6,
-                    'min_child_weight': 6,
+                    'max_depth': 10,
+                    'min_child_weight': 1,
+                    #'alpha': 1,
                     'early_stopping_rounds': 10,
                     #'scale_pos_weight': 1,
                     'tree_method': 'gpu_hist',
@@ -82,10 +83,8 @@ print('Micro F1-score: {:.2f}\n'.format(f1_score(y_test, y_pred, average='macro'
 print('Cohens Kappa: {:.2f}\n'.format(cohen_kappa_score(y_test, y_pred)))
 
 print('\n--------------- Classification Report ---------------\n')
-print(classification_report(y_test, y_pred))
+print(classification_report(le.inverse_transform(y_test), le.inverse_transform(y_pred)))
 
-print('\n------------------ Confusion Matrix -----------------\n')
-np.savetxt('result/isco88 y_pred.txt', np.concatenate((y_pred[:,np.newaxis], y_test[:,np.newaxis]),axis=1))
-print(confusion_matrix(y_test, y_pred))
-
+np.savetxt('result/isco88 y_pred.txt', np.concatenate((le.inverse_transform(y_pred)[:,np.newaxis],
+                                                       le.inverse_transform(y_test)[:,np.newaxis]),axis=1))
 print('---------------------- XGBoost ----------------------')
