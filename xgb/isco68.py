@@ -16,7 +16,7 @@ isco68_data = data_preprocess.CombineFeature(isco68_prep, column=['bjobnm','bjob
 isco68_data['label'] = isco68_data['bjobcode']
 isco68_data = isco68_data[['feature', 'label']]
 
-embedding_model = data_preprocess.EmbeddingModel("pdelobelle/robbert-v2-dutch-base")
+embedding_model = data_preprocess.EmbeddingModelB("bert-base-multilingual-uncased")
 batch_size = 256
 num_batches = len(isco68_data) // batch_size + 1
 embeddings = []
@@ -37,12 +37,12 @@ x_train, x_test, x_val, y_train, y_test, y_val = data_preprocess.SplitDataset(em
 num_class = np.unique(labels)
 all_parameters = {'objective': 'multi:softmax',
                     'num_class': num_class,
-                    #'gamma': 0.2,
+                    'gamma': 0.1,
                     'learning_rate': 0.05,
-                    'n_estimators': 300,
-                    #'max_depth': 10,
-                    #'min_child_weight': 1,
-                    #'alpha': 1,
+                    'n_estimators': 500,
+                    'max_depth': 7,
+                    'min_child_weight': 8,
+                    'alpha': 1,
                     'early_stopping_rounds': 10,
                     #'scale_pos_weight': 1,
                     'tree_method': 'gpu_hist',
