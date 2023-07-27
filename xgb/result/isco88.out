@@ -1,793 +1,90 @@
 [nltk_data] Downloading package stopwords to
 [nltk_data]     /home/bme001/20225898/nltk_data...
 [nltk_data]   Package stopwords is already up-to-date!
-Some weights of the model checkpoint at roberta-base were not used when initializing RobertaModel: ['lm_head.dense.weight', 'lm_head.layer_norm.weight', 'lm_head.bias', 'lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.decoder.weight']
+Some weights of the model checkpoint at roberta-base were not used when initializing RobertaModel: ['lm_head.layer_norm.bias', 'lm_head.dense.bias', 'lm_head.dense.weight', 'lm_head.layer_norm.weight', 'lm_head.bias', 'lm_head.decoder.weight']
 - This IS expected if you are initializing RobertaModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
 - This IS NOT expected if you are initializing RobertaModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
-[0]	validation_0-merror:0.78999	validation_0-mlogloss:5.26099	validation_1-merror:0.79850	validation_1-mlogloss:5.30148
-[1]	validation_0-merror:0.73655	validation_0-mlogloss:4.95055	validation_1-merror:0.75659	validation_1-mlogloss:5.02297
-[2]	validation_0-merror:0.69095	validation_0-mlogloss:4.70388	validation_1-merror:0.71468	validation_1-mlogloss:4.81281
-[3]	validation_0-merror:0.65543	validation_0-mlogloss:4.49219	validation_1-merror:0.69109	validation_1-mlogloss:4.64015
-[4]	validation_0-merror:0.62651	validation_0-mlogloss:4.30813	validation_1-merror:0.67416	validation_1-mlogloss:4.49001
-[5]	validation_0-merror:0.60175	validation_0-mlogloss:4.14678	validation_1-merror:0.66500	validation_1-mlogloss:4.36379
-[6]	validation_0-merror:0.58142	validation_0-mlogloss:3.99812	validation_1-merror:0.64779	validation_1-mlogloss:4.25079
-[7]	validation_0-merror:0.56077	validation_0-mlogloss:3.86656	validation_1-merror:0.63669	validation_1-mlogloss:4.15367
-[8]	validation_0-merror:0.54372	validation_0-mlogloss:3.74364	validation_1-merror:0.62864	validation_1-mlogloss:4.06487
-[9]	validation_0-merror:0.52908	validation_0-mlogloss:3.62975	validation_1-merror:0.62476	validation_1-mlogloss:3.98307
-[10]	validation_0-merror:0.51328	validation_0-mlogloss:3.52354	validation_1-merror:0.61449	validation_1-mlogloss:3.90575
-[11]	validation_0-merror:0.49901	validation_0-mlogloss:3.42542	validation_1-merror:0.60866	validation_1-mlogloss:3.83665
-[12]	validation_0-merror:0.48612	validation_0-mlogloss:3.33404	validation_1-merror:0.60283	validation_1-mlogloss:3.77224
-[13]	validation_0-merror:0.47549	validation_0-mlogloss:3.24676	validation_1-merror:0.59756	validation_1-mlogloss:3.71117
-[14]	validation_0-merror:0.46505	validation_0-mlogloss:3.16454	validation_1-merror:0.59062	validation_1-mlogloss:3.65530
-[15]	validation_0-merror:0.45369	validation_0-mlogloss:3.08605	validation_1-merror:0.58812	validation_1-mlogloss:3.60187
-[16]	validation_0-merror:0.44274	validation_0-mlogloss:3.01208	validation_1-merror:0.58701	validation_1-mlogloss:3.55225
-[17]	validation_0-merror:0.43212	validation_0-mlogloss:2.93966	validation_1-merror:0.58201	validation_1-mlogloss:3.50376
-[18]	validation_0-merror:0.42010	validation_0-mlogloss:2.87119	validation_1-merror:0.57841	validation_1-mlogloss:3.46053
-[19]	validation_0-merror:0.41105	validation_0-mlogloss:2.80460	validation_1-merror:0.57175	validation_1-mlogloss:3.41673
-[20]	validation_0-merror:0.40181	validation_0-mlogloss:2.74112	validation_1-merror:0.56980	validation_1-mlogloss:3.37563
-[21]	validation_0-merror:0.39313	validation_0-mlogloss:2.68076	validation_1-merror:0.56703	validation_1-mlogloss:3.33647
-[22]	validation_0-merror:0.38495	validation_0-mlogloss:2.62213	validation_1-merror:0.56342	validation_1-mlogloss:3.30069
-[23]	validation_0-merror:0.37700	validation_0-mlogloss:2.56602	validation_1-merror:0.56037	validation_1-mlogloss:3.26501
-[24]	validation_0-merror:0.36869	validation_0-mlogloss:2.51180	validation_1-merror:0.55842	validation_1-mlogloss:3.23020
-[25]	validation_0-merror:0.36051	validation_0-mlogloss:2.45882	validation_1-merror:0.55593	validation_1-mlogloss:3.19801
-[26]	validation_0-merror:0.35224	validation_0-mlogloss:2.40703	validation_1-merror:0.55509	validation_1-mlogloss:3.16680
-[27]	validation_0-merror:0.34411	validation_0-mlogloss:2.35673	validation_1-merror:0.55065	validation_1-mlogloss:3.13693
-[28]	validation_0-merror:0.33649	validation_0-mlogloss:2.30848	validation_1-merror:0.54815	validation_1-mlogloss:3.10812
-[29]	validation_0-merror:0.32882	validation_0-mlogloss:2.26199	validation_1-merror:0.54538	validation_1-mlogloss:3.08033
-[30]	validation_0-merror:0.32189	validation_0-mlogloss:2.21687	validation_1-merror:0.54149	validation_1-mlogloss:3.05446
-[31]	validation_0-merror:0.31639	validation_0-mlogloss:2.17262	validation_1-merror:0.54011	validation_1-mlogloss:3.02896
-[32]	validation_0-merror:0.30947	validation_0-mlogloss:2.13068	validation_1-merror:0.53872	validation_1-mlogloss:3.00508
-[33]	validation_0-merror:0.30295	validation_0-mlogloss:2.08898	validation_1-merror:0.53594	validation_1-mlogloss:2.98148
-[34]	validation_0-merror:0.29736	validation_0-mlogloss:2.04867	validation_1-merror:0.53566	validation_1-mlogloss:2.95855
-[35]	validation_0-merror:0.29113	validation_0-mlogloss:2.00894	validation_1-merror:0.53317	validation_1-mlogloss:2.93546
-[36]	validation_0-merror:0.28484	validation_0-mlogloss:1.97089	validation_1-merror:0.53150	validation_1-mlogloss:2.91501
-[37]	validation_0-merror:0.27833	validation_0-mlogloss:1.93412	validation_1-merror:0.53011	validation_1-mlogloss:2.89397
-[38]	validation_0-merror:0.27214	validation_0-mlogloss:1.89795	validation_1-merror:0.53011	validation_1-mlogloss:2.87469
-[39]	validation_0-merror:0.26623	validation_0-mlogloss:1.86310	validation_1-merror:0.53067	validation_1-mlogloss:2.85585
-[40]	validation_0-merror:0.26059	validation_0-mlogloss:1.82878	validation_1-merror:0.52817	validation_1-mlogloss:2.83757
-[41]	validation_0-merror:0.25422	validation_0-mlogloss:1.79567	validation_1-merror:0.52651	validation_1-mlogloss:2.82003
-[42]	validation_0-merror:0.24913	validation_0-mlogloss:1.76307	validation_1-merror:0.52567	validation_1-mlogloss:2.80258
-[43]	validation_0-merror:0.24308	validation_0-mlogloss:1.73119	validation_1-merror:0.52484	validation_1-mlogloss:2.78571
-[44]	validation_0-merror:0.23791	validation_0-mlogloss:1.69983	validation_1-merror:0.52262	validation_1-mlogloss:2.76968
-[45]	validation_0-merror:0.23370	validation_0-mlogloss:1.66988	validation_1-merror:0.52262	validation_1-mlogloss:2.75357
-[46]	validation_0-merror:0.22848	validation_0-mlogloss:1.64033	validation_1-merror:0.52206	validation_1-mlogloss:2.73825
-[47]	validation_0-merror:0.22345	validation_0-mlogloss:1.61170	validation_1-merror:0.51984	validation_1-mlogloss:2.72295
-[48]	validation_0-merror:0.21837	validation_0-mlogloss:1.58371	validation_1-merror:0.51790	validation_1-mlogloss:2.70881
-[49]	validation_0-merror:0.21412	validation_0-mlogloss:1.55626	validation_1-merror:0.51624	validation_1-mlogloss:2.69443
-[50]	validation_0-merror:0.20904	validation_0-mlogloss:1.52874	validation_1-merror:0.51485	validation_1-mlogloss:2.68136
-[51]	validation_0-merror:0.20432	validation_0-mlogloss:1.50232	validation_1-merror:0.51374	validation_1-mlogloss:2.66723
-[52]	validation_0-merror:0.19933	validation_0-mlogloss:1.47670	validation_1-merror:0.51346	validation_1-mlogloss:2.65418
-[53]	validation_0-merror:0.19458	validation_0-mlogloss:1.45140	validation_1-merror:0.51346	validation_1-mlogloss:2.64165
-[54]	validation_0-merror:0.19093	validation_0-mlogloss:1.42653	validation_1-merror:0.51402	validation_1-mlogloss:2.62844
-[55]	validation_0-merror:0.18695	validation_0-mlogloss:1.40247	validation_1-merror:0.51096	validation_1-mlogloss:2.61683
-[56]	validation_0-merror:0.18210	validation_0-mlogloss:1.37844	validation_1-merror:0.51013	validation_1-mlogloss:2.60529
-[57]	validation_0-merror:0.17808	validation_0-mlogloss:1.35555	validation_1-merror:0.51041	validation_1-mlogloss:2.59290
-[58]	validation_0-merror:0.17462	validation_0-mlogloss:1.33292	validation_1-merror:0.50874	validation_1-mlogloss:2.58182
-[59]	validation_0-merror:0.17152	validation_0-mlogloss:1.31136	validation_1-merror:0.50791	validation_1-mlogloss:2.57149
-[60]	validation_0-merror:0.16718	validation_0-mlogloss:1.28982	validation_1-merror:0.50847	validation_1-mlogloss:2.56049
-[61]	validation_0-merror:0.16395	validation_0-mlogloss:1.26826	validation_1-merror:0.50763	validation_1-mlogloss:2.55033
-[62]	validation_0-merror:0.16048	validation_0-mlogloss:1.24747	validation_1-merror:0.50763	validation_1-mlogloss:2.54046
-[63]	validation_0-merror:0.15693	validation_0-mlogloss:1.22733	validation_1-merror:0.50708	validation_1-mlogloss:2.53050
-[64]	validation_0-merror:0.15360	validation_0-mlogloss:1.20741	validation_1-merror:0.50680	validation_1-mlogloss:2.52108
-[65]	validation_0-merror:0.15051	validation_0-mlogloss:1.18785	validation_1-merror:0.50541	validation_1-mlogloss:2.51159
-[66]	validation_0-merror:0.14681	validation_0-mlogloss:1.16865	validation_1-merror:0.50375	validation_1-mlogloss:2.50186
-[67]	validation_0-merror:0.14404	validation_0-mlogloss:1.14958	validation_1-merror:0.50347	validation_1-mlogloss:2.49281
-[68]	validation_0-merror:0.14113	validation_0-mlogloss:1.13164	validation_1-merror:0.50236	validation_1-mlogloss:2.48409
-[69]	validation_0-merror:0.13845	validation_0-mlogloss:1.11387	validation_1-merror:0.50236	validation_1-mlogloss:2.47546
-[70]	validation_0-merror:0.13572	validation_0-mlogloss:1.09606	validation_1-merror:0.50042	validation_1-mlogloss:2.46726
-[71]	validation_0-merror:0.13226	validation_0-mlogloss:1.07859	validation_1-merror:0.49931	validation_1-mlogloss:2.45845
-[72]	validation_0-merror:0.12898	validation_0-mlogloss:1.06209	validation_1-merror:0.49875	validation_1-mlogloss:2.45098
-[73]	validation_0-merror:0.12602	validation_0-mlogloss:1.04507	validation_1-merror:0.49764	validation_1-mlogloss:2.44356
-[74]	validation_0-merror:0.12408	validation_0-mlogloss:1.02879	validation_1-merror:0.49736	validation_1-mlogloss:2.43572
-[75]	validation_0-merror:0.12122	validation_0-mlogloss:1.01305	validation_1-merror:0.49653	validation_1-mlogloss:2.42859
-[76]	validation_0-merror:0.11858	validation_0-mlogloss:0.99757	validation_1-merror:0.49570	validation_1-mlogloss:2.42090
-[77]	validation_0-merror:0.11517	validation_0-mlogloss:0.98179	validation_1-merror:0.49570	validation_1-mlogloss:2.41377
-[78]	validation_0-merror:0.11267	validation_0-mlogloss:0.96669	validation_1-merror:0.49514	validation_1-mlogloss:2.40611
-[79]	validation_0-merror:0.11032	validation_0-mlogloss:0.95194	validation_1-merror:0.49403	validation_1-mlogloss:2.39896
-[80]	validation_0-merror:0.10722	validation_0-mlogloss:0.93745	validation_1-merror:0.49292	validation_1-mlogloss:2.39232
-[81]	validation_0-merror:0.10537	validation_0-mlogloss:0.92337	validation_1-merror:0.49237	validation_1-mlogloss:2.38554
-[82]	validation_0-merror:0.10269	validation_0-mlogloss:0.90933	validation_1-merror:0.49265	validation_1-mlogloss:2.37894
-[83]	validation_0-merror:0.10089	validation_0-mlogloss:0.89573	validation_1-merror:0.49265	validation_1-mlogloss:2.37236
-[84]	validation_0-merror:0.09895	validation_0-mlogloss:0.88244	validation_1-merror:0.49209	validation_1-mlogloss:2.36586
-[85]	validation_0-merror:0.09678	validation_0-mlogloss:0.86951	validation_1-merror:0.49153	validation_1-mlogloss:2.35964
-[86]	validation_0-merror:0.09447	validation_0-mlogloss:0.85662	validation_1-merror:0.49181	validation_1-mlogloss:2.35381
-[87]	validation_0-merror:0.09308	validation_0-mlogloss:0.84400	validation_1-merror:0.49098	validation_1-mlogloss:2.34783
-[88]	validation_0-merror:0.09110	validation_0-mlogloss:0.83157	validation_1-merror:0.48931	validation_1-mlogloss:2.34221
-[89]	validation_0-merror:0.08948	validation_0-mlogloss:0.81932	validation_1-merror:0.48931	validation_1-mlogloss:2.33630
-[90]	validation_0-merror:0.08773	validation_0-mlogloss:0.80766	validation_1-merror:0.48709	validation_1-mlogloss:2.33106
-[91]	validation_0-merror:0.08597	validation_0-mlogloss:0.79600	validation_1-merror:0.48709	validation_1-mlogloss:2.32566
-[92]	validation_0-merror:0.08403	validation_0-mlogloss:0.78466	validation_1-merror:0.48793	validation_1-mlogloss:2.32062
-[93]	validation_0-merror:0.08218	validation_0-mlogloss:0.77354	validation_1-merror:0.48793	validation_1-mlogloss:2.31510
-[94]	validation_0-merror:0.08080	validation_0-mlogloss:0.76259	validation_1-merror:0.48848	validation_1-mlogloss:2.31032
-[95]	validation_0-merror:0.07955	validation_0-mlogloss:0.75185	validation_1-merror:0.48654	validation_1-mlogloss:2.30529
-[96]	validation_0-merror:0.07784	validation_0-mlogloss:0.74123	validation_1-merror:0.48737	validation_1-mlogloss:2.30052
-[97]	validation_0-merror:0.07645	validation_0-mlogloss:0.73091	validation_1-merror:0.48682	validation_1-mlogloss:2.29605
-[98]	validation_0-merror:0.07548	validation_0-mlogloss:0.72083	validation_1-merror:0.48598	validation_1-mlogloss:2.29155
-[99]	validation_0-merror:0.07382	validation_0-mlogloss:0.71084	validation_1-merror:0.48654	validation_1-mlogloss:2.28668
-[100]	validation_0-merror:0.07234	validation_0-mlogloss:0.70108	validation_1-merror:0.48626	validation_1-mlogloss:2.28207
-[101]	validation_0-merror:0.07086	validation_0-mlogloss:0.69147	validation_1-merror:0.48543	validation_1-mlogloss:2.27740
-[102]	validation_0-merror:0.06929	validation_0-mlogloss:0.68200	validation_1-merror:0.48487	validation_1-mlogloss:2.27278
-[103]	validation_0-merror:0.06832	validation_0-mlogloss:0.67279	validation_1-merror:0.48487	validation_1-mlogloss:2.26831
-[104]	validation_0-merror:0.06708	validation_0-mlogloss:0.66375	validation_1-merror:0.48487	validation_1-mlogloss:2.26423
-[105]	validation_0-merror:0.06574	validation_0-mlogloss:0.65507	validation_1-merror:0.48487	validation_1-mlogloss:2.26015
-[106]	validation_0-merror:0.06435	validation_0-mlogloss:0.64650	validation_1-merror:0.48487	validation_1-mlogloss:2.25591
-[107]	validation_0-merror:0.06283	validation_0-mlogloss:0.63790	validation_1-merror:0.48515	validation_1-mlogloss:2.25217
-[108]	validation_0-merror:0.06218	validation_0-mlogloss:0.62939	validation_1-merror:0.48460	validation_1-mlogloss:2.24779
-[109]	validation_0-merror:0.06089	validation_0-mlogloss:0.62116	validation_1-merror:0.48404	validation_1-mlogloss:2.24421
-[110]	validation_0-merror:0.05959	validation_0-mlogloss:0.61319	validation_1-merror:0.48265	validation_1-mlogloss:2.24025
-[111]	validation_0-merror:0.05798	validation_0-mlogloss:0.60543	validation_1-merror:0.48293	validation_1-mlogloss:2.23605
-[112]	validation_0-merror:0.05668	validation_0-mlogloss:0.59752	validation_1-merror:0.48265	validation_1-mlogloss:2.23257
-[113]	validation_0-merror:0.05548	validation_0-mlogloss:0.59024	validation_1-merror:0.48321	validation_1-mlogloss:2.22910
-[114]	validation_0-merror:0.05414	validation_0-mlogloss:0.58271	validation_1-merror:0.48293	validation_1-mlogloss:2.22580
-[115]	validation_0-merror:0.05326	validation_0-mlogloss:0.57554	validation_1-merror:0.48238	validation_1-mlogloss:2.22229
-[116]	validation_0-merror:0.05206	validation_0-mlogloss:0.56825	validation_1-merror:0.48154	validation_1-mlogloss:2.21954
-[117]	validation_0-merror:0.05151	validation_0-mlogloss:0.56143	validation_1-merror:0.48238	validation_1-mlogloss:2.21603
-[118]	validation_0-merror:0.05058	validation_0-mlogloss:0.55445	validation_1-merror:0.48238	validation_1-mlogloss:2.21281
-[119]	validation_0-merror:0.04952	validation_0-mlogloss:0.54768	validation_1-merror:0.48127	validation_1-mlogloss:2.20955
-[120]	validation_0-merror:0.04855	validation_0-mlogloss:0.54122	validation_1-merror:0.48127	validation_1-mlogloss:2.20632
-[121]	validation_0-merror:0.04749	validation_0-mlogloss:0.53466	validation_1-merror:0.47960	validation_1-mlogloss:2.20370
-[122]	validation_0-merror:0.04666	validation_0-mlogloss:0.52843	validation_1-merror:0.48071	validation_1-mlogloss:2.20058
-[123]	validation_0-merror:0.04573	validation_0-mlogloss:0.52216	validation_1-merror:0.47960	validation_1-mlogloss:2.19761
-[124]	validation_0-merror:0.04495	validation_0-mlogloss:0.51602	validation_1-merror:0.47932	validation_1-mlogloss:2.19431
-[125]	validation_0-merror:0.04449	validation_0-mlogloss:0.50995	validation_1-merror:0.47905	validation_1-mlogloss:2.19151
-[126]	validation_0-merror:0.04379	validation_0-mlogloss:0.50415	validation_1-merror:0.47738	validation_1-mlogloss:2.18913
-[127]	validation_0-merror:0.04329	validation_0-mlogloss:0.49831	validation_1-merror:0.47710	validation_1-mlogloss:2.18656
-[128]	validation_0-merror:0.04255	validation_0-mlogloss:0.49268	validation_1-merror:0.47794	validation_1-mlogloss:2.18406
-[129]	validation_0-merror:0.04213	validation_0-mlogloss:0.48722	validation_1-merror:0.47655	validation_1-mlogloss:2.18133
-[130]	validation_0-merror:0.04153	validation_0-mlogloss:0.48186	validation_1-merror:0.47627	validation_1-mlogloss:2.17871
-[131]	validation_0-merror:0.04079	validation_0-mlogloss:0.47652	validation_1-merror:0.47738	validation_1-mlogloss:2.17681
-[132]	validation_0-merror:0.04010	validation_0-mlogloss:0.47134	validation_1-merror:0.47682	validation_1-mlogloss:2.17437
-[133]	validation_0-merror:0.03987	validation_0-mlogloss:0.46624	validation_1-merror:0.47571	validation_1-mlogloss:2.17214
-[134]	validation_0-merror:0.03936	validation_0-mlogloss:0.46107	validation_1-merror:0.47571	validation_1-mlogloss:2.16961
-[135]	validation_0-merror:0.03894	validation_0-mlogloss:0.45612	validation_1-merror:0.47655	validation_1-mlogloss:2.16754
-[136]	validation_0-merror:0.03853	validation_0-mlogloss:0.45129	validation_1-merror:0.47599	validation_1-mlogloss:2.16539
-[137]	validation_0-merror:0.03825	validation_0-mlogloss:0.44648	validation_1-merror:0.47599	validation_1-mlogloss:2.16362
-[138]	validation_0-merror:0.03770	validation_0-mlogloss:0.44181	validation_1-merror:0.47627	validation_1-mlogloss:2.16152
-[139]	validation_0-merror:0.03723	validation_0-mlogloss:0.43726	validation_1-merror:0.47516	validation_1-mlogloss:2.15942
-[140]	validation_0-merror:0.03673	validation_0-mlogloss:0.43269	validation_1-merror:0.47377	validation_1-mlogloss:2.15731
-[141]	validation_0-merror:0.03645	validation_0-mlogloss:0.42832	validation_1-merror:0.47433	validation_1-mlogloss:2.15567
-[142]	validation_0-merror:0.03594	validation_0-mlogloss:0.42406	validation_1-merror:0.47544	validation_1-mlogloss:2.15410
-[143]	validation_0-merror:0.03515	validation_0-mlogloss:0.41974	validation_1-merror:0.47405	validation_1-mlogloss:2.15216
-[144]	validation_0-merror:0.03455	validation_0-mlogloss:0.41563	validation_1-merror:0.47405	validation_1-mlogloss:2.15055
-[145]	validation_0-merror:0.03391	validation_0-mlogloss:0.41169	validation_1-merror:0.47377	validation_1-mlogloss:2.14887
-[146]	validation_0-merror:0.03354	validation_0-mlogloss:0.40776	validation_1-merror:0.47377	validation_1-mlogloss:2.14707
-[147]	validation_0-merror:0.03345	validation_0-mlogloss:0.40371	validation_1-merror:0.47433	validation_1-mlogloss:2.14529
-[148]	validation_0-merror:0.03289	validation_0-mlogloss:0.39982	validation_1-merror:0.47433	validation_1-mlogloss:2.14328
-[149]	validation_0-merror:0.03271	validation_0-mlogloss:0.39596	validation_1-merror:0.47405	validation_1-mlogloss:2.14138
-[150]	validation_0-merror:0.03220	validation_0-mlogloss:0.39214	validation_1-merror:0.47405	validation_1-mlogloss:2.13999
-[151]	validation_0-merror:0.03169	validation_0-mlogloss:0.38846	validation_1-merror:0.47488	validation_1-mlogloss:2.13828
-[152]	validation_0-merror:0.03151	validation_0-mlogloss:0.38491	validation_1-merror:0.47405	validation_1-mlogloss:2.13638
-[153]	validation_0-merror:0.03114	validation_0-mlogloss:0.38137	validation_1-merror:0.47405	validation_1-mlogloss:2.13494
-[154]	validation_0-merror:0.03086	validation_0-mlogloss:0.37778	validation_1-merror:0.47238	validation_1-mlogloss:2.13348
-[155]	validation_0-merror:0.03021	validation_0-mlogloss:0.37435	validation_1-merror:0.47238	validation_1-mlogloss:2.13179
-[156]	validation_0-merror:0.02970	validation_0-mlogloss:0.37094	validation_1-merror:0.47238	validation_1-mlogloss:2.13020
-[157]	validation_0-merror:0.02938	validation_0-mlogloss:0.36755	validation_1-merror:0.47266	validation_1-mlogloss:2.12870
-[158]	validation_0-merror:0.02887	validation_0-mlogloss:0.36432	validation_1-merror:0.47211	validation_1-mlogloss:2.12697
-[159]	validation_0-merror:0.02860	validation_0-mlogloss:0.36101	validation_1-merror:0.47211	validation_1-mlogloss:2.12553
-[160]	validation_0-merror:0.02827	validation_0-mlogloss:0.35780	validation_1-merror:0.47349	validation_1-mlogloss:2.12398
-[161]	validation_0-merror:0.02804	validation_0-mlogloss:0.35470	validation_1-merror:0.47266	validation_1-mlogloss:2.12284
-[162]	validation_0-merror:0.02763	validation_0-mlogloss:0.35161	validation_1-merror:0.47211	validation_1-mlogloss:2.12152
-[163]	validation_0-merror:0.02726	validation_0-mlogloss:0.34857	validation_1-merror:0.47238	validation_1-mlogloss:2.12029
-[164]	validation_0-merror:0.02707	validation_0-mlogloss:0.34569	validation_1-merror:0.47294	validation_1-mlogloss:2.11911
-[165]	validation_0-merror:0.02684	validation_0-mlogloss:0.34275	validation_1-merror:0.47266	validation_1-mlogloss:2.11784
-[166]	validation_0-merror:0.02665	validation_0-mlogloss:0.33987	validation_1-merror:0.47238	validation_1-mlogloss:2.11675
-[167]	validation_0-merror:0.02633	validation_0-mlogloss:0.33704	validation_1-merror:0.47211	validation_1-mlogloss:2.11540
-[168]	validation_0-merror:0.02605	validation_0-mlogloss:0.33429	validation_1-merror:0.47238	validation_1-mlogloss:2.11410
-[169]	validation_0-merror:0.02573	validation_0-mlogloss:0.33145	validation_1-merror:0.47100	validation_1-mlogloss:2.11269
-[170]	validation_0-merror:0.02568	validation_0-mlogloss:0.32873	validation_1-merror:0.47072	validation_1-mlogloss:2.11118
-[171]	validation_0-merror:0.02541	validation_0-mlogloss:0.32615	validation_1-merror:0.47044	validation_1-mlogloss:2.11019
-[172]	validation_0-merror:0.02518	validation_0-mlogloss:0.32355	validation_1-merror:0.46989	validation_1-mlogloss:2.10915
-[173]	validation_0-merror:0.02490	validation_0-mlogloss:0.32107	validation_1-merror:0.47016	validation_1-mlogloss:2.10815
-[174]	validation_0-merror:0.02485	validation_0-mlogloss:0.31854	validation_1-merror:0.46961	validation_1-mlogloss:2.10678
-[175]	validation_0-merror:0.02458	validation_0-mlogloss:0.31618	validation_1-merror:0.46878	validation_1-mlogloss:2.10573
-[176]	validation_0-merror:0.02458	validation_0-mlogloss:0.31378	validation_1-merror:0.46905	validation_1-mlogloss:2.10468
-[177]	validation_0-merror:0.02430	validation_0-mlogloss:0.31143	validation_1-merror:0.46989	validation_1-mlogloss:2.10365
-[178]	validation_0-merror:0.02402	validation_0-mlogloss:0.30913	validation_1-merror:0.47072	validation_1-mlogloss:2.10272
-[179]	validation_0-merror:0.02365	validation_0-mlogloss:0.30682	validation_1-merror:0.47100	validation_1-mlogloss:2.10152
-[180]	validation_0-merror:0.02347	validation_0-mlogloss:0.30452	validation_1-merror:0.47127	validation_1-mlogloss:2.10053
-[181]	validation_0-merror:0.02338	validation_0-mlogloss:0.30216	validation_1-merror:0.47072	validation_1-mlogloss:2.09924
-[182]	validation_0-merror:0.02324	validation_0-mlogloss:0.29999	validation_1-merror:0.47044	validation_1-mlogloss:2.09842
-[183]	validation_0-merror:0.02301	validation_0-mlogloss:0.29781	validation_1-merror:0.47072	validation_1-mlogloss:2.09716
-[184]	validation_0-merror:0.02291	validation_0-mlogloss:0.29575	validation_1-merror:0.46989	validation_1-mlogloss:2.09635
-[185]	validation_0-merror:0.02282	validation_0-mlogloss:0.29372	validation_1-merror:0.47016	validation_1-mlogloss:2.09536
-[186]	validation_0-merror:0.02264	validation_0-mlogloss:0.29168	validation_1-merror:0.46933	validation_1-mlogloss:2.09461
-[187]	validation_0-merror:0.02231	validation_0-mlogloss:0.28960	validation_1-merror:0.46905	validation_1-mlogloss:2.09407
-[188]	validation_0-merror:0.02208	validation_0-mlogloss:0.28759	validation_1-merror:0.46933	validation_1-mlogloss:2.09333
-[189]	validation_0-merror:0.02199	validation_0-mlogloss:0.28570	validation_1-merror:0.47016	validation_1-mlogloss:2.09231
-[190]	validation_0-merror:0.02171	validation_0-mlogloss:0.28380	validation_1-merror:0.46989	validation_1-mlogloss:2.09128
-[191]	validation_0-merror:0.02148	validation_0-mlogloss:0.28188	validation_1-merror:0.46961	validation_1-mlogloss:2.09054
-[192]	validation_0-merror:0.02139	validation_0-mlogloss:0.28007	validation_1-merror:0.47016	validation_1-mlogloss:2.08962
-[193]	validation_0-merror:0.02134	validation_0-mlogloss:0.27819	validation_1-merror:0.46989	validation_1-mlogloss:2.08881
-[194]	validation_0-merror:0.02130	validation_0-mlogloss:0.27644	validation_1-merror:0.46933	validation_1-mlogloss:2.08793
-[195]	validation_0-merror:0.02116	validation_0-mlogloss:0.27464	validation_1-merror:0.46933	validation_1-mlogloss:2.08728
-[196]	validation_0-merror:0.02111	validation_0-mlogloss:0.27290	validation_1-merror:0.47016	validation_1-mlogloss:2.08641
-[197]	validation_0-merror:0.02102	validation_0-mlogloss:0.27120	validation_1-merror:0.47044	validation_1-mlogloss:2.08575
-[198]	validation_0-merror:0.02097	validation_0-mlogloss:0.26950	validation_1-merror:0.47127	validation_1-mlogloss:2.08534
-[199]	validation_0-merror:0.02088	validation_0-mlogloss:0.26783	validation_1-merror:0.47044	validation_1-mlogloss:2.08457
-[200]	validation_0-merror:0.02070	validation_0-mlogloss:0.26624	validation_1-merror:0.47044	validation_1-mlogloss:2.08391
-[201]	validation_0-merror:0.02060	validation_0-mlogloss:0.26462	validation_1-merror:0.46933	validation_1-mlogloss:2.08317
-[202]	validation_0-merror:0.02042	validation_0-mlogloss:0.26303	validation_1-merror:0.46905	validation_1-mlogloss:2.08262
-[203]	validation_0-merror:0.02042	validation_0-mlogloss:0.26150	validation_1-merror:0.46850	validation_1-mlogloss:2.08195
-[204]	validation_0-merror:0.02028	validation_0-mlogloss:0.25993	validation_1-merror:0.46850	validation_1-mlogloss:2.08117
-[205]	validation_0-merror:0.02028	validation_0-mlogloss:0.25841	validation_1-merror:0.46822	validation_1-mlogloss:2.08060
-[206]	validation_0-merror:0.02023	validation_0-mlogloss:0.25695	validation_1-merror:0.46822	validation_1-mlogloss:2.07997
-[207]	validation_0-merror:0.02019	validation_0-mlogloss:0.25550	validation_1-merror:0.46850	validation_1-mlogloss:2.07953
-[208]	validation_0-merror:0.02010	validation_0-mlogloss:0.25396	validation_1-merror:0.46933	validation_1-mlogloss:2.07877
-[209]	validation_0-merror:0.01996	validation_0-mlogloss:0.25251	validation_1-merror:0.46822	validation_1-mlogloss:2.07826
-[210]	validation_0-merror:0.01982	validation_0-mlogloss:0.25108	validation_1-merror:0.46878	validation_1-mlogloss:2.07748
-[211]	validation_0-merror:0.01968	validation_0-mlogloss:0.24966	validation_1-merror:0.46850	validation_1-mlogloss:2.07689
-[212]	validation_0-merror:0.01963	validation_0-mlogloss:0.24833	validation_1-merror:0.46961	validation_1-mlogloss:2.07634
-[213]	validation_0-merror:0.01954	validation_0-mlogloss:0.24693	validation_1-merror:0.46850	validation_1-mlogloss:2.07584
-[214]	validation_0-merror:0.01945	validation_0-mlogloss:0.24557	validation_1-merror:0.46850	validation_1-mlogloss:2.07535
-[215]	validation_0-merror:0.01945	validation_0-mlogloss:0.24426	validation_1-merror:0.46767	validation_1-mlogloss:2.07478
-[216]	validation_0-merror:0.01940	validation_0-mlogloss:0.24298	validation_1-merror:0.46878	validation_1-mlogloss:2.07416
-[217]	validation_0-merror:0.01940	validation_0-mlogloss:0.24166	validation_1-merror:0.46794	validation_1-mlogloss:2.07357
-[218]	validation_0-merror:0.01940	validation_0-mlogloss:0.24040	validation_1-merror:0.46739	validation_1-mlogloss:2.07308
-[219]	validation_0-merror:0.01931	validation_0-mlogloss:0.23917	validation_1-merror:0.46739	validation_1-mlogloss:2.07263
-[220]	validation_0-merror:0.01917	validation_0-mlogloss:0.23791	validation_1-merror:0.46767	validation_1-mlogloss:2.07211
-[221]	validation_0-merror:0.01908	validation_0-mlogloss:0.23670	validation_1-merror:0.46600	validation_1-mlogloss:2.07155
-[222]	validation_0-merror:0.01908	validation_0-mlogloss:0.23550	validation_1-merror:0.46572	validation_1-mlogloss:2.07092
-[223]	validation_0-merror:0.01899	validation_0-mlogloss:0.23427	validation_1-merror:0.46628	validation_1-mlogloss:2.07045
-[224]	validation_0-merror:0.01894	validation_0-mlogloss:0.23312	validation_1-merror:0.46572	validation_1-mlogloss:2.07015
-[225]	validation_0-merror:0.01894	validation_0-mlogloss:0.23200	validation_1-merror:0.46600	validation_1-mlogloss:2.06962
-[226]	validation_0-merror:0.01885	validation_0-mlogloss:0.23087	validation_1-merror:0.46572	validation_1-mlogloss:2.06905
-[227]	validation_0-merror:0.01880	validation_0-mlogloss:0.22971	validation_1-merror:0.46600	validation_1-mlogloss:2.06871
-[228]	validation_0-merror:0.01880	validation_0-mlogloss:0.22855	validation_1-merror:0.46600	validation_1-mlogloss:2.06816
-[229]	validation_0-merror:0.01871	validation_0-mlogloss:0.22745	validation_1-merror:0.46517	validation_1-mlogloss:2.06767
-[230]	validation_0-merror:0.01871	validation_0-mlogloss:0.22635	validation_1-merror:0.46656	validation_1-mlogloss:2.06720
-[231]	validation_0-merror:0.01876	validation_0-mlogloss:0.22525	validation_1-merror:0.46683	validation_1-mlogloss:2.06694
-[232]	validation_0-merror:0.01871	validation_0-mlogloss:0.22418	validation_1-merror:0.46600	validation_1-mlogloss:2.06671
-[233]	validation_0-merror:0.01857	validation_0-mlogloss:0.22316	validation_1-merror:0.46545	validation_1-mlogloss:2.06647
-[234]	validation_0-merror:0.01852	validation_0-mlogloss:0.22215	validation_1-merror:0.46628	validation_1-mlogloss:2.06608
-[235]	validation_0-merror:0.01843	validation_0-mlogloss:0.22112	validation_1-merror:0.46600	validation_1-mlogloss:2.06542
-[236]	validation_0-merror:0.01839	validation_0-mlogloss:0.22011	validation_1-merror:0.46461	validation_1-mlogloss:2.06490
-[237]	validation_0-merror:0.01834	validation_0-mlogloss:0.21915	validation_1-merror:0.46489	validation_1-mlogloss:2.06439
-[238]	validation_0-merror:0.01834	validation_0-mlogloss:0.21821	validation_1-merror:0.46545	validation_1-mlogloss:2.06404
-[239]	validation_0-merror:0.01834	validation_0-mlogloss:0.21723	validation_1-merror:0.46572	validation_1-mlogloss:2.06369
-[240]	validation_0-merror:0.01815	validation_0-mlogloss:0.21627	validation_1-merror:0.46572	validation_1-mlogloss:2.06317
-[241]	validation_0-merror:0.01811	validation_0-mlogloss:0.21533	validation_1-merror:0.46517	validation_1-mlogloss:2.06289
-[242]	validation_0-merror:0.01811	validation_0-mlogloss:0.21440	validation_1-merror:0.46572	validation_1-mlogloss:2.06258
-[243]	validation_0-merror:0.01806	validation_0-mlogloss:0.21349	validation_1-merror:0.46461	validation_1-mlogloss:2.06203
-[244]	validation_0-merror:0.01806	validation_0-mlogloss:0.21258	validation_1-merror:0.46434	validation_1-mlogloss:2.06167
-[245]	validation_0-merror:0.01802	validation_0-mlogloss:0.21167	validation_1-merror:0.46461	validation_1-mlogloss:2.06125
-[246]	validation_0-merror:0.01797	validation_0-mlogloss:0.21082	validation_1-merror:0.46461	validation_1-mlogloss:2.06081
-[247]	validation_0-merror:0.01792	validation_0-mlogloss:0.20995	validation_1-merror:0.46461	validation_1-mlogloss:2.06047
-[248]	validation_0-merror:0.01788	validation_0-mlogloss:0.20906	validation_1-merror:0.46406	validation_1-mlogloss:2.06026
-[249]	validation_0-merror:0.01783	validation_0-mlogloss:0.20823	validation_1-merror:0.46406	validation_1-mlogloss:2.05989
-[250]	validation_0-merror:0.01779	validation_0-mlogloss:0.20741	validation_1-merror:0.46461	validation_1-mlogloss:2.05961
-[251]	validation_0-merror:0.01774	validation_0-mlogloss:0.20658	validation_1-merror:0.46489	validation_1-mlogloss:2.05925
-[252]	validation_0-merror:0.01779	validation_0-mlogloss:0.20575	validation_1-merror:0.46489	validation_1-mlogloss:2.05910
-[253]	validation_0-merror:0.01774	validation_0-mlogloss:0.20493	validation_1-merror:0.46517	validation_1-mlogloss:2.05875
-[254]	validation_0-merror:0.01774	validation_0-mlogloss:0.20416	validation_1-merror:0.46489	validation_1-mlogloss:2.05837
-[255]	validation_0-merror:0.01769	validation_0-mlogloss:0.20337	validation_1-merror:0.46406	validation_1-mlogloss:2.05797
-[256]	validation_0-merror:0.01760	validation_0-mlogloss:0.20262	validation_1-merror:0.46489	validation_1-mlogloss:2.05783
-[257]	validation_0-merror:0.01751	validation_0-mlogloss:0.20185	validation_1-merror:0.46434	validation_1-mlogloss:2.05749
-[258]	validation_0-merror:0.01746	validation_0-mlogloss:0.20106	validation_1-merror:0.46434	validation_1-mlogloss:2.05729
-[259]	validation_0-merror:0.01746	validation_0-mlogloss:0.20032	validation_1-merror:0.46434	validation_1-mlogloss:2.05701
-[260]	validation_0-merror:0.01742	validation_0-mlogloss:0.19958	validation_1-merror:0.46378	validation_1-mlogloss:2.05656
-[261]	validation_0-merror:0.01737	validation_0-mlogloss:0.19888	validation_1-merror:0.46323	validation_1-mlogloss:2.05633
-[262]	validation_0-merror:0.01732	validation_0-mlogloss:0.19818	validation_1-merror:0.46323	validation_1-mlogloss:2.05587
-[263]	validation_0-merror:0.01737	validation_0-mlogloss:0.19745	validation_1-merror:0.46323	validation_1-mlogloss:2.05543
-[264]	validation_0-merror:0.01732	validation_0-mlogloss:0.19672	validation_1-merror:0.46239	validation_1-mlogloss:2.05520
-[265]	validation_0-merror:0.01732	validation_0-mlogloss:0.19603	validation_1-merror:0.46211	validation_1-mlogloss:2.05502
-[266]	validation_0-merror:0.01728	validation_0-mlogloss:0.19532	validation_1-merror:0.46239	validation_1-mlogloss:2.05449
-[267]	validation_0-merror:0.01728	validation_0-mlogloss:0.19467	validation_1-merror:0.46211	validation_1-mlogloss:2.05426
-[268]	validation_0-merror:0.01723	validation_0-mlogloss:0.19396	validation_1-merror:0.46295	validation_1-mlogloss:2.05387
-[269]	validation_0-merror:0.01718	validation_0-mlogloss:0.19332	validation_1-merror:0.46239	validation_1-mlogloss:2.05362
-[270]	validation_0-merror:0.01700	validation_0-mlogloss:0.19268	validation_1-merror:0.46184	validation_1-mlogloss:2.05348
-[271]	validation_0-merror:0.01700	validation_0-mlogloss:0.19206	validation_1-merror:0.46156	validation_1-mlogloss:2.05320
-[272]	validation_0-merror:0.01700	validation_0-mlogloss:0.19140	validation_1-merror:0.46156	validation_1-mlogloss:2.05308
-[273]	validation_0-merror:0.01709	validation_0-mlogloss:0.19077	validation_1-merror:0.46100	validation_1-mlogloss:2.05284
-[274]	validation_0-merror:0.01705	validation_0-mlogloss:0.19017	validation_1-merror:0.46045	validation_1-mlogloss:2.05265
-[275]	validation_0-merror:0.01695	validation_0-mlogloss:0.18954	validation_1-merror:0.46045	validation_1-mlogloss:2.05238
-[276]	validation_0-merror:0.01695	validation_0-mlogloss:0.18892	validation_1-merror:0.46100	validation_1-mlogloss:2.05217
-[277]	validation_0-merror:0.01691	validation_0-mlogloss:0.18830	validation_1-merror:0.46073	validation_1-mlogloss:2.05187
-[278]	validation_0-merror:0.01691	validation_0-mlogloss:0.18772	validation_1-merror:0.46045	validation_1-mlogloss:2.05183
-[279]	validation_0-merror:0.01691	validation_0-mlogloss:0.18713	validation_1-merror:0.45962	validation_1-mlogloss:2.05151
-[280]	validation_0-merror:0.01691	validation_0-mlogloss:0.18656	validation_1-merror:0.45962	validation_1-mlogloss:2.05131
-[281]	validation_0-merror:0.01682	validation_0-mlogloss:0.18599	validation_1-merror:0.46100	validation_1-mlogloss:2.05117
-[282]	validation_0-merror:0.01677	validation_0-mlogloss:0.18542	validation_1-merror:0.46017	validation_1-mlogloss:2.05069
-[283]	validation_0-merror:0.01677	validation_0-mlogloss:0.18486	validation_1-merror:0.45906	validation_1-mlogloss:2.05057
-[284]	validation_0-merror:0.01682	validation_0-mlogloss:0.18426	validation_1-merror:0.45878	validation_1-mlogloss:2.05058
-[285]	validation_0-merror:0.01677	validation_0-mlogloss:0.18371	validation_1-merror:0.45906	validation_1-mlogloss:2.05040
-[286]	validation_0-merror:0.01677	validation_0-mlogloss:0.18316	validation_1-merror:0.45878	validation_1-mlogloss:2.05030
-[287]	validation_0-merror:0.01677	validation_0-mlogloss:0.18262	validation_1-merror:0.45934	validation_1-mlogloss:2.05020
-[288]	validation_0-merror:0.01677	validation_0-mlogloss:0.18209	validation_1-merror:0.45934	validation_1-mlogloss:2.04997
-[289]	validation_0-merror:0.01677	validation_0-mlogloss:0.18159	validation_1-merror:0.45962	validation_1-mlogloss:2.04971
-[290]	validation_0-merror:0.01677	validation_0-mlogloss:0.18109	validation_1-merror:0.45989	validation_1-mlogloss:2.04980
-[291]	validation_0-merror:0.01672	validation_0-mlogloss:0.18058	validation_1-merror:0.46017	validation_1-mlogloss:2.04959
-[292]	validation_0-merror:0.01672	validation_0-mlogloss:0.18011	validation_1-merror:0.46045	validation_1-mlogloss:2.04933
-[293]	validation_0-merror:0.01668	validation_0-mlogloss:0.17962	validation_1-merror:0.45962	validation_1-mlogloss:2.04915
-[294]	validation_0-merror:0.01658	validation_0-mlogloss:0.17910	validation_1-merror:0.46017	validation_1-mlogloss:2.04932
-[295]	validation_0-merror:0.01663	validation_0-mlogloss:0.17862	validation_1-merror:0.46017	validation_1-mlogloss:2.04924
-[296]	validation_0-merror:0.01658	validation_0-mlogloss:0.17815	validation_1-merror:0.46017	validation_1-mlogloss:2.04900
-[297]	validation_0-merror:0.01663	validation_0-mlogloss:0.17765	validation_1-merror:0.46073	validation_1-mlogloss:2.04883
-[298]	validation_0-merror:0.01658	validation_0-mlogloss:0.17720	validation_1-merror:0.46017	validation_1-mlogloss:2.04875
-[299]	validation_0-merror:0.01654	validation_0-mlogloss:0.17672	validation_1-merror:0.46045	validation_1-mlogloss:2.04868
-[300]	validation_0-merror:0.01649	validation_0-mlogloss:0.17626	validation_1-merror:0.46073	validation_1-mlogloss:2.04851
-[301]	validation_0-merror:0.01640	validation_0-mlogloss:0.17581	validation_1-merror:0.46100	validation_1-mlogloss:2.04825
-[302]	validation_0-merror:0.01645	validation_0-mlogloss:0.17537	validation_1-merror:0.46128	validation_1-mlogloss:2.04814
-[303]	validation_0-merror:0.01635	validation_0-mlogloss:0.17490	validation_1-merror:0.46100	validation_1-mlogloss:2.04805
-[304]	validation_0-merror:0.01635	validation_0-mlogloss:0.17444	validation_1-merror:0.46100	validation_1-mlogloss:2.04787
-[305]	validation_0-merror:0.01631	validation_0-mlogloss:0.17401	validation_1-merror:0.46045	validation_1-mlogloss:2.04783
-[306]	validation_0-merror:0.01626	validation_0-mlogloss:0.17357	validation_1-merror:0.46045	validation_1-mlogloss:2.04805
-[307]	validation_0-merror:0.01621	validation_0-mlogloss:0.17311	validation_1-merror:0.46017	validation_1-mlogloss:2.04793
-[308]	validation_0-merror:0.01621	validation_0-mlogloss:0.17266	validation_1-merror:0.46073	validation_1-mlogloss:2.04757
-[309]	validation_0-merror:0.01621	validation_0-mlogloss:0.17223	validation_1-merror:0.46045	validation_1-mlogloss:2.04736
-[310]	validation_0-merror:0.01621	validation_0-mlogloss:0.17182	validation_1-merror:0.46017	validation_1-mlogloss:2.04732
-[311]	validation_0-merror:0.01621	validation_0-mlogloss:0.17144	validation_1-merror:0.46073	validation_1-mlogloss:2.04724
-[312]	validation_0-merror:0.01621	validation_0-mlogloss:0.17101	validation_1-merror:0.46045	validation_1-mlogloss:2.04717
-[313]	validation_0-merror:0.01621	validation_0-mlogloss:0.17061	validation_1-merror:0.46045	validation_1-mlogloss:2.04697
-[314]	validation_0-merror:0.01621	validation_0-mlogloss:0.17021	validation_1-merror:0.45989	validation_1-mlogloss:2.04676
-[315]	validation_0-merror:0.01621	validation_0-mlogloss:0.16979	validation_1-merror:0.45989	validation_1-mlogloss:2.04683
-[316]	validation_0-merror:0.01621	validation_0-mlogloss:0.16941	validation_1-merror:0.45962	validation_1-mlogloss:2.04670
-[317]	validation_0-merror:0.01612	validation_0-mlogloss:0.16901	validation_1-merror:0.46073	validation_1-mlogloss:2.04668
-[318]	validation_0-merror:0.01617	validation_0-mlogloss:0.16865	validation_1-merror:0.46100	validation_1-mlogloss:2.04649
-[319]	validation_0-merror:0.01617	validation_0-mlogloss:0.16828	validation_1-merror:0.46100	validation_1-mlogloss:2.04648
-[320]	validation_0-merror:0.01617	validation_0-mlogloss:0.16790	validation_1-merror:0.45989	validation_1-mlogloss:2.04628
-[321]	validation_0-merror:0.01617	validation_0-mlogloss:0.16754	validation_1-merror:0.46017	validation_1-mlogloss:2.04620
-[322]	validation_0-merror:0.01617	validation_0-mlogloss:0.16719	validation_1-merror:0.45906	validation_1-mlogloss:2.04621
-[323]	validation_0-merror:0.01612	validation_0-mlogloss:0.16682	validation_1-merror:0.45934	validation_1-mlogloss:2.04600
-[324]	validation_0-merror:0.01612	validation_0-mlogloss:0.16648	validation_1-merror:0.45962	validation_1-mlogloss:2.04586
-[325]	validation_0-merror:0.01608	validation_0-mlogloss:0.16612	validation_1-merror:0.46017	validation_1-mlogloss:2.04572
-[326]	validation_0-merror:0.01608	validation_0-mlogloss:0.16579	validation_1-merror:0.46045	validation_1-mlogloss:2.04559
-[327]	validation_0-merror:0.01608	validation_0-mlogloss:0.16545	validation_1-merror:0.46073	validation_1-mlogloss:2.04551
-[328]	validation_0-merror:0.01608	validation_0-mlogloss:0.16512	validation_1-merror:0.46045	validation_1-mlogloss:2.04559
-[329]	validation_0-merror:0.01608	validation_0-mlogloss:0.16477	validation_1-merror:0.46045	validation_1-mlogloss:2.04540
-[330]	validation_0-merror:0.01608	validation_0-mlogloss:0.16442	validation_1-merror:0.46045	validation_1-mlogloss:2.04520
-[331]	validation_0-merror:0.01608	validation_0-mlogloss:0.16409	validation_1-merror:0.46017	validation_1-mlogloss:2.04500
-[332]	validation_0-merror:0.01608	validation_0-mlogloss:0.16376	validation_1-merror:0.46045	validation_1-mlogloss:2.04503
-[333]	validation_0-merror:0.01603	validation_0-mlogloss:0.16342	validation_1-merror:0.46045	validation_1-mlogloss:2.04500
-[334]	validation_0-merror:0.01603	validation_0-mlogloss:0.16310	validation_1-merror:0.46017	validation_1-mlogloss:2.04484
-[335]	validation_0-merror:0.01603	validation_0-mlogloss:0.16280	validation_1-merror:0.46045	validation_1-mlogloss:2.04480
-[336]	validation_0-merror:0.01598	validation_0-mlogloss:0.16250	validation_1-merror:0.46045	validation_1-mlogloss:2.04482
-[337]	validation_0-merror:0.01603	validation_0-mlogloss:0.16219	validation_1-merror:0.46045	validation_1-mlogloss:2.04481
-[338]	validation_0-merror:0.01603	validation_0-mlogloss:0.16190	validation_1-merror:0.45962	validation_1-mlogloss:2.04473
-[339]	validation_0-merror:0.01603	validation_0-mlogloss:0.16161	validation_1-merror:0.45962	validation_1-mlogloss:2.04492
-[340]	validation_0-merror:0.01598	validation_0-mlogloss:0.16131	validation_1-merror:0.45962	validation_1-mlogloss:2.04475
-[341]	validation_0-merror:0.01598	validation_0-mlogloss:0.16102	validation_1-merror:0.45962	validation_1-mlogloss:2.04470
-[342]	validation_0-merror:0.01594	validation_0-mlogloss:0.16075	validation_1-merror:0.45989	validation_1-mlogloss:2.04457
-[343]	validation_0-merror:0.01594	validation_0-mlogloss:0.16048	validation_1-merror:0.46045	validation_1-mlogloss:2.04438
-[344]	validation_0-merror:0.01594	validation_0-mlogloss:0.16021	validation_1-merror:0.45989	validation_1-mlogloss:2.04425
-[345]	validation_0-merror:0.01594	validation_0-mlogloss:0.15997	validation_1-merror:0.46073	validation_1-mlogloss:2.04427
-[346]	validation_0-merror:0.01589	validation_0-mlogloss:0.15968	validation_1-merror:0.45989	validation_1-mlogloss:2.04427
-[347]	validation_0-merror:0.01589	validation_0-mlogloss:0.15942	validation_1-merror:0.46017	validation_1-mlogloss:2.04425
-[348]	validation_0-merror:0.01585	validation_0-mlogloss:0.15915	validation_1-merror:0.45989	validation_1-mlogloss:2.04435
-[349]	validation_0-merror:0.01589	validation_0-mlogloss:0.15890	validation_1-merror:0.45989	validation_1-mlogloss:2.04428
-[350]	validation_0-merror:0.01585	validation_0-mlogloss:0.15866	validation_1-merror:0.45934	validation_1-mlogloss:2.04416
-[351]	validation_0-merror:0.01585	validation_0-mlogloss:0.15843	validation_1-merror:0.45934	validation_1-mlogloss:2.04416
-[352]	validation_0-merror:0.01585	validation_0-mlogloss:0.15819	validation_1-merror:0.45906	validation_1-mlogloss:2.04409
-[353]	validation_0-merror:0.01585	validation_0-mlogloss:0.15797	validation_1-merror:0.45989	validation_1-mlogloss:2.04431
-[354]	validation_0-merror:0.01585	validation_0-mlogloss:0.15776	validation_1-merror:0.46017	validation_1-mlogloss:2.04431
-[355]	validation_0-merror:0.01585	validation_0-mlogloss:0.15754	validation_1-merror:0.45989	validation_1-mlogloss:2.04426
-[356]	validation_0-merror:0.01585	validation_0-mlogloss:0.15733	validation_1-merror:0.45962	validation_1-mlogloss:2.04412
-[357]	validation_0-merror:0.01580	validation_0-mlogloss:0.15712	validation_1-merror:0.45934	validation_1-mlogloss:2.04412
-[358]	validation_0-merror:0.01580	validation_0-mlogloss:0.15693	validation_1-merror:0.45962	validation_1-mlogloss:2.04418
-[359]	validation_0-merror:0.01575	validation_0-mlogloss:0.15675	validation_1-merror:0.45934	validation_1-mlogloss:2.04407
-[360]	validation_0-merror:0.01580	validation_0-mlogloss:0.15656	validation_1-merror:0.45962	validation_1-mlogloss:2.04402
-[361]	validation_0-merror:0.01575	validation_0-mlogloss:0.15638	validation_1-merror:0.45906	validation_1-mlogloss:2.04406
-[362]	validation_0-merror:0.01575	validation_0-mlogloss:0.15620	validation_1-merror:0.45962	validation_1-mlogloss:2.04400
-[363]	validation_0-merror:0.01575	validation_0-mlogloss:0.15603	validation_1-merror:0.45962	validation_1-mlogloss:2.04402
-[364]	validation_0-merror:0.01575	validation_0-mlogloss:0.15587	validation_1-merror:0.45962	validation_1-mlogloss:2.04404
-[365]	validation_0-merror:0.01575	validation_0-mlogloss:0.15570	validation_1-merror:0.45989	validation_1-mlogloss:2.04402
-[366]	validation_0-merror:0.01575	validation_0-mlogloss:0.15553	validation_1-merror:0.45989	validation_1-mlogloss:2.04383
-[367]	validation_0-merror:0.01575	validation_0-mlogloss:0.15539	validation_1-merror:0.45934	validation_1-mlogloss:2.04379
-[368]	validation_0-merror:0.01571	validation_0-mlogloss:0.15523	validation_1-merror:0.45906	validation_1-mlogloss:2.04375
-[369]	validation_0-merror:0.01571	validation_0-mlogloss:0.15507	validation_1-merror:0.45823	validation_1-mlogloss:2.04362
-[370]	validation_0-merror:0.01571	validation_0-mlogloss:0.15494	validation_1-merror:0.45934	validation_1-mlogloss:2.04362
-[371]	validation_0-merror:0.01571	validation_0-mlogloss:0.15478	validation_1-merror:0.45906	validation_1-mlogloss:2.04359
-[372]	validation_0-merror:0.01571	validation_0-mlogloss:0.15463	validation_1-merror:0.45878	validation_1-mlogloss:2.04342
-[373]	validation_0-merror:0.01571	validation_0-mlogloss:0.15450	validation_1-merror:0.45851	validation_1-mlogloss:2.04346
-[374]	validation_0-merror:0.01571	validation_0-mlogloss:0.15434	validation_1-merror:0.45851	validation_1-mlogloss:2.04344
-[375]	validation_0-merror:0.01571	validation_0-mlogloss:0.15423	validation_1-merror:0.45823	validation_1-mlogloss:2.04336
-[376]	validation_0-merror:0.01571	validation_0-mlogloss:0.15410	validation_1-merror:0.45823	validation_1-mlogloss:2.04338
-[377]	validation_0-merror:0.01571	validation_0-mlogloss:0.15396	validation_1-merror:0.45795	validation_1-mlogloss:2.04343
-[378]	validation_0-merror:0.01571	validation_0-mlogloss:0.15385	validation_1-merror:0.45795	validation_1-mlogloss:2.04337
-[379]	validation_0-merror:0.01571	validation_0-mlogloss:0.15374	validation_1-merror:0.45795	validation_1-mlogloss:2.04331
-[380]	validation_0-merror:0.01571	validation_0-mlogloss:0.15362	validation_1-merror:0.45795	validation_1-mlogloss:2.04326
-[381]	validation_0-merror:0.01571	validation_0-mlogloss:0.15351	validation_1-merror:0.45823	validation_1-mlogloss:2.04323
-[382]	validation_0-merror:0.01571	validation_0-mlogloss:0.15339	validation_1-merror:0.45795	validation_1-mlogloss:2.04317
-[383]	validation_0-merror:0.01571	validation_0-mlogloss:0.15328	validation_1-merror:0.45851	validation_1-mlogloss:2.04316
-[384]	validation_0-merror:0.01571	validation_0-mlogloss:0.15318	validation_1-merror:0.45851	validation_1-mlogloss:2.04319
-[385]	validation_0-merror:0.01571	validation_0-mlogloss:0.15306	validation_1-merror:0.45851	validation_1-mlogloss:2.04326
-[386]	validation_0-merror:0.01566	validation_0-mlogloss:0.15296	validation_1-merror:0.45851	validation_1-mlogloss:2.04328
-[387]	validation_0-merror:0.01566	validation_0-mlogloss:0.15285	validation_1-merror:0.45851	validation_1-mlogloss:2.04327
-[388]	validation_0-merror:0.01566	validation_0-mlogloss:0.15274	validation_1-merror:0.45851	validation_1-mlogloss:2.04325
-[389]	validation_0-merror:0.01566	validation_0-mlogloss:0.15264	validation_1-merror:0.45823	validation_1-mlogloss:2.04324
-[390]	validation_0-merror:0.01566	validation_0-mlogloss:0.15253	validation_1-merror:0.45823	validation_1-mlogloss:2.04331
-[391]	validation_0-merror:0.01566	validation_0-mlogloss:0.15243	validation_1-merror:0.45823	validation_1-mlogloss:2.04334
-[392]	validation_0-merror:0.01566	validation_0-mlogloss:0.15232	validation_1-merror:0.45823	validation_1-mlogloss:2.04335
-
------------------- Evaluation Matrix -----------------
-
-
-Accuracy: 0.55
-Micro Precision: 0.29
-Micro Recall: 0.22
-Micro F1-score: 0.24
-
-Cohens Kappa: 0.53
-
-
---------------- Classification Report ---------------
-
-              precision    recall  f1-score   support
-
-           0       0.64      0.84      0.73       218
-           2       0.00      0.00      0.00         1
-           3       0.33      0.12      0.18        16
-           4       0.00      0.00      0.00         1
-           5       0.33      0.07      0.11        15
-           6       0.00      0.00      0.00         1
-           7       0.00      0.00      0.00         4
-           8       0.53      0.62      0.57       274
-           9       0.00      0.00      0.00         1
-          10       0.00      0.00      0.00        29
-          11       0.00      0.00      0.00        14
-          12       0.33      0.09      0.14        34
-          13       0.00      0.00      0.00         4
-          14       0.50      0.09      0.15        23
-          15       0.00      0.00      0.00        22
-          16       0.00      0.00      0.00         1
-          17       0.00      0.00      0.00         4
-          18       0.00      0.00      0.00         8
-          19       0.00      0.00      0.00        14
-          20       0.00      0.00      0.00         1
-          21       0.00      0.00      0.00         1
-          23       0.00      0.00      0.00         2
-          24       0.00      0.00      0.00         7
-          26       0.00      0.00      0.00         1
-          29       0.00      0.00      0.00         1
-          30       0.00      0.00      0.00         1
-          32       0.00      0.00      0.00         7
-          33       0.25      0.18      0.21        11
-          34       0.00      0.00      0.00         1
-          35       0.00      0.00      0.00         5
-          36       0.43      0.38      0.40         8
-          37       0.35      0.32      0.33        19
-          38       0.00      0.00      0.00         7
-          39       0.50      0.21      0.30        19
-          40       0.29      0.11      0.16        18
-          41       0.00      0.00      0.00         3
-          42       0.00      0.00      0.00         4
-          43       0.17      0.10      0.12        10
-          44       0.20      0.10      0.13        10
-          46       0.00      0.00      0.00         1
-          47       0.00      0.00      0.00         2
-          48       0.72      0.77      0.74        88
-          49       0.00      0.00      0.00         3
-          50       0.20      0.10      0.13        10
-          51       0.60      0.67      0.63         9
-          52       0.75      0.80      0.77        66
-          53       0.79      0.59      0.68        44
-          54       0.64      0.64      0.64        50
-          55       0.83      0.80      0.81        84
-          56       0.76      0.93      0.84       116
-          57       0.91      0.79      0.85        39
-          59       0.00      0.00      0.00         5
-          60       0.47      0.18      0.26        51
-          61       0.00      0.00      0.00         5
-          62       1.00      0.57      0.73         7
-          63       0.00      0.00      0.00         3
-          64       0.00      0.00      0.00         1
-          66       0.00      0.00      0.00         2
-          67       0.00      0.00      0.00         1
-          68       0.00      0.00      0.00         1
-          69       1.00      0.29      0.44         7
-          71       0.00      0.00      0.00         1
-          72       0.00      0.00      0.00         1
-          73       0.75      0.40      0.52        15
-          74       0.50      0.40      0.44         5
-          76       0.00      0.00      0.00         1
-          77       0.50      0.33      0.40         6
-          78       0.00      0.00      0.00         4
-          79       0.00      0.00      0.00         2
-          80       0.00      0.00      0.00         6
-          81       0.00      0.00      0.00         4
-          82       0.20      0.21      0.21        14
-          83       0.26      0.19      0.22        52
-          84       0.00      0.00      0.00         9
-          85       0.00      0.00      0.00        13
-          86       0.11      0.05      0.06        22
-          87       0.38      0.33      0.36        24
-          88       0.26      0.28      0.27        18
-          89       0.33      0.09      0.14        11
-          90       0.00      0.00      0.00        13
-          91       0.39      0.43      0.41        21
-          92       0.00      0.00      0.00         4
-          94       0.50      0.47      0.48        15
-          95       0.67      0.46      0.55        13
-          96       0.00      0.00      0.00         3
-          97       0.40      0.22      0.29         9
-          98       0.43      0.30      0.35        10
-          99       0.00      0.00      0.00         2
-         101       0.57      0.62      0.59       136
-         102       0.09      0.12      0.11         8
-         103       0.50      0.50      0.50        10
-         104       0.00      0.00      0.00         3
-         105       0.50      0.29      0.36         7
-         107       0.00      0.00      0.00         2
-         108       0.00      0.00      0.00         1
-         109       0.00      0.00      0.00         9
-         110       0.00      0.00      0.00         2
-         111       0.50      0.57      0.53         7
-         112       0.59      0.51      0.55        39
-         114       0.00      0.00      0.00         5
-         115       0.83      0.42      0.56        12
-         116       0.78      0.56      0.65        25
-         117       0.62      0.50      0.55        16
-         118       0.00      0.00      0.00         1
-         119       0.41      0.38      0.40       165
-         120       0.59      0.49      0.54        78
-         121       0.00      0.00      0.00         1
-         123       0.00      0.00      0.00         1
-         125       0.00      0.00      0.00         6
-         126       0.00      0.00      0.00         3
-         127       0.00      0.00      0.00         2
-         128       0.65      0.69      0.67       196
-         129       0.50      0.22      0.30        32
-         130       0.33      0.69      0.45       534
-         131       0.00      0.00      0.00         2
-         132       1.00      0.50      0.67         6
-         133       0.00      0.00      0.00         4
-         135       0.00      0.00      0.00         3
-         136       0.75      0.27      0.40        11
-         137       0.63      0.52      0.57        42
-         138       0.00      0.00      0.00         2
-         139       0.00      0.00      0.00         6
-         140       0.00      0.00      0.00         1
-         141       0.00      0.00      0.00         4
-         142       0.00      0.00      0.00         3
-         144       0.45      0.55      0.50       246
-         146       0.37      0.47      0.42       167
-         147       0.14      0.11      0.12         9
-         148       1.00      0.08      0.15        12
-         149       0.56      0.29      0.38        51
-         150       0.50      0.15      0.23        46
-         151       0.00      0.00      0.00        14
-         152       0.00      0.00      0.00         1
-         153       0.59      0.53      0.56       143
-         154       0.33      0.12      0.17        17
-         155       0.00      0.00      0.00         8
-         156       0.43      0.20      0.27        15
-         157       0.29      0.11      0.15        19
-         158       0.00      0.00      0.00         3
-         159       0.50      0.11      0.19        35
-         160       0.61      0.53      0.57       101
-         161       0.68      0.59      0.63        29
-         162       0.00      0.00      0.00         1
-         163       0.00      0.00      0.00         3
-         164       0.00      0.00      0.00         5
-         165       0.41      0.21      0.28        58
-         166       0.60      0.35      0.44        26
-         168       1.00      0.50      0.67         6
-         169       0.50      0.11      0.18         9
-         170       0.88      0.64      0.74        11
-         171       0.00      0.00      0.00         2
-         172       0.00      0.00      0.00        20
-         173       0.71      0.77      0.74       224
-         174       0.67      0.75      0.71       186
-         175       0.60      0.32      0.41        19
-         176       0.22      0.15      0.18        13
-         177       0.94      0.86      0.90        56
-         178       0.00      0.00      0.00         1
-         179       1.00      0.20      0.33         5
-         180       0.00      0.00      0.00         1
-         181       0.86      0.67      0.75         9
-         182       0.85      0.63      0.73        52
-         183       0.80      0.36      0.50        11
-         184       0.69      0.67      0.68       141
-         185       0.00      0.00      0.00         1
-         186       0.60      0.82      0.69       572
-         187       0.58      0.42      0.49        71
-         188       0.71      0.46      0.55        79
-         189       0.79      0.89      0.83       781
-         190       0.71      0.66      0.68       227
-         191       0.57      0.57      0.57        81
-         192       0.00      0.00      0.00         2
-         193       0.76      0.51      0.61        43
-         194       0.00      0.00      0.00         5
-         195       0.71      0.77      0.74        22
-         196       0.80      0.50      0.62        16
-         197       0.00      0.00      0.00         3
-         198       0.00      0.00      0.00         1
-         199       0.00      0.00      0.00         1
-         200       0.87      0.83      0.85        96
-         201       0.22      0.13      0.17        15
-         202       0.00      0.00      0.00         1
-         203       0.00      0.00      0.00         2
-         204       0.64      0.60      0.62        15
-         205       0.00      0.00      0.00         3
-         206       0.83      0.87      0.85        23
-         207       0.00      0.00      0.00         2
-         208       0.00      0.00      0.00         8
-         209       0.46      0.61      0.52        18
-         210       0.00      0.00      0.00         3
-         211       0.29      0.18      0.22        11
-         212       0.66      0.63      0.64        62
-         213       0.50      0.53      0.51        34
-         214       0.46      0.51      0.48        45
-         215       0.51      0.59      0.55        74
-         216       1.00      0.09      0.17        11
-         217       0.25      0.15      0.19        39
-         218       0.00      0.00      0.00         7
-         219       0.22      0.17      0.19        12
-         220       0.43      0.28      0.34        32
-         221       0.00      0.00      0.00         1
-         222       0.00      0.00      0.00         4
-         223       0.37      0.30      0.33        33
-         224       0.35      0.39      0.37        49
-         226       0.75      0.68      0.71        31
-         227       0.52      0.52      0.52        29
-         228       0.00      0.00      0.00         2
-         230       0.67      0.20      0.31        10
-         231       0.73      0.71      0.72        79
-         232       0.00      0.00      0.00         4
-         233       0.00      0.00      0.00         5
-         235       0.00      0.00      0.00         1
-         236       0.00      0.00      0.00        12
-         237       0.56      0.43      0.49        42
-         239       0.00      0.00      0.00         6
-         240       0.00      0.00      0.00         2
-         241       0.85      0.66      0.75        71
-         242       0.00      0.00      0.00         7
-         243       0.49      0.67      0.57       112
-         244       0.00      0.00      0.00         1
-         245       0.45      0.53      0.48        76
-         246       0.21      0.11      0.15        27
-         247       0.29      0.18      0.22        11
-         248       0.62      0.44      0.52        18
-         249       0.25      0.28      0.26        18
-         250       0.00      0.00      0.00         1
-         251       0.75      0.55      0.63        11
-         252       0.00      0.00      0.00         3
-         253       0.00      0.00      0.00         3
-         254       0.00      0.00      0.00         1
-         255       1.00      0.17      0.29         6
-         256       0.00      0.00      0.00         3
-         257       0.00      0.00      0.00         5
-         258       0.57      0.80      0.67         5
-         259       0.00      0.00      0.00         1
-         260       0.00      0.00      0.00         3
-         261       0.00      0.00      0.00         1
-         262       0.00      0.00      0.00         1
-         264       0.56      0.43      0.49        21
-         265       0.50      0.30      0.37        20
-         266       0.00      0.00      0.00         6
-         267       0.20      0.17      0.18         6
-         269       0.00      0.00      0.00         2
-         270       0.53      0.53      0.53        49
-         272       0.46      0.50      0.48        12
-         274       0.00      0.00      0.00         4
-         275       0.00      0.00      0.00         5
-         276       0.49      0.43      0.46        46
-         277       0.00      0.00      0.00         2
-         278       0.33      0.38      0.35         8
-         279       0.53      0.31      0.39        29
-         280       0.00      0.00      0.00         3
-         281       0.00      0.00      0.00         1
-         282       0.36      0.18      0.24        22
-         283       0.00      0.00      0.00         6
-         284       0.33      0.25      0.29        12
-         285       0.09      0.14      0.11         7
-         286       0.50      0.25      0.33         8
-         287       0.00      0.00      0.00         2
-         288       0.29      0.21      0.24        19
-         289       0.32      0.29      0.31        38
-         290       0.00      0.00      0.00         6
-         291       0.40      0.22      0.29         9
-         292       0.50      0.31      0.38        29
-         293       0.00      0.00      0.00         4
-         294       0.67      0.57      0.62         7
-         295       0.00      0.00      0.00         2
-         296       0.67      0.46      0.55        13
-         297       0.25      0.36      0.30        11
-         298       0.20      0.17      0.18         6
-         299       0.00      0.00      0.00         8
-         300       0.00      0.00      0.00         1
-         301       0.25      0.14      0.18         7
-         302       0.50      0.33      0.40         3
-         303       0.00      0.00      0.00        12
-         304       0.56      0.33      0.42        15
-         305       0.71      0.58      0.64        26
-         306       0.00      0.00      0.00        16
-         307       0.00      0.00      0.00         3
-         308       0.00      0.00      0.00         1
-         309       0.00      0.00      0.00         4
-         310       0.36      0.54      0.43       154
-         311       0.60      0.20      0.30        15
-         312       0.67      0.15      0.25        13
-         313       0.00      0.00      0.00         3
-         314       0.40      0.30      0.34        27
-         315       0.00      0.00      0.00         3
-         316       0.00      0.00      0.00         6
-         317       0.86      0.46      0.60        13
-         318       0.55      0.65      0.59        68
-         319       0.00      0.00      0.00        11
-         321       0.59      0.57      0.58        30
-         322       0.33      0.33      0.33         3
-         323       0.70      0.44      0.54        16
-         324       0.25      0.11      0.15        19
-         325       0.58      0.48      0.53        29
-         326       0.41      0.49      0.45        87
-         327       0.58      0.79      0.67       146
-         328       0.42      0.30      0.35        33
-         329       0.00      0.00      0.00         3
-         330       0.55      0.65      0.59        34
-         331       0.67      0.11      0.19        18
-         332       0.20      0.14      0.17         7
-         333       0.25      0.17      0.20         6
-         334       0.00      0.00      0.00         4
-         335       0.30      0.27      0.29        11
-         336       0.33      0.33      0.33         6
-         337       0.00      0.00      0.00         3
-         338       0.00      0.00      0.00         3
-         340       0.50      0.22      0.31         9
-         341       0.00      0.00      0.00         1
-         342       0.00      0.00      0.00         2
-         343       0.08      0.05      0.06        22
-         344       0.00      0.00      0.00         5
-         345       0.52      0.67      0.58       103
-         346       0.45      0.44      0.44        32
-         347       0.00      0.00      0.00         5
-         348       0.00      0.00      0.00         1
-         349       0.32      0.21      0.25        48
-         351       0.17      0.20      0.18         5
-         352       0.00      0.00      0.00         2
-         353       0.44      0.30      0.36        89
-         354       0.57      0.63      0.60       186
-         355       0.72      0.58      0.65        36
-         356       0.45      0.53      0.49       133
-         357       1.00      0.33      0.50         3
-         358       0.67      0.30      0.41        20
-         359       0.29      0.17      0.21        35
-         360       0.67      0.19      0.30        21
-         361       0.00      0.00      0.00         8
-         362       0.42      0.36      0.38        14
-         363       0.00      0.00      0.00         1
-         364       0.00      0.00      0.00         7
-         365       0.00      0.00      0.00         3
-         366       0.00      0.00      0.00         3
-         367       1.00      0.33      0.50         6
-         368       0.63      0.52      0.57        23
-         369       0.63      0.69      0.66       148
-         370       0.59      0.46      0.52        37
-         371       0.00      0.00      0.00         3
-         372       0.44      0.29      0.35        24
-         373       0.34      0.21      0.26        62
-         374       0.00      0.00      0.00         3
-         375       0.82      0.75      0.78        12
-         376       0.71      0.19      0.29        27
-         377       0.00      0.00      0.00         2
-         379       0.00      0.00      0.00         1
-         381       0.00      0.00      0.00         6
-         382       0.42      0.50      0.46       117
-         383       0.00      0.00      0.00         9
-         384       0.37      0.55      0.44       170
-         385       0.83      0.36      0.50        14
-         386       0.00      0.00      0.00         3
-         387       0.61      0.41      0.49        83
-
-    accuracy                           0.55     10812
-   macro avg       0.29      0.22      0.24     10812
-weighted avg       0.53      0.55      0.52     10812
-
-
------------------- Confusion Matrix -----------------
-
-[[184   0   0 ...   0   0   0]
- [  0   0   0 ...   0   0   0]
- [  0   0   2 ...   0   0   0]
- ...
- [  0   0   0 ...   5   0   0]
- [  0   0   0 ...   0   0   0]
- [  0   0   0 ...   0   0  34]]
----------------------- XGBoost ----------------------
-/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
-/home/bme001/20225898/miniconda3/envs/job/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1344: UndefinedMetricWarning: Precision and F-score are ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, msg_start, len(result))
+[0]	validation_0-merror:0.66356	validation_0-mlogloss:5.27094	validation_1-merror:0.71912	validation_1-mlogloss:5.36725
+[1]	validation_0-merror:0.58391	validation_0-mlogloss:4.93428	validation_1-merror:0.67583	validation_1-mlogloss:5.11920
+[2]	validation_0-merror:0.52649	validation_0-mlogloss:4.66327	validation_1-merror:0.64890	validation_1-mlogloss:4.93376
+[3]	validation_0-merror:0.47965	validation_0-mlogloss:4.43301	validation_1-merror:0.63003	validation_1-mlogloss:4.78759
+[4]	validation_0-merror:0.44085	validation_0-mlogloss:4.23033	validation_1-merror:0.61171	validation_1-mlogloss:4.65763
+[5]	validation_0-merror:0.41063	validation_0-mlogloss:4.04905	validation_1-merror:0.60117	validation_1-mlogloss:4.54636
+[6]	validation_0-merror:0.37978	validation_0-mlogloss:3.88368	validation_1-merror:0.59256	validation_1-mlogloss:4.45085
+[7]	validation_0-merror:0.35266	validation_0-mlogloss:3.73262	validation_1-merror:0.58535	validation_1-mlogloss:4.36428
+[8]	validation_0-merror:0.32928	validation_0-mlogloss:3.59251	validation_1-merror:0.57952	validation_1-mlogloss:4.28597
+[9]	validation_0-merror:0.30632	validation_0-mlogloss:3.46362	validation_1-merror:0.57508	validation_1-mlogloss:4.21556
+[10]	validation_0-merror:0.28822	validation_0-mlogloss:3.34218	validation_1-merror:0.57119	validation_1-mlogloss:4.15144
+[11]	validation_0-merror:0.27122	validation_0-mlogloss:3.22925	validation_1-merror:0.56647	validation_1-mlogloss:4.08956
+[12]	validation_0-merror:0.25482	validation_0-mlogloss:3.12247	validation_1-merror:0.56314	validation_1-mlogloss:4.03338
+[13]	validation_0-merror:0.24091	validation_0-mlogloss:3.02206	validation_1-merror:0.55648	validation_1-mlogloss:3.98202
+[14]	validation_0-merror:0.22908	validation_0-mlogloss:2.92727	validation_1-merror:0.54982	validation_1-mlogloss:3.93428
+[15]	validation_0-merror:0.21661	validation_0-mlogloss:2.83672	validation_1-merror:0.54788	validation_1-mlogloss:3.88853
+[16]	validation_0-merror:0.20589	validation_0-mlogloss:2.75120	validation_1-merror:0.54538	validation_1-mlogloss:3.84584
+[17]	validation_0-merror:0.19513	validation_0-mlogloss:2.66975	validation_1-merror:0.54122	validation_1-mlogloss:3.80481
+[18]	validation_0-merror:0.18492	validation_0-mlogloss:2.59105	validation_1-merror:0.53983	validation_1-mlogloss:3.76766
+[19]	validation_0-merror:0.17545	validation_0-mlogloss:2.51652	validation_1-merror:0.53983	validation_1-mlogloss:3.73073
+[20]	validation_0-merror:0.16746	validation_0-mlogloss:2.44493	validation_1-merror:0.53789	validation_1-mlogloss:3.69537
+[21]	validation_0-merror:0.15882	validation_0-mlogloss:2.37573	validation_1-merror:0.53650	validation_1-mlogloss:3.66251
+[22]	validation_0-merror:0.15055	validation_0-mlogloss:2.31027	validation_1-merror:0.53455	validation_1-mlogloss:3.63063
+[23]	validation_0-merror:0.14270	validation_0-mlogloss:2.24707	validation_1-merror:0.53261	validation_1-mlogloss:3.60114
+[24]	validation_0-merror:0.13572	validation_0-mlogloss:2.18648	validation_1-merror:0.53039	validation_1-mlogloss:3.57251
+[25]	validation_0-merror:0.12986	validation_0-mlogloss:2.12790	validation_1-merror:0.52873	validation_1-mlogloss:3.54471
+[26]	validation_0-merror:0.12413	validation_0-mlogloss:2.07152	validation_1-merror:0.52789	validation_1-mlogloss:3.51791
+[27]	validation_0-merror:0.11775	validation_0-mlogloss:2.01720	validation_1-merror:0.52817	validation_1-mlogloss:3.49275
+[28]	validation_0-merror:0.11193	validation_0-mlogloss:1.96473	validation_1-merror:0.52567	validation_1-mlogloss:3.46808
+[29]	validation_0-merror:0.10731	validation_0-mlogloss:1.91415	validation_1-merror:0.52373	validation_1-mlogloss:3.44370
+[30]	validation_0-merror:0.10297	validation_0-mlogloss:1.86525	validation_1-merror:0.52234	validation_1-mlogloss:3.42089
+[31]	validation_0-merror:0.09867	validation_0-mlogloss:1.81828	validation_1-merror:0.52206	validation_1-mlogloss:3.39844
+[32]	validation_0-merror:0.09405	validation_0-mlogloss:1.77296	validation_1-merror:0.52234	validation_1-mlogloss:3.37624
+[33]	validation_0-merror:0.08985	validation_0-mlogloss:1.72901	validation_1-merror:0.52040	validation_1-mlogloss:3.35536
+[34]	validation_0-merror:0.08662	validation_0-mlogloss:1.68682	validation_1-merror:0.51929	validation_1-mlogloss:3.33523
+[35]	validation_0-merror:0.08306	validation_0-mlogloss:1.64536	validation_1-merror:0.51790	validation_1-mlogloss:3.31536
+[36]	validation_0-merror:0.07978	validation_0-mlogloss:1.60574	validation_1-merror:0.51818	validation_1-mlogloss:3.29655
+[37]	validation_0-merror:0.07678	validation_0-mlogloss:1.56690	validation_1-merror:0.51679	validation_1-mlogloss:3.27755
+[38]	validation_0-merror:0.07364	validation_0-mlogloss:1.52973	validation_1-merror:0.51596	validation_1-mlogloss:3.25916
+[39]	validation_0-merror:0.07073	validation_0-mlogloss:1.49346	validation_1-merror:0.51291	validation_1-mlogloss:3.24208
+[40]	validation_0-merror:0.06823	validation_0-mlogloss:1.45819	validation_1-merror:0.51402	validation_1-mlogloss:3.22455
+[41]	validation_0-merror:0.06588	validation_0-mlogloss:1.42402	validation_1-merror:0.51318	validation_1-mlogloss:3.20828
+[42]	validation_0-merror:0.06338	validation_0-mlogloss:1.39089	validation_1-merror:0.51235	validation_1-mlogloss:3.19192
+[43]	validation_0-merror:0.06070	validation_0-mlogloss:1.35860	validation_1-merror:0.51207	validation_1-mlogloss:3.17603
+[44]	validation_0-merror:0.05830	validation_0-mlogloss:1.32733	validation_1-merror:0.50958	validation_1-mlogloss:3.16020
+[45]	validation_0-merror:0.05594	validation_0-mlogloss:1.29698	validation_1-merror:0.51013	validation_1-mlogloss:3.14445
+[46]	validation_0-merror:0.05396	validation_0-mlogloss:1.26742	validation_1-merror:0.51013	validation_1-mlogloss:3.12946
+[47]	validation_0-merror:0.05169	validation_0-mlogloss:1.23885	validation_1-merror:0.51013	validation_1-mlogloss:3.11514
+[48]	validation_0-merror:0.04994	validation_0-mlogloss:1.21100	validation_1-merror:0.50985	validation_1-mlogloss:3.10101
+[49]	validation_0-merror:0.04795	validation_0-mlogloss:1.18382	validation_1-merror:0.50819	validation_1-mlogloss:3.08710
+[50]	validation_0-merror:0.04661	validation_0-mlogloss:1.15752	validation_1-merror:0.50958	validation_1-mlogloss:3.07328
+[51]	validation_0-merror:0.04481	validation_0-mlogloss:1.13175	validation_1-merror:0.51013	validation_1-mlogloss:3.05987
+[52]	validation_0-merror:0.04333	validation_0-mlogloss:1.10670	validation_1-merror:0.51152	validation_1-mlogloss:3.04697
+[53]	validation_0-merror:0.04153	validation_0-mlogloss:1.08223	validation_1-merror:0.51069	validation_1-mlogloss:3.03405
+[54]	validation_0-merror:0.04010	validation_0-mlogloss:1.05851	validation_1-merror:0.50930	validation_1-mlogloss:3.02164
+[55]	validation_0-merror:0.03876	validation_0-mlogloss:1.03540	validation_1-merror:0.50930	validation_1-mlogloss:3.00938
+[56]	validation_0-merror:0.03751	validation_0-mlogloss:1.01270	validation_1-merror:0.50902	validation_1-mlogloss:2.99738
+[57]	validation_0-merror:0.03617	validation_0-mlogloss:0.99085	validation_1-merror:0.50819	validation_1-mlogloss:2.98604
+[58]	validation_0-merror:0.03479	validation_0-mlogloss:0.96934	validation_1-merror:0.50735	validation_1-mlogloss:2.97455
+[59]	validation_0-merror:0.03354	validation_0-mlogloss:0.94840	validation_1-merror:0.50735	validation_1-mlogloss:2.96376
+[60]	validation_0-merror:0.03234	validation_0-mlogloss:0.92811	validation_1-merror:0.50680	validation_1-mlogloss:2.95262
+[61]	validation_0-merror:0.03137	validation_0-mlogloss:0.90831	validation_1-merror:0.50735	validation_1-mlogloss:2.94157
+[62]	validation_0-merror:0.03044	validation_0-mlogloss:0.88895	validation_1-merror:0.50791	validation_1-mlogloss:2.93137
+[63]	validation_0-merror:0.02929	validation_0-mlogloss:0.87021	validation_1-merror:0.50735	validation_1-mlogloss:2.92068
+[64]	validation_0-merror:0.02836	validation_0-mlogloss:0.85185	validation_1-merror:0.50708	validation_1-mlogloss:2.91047
+[65]	validation_0-merror:0.02758	validation_0-mlogloss:0.83382	validation_1-merror:0.50597	validation_1-mlogloss:2.90009
+[66]	validation_0-merror:0.02675	validation_0-mlogloss:0.81644	validation_1-merror:0.50541	validation_1-mlogloss:2.89034
+[67]	validation_0-merror:0.02573	validation_0-mlogloss:0.79934	validation_1-merror:0.50541	validation_1-mlogloss:2.88044
+[68]	validation_0-merror:0.02453	validation_0-mlogloss:0.78279	validation_1-merror:0.50486	validation_1-mlogloss:2.87121
+[69]	validation_0-merror:0.02374	validation_0-mlogloss:0.76653	validation_1-merror:0.50430	validation_1-mlogloss:2.86150
+[70]	validation_0-merror:0.02291	validation_0-mlogloss:0.75051	validation_1-merror:0.50319	validation_1-mlogloss:2.85213
+[71]	validation_0-merror:0.02227	validation_0-mlogloss:0.73492	validation_1-merror:0.50458	validation_1-mlogloss:2.84322
+[72]	validation_0-merror:0.02130	validation_0-mlogloss:0.71975	validation_1-merror:0.50347	validation_1-mlogloss:2.83434
+[73]	validation_0-merror:0.02046	validation_0-mlogloss:0.70506	validation_1-merror:0.50264	validation_1-mlogloss:2.82566
+[74]	validation_0-merror:0.02005	validation_0-mlogloss:0.69058	validation_1-merror:0.50264	validation_1-mlogloss:2.81719
+[75]	validation_0-merror:0.01982	validation_0-mlogloss:0.67656	validation_1-merror:0.50236	validation_1-mlogloss:2.80898
+[76]	validation_0-merror:0.01940	validation_0-mlogloss:0.66281	validation_1-merror:0.50208	validation_1-mlogloss:2.80063
+[77]	validation_0-merror:0.01889	validation_0-mlogloss:0.64922	validation_1-merror:0.50264	validation_1-mlogloss:2.79247
+[78]	validation_0-merror:0.01815	validation_0-mlogloss:0.63622	validation_1-merror:0.50208	validation_1-mlogloss:2.78473
+[79]	validation_0-merror:0.01751	validation_0-mlogloss:0.62338	validation_1-merror:0.50180	validation_1-mlogloss:2.77668
+[80]	validation_0-merror:0.01695	validation_0-mlogloss:0.61083	validation_1-merror:0.50153	validation_1-mlogloss:2.76876
+[81]	validation_0-merror:0.01658	validation_0-mlogloss:0.59861	validation_1-merror:0.50153	validation_1-mlogloss:2.76098
+[82]	validation_0-merror:0.01645	validation_0-mlogloss:0.58663	validation_1-merror:0.50125	validation_1-mlogloss:2.75305
+[83]	validation_0-merror:0.01621	validation_0-mlogloss:0.57499	validation_1-merror:0.49986	validation_1-mlogloss:2.74573
