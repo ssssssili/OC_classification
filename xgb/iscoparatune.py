@@ -106,11 +106,12 @@ num_class = np.unique(labels)
 max_depth = []
 min_child = []
 gamma = []
+learning_rate = []
 score = []
 
 for learn in range(3):
-    for min in range(3):
-      for max in range(5):
+    #for min in range(3):
+      #for max in range(5):
         all_parameters = {'objective': 'multi:softmax',
                     'num_class': num_class,
                     'gamma': 0.1,
@@ -129,18 +130,19 @@ for learn in range(3):
               verbose=0, # set to 1 to see xgb training round intermediate results
               eval_set=[(x_train, y_train), (x_val, y_val)])
         s = xg.score(x_test, y_test)
-        max_depth.append(max+6)
-        min_child.append(min+5)
-        gamma.append(0.1*gam)
+        learning_rate.append(0.05*(learn+1))
+        #max_depth.append(max+6)
+        #min_child.append(min+5)
+        #gamma.append(0.1*gam)
         score.append(s)
-        print('score:', s, 'max_depth:',max+6, 'min:',min+5, 'gamma:', 0.1 * gam)
+        print('score:', s, 'leanringrate',0.05*(learn+1))  #'max_depth:',max+6, 'min:',min+5, 'gamma:', 0.1 * gam)
 
-try:
-    np.savetxt('result/isco88xgbpara.txt',
-           np.concatenate((np.array(score)[:,np.newaxis],np.array(max_depth)[:,np.newaxis],np.array(min_child)[:,np.newaxis],
-                           np.array(gamma)[:,np.newaxis]),axis=1),
-           fmt = '%f')
-except:
-    print('error when saving file')
+#try:
+    #np.savetxt('result/isco88xgbpara.txt',
+           #np.concatenate((np.array(score)[:,np.newaxis],np.array(max_depth)[:,np.newaxis],np.array(min_child)[:,np.newaxis],
+                           #np.array(gamma)[:,np.newaxis]),axis=1),
+           #fmt = '%f')
+#except:
+    #print('error when saving file')
 
 print('\n------------------ end -----------------\n')
