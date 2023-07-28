@@ -108,16 +108,16 @@ min_child = []
 gamma = []
 score = []
 
-for gam in range(3):
+for learn in range(3):
     for min in range(3):
       for max in range(5):
         all_parameters = {'objective': 'multi:softmax',
                     'num_class': num_class,
-                    'gamma': 0.1*gam,
-                    'learning_rate': 0.05,
+                    'gamma': 0.1,
+                    'learning_rate': 0.05*(learn+1),
                     'n_estimators': 500,
-                    'max_depth': max+6,
-                    'min_child_weight': min+5,
+                    'max_depth': 8,
+                    'min_child_weight': 7,
                     'early_stopping_rounds': 10,
                     #'scale_pos_weight': 1,
                     'tree_method': 'gpu_hist',
@@ -136,7 +136,7 @@ for gam in range(3):
         print('score:', s, 'max_depth:',max+6, 'min:',min+5, 'gamma:', 0.1 * gam)
 
 try:
-    np.savetxt('isco88xgbpara.txt',
+    np.savetxt('result/isco88xgbpara.txt',
            np.concatenate((np.array(score)[:,np.newaxis],np.array(max_depth)[:,np.newaxis],np.array(min_child)[:,np.newaxis],
                            np.array(gamma)[:,np.newaxis]),axis=1),
            fmt = '%f')
