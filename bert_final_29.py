@@ -60,7 +60,7 @@ class BertClassifier(nn.Module):
 def train(model, train_data, val_data, learning_rate, epochs):
     train, val = Dataset(train_data), Dataset(val_data)
     # shuffle为Ture训练时打乱样本的结果更好，但是如果自己比较可以选同样的情况不打乱
-    train_dataloader = torch.utils.data.DataLoader(train, batch_size=8, shuffle=True)
+    train_dataloader = torch.utils.data.DataLoader(train, batch_size=2, shuffle=True)
     val_dataloader = torch.utils.data.DataLoader(val, batch_size=2)
     # 使用gpu
     use_cuda = torch.cuda.is_available()

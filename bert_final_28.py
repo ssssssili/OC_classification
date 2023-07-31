@@ -50,7 +50,7 @@ class BertClassifier(nn.Module):
     def __init__(self, dropout=0.5):
         super(BertClassifier, self).__init__()
         # self.bert = BertModel.from_pretrained('roberta-base')
-        self.bert = BertModel.from_pretrained('bert-base-cased')
+        self.bert = BertModel.from_pretrained('bert-base-uncased')
         self.dropout = nn.Dropout(dropout)
         self.linear = nn.Linear(768, 388)  # *******此处的389改为类的数量即可，一定记得需要改变如果切换数据集的话!!!!!!********
         self.relu = nn.ReLU()
@@ -193,7 +193,7 @@ data = isco88_data
 # 去除一个warning的提示
 logging.set_verbosity_error()
 # 读取预训练模型
-BERT_PATH = 'bert-base-cased'
+BERT_PATH = 'bert-base-uncased'
 # BERT_PATH = 'roberta-base'
 tokenizer = BertTokenizer.from_pretrained(BERT_PATH)
 # 读取dataframe
