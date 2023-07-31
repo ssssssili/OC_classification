@@ -66,7 +66,7 @@ class BertClassifier(nn.Module):
 def train(model, train_data, val_data, learning_rate, epochs):
     train, val = Dataset(train_data), Dataset(val_data)
     # shuffle为Ture训练时打乱样本的结果更好，但是如果自己比较可以选同样的情况不打乱
-    train_dataloader = torch.utils.data.DataLoader(train, batch_size=2, shuffle=True)
+    train_dataloader = torch.utils.data.DataLoader(train, batch_size=8, shuffle=True)
     val_dataloader = torch.utils.data.DataLoader(val, batch_size=2)
     # 使用gpu
     use_cuda = torch.cuda.is_available()
@@ -215,7 +215,7 @@ df_train, df_val, df_test = np.split(data.sample(frac=1, random_state=42),
 EPOCHS = 10
 model = BertClassifier()
 LR = 1e-5
-unfreeze_layers = ['bert.pooler', 'dropout.', 'linear.', 'relu.']
+unfreeze_layers = ['layer.11', 'bert.pooler', 'dropout.', 'linear.', 'relu.']
 for name, param in model.named_parameters():
     print(name, param.size())
 
