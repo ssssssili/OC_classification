@@ -7,7 +7,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --time=168:00:0
 #SBATCH --job-name=exp26
-#SBATCH --output=/home/bme001/20225898/OC_classification/exp26/out_exp26.out
+#SBATCH --output=/home/bme001/20225898/OC_classification/bert/out_exp26.out
 
 module load cuda11.6/toolkit
 
