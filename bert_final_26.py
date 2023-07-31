@@ -23,7 +23,7 @@ class Dataset(torch.utils.data.Dataset):
         self.labels = [labels[label] for label in df['label']]
         self.texts = [tokenizer(text,
                                 padding='max_length',
-                                max_length=250,  # 这里bert最多是512，改小不会太影响，只要大于总的句子长度就可以
+                                max_length=305,  # 这里bert最多是512，改小不会太影响，只要大于总的句子长度就可以
                                 truncation=True,
                                 return_tensors="pt")
                       for text in df['feature']]
@@ -177,13 +177,15 @@ def evaluate(model, test_data):
     print(classification_report(test_labels, pred_labels))
 
 
-
-isco88_prep = pd.read_csv('isco88_prep.csv')
+asial = pd.read_csv('data/(English - ISCO-88) AL_allcodes(AsiaLymph) - Copy.csv')
+isco88_short = asial[~asial['isco88_cg_4'].str.contains('z')]
+isco88_prep = data_preprocess.PrepData(isco88_short, column=['occupation_en', 'task_en', 'employer_en', 'product_en'],
+                                      lan='english', lower=True, punc=True, stop_word=True, stemming=True)
 
 le = preprocessing.LabelEncoder()
 isco88_prep['label'] = le.fit_transform(isco88_prep['isco88_cg_4'])
 
-isco88_feature = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en'], withname=False)
+isco88_feature = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en', 'product_en'], withname=False)
 
 isco88_data = isco88_feature[['feature', 'label']]
 data = isco88_data
