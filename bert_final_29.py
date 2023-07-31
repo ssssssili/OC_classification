@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Jul  4 19:01:25 2023
-
-@author: Xinhao Lan
-"""
 import data_preprocess
 from transformers import BertModel, BertTokenizer
 import pandas as pd
@@ -23,7 +17,7 @@ class Dataset(torch.utils.data.Dataset):
         self.labels = [labels[label] for label in df['label']]
         self.texts = [tokenizer(text,
                                 padding='max_length',
-                                max_length=250,  # 这里bert最多是512，改小不会太影响，只要大于总的句子长度就可以
+                                max_length=305,  # 这里bert最多是512，改小不会太影响，只要大于总的句子长度就可以
                                 truncation=True,
                                 return_tensors="pt")
                       for text in df['feature']]
@@ -135,8 +129,8 @@ def train(model, train_data, val_data, learning_rate, epochs):
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.xlabel("Epochs", fontdict={'size': 16})
     plt.ylabel("Loss", fontdict={'size': 16})
-    plt.title("ISCO88 + MulBert + Unfreeze 1 layer", fontdict={'size': 20})
-    plt.savefig('bert/29_loss.png')
+    plt.title("ISCO88 + Bert + Unfreeze 0 layer", fontdict={'size': 20})
+    plt.savefig('bert/26_loss.png')
 
     plt.figure(figsize=(12, 8), dpi=100)
     plt.plot(Epoch, Train_acc, c='red', label='Train')
@@ -148,8 +142,8 @@ def train(model, train_data, val_data, learning_rate, epochs):
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.xlabel("Epochs", fontdict={'size': 16})
     plt.ylabel("Accuracy", fontdict={'size': 16})
-    plt.title("ISCO88 + MulBert + Unfreeze 1 layer", fontdict={'size': 20})
-    plt.savefig('bert/29_accuracy.png')
+    plt.title("ISCO88 + Bert + Unfreeze 0 layer", fontdict={'size': 20})
+    plt.savefig('bert/26_accuracy.png')
 
 
 def evaluate(model, test_data):
@@ -177,13 +171,15 @@ def evaluate(model, test_data):
     print(classification_report(test_labels, pred_labels))
 
 
-
-isco88_prep = pd.read_csv('isco88_prep.csv')
+asial = pd.read_csv('data/(English - ISCO-88) AL_allcodes(AsiaLymph) - Copy.csv')
+isco88_short = asial[~asial['isco88_cg_4'].str.contains('z')]
+isco88_prep = data_preprocess.PrepData(isco88_short, column=['occupation_en', 'task_en', 'employer_en', 'product_en'],
+                                      lan='english', lower=True, punc=True, stop_word=True, stemming=True)
 
 le = preprocessing.LabelEncoder()
 isco88_prep['label'] = le.fit_transform(isco88_prep['isco88_cg_4'])
 
-isco88_feature = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en'], withname=False)
+isco88_feature = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en', 'product_en'], withname=False)
 
 isco88_data = isco88_feature[['feature', 'label']]
 data = isco88_data
