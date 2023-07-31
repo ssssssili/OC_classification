@@ -135,8 +135,8 @@ def train(model, train_data, val_data, learning_rate, epochs):
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.xlabel("Epochs", fontdict={'size': 16})
     plt.ylabel("Loss", fontdict={'size': 16})
-    plt.title("ISCO88 + Bert + Unfreeze 0 layer", fontdict={'size': 20})
-    plt.savefig('bert/26_loss.png')
+    plt.title("ISCO88 + Bert + Unfreeze 1 layer", fontdict={'size': 20})
+    plt.savefig('bert/28_loss.png')
 
     plt.figure(figsize=(12, 8), dpi=100)
     plt.plot(Epoch, Train_acc, c='red', label='Train')
@@ -148,8 +148,8 @@ def train(model, train_data, val_data, learning_rate, epochs):
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.xlabel("Epochs", fontdict={'size': 16})
     plt.ylabel("Accuracy", fontdict={'size': 16})
-    plt.title("ISCO88 + Bert + Unfreeze 0 layer", fontdict={'size': 20})
-    plt.savefig('bert/26_accuracy.png')
+    plt.title("ISCO88 + Bert + Unfreeze 1 layer", fontdict={'size': 20})
+    plt.savefig('bert/28_accuracy.png')
 
 
 def evaluate(model, test_data):
@@ -213,7 +213,7 @@ df_train, df_val, df_test = np.split(data.sample(frac=1, random_state=42),
 EPOCHS = 10
 model = BertClassifier()
 LR = 1e-5
-unfreeze_layers = ['bert.pooler', 'dropout.', 'linear.', 'relu.']
+unfreeze_layers = ['layer.11', 'bert.pooler', 'dropout.', 'linear.', 'relu.']
 for name, param in model.named_parameters():
     print(name, param.size())
 

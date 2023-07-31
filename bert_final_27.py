@@ -15,6 +15,7 @@ from tqdm import tqdm
 from torch import nn
 import matplotlib.pyplot as plt
 from sklearn import preprocessing
+from sklearn.metrics import classification_report
 
 
 class Dataset(torch.utils.data.Dataset):
@@ -22,7 +23,7 @@ class Dataset(torch.utils.data.Dataset):
         self.labels = [labels[label] for label in df['label']]
         self.texts = [tokenizer(text,
                                 padding='max_length',
-                                max_length="longest",  # 这里bert最多是512，改小不会太影响，只要大于总的句子长度就可以
+                                max_length=250,  # 这里bert最多是512，改小不会太影响，只要大于总的句子长度就可以
                                 truncation=True,
                                 return_tensors="pt")
                       for text in df['feature']]
@@ -135,7 +136,7 @@ def train(model, train_data, val_data, learning_rate, epochs):
     plt.xlabel("Epochs", fontdict={'size': 16})
     plt.ylabel("Loss", fontdict={'size': 16})
     plt.title("ISCO88 + MulBert + Unfreeze 0 layer", fontdict={'size': 20})
-    plt.savefig('exp27/27_loss.png')
+    plt.savefig('bert/27_loss.png')
 
     plt.figure(figsize=(12, 8), dpi=100)
     plt.plot(Epoch, Train_acc, c='red', label='Train')
@@ -148,7 +149,7 @@ def train(model, train_data, val_data, learning_rate, epochs):
     plt.xlabel("Epochs", fontdict={'size': 16})
     plt.ylabel("Accuracy", fontdict={'size': 16})
     plt.title("ISCO88 + MulBert + Unfreeze 0 layer", fontdict={'size': 20})
-    plt.savefig('exp27/27_accuracy.png')
+    plt.savefig('bert/27_accuracy.png')
 
 
 def evaluate(model, test_data):
@@ -173,8 +174,8 @@ def evaluate(model, test_data):
             test_labels.append(test_label.cpu().numpy()[0])
             pred_labels.append(output.argmax(dim=1).cpu().numpy()[0])
     print(f'Test Accuracy: {total_acc_test / len(test_data): .3f}')
-    np.savetxt('exp27/test_labels.txt', test_labels, fmt='%f')
-    np.savetxt('exp27/pred_labels.txt', pred_labels, fmt='%f')
+    print(classification_report(test_labels, pred_labels))
+
 
 
 isco88_prep = pd.read_csv('isco88_prep.csv')

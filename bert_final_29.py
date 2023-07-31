@@ -50,7 +50,7 @@ class BertClassifier(nn.Module):
     def __init__(self, dropout=0.5):
         super(BertClassifier, self).__init__()
         # self.bert = BertModel.from_pretrained('roberta-base')
-        self.bert = BertModel.from_pretrained('bert-base-uncased')
+        self.bert = BertModel.from_pretrained('bert-base-multilingual-uncased')
         self.dropout = nn.Dropout(dropout)
         self.linear = nn.Linear(768, 388)  # *******此处的389改为类的数量即可，一定记得需要改变如果切换数据集的话!!!!!!********
         self.relu = nn.ReLU()
@@ -135,8 +135,8 @@ def train(model, train_data, val_data, learning_rate, epochs):
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.xlabel("Epochs", fontdict={'size': 16})
     plt.ylabel("Loss", fontdict={'size': 16})
-    plt.title("ISCO88 + Bert + Unfreeze 0 layer", fontdict={'size': 20})
-    plt.savefig('bert/26_loss.png')
+    plt.title("ISCO88 + MulBert + Unfreeze 1 layer", fontdict={'size': 20})
+    plt.savefig('bert/29_loss.png')
 
     plt.figure(figsize=(12, 8), dpi=100)
     plt.plot(Epoch, Train_acc, c='red', label='Train')
@@ -148,8 +148,8 @@ def train(model, train_data, val_data, learning_rate, epochs):
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.xlabel("Epochs", fontdict={'size': 16})
     plt.ylabel("Accuracy", fontdict={'size': 16})
-    plt.title("ISCO88 + Bert + Unfreeze 0 layer", fontdict={'size': 20})
-    plt.savefig('bert/26_accuracy.png')
+    plt.title("ISCO88 + MulBert + Unfreeze 1 layer", fontdict={'size': 20})
+    plt.savefig('bert/29_accuracy.png')
 
 
 def evaluate(model, test_data):
@@ -191,7 +191,7 @@ data = isco88_data
 # 去除一个warning的提示
 logging.set_verbosity_error()
 # 读取预训练模型
-BERT_PATH = 'bert-base-uncased'
+BERT_PATH = 'bert-base-multilingual-uncased'
 # BERT_PATH = 'roberta-base'
 tokenizer = BertTokenizer.from_pretrained(BERT_PATH)
 # 读取dataframe
@@ -213,7 +213,7 @@ df_train, df_val, df_test = np.split(data.sample(frac=1, random_state=42),
 EPOCHS = 10
 model = BertClassifier()
 LR = 1e-5
-unfreeze_layers = ['bert.pooler', 'dropout.', 'linear.', 'relu.']
+unfreeze_layers = ['layer.11', 'bert.pooler', 'dropout.', 'linear.', 'relu.']
 for name, param in model.named_parameters():
     print(name, param.size())
 
