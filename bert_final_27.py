@@ -215,7 +215,7 @@ df_train, df_val, df_test = np.split(data.sample(frac=1, random_state=42),
 EPOCHS = 10
 model = BertClassifier()
 LR = 1e-5
-unfreeze_layers = ['bert.pooler', 'dropout.', 'linear.', 'relu.']
+unfreeze_layers = ['layer.11', 'bert.pooler', 'dropout.', 'linear.', 'relu.']
 for name, param in model.named_parameters():
     print(name, param.size())
 
