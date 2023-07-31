@@ -180,7 +180,7 @@ def evaluate(model, test_data):
 asial = pd.read_csv('data/(English - ISCO-88) AL_allcodes(AsiaLymph) - Copy.csv')
 isco88_short = asial[~asial['isco88_cg_4'].str.contains('z')]
 isco88_prep = data_preprocess.PrepData(isco88_short, column=['occupation_en', 'task_en', 'employer_en', 'product_en'],
-                                      lan='english', lower=False, punc=True, stop_word=True, stemming=True)
+                                      lan='english', lower=False, punc=True, stop_word=False, stemming=False)
 
 le = preprocessing.LabelEncoder()
 isco88_prep['label'] = le.fit_transform(isco88_prep['isco88_cg_4'])
