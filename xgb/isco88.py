@@ -12,11 +12,11 @@ os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"]="0,1,2,3"
 
 isco88_prep = pd.read_csv('../data/isco88_prep.csv')
-isco88_data = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en', 'product_en'], withname=False)
+isco88_data = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en','employer_en'], withname=False)
 isco88_data['label'] = isco88_data['isco88_cg_4']
 isco88_data = isco88_data[['feature', 'label']]
 
-embedding_model = data_preprocess.EmbeddingModelB("bert-base-uncased")
+embedding_model = data_preprocess.EmbeddingModelD("distilbert-base-uncased")
 batch_size = 256
 num_batches = len(isco88_data) // batch_size + 1
 embeddings = []
@@ -37,11 +37,11 @@ x_train, x_test, x_val, y_train, y_test, y_val = data_preprocess.SplitDataset(em
 num_class = np.unique(labels)
 all_parameters = {'objective': 'multi:softmax',
                     'num_class': num_class,
-                    'gamma': 0.1,
-                    'learning_rate': 0.05,
-                    'n_estimators': 300,
-                    'max_depth': 10,
-                    'min_child_weight': 6,
+                    'gamma': 0.3,
+                    'learning_rate': 0.03,
+                    'n_estimators': 1000,
+                    'max_depth': 8,
+                    'min_child_weight': 10,
                     #'alpha': 1,
                     'early_stopping_rounds': 10,
                     #'scale_pos_weight': 1,
