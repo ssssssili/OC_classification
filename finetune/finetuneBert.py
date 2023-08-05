@@ -126,6 +126,9 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
     model.load_state_dict(torch.load("best_model.pt"))
     model.eval()
 
+    # Synchronize the GPU before the evaluation
+    torch.cuda.synchronize()
+
     # Evaluation on the test set
     print("Evaluating on the test set...")
     test_predictions, test_true_labels = [], []
@@ -143,6 +146,9 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
             predictions = torch.argmax(logits, dim=1)
             test_predictions.extend(predictions.cpu().tolist())
             test_true_labels.extend(labels.cpu().tolist())
+
+    # Synchronize the GPU after the evaluation
+    torch.cuda.synchronize()
 
     # Calculate evaluation metrics
     accuracy = accuracy_score(test_true_labels, test_predictions)
