@@ -179,9 +179,9 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
 
     # Calculate evaluation metrics
     accuracy = accuracy_score(test_true_labels, test_predictions)
-    precision = precision_score(test_true_labels, test_predictions)
-    recall = recall_score(test_true_labels, test_predictions)
-    f1 = f1_score(test_true_labels, test_predictions)
+    precision = precision_score(test_true_labels, test_predictions, average='macro')
+    recall = recall_score(test_true_labels, test_predictions, average='macro')
+    f1 = f1_score(test_true_labels, test_predictions, average='macro')
     cohen_kappa = cohen_kappa_score(test_true_labels, test_predictions)
 
     # Save the fine-tuned model
