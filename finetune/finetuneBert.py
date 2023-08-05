@@ -43,7 +43,7 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
     os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
     model = BertForSequenceClassification.from_pretrained(model_path, num_labels)
-    tokenizer = BertTokenizer.from_pretrained(model_path, num_labels)
+    tokenizer = BertTokenizer.from_pretrained(model_path)
 
     # Create datasets and data loaders
     train_dataset = TextClassificationDataset(train_texts, train_labels, tokenizer, max_length=max_length)
