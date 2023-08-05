@@ -2,12 +2,26 @@ from sklearn.model_selection import train_test_split
 from finetuneBert import train_and_evaluate_series_model
 import data_preprocess
 import pandas as pd
+import numpy as np
 
 
 isco88_prep = pd.read_csv('../data/isco88_prep.csv')
 isco88_data = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en', 'product_en'], withname=False)
+print(len(np.unique(isco88_data['isco88_cg_4'])))
+print(len(isco88_data['isco88_cg_4'].value_counts()))
 isco88_data['label'] = isco88_data['isco88_cg_4']
 isco88_data = isco88_data[['feature', 'label']]
+
+print(len(np.unique(isco88_prep['isco88_cg_4'])))
+
+print(len(np.unique(isco88_data['label'])))
+maxnum = []
+for i in isco88_data['feature']:
+    cnt = 0
+    for j in i:
+        cnt += 1
+    maxnum.append(cnt)
+print(max(maxnum))
 
 texts = isco88_data['feature'].tolist()
 labels = isco88_data['label'].tolist()
@@ -25,7 +39,7 @@ layer_configs = [
 # Perform training and evaluation for BERT base model
 bert_results = train_and_evaluate_series_model(train_texts, train_labels, val_texts, val_labels, test_texts, test_labels,
                                 model_type='bert-base-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=50, max_length=305, num_labels=788,
+                                batch_size=2, num_epochs=50, max_length=305, num_labels=388,
                                 result_filename='result/isco88_bert_results.txt',
                                 test_labels_filename='result/isco88_bert_test_labels.txt',
                                 test_predictions_filename='result/isco88_bert_test_predictions.txt')
@@ -33,7 +47,7 @@ bert_results = train_and_evaluate_series_model(train_texts, train_labels, val_te
 # Perform training and evaluation for multilingual BERT model
 multilingual_bert_results = train_and_evaluate_series_model(train_texts, train_labels, val_texts, val_labels, test_texts, test_labels,
                                 model_type='bert-base-multilingual-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=50, max_length=305, num_labels=788,
+                                batch_size=2, num_epochs=50, max_length=305, num_labels=388,
                                 result_filename='result/isco88_mulbert_results.txt',
                                 test_labels_filename='result/isco88_mulbert_test_labels.txt',
                                 test_predictions_filename='result/isco88_mulbert_test_predictions.txt')
