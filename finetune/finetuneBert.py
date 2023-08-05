@@ -199,9 +199,8 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
     return evaluation_results
 
 
-def train_and_evaluate_series_model(train_texts, train_labels, val_texts, val_labels, test_texts, test_labels,
-                                    model_type, layer_configs, batch_size, num_epochs, max_length, num_labels,
-                                    result_filename, test_labels_filename, test_predictions_filename):
+def train_and_evaluate_series_model(feature, label, model_type, layer_configs, batch_size, num_epochs, max_length,
+                                    num_labels, result_filename, test_labels_filename, test_predictions_filename):
     best_evaluation_results = None
     best_model_name = None
     best_model_config_num = None
@@ -214,9 +213,9 @@ def train_and_evaluate_series_model(train_texts, train_labels, val_texts, val_la
         model_name = f"model_config_{config_num}"
 
         # Fine-tune and evaluate the model
-        evaluation_results = fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts, test_labels,
-                                            model_path=model_type, unfreeze_layers=unfreeze_layers, batch_size=batch_size,
-                                            num_epochs=num_epochs, max_length=max_length, num_labels=num_labels)
+        evaluation_results = fine_tune_bert(feature, label, model_path=model_type, unfreeze_layers=unfreeze_layers,
+                                            batch_size=batch_size, num_epochs=num_epochs, max_length=max_length,
+                                            num_labels=num_labels)
 
         results[model_name] = evaluation_results
 
