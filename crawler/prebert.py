@@ -1,15 +1,16 @@
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup
 
-
-def preprocess_text(text):
+def preprocess_text(text, max_length=512):
     # Lowercase the text
-    return text.lower()
-
+    text = text.lower()
+    # Split text into chunks of maximum length
+    text_chunks = [text[i:i + max_length] for i in range(0, len(text), max_length)]
+    return text_chunks
 
 def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
     # Preprocess the text
-    text_data = preprocess_text(text_data)
+    text_chunks = preprocess_text(text_data)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # Load the tokenizer and model
@@ -39,12 +40,19 @@ def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
     # Train the model
     for epoch in range(num_epochs):
         model.train()
-        outputs = model(**inputs, labels=labels)
-        loss = outputs.loss
-        loss.backward()
-        optimizer.step()
-        scheduler.step()
-        model.zero_grad()
+        for chunk in text_chunks:
+            # Tokenize the input text and move tensors to GPU
+            inputs = tokenizer(chunk, return_tensors="pt", truncation=True, padding=True, max_length=512)
+            inputs = {k: v.to("cuda") for k, v in inputs.items()}
+            labels = torch.tensor([1]).unsqueeze(0).to(device)  # Replace 1 with the actual label you have for the text data
+
+            # Training step
+            outputs = model(**inputs, labels=labels)
+            loss = outputs.loss
+            loss.backward()
+            optimizer.step()
+            scheduler.step()
+            model.zero_grad()
 
     # Save the trained model
     model_save_path = f"{model_type}_layers{'_'.join(map(str, unfrozen_layers))}_model.pt"
