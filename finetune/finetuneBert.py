@@ -68,6 +68,7 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
 
     # Define optimizer and learning rate scheduler
     optimizer = AdamW(model.parameters(), lr=2e-5)
+    loss_fn = torch.nn.CrossEntropyLoss()
     total_steps = len(train_loader) * num_epochs
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0, num_training_steps=total_steps)
 
@@ -79,30 +80,34 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
     best_val_loss = float('inf')
     patience = 5
 
-    # Fine-tuning loop
+    # Training loop
     for epoch in range(num_epochs):
         model.train()
-        total_train_loss = 0
+        total_train_loss = 0.0
 
-        for batch in train_loader:
-            input_ids = batch['input_ids'].to(device)
-            attention_mask = batch['attention_mask'].to(device)
-            labels = batch['labels'].to(device)
+        for step, batch in enumerate(train_loader):
+            input_ids = batch['input_ids']
+            attention_mask = batch['attention_mask']
+            labels = batch['labels']
 
-            model.zero_grad()
+            optimizer.zero_grad()
 
-            outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-            loss = outputs.loss
+            # Forward pass
+            outputs = model(input_ids=input_ids, attention_mask=attention_mask)
+            logits = outputs.logits
+
+            # Calculate the loss
+            loss = loss_fn(logits, labels)
+
+            # Backpropagation
+            loss.backward()
+            optimizer.step()
+
             total_train_loss += loss.item()
 
-            loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0)
-
-            optimizer.step()
-            scheduler.step()
-
-        average_train_loss = total_train_loss / len(train_loader)
-        print(f'Epoch {epoch + 1}/{num_epochs} - Average training loss: {average_train_loss:.4f}')
+        # Calculate average training loss for the epoch
+        avg_train_loss = total_train_loss / len(train_loader)
+        print(f'Epoch {epoch + 1}/{num_epochs} - Average training loss: {avg_train_loss:.4f}')
 
         # Validation
         model.eval()
