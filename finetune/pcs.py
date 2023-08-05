@@ -28,18 +28,10 @@ layer_configs = [
 # Perform training and evaluation for BERT base model
 bert_results = train_and_evaluate_series_model(pcs_data['feature'], pcs_data['label'],
                                 model_type='bert-base-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=50, max_length=132, num_labels=495, name="pcs",
+                                batch_size=2, num_epochs=20, max_length=132, num_labels=495, name="pcsbert",
                                 result_filename='result/pcs_bert_results.txt',
                                 test_labels_filename='result/pcs_bert_test_labels.txt',
                                 test_predictions_filename='result/pcs_bert_test_predictions.txt')
-
-# Perform training and evaluation for multilingual BERT model
-multilingual_bert_results = train_and_evaluate_series_model(pcs_data['feature'], pcs_data['label'],
-                                model_type='bert-base-multilingual-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=50, max_length=132, num_labels=495, name="pcs",
-                                result_filename='result/pcs_mulbert_results.txt',
-                                test_labels_filename='result/pcs_mulbert_test_labels.txt',
-                                test_predictions_filename='result/pcs_mulbert_test_predictions.txt')
 
 
 # Print or analyze the results for BERT base model
@@ -51,6 +43,16 @@ for config, result in bert_results.items():
     print("Test F1 Score:", result['f1_score'])
     print("Test Cohen's Kappa:", result['cohen_kappa'])
     print("-----------------------------")
+
+
+# Perform training and evaluation for multilingual BERT model
+multilingual_bert_results = train_and_evaluate_series_model(pcs_data['feature'], pcs_data['label'],
+                                model_type='bert-base-multilingual-uncased', layer_configs=layer_configs,
+                                batch_size=2, num_epochs=20, max_length=132, num_labels=495, name="pcsmul",
+                                result_filename='result/pcs_mulbert_results.txt',
+                                test_labels_filename='result/pcs_mulbert_test_labels.txt',
+                                test_predictions_filename='result/pcs_mulbert_test_predictions.txt')
+
 
 # Print or analyze the results for multilingual BERT model
 for config, result in multilingual_bert_results.items():

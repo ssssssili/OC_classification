@@ -29,19 +29,10 @@ layer_configs = [
 # Perform training and evaluation for BERT base model
 bert_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type='bert-base-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=50, max_length=305, num_labels=388, name="isco88",
+                                batch_size=2, num_epochs=20, max_length=305, num_labels=388, name="isco88bert",
                                 result_filename='result/isco88_bert_results.txt',
                                 test_labels_filename='result/isco88_bert_test_labels.txt',
                                 test_predictions_filename='result/isco88_bert_test_predictions.txt')
-
-# Perform training and evaluation for multilingual BERT model
-multilingual_bert_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
-                                model_type='bert-base-multilingual-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=50, max_length=305, num_labels=388, name="isco88",
-                                result_filename='result/isco88_mulbert_results.txt',
-                                test_labels_filename='result/isco88_mulbert_test_labels.txt',
-                                test_predictions_filename='result/isco88_mulbert_test_predictions.txt')
-
 
 # Print or analyze the results for BERT base model
 for config, result in bert_results.items():
@@ -52,6 +43,15 @@ for config, result in bert_results.items():
     print("Test F1 Score:", result['f1_score'])
     print("Test Cohen's Kappa:", result['cohen_kappa'])
     print("-----------------------------")
+
+# Perform training and evaluation for multilingual BERT model
+multilingual_bert_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
+                                model_type='bert-base-multilingual-uncased', layer_configs=layer_configs,
+                                batch_size=2, num_epochs=20, max_length=305, num_labels=388, name="isco88mul",
+                                result_filename='result/isco88_mulbert_results.txt',
+                                test_labels_filename='result/isco88_mulbert_test_labels.txt',
+                                test_predictions_filename='result/isco88_mulbert_test_predictions.txt')
+
 
 # Print or analyze the results for multilingual BERT model
 for config, result in multilingual_bert_results.items():

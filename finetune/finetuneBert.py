@@ -6,7 +6,6 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import os
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-import random as rnd
 
 
 class TextClassificationDataset(Dataset):
@@ -216,9 +215,15 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
         # Fine-tune and evaluate the model
         evaluation_results = fine_tune_bert(feature, label, model_path=model_type, unfreeze_layers=unfreeze_layers,
                                             batch_size=batch_size, num_epochs=num_epochs, max_length=max_length,
-                                            num_labels=num_labels, name=name)
+                                            num_labels=num_labels, name=name+config_num)
 
         results[model_name] = evaluation_results
+        print("Test Accuracy:", evaluation_results['accuracy'])
+        print("Test Precision:", evaluation_results['precision'])
+        print("Test Recall:", evaluation_results['recall'])
+        print("Test F1 Score:", evaluation_results['f1_score'])
+        print("Test Cohen's Kappa:", evaluation_results['cohen_kappa'])
+        print("-----------------------------")
 
         # Check if the current model performs better than the previous best model
         if evaluation_results['accuracy'] > best_val_accuracy:
