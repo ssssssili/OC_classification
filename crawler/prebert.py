@@ -1,6 +1,7 @@
 import torch
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup
 
+
 def preprocess_text(text, max_length=512):
     # Lowercase the text
     text = text.lower()
@@ -8,22 +9,22 @@ def preprocess_text(text, max_length=512):
     text_chunks = [text[i:i + max_length] for i in range(0, len(text), max_length)]
     return text_chunks
 
+
 def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
     # Preprocess the text
     text_chunks = preprocess_text(text_data)
 
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     # Load the tokenizer and model
     tokenizer = BertTokenizer.from_pretrained(model_type)
-    model = BertForSequenceClassification.from_pretrained(model_type).to(device)
-    # Move the model to the GPU
+    model = BertForSequenceClassification.from_pretrained(model_type)
+    model.to("cuda")  # Move the model to the GPU
 
-    # Tokenize the input text and move tensors to GPU
-    inputs = tokenizer(text_data, return_tensors="pt")
-    inputs = {k: v.to("cuda") for k, v in inputs.items()}
-    labels = torch.tensor([1]).unsqueeze(0).to(device)  # Replace 1 with the actual label you have for the text data
+    # Tokenize the input text chunks and move tensors to GPU
+    tokenized_chunks = [tokenizer(chunk, return_tensors="pt", truncation=True, padding=True, max_length=512) for chunk
+                        in text_chunks]
+    tokenized_chunks = [{k: v.to("cuda") for k, v in inputs.items()} for inputs in tokenized_chunks]
 
-    # Freeze layers based on the 'unfrozen_layers' parameter
+    # Freeze/unfreeze layers
     for i, layer in enumerate(model.base_model.encoder.layer):
         for param in layer.parameters():
             param.requires_grad = False
@@ -35,16 +36,14 @@ def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
     # Create the optimizer and learning rate scheduler
     optimizer = AdamW(model.parameters(), lr=1e-5)
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0,
-                                                num_training_steps=len(inputs["input_ids"]) * num_epochs)
+                                                num_training_steps=len(text_chunks) * num_epochs)
 
     # Train the model
     for epoch in range(num_epochs):
         model.train()
-        for chunk in text_chunks:
-            # Tokenize the input text and move tensors to GPU
-            inputs = tokenizer(chunk, return_tensors="pt", truncation=True, padding=True, max_length=512)
-            inputs = {k: v.to("cuda") for k, v in inputs.items()}
-            labels = torch.tensor([1]).unsqueeze(0).to(device)  # Replace 1 with the actual label you have for the text data
+        for inputs in tokenized_chunks:
+            labels = torch.tensor([1]).unsqueeze(0).to(
+                "cuda")  # Replace 1 with the actual label you have for the text data
 
             # Training step
             outputs = model(**inputs, labels=labels)
@@ -59,7 +58,6 @@ def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
     model.save_pretrained(model_save_path)
 
     return model_save_path
-
 
 # Load text data from a text file
 text_file_path = "isco88index.txt"
