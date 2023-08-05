@@ -3,6 +3,7 @@ from transformers import BertForSequenceClassification, BertTokenizer
 from torch.utils.data import DataLoader, Dataset
 from transformers import AdamW, get_linear_schedule_with_warmup
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
+import os
 
 class TextClassificationDataset(Dataset):
     def __init__(self, texts, labels, tokenizer, max_length):
@@ -35,9 +36,14 @@ class TextClassificationDataset(Dataset):
         }
 
 def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts, test_labels,
-                   model_path, unfreeze_layers, batch_size, num_epochs, max_length):
-    model = BertForSequenceClassification.from_pretrained(model_path)
-    tokenizer = BertTokenizer.from_pretrained(model_path)
+                   model_path, unfreeze_layers, batch_size, num_epochs, max_length, num_labels):
+
+    os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+    os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+    os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
+
+    model = BertForSequenceClassification.from_pretrained(model_path, num_labels)
+    tokenizer = BertTokenizer.from_pretrained(model_path, num_labels)
 
     # Create datasets and data loaders
     train_dataset = TextClassificationDataset(train_texts, train_labels, tokenizer, max_length=max_length)
