@@ -1,107 +1,69 @@
 import torch
-from transformers import BertTokenizer, BertForMaskedLM
-from torch.utils.data import DataLoader, Dataset
+from transformers import BertTokenizer, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup
 
-# Step 1: Load your text data from the .txt file (if it's not already loaded)
-with open('isco88index.txt', 'r', encoding='utf-8') as file:
-    text_data = file.read()
-    text_data = text_data.lower()
 
-# Step 2: Tokenize and preprocess your text data
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-inputs = tokenizer(text_data, return_tensors='pt', padding=True, truncation=True)
+def preprocess_text(text):
+    # Lowercase the text
+    return text.lower()
 
-# Step 3: Prepare the dataset and data loader
-class CustomDataset(Dataset):
-    def __init__(self, input_ids, attention_mask):
-        self.input_ids = input_ids
-        self.attention_mask = attention_mask
 
-    def __len__(self):
-        return len(self.input_ids)
+def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
+    # Preprocess the text
+    text_data = preprocess_text(text_data)
 
-    def __getitem__(self, idx):
-        return {
-            'input_ids': self.input_ids[idx],
-            'attention_mask': self.attention_mask[idx]
-        }
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    # Load the tokenizer and model
+    tokenizer = BertTokenizer.from_pretrained(model_type)
+    model = BertForSequenceClassification.from_pretrained(model_type).to(device)
+    # Move the model to the GPU
 
-# Create DataLoader from the custom dataset
-dataset = CustomDataset(inputs['input_ids'], inputs['attention_mask'])
-dataloader = DataLoader(dataset, batch_size=8, shuffle=True)
+    # Tokenize the input text and move tensors to GPU
+    inputs = tokenizer(text_data, return_tensors="pt")
+    inputs = {k: v.to("cuda") for k, v in inputs.items()}
+    labels = torch.tensor([1]).unsqueeze(0).to(device)  # Replace 1 with the actual label you have for the text data
 
-# Define the device (GPU if available, else CPU)
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    # Freeze layers based on the 'unfrozen_layers' parameter
+    for i, layer in enumerate(model.base_model.encoder.layer):
+        for param in layer.parameters():
+            param.requires_grad = False
 
-# List of models with different configurations
-models = [
-    {
-        'model_name': 'bert-base-uncased',  # Base BERT
-        'unfrozen_layers': [-2, -1],  # Unfreeze the last two layers
-        'learning_rate': 2e-5
-    },
-    {
-        'model_name': 'bert-base-uncased',  # Multilingual BERT
-        'unfrozen_layers': [-3, -2, -1],  # Unfreeze the last three layers
-        'learning_rate': 2e-5
-    },
-    {
-        'model_name': 'bert-base-uncased',  # Base BERT
-        'unfrozen_layers': 'all',  # Unfreeze all layers
-        'learning_rate': 2e-5
-    },
-    {
-        'model_name': 'bert-base-uncased',  # Base BERT
-        'unfrozen_layers': 'all',  # Unfreeze all layers
-        'learning_rate': 1e-5
-    }
-]
-
-for model_config in models:
-    # Step 4: Load the pre-trained model and prepare for fine-tuning
-    model_name = model_config['model_name']
-    model = BertForMaskedLM.from_pretrained(model_name)
-    model.train()
-    model.to(device)
-
-    # Freeze all layers
-    for param in model.parameters():
-        param.requires_grad = False
-
-    # Unfreeze specific layers for fine-tuning
-    unfrozen_layers = model_config['unfrozen_layers']
-    for layer_index in unfrozen_layers:
-        for param in model.bert.encoder.layer[layer_index].parameters():
+    for layer_idx in unfrozen_layers:
+        for param in model.base_model.encoder.layer[layer_idx].parameters():
             param.requires_grad = True
 
-    # Define the optimizer with different learning rate for unfrozen layers
-    learning_rate = model_config['learning_rate']
-    optimizer = torch.optim.AdamW([
-        {'params': model.bert.embeddings.parameters(), 'lr': learning_rate},
-        {'params': model.bert.pooler.parameters(), 'lr': learning_rate},
-        {'params': model.bert.encoder.layer.parameters(), 'lr': learning_rate},
-    ])
+    # Create the optimizer and learning rate scheduler
+    optimizer = AdamW(model.parameters(), lr=1e-5)
+    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0,
+                                                num_training_steps=len(inputs["input_ids"]) * num_epochs)
 
-    # Step 5: Train the model with different layers unfrozen
-    epochs = 5
-    for epoch in range(epochs):
-        total_loss = 0
-        for batch in dataloader:
-            input_ids = batch['input_ids'].to(device)
-            attention_mask = batch['attention_mask'].to(device)
+    # Train the model
+    for epoch in range(num_epochs):
+        model.train()
+        outputs = model(**inputs, labels=labels)
+        loss = outputs.loss
+        loss.backward()
+        optimizer.step()
+        scheduler.step()
+        model.zero_grad()
 
-            outputs = model(input_ids, attention_mask=attention_mask, labels=input_ids)
-            loss = outputs.loss
-            total_loss += loss.item()
-
-            loss.backward()
-            optimizer.step()
-            optimizer.zero_grad()
-
-        avg_loss = total_loss / len(dataloader)
-        print(f"{model_name} - Epoch {epoch + 1}/{epochs} - Loss: {avg_loss:.4f}")
-
-    # Step 6: Save the fine-tuned model
-    model_save_path = f'{model_name}_unfrozen_layers_{unfrozen_layers}_lr_{learning_rate}.pt'
+    # Save the trained model
+    model_save_path = f"{model_type}_layers{'_'.join(map(str, unfrozen_layers))}_model.pt"
     model.save_pretrained(model_save_path)
-    print(f"Model saved to {model_save_path}")
+
+    return model_save_path
+
+
+# Load text data from a text file
+text_file_path = "isco88index.txt"
+with open(text_file_path, "r", encoding="utf-8") as file:
+    text_data = file.read()
+
+# Define the model types and layers to tune
+model_types = ['bert-base-uncased', 'bert-base-multilingual-uncased']
+layers_to_tune = [[-1], [-1, -2], ['all']]  # Examples of different layer combinations
+
+# Train and save models with different parameters
+for model_type in model_types:
+    for unfrozen_layers in layers_to_tune:
+        model_save_path = train_and_save_model(model_type, unfrozen_layers, text_data)
+        print(f"Model saved at: {model_save_path}")
