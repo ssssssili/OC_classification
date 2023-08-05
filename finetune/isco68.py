@@ -28,7 +28,7 @@ layer_configs = [
 # Perform training and evaluation for BERT base model
 bert_results = train_and_evaluate_series_model(isco68_data['feature'], isco68_data['label'],
                                 model_type='bert-base-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=50, max_length=100, num_labels=639,
+                                batch_size=2, num_epochs=50, max_length=100, num_labels=639, name="isco68",
                                 result_filename='result/isco68_bert_results.txt',
                                 test_labels_filename='result/isco68_bert_test_labels.txt',
                                 test_predictions_filename='result/isco68_bert_test_predictions.txt')
@@ -36,7 +36,7 @@ bert_results = train_and_evaluate_series_model(isco68_data['feature'], isco68_da
 # Perform training and evaluation for multilingual BERT model
 multilingual_bert_results = train_and_evaluate_series_model(isco68_data['feature'], isco68_data['label'],
                                 model_type='bert-base-multilingual-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=50, max_length=100, num_labels=639,
+                                batch_size=2, num_epochs=50, max_length=100, num_labels=639, name="isco68",
                                 result_filename='result/isco68_mulbert_results.txt',
                                 test_labels_filename='result/isco68_mulbert_test_labels.txt',
                                 test_predictions_filename='result/isco68_mulbert_test_predictions.txt')

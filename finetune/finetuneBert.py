@@ -6,6 +6,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 import os
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
+import random as rnd
 
 
 class TextClassificationDataset(Dataset):
@@ -38,7 +39,7 @@ class TextClassificationDataset(Dataset):
             'labels': torch.tensor(label, dtype=torch.long)
         }
 
-def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_epochs, max_length, num_labels):
+def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_epochs, max_length, num_labels, name):
 
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
     os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
@@ -141,7 +142,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
         if average_val_loss < best_val_loss:
             best_val_loss = average_val_loss
             patience_counter = 0
-            torch.save(model.state_dict(), "best_model.pt")  # Save the best model so far
+            torch.save(model.state_dict(), f"{name}_best_model.pt")  # Save the best model so far
         else:
             patience_counter += 1
             if patience_counter >= patience:
@@ -149,7 +150,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
                 break
 
     # Load the best model and evaluate it on the test set
-    model.load_state_dict(torch.load("best_model.pt"))
+    model.load_state_dict(torch.load(f"{name}_best_model.pt"))
     model.eval()
 
     # Synchronize the GPU before the evaluation
@@ -184,7 +185,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
     cohen_kappa = cohen_kappa_score(test_true_labels, test_predictions)
 
     # Save the fine-tuned model
-    model.save_pretrained("fine_tuned_model")
+    model.save_pretrained(f"{name}_fine_tuned_model")
 
     evaluation_results = {
         'accuracy': accuracy,
@@ -200,7 +201,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
 
 
 def train_and_evaluate_series_model(feature, label, model_type, layer_configs, batch_size, num_epochs, max_length,
-                                    num_labels, result_filename, test_labels_filename, test_predictions_filename):
+                                    num_labels, name, result_filename, test_labels_filename, test_predictions_filename):
     best_evaluation_results = None
     best_model_name = None
     best_model_config_num = None
@@ -215,7 +216,7 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
         # Fine-tune and evaluate the model
         evaluation_results = fine_tune_bert(feature, label, model_path=model_type, unfreeze_layers=unfreeze_layers,
                                             batch_size=batch_size, num_epochs=num_epochs, max_length=max_length,
-                                            num_labels=num_labels)
+                                            num_labels=num_labels, name=name)
 
         results[model_name] = evaluation_results
 
