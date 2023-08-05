@@ -1,5 +1,5 @@
 import torch
-from transformers import BertForSequenceClassification, BertTokenizer
+from transformers import BertForSequenceClassification, BertTokenizer, BertConfig
 from torch.utils.data import DataLoader, Dataset
 from transformers import AdamW, get_linear_schedule_with_warmup
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
@@ -42,7 +42,11 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
     os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
     os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
-    model = BertForSequenceClassification.from_pretrained(model_path, num_labels)
+    # Initialize the BERT model configuration
+    config = BertConfig.from_pretrained(model_path, num_labels=num_labels)
+
+    # Initialize the BERT model for sequence classification
+    model = BertForSequenceClassification(config)
     tokenizer = BertTokenizer.from_pretrained(model_path)
 
     # Create datasets and data loaders

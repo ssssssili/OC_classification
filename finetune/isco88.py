@@ -2,19 +2,14 @@ from sklearn.model_selection import train_test_split
 from finetuneBert import train_and_evaluate_series_model
 import data_preprocess
 import pandas as pd
-import numpy as np
 
 
 isco88_prep = pd.read_csv('../data/isco88_prep.csv')
 isco88_data = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en', 'product_en'], withname=False)
-print(len(np.unique(isco88_data['isco88_cg_4'])))
-print(len(isco88_data['isco88_cg_4'].value_counts()))
 isco88_data['label'] = isco88_data['isco88_cg_4']
 isco88_data = isco88_data[['feature', 'label']]
 
-print(len(np.unique(isco88_prep['isco88_cg_4'])))
-
-print(len(np.unique(isco88_data['label'])))
+"""
 maxnum = []
 for i in isco88_data['feature']:
     cnt = 0
@@ -22,6 +17,8 @@ for i in isco88_data['feature']:
         cnt += 1
     maxnum.append(cnt)
 print(max(maxnum))
+print(len(isco88_data['label'].value_counts()))
+"""
 
 texts = isco88_data['feature'].tolist()
 labels = isco88_data['label'].tolist()
