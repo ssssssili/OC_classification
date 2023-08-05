@@ -215,7 +215,7 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
         # Fine-tune and evaluate the model
         evaluation_results = fine_tune_bert(feature, label, model_path=model_type, unfreeze_layers=unfreeze_layers,
                                             batch_size=batch_size, num_epochs=num_epochs, max_length=max_length,
-                                            num_labels=num_labels, name=name+config_num)
+                                            num_labels=num_labels, name=f"{name}-{config_num}")
 
         results[model_name] = evaluation_results
         print("Test Accuracy:", evaluation_results['accuracy'])
