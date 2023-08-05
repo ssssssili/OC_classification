@@ -1,4 +1,3 @@
-from sklearn.model_selection import train_test_split
 from finetuneBert import train_and_evaluate_series_model
 import data_preprocess
 import pandas as pd
@@ -20,12 +19,6 @@ print(max(maxnum))
 print(len(isco88_data['label'].value_counts()))
 """
 
-texts = isco88_data['feature'].tolist()
-labels = isco88_data['label'].tolist()
-
-train_texts, temp_texts, train_labels, temp_labels = train_test_split(texts, labels, test_size=0.4, random_state=42)
-val_texts, test_texts, val_labels, test_labels = train_test_split(temp_texts, temp_labels, test_size=0.75, random_state=42)
-
 layer_configs = [
     [0],                # Unfreeze only the classifier layer
     [0, 11],            # Unfreeze the classifier and last layer of BERT
@@ -34,7 +27,7 @@ layer_configs = [
 ]
 
 # Perform training and evaluation for BERT base model
-bert_results = train_and_evaluate_series_model(train_texts, train_labels, val_texts, val_labels, test_texts, test_labels,
+bert_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type='bert-base-uncased', layer_configs=layer_configs,
                                 batch_size=2, num_epochs=50, max_length=305, num_labels=388,
                                 result_filename='result/isco88_bert_results.txt',
@@ -42,7 +35,7 @@ bert_results = train_and_evaluate_series_model(train_texts, train_labels, val_te
                                 test_predictions_filename='result/isco88_bert_test_predictions.txt')
 
 # Perform training and evaluation for multilingual BERT model
-multilingual_bert_results = train_and_evaluate_series_model(train_texts, train_labels, val_texts, val_labels, test_texts, test_labels,
+multilingual_bert_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type='bert-base-multilingual-uncased', layer_configs=layer_configs,
                                 batch_size=2, num_epochs=50, max_length=305, num_labels=388,
                                 result_filename='result/isco88_mulbert_results.txt',

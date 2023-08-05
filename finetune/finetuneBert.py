@@ -4,6 +4,9 @@ from torch.utils.data import DataLoader, Dataset
 from transformers import AdamW, get_linear_schedule_with_warmup
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
 import os
+from sklearn.preprocessing import LabelEncoder
+from sklearn.model_selection import train_test_split
+
 
 class TextClassificationDataset(Dataset):
     def __init__(self, texts, labels, tokenizer, max_length):
@@ -35,14 +38,21 @@ class TextClassificationDataset(Dataset):
             'labels': torch.tensor(label, dtype=torch.long)
         }
 
-def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts, test_labels,
-                   model_path, unfreeze_layers, batch_size, num_epochs, max_length, num_labels):
+def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_epochs, max_length, num_labels):
 
     os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
     os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
     os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+    le = LabelEncoder()
+    labels = le.fit_transform(label).tolist()
+    texts = feature.tolist()
+
+    train_texts, temp_texts, train_labels, temp_labels = train_test_split(texts, labels, test_size=0.4, random_state=42)
+    val_texts, test_texts, val_labels, test_labels = train_test_split(temp_texts, temp_labels, test_size=0.75,
+                                                                      random_state=42)
 
     # Initialize the BERT model configuration
     config = BertConfig.from_pretrained(model_path, num_labels=num_labels)
@@ -182,8 +192,8 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
         'recall': recall,
         'f1_score': f1,
         'cohen_kappa': cohen_kappa,
-        'test_true_labels': test_true_labels,
-        'test_predictions': test_predictions
+        'test_true_labels': le.inverse_transform(test_true_labels),
+        'test_predictions': le.inverse_transform(test_predictions)
     }
 
     return evaluation_results
