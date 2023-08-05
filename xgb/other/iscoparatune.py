@@ -1,8 +1,7 @@
 import pandas as pd
 import numpy as np
-import data_preprocess
+from other import data_preprocess
 import xgboost as xgb
-import time
 from sklearn.preprocessing import LabelEncoder
 import os
 
