@@ -180,7 +180,7 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
 
 
 def train_and_evaluate_series_model(train_texts, train_labels, val_texts, val_labels, test_texts, test_labels,
-                                    model_type, layer_configs, batch_size, num_epochs, max_length,
+                                    model_type, layer_configs, batch_size, num_epochs, max_length, num_labels,
                                     result_filename, test_labels_filename, test_predictions_filename):
     best_evaluation_results = None
     best_model_name = None
@@ -196,7 +196,7 @@ def train_and_evaluate_series_model(train_texts, train_labels, val_texts, val_la
         # Fine-tune and evaluate the model
         evaluation_results = fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts, test_labels,
                                             model_path=model_type, unfreeze_layers=unfreeze_layers, batch_size=batch_size,
-                                            num_epochs=num_epochs, max_length=max_length)
+                                            num_epochs=num_epochs, max_length=max_length, num_labels=num_labels)
 
         results[model_name] = evaluation_results
 
