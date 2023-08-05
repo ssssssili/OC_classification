@@ -42,11 +42,13 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
     os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
     os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
     # Initialize the BERT model configuration
     config = BertConfig.from_pretrained(model_path, num_labels=num_labels)
 
     # Initialize the BERT model for sequence classification
-    model = BertForSequenceClassification(config)
+    model = BertForSequenceClassification(config).to(device)
     tokenizer = BertTokenizer.from_pretrained(model_path)
 
     # Create datasets and data loaders
@@ -73,8 +75,7 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
     scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0, num_training_steps=total_steps)
 
     # Move model to GPU if available
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model.to(device)
+    #model.to(device)
 
     # Early stopping
     best_val_loss = float('inf')
@@ -86,9 +87,9 @@ def fine_tune_bert(train_texts, train_labels, val_texts, val_labels, test_texts,
         total_train_loss = 0.0
 
         for step, batch in enumerate(train_loader):
-            input_ids = batch['input_ids']
-            attention_mask = batch['attention_mask']
-            labels = batch['labels']
+            input_ids = batch['input_ids'].to(device)
+            attention_mask = batch['attention_mask'].to(device)
+            labels = batch['labels'].to(device)
 
             optimizer.zero_grad()
 
