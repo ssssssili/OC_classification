@@ -78,7 +78,7 @@ try:
 except:
     print('error when saving file')
 """
-isco88_prep = pd.read_csv('../data/isco88_prep.csv')
+isco88_prep = pd.read_csv('../../data/isco88_prep.csv')
 isco88_data = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en', 'product_en'], withname=False)
 isco88_data['label'] = isco88_data['isco88_cg_4']
 isco88_data = isco88_data[['feature', 'label']]
