@@ -2,6 +2,12 @@ from sklearn.model_selection import train_test_split
 from finetuneBert import train_and_evaluate_series_model
 import data_preprocess
 import pandas as pd
+import os
+
+
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
 isco88_prep = pd.read_csv('../data/isco88_prep.csv')
 isco88_data = data_preprocess.CombineFeature(isco88_prep, column=['occupation_en', 'task_en', 'employer_en', 'product_en'], withname=False)
