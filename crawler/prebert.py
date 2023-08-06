@@ -24,6 +24,13 @@ def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
                         in text_chunks]
     tokenized_chunks = [{k: v.to("cuda") for k, v in inputs.items()} for inputs in tokenized_chunks]
 
+    # Determine which layers to unfreeze
+    if unfrozen_layers == 'all':
+        unfrozen_layers = list(range(len(model.base_model.encoder.layer)))
+    else:
+        # Convert layer indices to a list if not already a list
+        unfrozen_layers = [unfrozen_layers] if isinstance(unfrozen_layers, int) else unfrozen_layers
+
     # Freeze/unfreeze layers
     for i, layer in enumerate(model.base_model.encoder.layer):
         for param in layer.parameters():
@@ -66,7 +73,7 @@ with open(text_file_path, "r", encoding="utf-8") as file:
 
 # Define the model types and layers to tune
 model_types = ['bert-base-uncased', 'bert-base-multilingual-uncased']
-layers_to_tune = [[-1], [-1, -2], ['all']]  # Examples of different layer combinations
+layers_to_tune = [['all'], [-1], [-1, -2]]  # Examples of different layer combinations
 
 # Train and save models with different parameters
 for model_type in model_types:
