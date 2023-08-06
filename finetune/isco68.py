@@ -25,30 +25,10 @@ layer_configs = [
     [0, 5, 11]          # Unfreeze the classifier and selected middle layers
 ]
 
-# Perform training and evaluation for BERT base model
-bert_results = train_and_evaluate_series_model(isco68_data['feature'], isco68_data['label'],
-                                model_type='bert-base-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=20, max_length=100, num_labels=639, name="isco68bert",
-                                result_filename='result/isco68_bert_results.txt',
-                                test_labels_filename='result/isco68_bert_test_labels.txt',
-                                test_predictions_filename='result/isco68_bert_test_predictions.txt')
-
-
-# Print or analyze the results for BERT base model
-for config, result in bert_results.items():
-    print(f"Configuration: {config}")
-    print("Test Accuracy:", result['accuracy'])
-    print("Test Precision:", result['precision'])
-    print("Test Recall:", result['recall'])
-    print("Test F1 Score:", result['f1_score'])
-    print("Test Cohen's Kappa:", result['cohen_kappa'])
-    print("-----------------------------")
-
-
 # Perform training and evaluation for multilingual BERT model
 multilingual_bert_results = train_and_evaluate_series_model(isco68_data['feature'], isco68_data['label'],
                                 model_type='bert-base-multilingual-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=20, max_length=100, num_labels=639, name="isco68mul",
+                                batch_size=2, num_epochs=10, max_length=100, num_labels=639, name="isco68mul",
                                 result_filename='result/isco68_mulbert_results.txt',
                                 test_labels_filename='result/isco68_mulbert_test_labels.txt',
                                 test_predictions_filename='result/isco68_mulbert_test_predictions.txt')

@@ -20,8 +20,6 @@ print(len(isco88_data['label'].value_counts()))
 """
 
 layer_configs = [
-    [0],                # Unfreeze only the classifier layer
-    [0, 11],            # Unfreeze the classifier and last layer of BERT
     list(range(12)),    # Unfreeze all layers of BERT
     [0, 5, 11]          # Unfreeze the classifier and selected middle layers
 ]
@@ -29,7 +27,7 @@ layer_configs = [
 # Perform training and evaluation for BERT base model
 bert_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type='bert-base-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=20, max_length=305, num_labels=388, name="isco88bert",
+                                batch_size=2, num_epochs=10, max_length=305, num_labels=388, name="isco88bert",
                                 result_filename='result/isco88_bert_results.txt',
                                 test_labels_filename='result/isco88_bert_test_labels.txt',
                                 test_predictions_filename='result/isco88_bert_test_predictions.txt')
@@ -47,7 +45,7 @@ for config, result in bert_results.items():
 # Perform training and evaluation for multilingual BERT model
 multilingual_bert_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type='bert-base-multilingual-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=20, max_length=305, num_labels=388, name="isco88mul",
+                                batch_size=2, num_epochs=10, max_length=305, num_labels=388, name="isco88mul",
                                 result_filename='result/isco88_mulbert_results.txt',
                                 test_labels_filename='result/isco88_mulbert_test_labels.txt',
                                 test_predictions_filename='result/isco88_mulbert_test_predictions.txt')
