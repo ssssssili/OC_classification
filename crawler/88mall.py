@@ -179,7 +179,7 @@ df_train, df_val, df_test = np.split(data.sample(frac=1, random_state=42),
 EPOCHS = 10
 LR = 2e-5
 
-"""
+
 print('*'*10, 'unfreeze_0', '*'*10)
 model1 = BertClassifier()
 for name, param in model1.named_parameters():
@@ -194,7 +194,7 @@ for name, param in model1.named_parameters():
 train(model1, df_train, df_val, LR, EPOCHS)
 evaluate(model1, df_test)
 torch.save(model1.state_dict(), "88m_unfreeze_0_model.pt")
-"""
+
 
 print('*'*10, 'unfreeze_01', '*'*10)
 model2 = BertClassifier()
