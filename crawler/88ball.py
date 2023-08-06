@@ -43,7 +43,7 @@ class BertClassifier(nn.Module):
     def __init__(self, dropout=0.5):
         super(BertClassifier, self).__init__()
         # self.bert = BertModel.from_pretrained('roberta-base')
-        self.bert = BertModel.from_pretrained('bert-base-uncased_layers-1_model.pt.pt')
+        self.bert = BertModel.from_pretrained('bert-base-uncased_layers-1_model.pt')
         self.dropout = nn.Dropout(dropout)
         self.linear = nn.Linear(768, 388)
         self.relu = nn.ReLU()
