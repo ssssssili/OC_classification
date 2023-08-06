@@ -73,7 +73,7 @@ with open(text_file_path, "r", encoding="utf-8") as file:
 
 # Define the model types and layers to tune
 model_types = ['bert-base-uncased', 'bert-base-multilingual-uncased']
-layers_to_tune = [['all'], [-1], [-1, -2]]  # Examples of different layer combinations
+layers_to_tune = [[i for i in range(12)], [-1], [-1, -2]]  # Examples of different layer combinations
 
 # Train and save models with different parameters
 for model_type in model_types:
