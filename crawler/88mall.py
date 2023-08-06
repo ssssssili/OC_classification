@@ -143,6 +143,7 @@ def evaluate(model, test_data):
     print(f'Test Accuracy: {total_acc_test / len(test_data): .4f}')
     print(classification_report(test_labels, pred_labels))
 
+torch.cuda.init()
 
 le = preprocessing.LabelEncoder()
 isco88_prep = pd.read_csv('../data/isco88_prep.csv')
