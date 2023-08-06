@@ -43,7 +43,7 @@ class BertClassifier(nn.Module):
     def __init__(self, dropout=0.5):
         super(BertClassifier, self).__init__()
         # self.bert = BertModel.from_pretrained('roberta-base')
-        self.bert = BertModel.from_pretrained('bert-base-uncased_layers0_1_2_3_4_5_6_7_8_9_10_11_model.pt')
+        self.bert = BertModel.from_pretrained('bert-base-uncased_layers-1_model.pt.pt')
         self.dropout = nn.Dropout(dropout)
         self.linear = nn.Linear(768, 388)
         self.relu = nn.ReLU()
@@ -178,7 +178,7 @@ df_train, df_val, df_test = np.split(data.sample(frac=1, random_state=42),
 EPOCHS = 10
 LR = 2e-5
 
-
+"""
 print('*'*10, 'unfreeze_0', '*'*10)
 model1 = BertClassifier()
 for name, param in model1.named_parameters():
@@ -193,6 +193,7 @@ for name, param in model1.named_parameters():
 train(model1, df_train, df_val, LR, EPOCHS)
 evaluate(model1, df_test)
 torch.save(model1.state_dict(), "88b_unfreeze_0_model.pt")
+"""
 
 print('*'*10, 'unfreeze_01', '*'*10)
 model2 = BertClassifier()
@@ -207,7 +208,7 @@ for name, param in model2.named_parameters():
         print(name, param.size())
 train(model2, df_train, df_val, LR, EPOCHS)
 evaluate(model2, df_test)
-torch.save(model1.state_dict(), "88b_unfreeze_01_model.pt")
+torch.save(model2.state_dict(), "88b_unfreeze_01_model.pt")
 
 """
 print('*'*10, 'unfreeze_all', '*'*10)

@@ -179,6 +179,7 @@ df_train, df_val, df_test = np.split(data.sample(frac=1, random_state=42),
 EPOCHS = 10
 LR = 2e-5
 
+"""
 print('*'*10, 'unfreeze_0', '*'*10)
 model1 = BertClassifier()
 for name, param in model1.named_parameters():
@@ -193,7 +194,8 @@ for name, param in model1.named_parameters():
 train(model1, df_train, df_val, LR, EPOCHS)
 evaluate(model1, df_test)
 model1.load_state_dict(torch.load("pcs_unfreeze_0_model.pt"))
-
+"""
+"""
 print('*'*10, 'unfreeze_01', '*'*10)
 model2 = BertClassifier()
 for name, param in model2.named_parameters():
@@ -207,14 +209,8 @@ for name, param in model2.named_parameters():
         print(name, param.size())
 train(model2, df_train, df_val, LR, EPOCHS)
 evaluate(model2, df_test)
-model2.load_state_dict(torch.load("pcs_unfreeze_01_model.pt"))
-
-print('*'*10, 'unfreeze_all', '*'*10)
-model4 = BertClassifier()
-train(model4, df_train, df_val, LR, EPOCHS)
-evaluate(model4, df_test)
-model4.load_state_dict(torch.load("pcs_unfreeze_all_model.pt"))
-
+torch.save(model2.state_dict(), "pcs_unfreeze_01_model.pt")
+"""
 print('*'*10, 'unfreeze_015', '*'*10)
 model3 = BertClassifier()
 for name, param in model3.named_parameters():
@@ -228,5 +224,12 @@ for name, param in model3.named_parameters():
         print(name, param.size())
 train(model3, df_train, df_val, LR, EPOCHS)
 evaluate(model3, df_test)
-model3.load_state_dict(torch.load("pcs_unfreeze_015_model.pt"))
+torch.save(model3.state_dict(), "pcs_unfreeze_015_model.pt")
 
+"""
+print('*'*10, 'unfreeze_all', '*'*10)
+model4 = BertClassifier()
+train(model4, df_train, df_val, LR, EPOCHS)
+evaluate(model4, df_test)
+model4.load_state_dict(torch.load("pcs_unfreeze_all_model.pt"))
+"""
