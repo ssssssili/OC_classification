@@ -1,4 +1,4 @@
-from finetuneBert import train_and_evaluate_series_model
+from finetuneBert2 import train_and_evaluate_series_model
 import data_preprocess
 import pandas as pd
 
@@ -27,10 +27,10 @@ layer_configs = [
 # Perform training and evaluation for BERT base model
 bert_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type='bert-base-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=10, max_length=305, num_labels=388, name="isco88bert",
-                                result_filename='result/isco88_bert_results.txt',
-                                test_labels_filename='result/isco88_bert_test_labels.txt',
-                                test_predictions_filename='result/isco88_bert_test_predictions.txt')
+                                batch_size=2, num_epochs=10, max_length=305, num_labels=388, name="isco88bert2",
+                                result_filename='result/isco88_bert_results2.txt',
+                                test_labels_filename='result/isco88_bert_test_labels2.txt',
+                                test_predictions_filename='result/isco88_bert_test_predictions2.txt')
 
 # Print or analyze the results for BERT base model
 for config, result in bert_results.items():
@@ -45,10 +45,10 @@ for config, result in bert_results.items():
 # Perform training and evaluation for multilingual BERT model
 multilingual_bert_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type='bert-base-multilingual-uncased', layer_configs=layer_configs,
-                                batch_size=2, num_epochs=10, max_length=305, num_labels=388, name="isco88mul",
-                                result_filename='result/isco88_mulbert_results.txt',
-                                test_labels_filename='result/isco88_mulbert_test_labels.txt',
-                                test_predictions_filename='result/isco88_mulbert_test_predictions.txt')
+                                batch_size=2, num_epochs=10, max_length=305, num_labels=388, name="isco88mul2",
+                                result_filename='result/isco88_mulbert_results2.txt',
+                                test_labels_filename='result/isco88_mulbert_test_labels2.txt',
+                                test_predictions_filename='result/isco88_mulbert_test_predictions2.txt')
 
 
 # Print or analyze the results for multilingual BERT model
