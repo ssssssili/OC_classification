@@ -78,5 +78,5 @@ layers_to_tune = [[i for i in range(12)], [-1], [-1, -2]]  # Examples of differe
 # Train and save models with different parameters
 for model_type in model_types:
     for unfrozen_layers in layers_to_tune:
-        model_save_path = train_and_save_model(model_type, unfrozen_layers, text_data)
+        model_save_path = train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=10)
         print(f"Model saved at: {model_save_path}")
