@@ -209,7 +209,7 @@ for name, param in model2.named_parameters():
 train(model2, df_train, df_val, LR, EPOCHS)
 evaluate(model2, df_test)
 model2.load_state_dict(torch.load("88m_unfreeze_01_model.pt"))
-"""
+
 
 print('*'*10, 'unfreeze_all', '*'*10)
 model4 = BertClassifier()
@@ -232,4 +232,3 @@ for name, param in model3.named_parameters():
 train(model3, df_train, df_val, LR, EPOCHS)
 evaluate(model3, df_test)
 torch.save(model3.state_dict(), "88m_unfreeze_015_model.pt")
-"""
