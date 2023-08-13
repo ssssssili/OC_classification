@@ -35,7 +35,7 @@ isco68_data_un = data_preprocess.PrepData(isco68_data, column=['feature'], lan='
 # multilingual uncased bert
 mul_un_results = train_and_evaluate_series_model(isco68_data_un['feature'], isco68_data_un['label'],
                                 model_type=multilingual_uncased, layer_configs=layer_configs,
-                                batch_size=2, num_epochs=10, max_length=100, num_labels=639, name="isco68mulun",
+                                batch_size=2, num_epochs=100, max_length=100, num_labels=639, name="isco68mulun",
                                 result_filename='result/isco68_mulun_results.txt',
                                 test_labels_filename='result/isco68_mulun_test_labels.txt',
                                 test_predictions_filename='result/isco68_mulun_test_predictions.txt')
@@ -46,7 +46,7 @@ isco68_data_cased = data_preprocess.PrepData(isco68_data, column=['feature'], la
 # multilingual cased bert
 mul_results = train_and_evaluate_series_model(isco68_data_cased['feature'], isco68_data_cased['label'],
                                 model_type=multilingual_cased, layer_configs=layer_configs,
-                                batch_size=2, num_epochs=10, max_length=100, num_labels=639, name="isco68mul",
+                                batch_size=2, num_epochs=100, max_length=100, num_labels=639, name="isco68mul",
                                 result_filename='result/isco68_mul_results.txt',
                                 test_labels_filename='result/isco68_mul_test_labels.txt',
                                 test_predictions_filename='result/isco68_mul_test_predictions.txt')
@@ -54,7 +54,7 @@ mul_results = train_and_evaluate_series_model(isco68_data_cased['feature'], isco
 # cased bert
 bert_results = train_and_evaluate_series_model(isco68_data_cased['feature'], isco68_data_cased['label'],
                                 model_type=monolingual_cased, layer_configs=layer_configs,
-                                batch_size=2, num_epochs=10, max_length=100, num_labels=639, name="isco68",
+                                batch_size=2, num_epochs=100, max_length=100, num_labels=639, name="isco68",
                                 result_filename='result/isco68_results.txt',
                                 test_labels_filename='result/isco68_test_labels.txt',
                                 test_predictions_filename='result/isco68_test_predictions.txt')

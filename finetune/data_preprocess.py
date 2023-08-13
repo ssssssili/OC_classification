@@ -12,7 +12,6 @@ from transformers import BertModel, BertTokenizer
 from transformers import DistilBertModel, DistilBertTokenizer
 from sklearn.model_selection import train_test_split
 
-
 def remove_rarewords(text, lan):
     return " ".join([word for word in str(text).split() if word not in stopwords.words(lan)])
 
