@@ -29,7 +29,7 @@ multilingual_cased = 'bert-base-multilingual-cased'
 monolingual_cased = 'bert-base-cased'
 
 # Preprocess uncased text
-isco88_data_un = data_preprocess.PrepData(isco88_data, column=['occupation_en', 'task_en', 'employer_en', 'product_en'],
+isco88_data_un = data_preprocess.PrepData(isco88_data, column=['feature'],
                                       lan='english', lower=True, punc=True, stop_word=False, stemming=False)
 
 # multilingual uncased bert
@@ -41,7 +41,7 @@ mul_un_results = train_and_evaluate_series_model(isco88_data_un['feature'], isco
                                 test_predictions_filename='result/isco88_mulun_test_predictions.txt')
 
 # Preprocess cased text
-isco88_data_cased = data_preprocess.PrepData(isco88_data, column=['occupation_en', 'task_en', 'employer_en', 'product_en'],
+isco88_data_cased = data_preprocess.PrepData(isco88_data, column=['feature'],
                                       lan='english', lower=False, punc=True, stop_word=False, stemming=False)
 
 # multilingual cased bert

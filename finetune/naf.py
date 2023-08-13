@@ -32,7 +32,7 @@ multilingual_cased = 'bert-base-multilingual-cased'
 monolingual_cased = 'dbmdz/bert-base-french-europeana-cased'
 
 # Preprocess uncased text
-naf_data_un = data_preprocess.PrepData(naf_data, column=['profession_txt', 'secteur_txt'],
+naf_data_un = data_preprocess.PrepData(naf_data, column=['feature'],
                                     lan='french', lower=True, punc=True, stop_word=False, stemming=False)
 
 mul_un_results = train_and_evaluate_series_model(naf_data_un['feature'], naf_data_un['label'],
@@ -43,7 +43,7 @@ mul_un_results = train_and_evaluate_series_model(naf_data_un['feature'], naf_dat
                                 test_predictions_filename='result/naf_mulun_test_predictions.txt')
 
 # Preprocess cased text
-naf_data_cased = data_preprocess.PrepData(naf_data, column=['profession_txt', 'secteur_txt'],
+naf_data_cased = data_preprocess.PrepData(naf_data, column=['feature'],
                                     lan='french', lower=False, punc=True, stop_word=False, stemming=False)
 
 mul_results = train_and_evaluate_series_model(naf_data_cased['feature'], naf_data_cased['label'],
