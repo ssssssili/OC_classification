@@ -87,7 +87,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
     # Define optimizer and learning rate scheduler
     optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
     loss_fn = torch.nn.CrossEntropyLoss()
-    scheduler = ExponentialLR(optimizer, gamma=0.95)
+    #scheduler = ExponentialLR(optimizer, gamma=0.95)
 
     # Early stopping
     best_val_loss = float('inf')
@@ -226,6 +226,8 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
         print("Test F1 Score:", evaluation_results['f1_score'])
         print("Test Cohen's Kappa:", evaluation_results['cohen_kappa'])
         print("-----------------------------")
+
+        exit()
 
         # Check if the current model performs better than the previous best model
         if evaluation_results['accuracy'] > best_val_accuracy:
