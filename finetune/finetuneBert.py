@@ -45,10 +45,6 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
     os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    print(torch.cuda.current_device())
-    print(device)
-
-    exit()
 
     le = LabelEncoder()
     labels = le.fit_transform(label).tolist()
