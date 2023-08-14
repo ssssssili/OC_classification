@@ -1,11 +1,11 @@
+import os
 import torch
 from transformers import BertForSequenceClassification, BertTokenizer, BertConfig
 from torch.utils.data import DataLoader, Dataset
-from transformers import AdamW, get_linear_schedule_with_warmup
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
-import os
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
+from torch.optim.lr_scheduler import ExponentialLR
 
 
 class TextClassificationDataset(Dataset):
@@ -46,6 +46,12 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
+    """
+    print(torch.cuda.current_device())
+    print(device)
+    exit()
+    """
+
     le = LabelEncoder()
     labels = le.fit_transform(label).tolist()
     texts = feature.tolist()
@@ -79,17 +85,13 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             param.requires_grad = True
 
     # Define optimizer and learning rate scheduler
-    optimizer = AdamW(model.parameters(), lr=2e-5)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001)
     loss_fn = torch.nn.CrossEntropyLoss()
-    total_steps = len(train_loader) * num_epochs
-    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0, num_training_steps=total_steps)
-
-    # Move model to GPU if available
-    #model.to(device)
+    scheduler = ExponentialLR(optimizer, gamma=0.95)
 
     # Early stopping
-    #best_val_loss = float('inf')
-    #patience = 5
+    best_val_loss = float('inf')
+    patience = 5
 
     # Training loop
     for epoch in range(num_epochs):
@@ -113,8 +115,10 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             # Backpropagation
             loss.backward()
             optimizer.step()
+            scheduler.step()
 
             total_train_loss += loss.item()
+
 
         # Calculate average training loss for the epoch
         avg_train_loss = total_train_loss / len(train_loader)
@@ -137,7 +141,6 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
         average_val_loss = total_val_loss / len(val_loader)
         print(f'Epoch {epoch + 1}/{num_epochs} - Average validation loss: {average_val_loss:.4f}')
 
-        """
         # Early stopping check
         if average_val_loss < best_val_loss:
             best_val_loss = average_val_loss
@@ -148,10 +151,9 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             if patience_counter >= patience:
                 print("Early stopping!")
                 break
-        """
 
     # Load the best model and evaluate it on the test set
-    #model.load_state_dict(torch.load(f"{name}_best_model.pt"))
+    model.load_state_dict(torch.load(f"{name}_best_model.pt"))
     model.eval()
 
     # Synchronize the GPU before the evaluation
@@ -168,7 +170,6 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             labels = batch['labels'].to(device)
 
             outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-            loss = outputs.loss
             logits = outputs.logits
 
             predictions = torch.argmax(logits, dim=1)
@@ -186,7 +187,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
     cohen_kappa = cohen_kappa_score(test_true_labels, test_predictions)
 
     # Save the fine-tuned model
-    #model.save_pretrained(f"{name}_fine_tuned_model")
+    model.save_pretrained(f"{name}_fine_tuned_model")
 
     evaluation_results = {
         'accuracy': accuracy,
@@ -217,7 +218,7 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
         # Fine-tune and evaluate the model
         evaluation_results = fine_tune_bert(feature, label, model_path=model_type, unfreeze_layers=unfreeze_layers,
                                             batch_size=batch_size, num_epochs=num_epochs, max_length=max_length,
-                                            num_labels=num_labels, name=f"{name}-{config_num}")
+                                            num_labels=num_labels, name=f"{name}_{config_num}")
 
         results[model_name] = evaluation_results
         print("Test Accuracy:", evaluation_results['accuracy'])
@@ -227,6 +228,8 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
         print("Test Cohen's Kappa:", evaluation_results['cohen_kappa'])
         print("-----------------------------")
 
+        exit()
+
         # Check if the current model performs better than the previous best model
         if evaluation_results['accuracy'] > best_val_accuracy:
             best_val_accuracy = evaluation_results['accuracy']
@@ -235,14 +238,13 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
             best_model_config_num = config_num
 
     # Save the best-performing model's evaluation results to a file
-    with open(result_filename, 'w') as file:
-        file.write(f"Best Model Configuration: {best_model_config_num}\n")
-        file.write(f"Model Name: {best_model_name}\n")
-        file.write(f"Validation Accuracy: {best_evaluation_results['accuracy']}\n")
-        file.write(f"Validation Precision: {best_evaluation_results['precision']}\n")
-        file.write(f"Validation Recall: {best_evaluation_results['recall']}\n")
-        file.write(f"Validation F1 Score: {best_evaluation_results['f1_score']}\n")
-        file.write(f"Validation Cohen's Kappa: {best_evaluation_results['cohen_kappa']}\n")
+    print(f"Best Model Configuration: {best_model_config_num}\n")
+    print(f"Model Name: {best_model_name}\n")
+    print(f"Validation Accuracy: {best_evaluation_results['accuracy']}\n")
+    print(f"Validation Precision: {best_evaluation_results['precision']}\n")
+    print(f"Validation Recall: {best_evaluation_results['recall']}\n")
+    print(f"Validation F1 Score: {best_evaluation_results['f1_score']}\n")
+    print(f"Validation Cohen's Kappa: {best_evaluation_results['cohen_kappa']}\n")
 
     # Save the test labels and predicted labels of the best-performing model
     test_true_labels = best_evaluation_results['test_true_labels']
