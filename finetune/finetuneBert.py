@@ -115,7 +115,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             # Backpropagation
             loss.backward()
             optimizer.step()
-            scheduler.step()
+            #scheduler.step()
 
             total_train_loss += loss.item()
 
