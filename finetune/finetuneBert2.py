@@ -1,5 +1,6 @@
 import os
 import torch
+import numpy as np
 from transformers import BertForSequenceClassification, BertTokenizer, BertConfig
 from torch.utils.data import DataLoader, Dataset
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
@@ -85,9 +86,10 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             param.requires_grad = True
 
     # Define optimizer and learning rate scheduler
-    optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
     loss_fn = torch.nn.CrossEntropyLoss()
-    scheduler = ExponentialLR(optimizer, gamma=0.95)
+    #scheduler = ExponentialLR(optimizer, gamma=0.95)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=3, verbose=True)
 
     # Early stopping
     best_val_loss = float('inf')
@@ -115,7 +117,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             # Backpropagation
             loss.backward()
             optimizer.step()
-            scheduler.step()
+            scheduler.step(np.mean(loss_fn))
 
             total_train_loss += loss.item()
 
