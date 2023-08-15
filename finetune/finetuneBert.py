@@ -1,5 +1,6 @@
 import os
 import torch
+import numpy as np
 from transformers import BertForSequenceClassification, BertTokenizer, BertConfig
 from torch.utils.data import DataLoader, Dataset
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
@@ -85,8 +86,10 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             param.requires_grad = True
 
     # Define optimizer and learning rate scheduler
-    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001)
     loss_fn = torch.nn.CrossEntropyLoss()
+    scheduler = ExponentialLR(optimizer, gamma=0.9)
+    #scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=3, verbose=True)
 
     # Early stopping
     best_val_loss = float('inf')
@@ -117,10 +120,10 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
 
             total_train_loss += loss.item()
 
-
         # Calculate average training loss for the epoch
         avg_train_loss = total_train_loss / len(train_loader)
         print(f'Epoch {epoch + 1}/{num_epochs} - Average training loss: {avg_train_loss:.4f}')
+        scheduler.step()
 
         # Validation
         model.eval()
@@ -225,8 +228,6 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
         print("Test F1 Score:", evaluation_results['f1_score'])
         print("Test Cohen's Kappa:", evaluation_results['cohen_kappa'])
         print("-----------------------------")
-
-        exit()
 
         # Check if the current model performs better than the previous best model
         if evaluation_results['accuracy'] > best_val_accuracy:

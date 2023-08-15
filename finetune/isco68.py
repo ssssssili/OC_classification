@@ -1,4 +1,4 @@
-from finetuneBert2 import train_and_evaluate_series_model
+from finetuneBert import train_and_evaluate_series_model
 import data_preprocess
 import pandas as pd
 
