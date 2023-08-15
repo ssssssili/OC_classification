@@ -117,14 +117,13 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             # Backpropagation
             loss.backward()
             optimizer.step()
-            scheduler.step()
 
             total_train_loss += loss.item()
 
         # Calculate average training loss for the epoch
         avg_train_loss = total_train_loss / len(train_loader)
         print(f'Epoch {epoch + 1}/{num_epochs} - Average training loss: {avg_train_loss:.4f}')
-        scheduler.step(np.mean(total_train_loss))
+        scheduler.step(avg_train_loss)
 
         # Validation
         model.eval()
