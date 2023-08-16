@@ -89,7 +89,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
     optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
     loss_fn = torch.nn.CrossEntropyLoss()
     #scheduler = ExponentialLR(optimizer, gamma=0.9)
-    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=3, verbose=True)
+    #scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=3, verbose=True)
 
     # Early stopping
     best_val_loss = float('inf')
@@ -123,7 +123,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
         # Calculate average training loss for the epoch
         avg_train_loss = total_train_loss / len(train_loader)
         print(f'Epoch {epoch + 1}/{num_epochs} - Average training loss: {avg_train_loss:.4f}')
-        scheduler.step(total_train_loss)
+        #scheduler.step(total_train_loss)
 
         # Validation
         model.eval()

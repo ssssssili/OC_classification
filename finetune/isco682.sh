@@ -16,4 +16,4 @@ source /home/bme001/20225898/miniconda3/etc/profile.d/conda.sh
 conda activate StableDiffusion
 
 cd /home/bme001/20225898/OC_classification/finetune/
-srun python isco68.py
+srun python isco682.py

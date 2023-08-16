@@ -21,10 +21,12 @@ print(len(isco68_data['label'].value_counts()))
 
 layer_configs = [
     [0],                # Unfreeze only the classifier layer
-#    [0, 11],            # Unfreeze the classifier and last layer of BERT
+    [0, 11],            # Unfreeze the classifier and last layer of BERT
+    [0, 5, 11],
 #    list(range(12)),    # Unfreeze all layers of BERT
     [0, 7, 11]          # Unfreeze the classifier and selected middle layers
 ]
+
 multilingual_uncased = 'bert-base-multilingual-uncased'
 multilingual_cased = 'bert-base-multilingual-cased'
 monolingual_cased = 'GroNLP/bert-base-dutch-cased'
