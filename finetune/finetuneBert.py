@@ -86,7 +86,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             param.requires_grad = True
 
     # Define optimizer and learning rate scheduler
-    optimizer = torch.optim.AdamW(model.parameters(), lr=0.0001)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
     loss_fn = torch.nn.CrossEntropyLoss()
     #scheduler = ExponentialLR(optimizer, gamma=0.9)
     scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, patience=3, verbose=True)
