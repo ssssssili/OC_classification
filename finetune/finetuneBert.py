@@ -79,7 +79,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
 
     # Freeze layers before the specified layers to be unfrozen
     for layer_num, param in enumerate(model.parameters()):
-        if "classifier" not in param.name_or_path and "pooler" not in param.name_or_path and layer_num not in unfreeze_layers:
+        if "classifier" not in param.name and "pooler" not in param.name and layer_num not in unfreeze_layers:
             param.requires_grad = False
 
     # Define optimizer and learning rate scheduler
