@@ -8,7 +8,7 @@ def preprocess_text(text, max_length=512):
     text_chunks = [text[i:i + max_length] for i in range(0, len(text), max_length)]
     return text_chunks
 
-def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs):
+def train_and_save_model(index, model_type, unfrozen_layers, text_data, num_epochs):
     # Preprocess the text
     text_chunks = preprocess_text(text_data)
 
@@ -71,7 +71,7 @@ text_file_path = "pcsindex.txt"
 index = 'pcs'
 with open(text_file_path, "r", encoding="utf-8") as file:
     text_data = file.readlines()
-    print(text_data)
+    text_data = str(text_data)
 
 # Define the model types and layers to tune
 model_type = 'bert-base-multilingual-uncased'

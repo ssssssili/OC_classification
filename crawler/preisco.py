@@ -10,7 +10,7 @@ def preprocess_text(text, max_length=512):
     return text_chunks
 
 
-def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs):
+def train_and_save_model(index, model_type, unfrozen_layers, text_data, num_epochs):
     # Preprocess the text
     text_chunks = preprocess_text(text_data)
 
@@ -24,12 +24,14 @@ def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs):
                         in text_chunks]
     tokenized_chunks = [{k: v.to("cuda") for k, v in inputs.items()} for inputs in tokenized_chunks]
 
+    """
     # Determine which layers to unfreeze
     if unfrozen_layers == 'all':
         unfrozen_layers = list(range(len(model.base_model.encoder.layer)))
     else:
         # Convert layer indices to a list if not already a list
         unfrozen_layers = [unfrozen_layers] if isinstance(unfrozen_layers, int) else unfrozen_layers
+    """
 
     # Freeze/unfreeze layers
     for i, layer in enumerate(model.base_model.encoder.layer):
@@ -42,8 +44,8 @@ def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs):
 
     # Create the optimizer and learning rate scheduler
     optimizer = AdamW(model.parameters(), lr=1e-5)
-    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0,
-                                                num_training_steps=len(text_chunks) * num_epochs)
+    #scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0,
+                                                #num_training_steps=len(text_chunks) * num_epochs)
 
     # Train the model
     for epoch in range(num_epochs):
@@ -57,7 +59,7 @@ def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs):
             loss = outputs.loss
             loss.backward()
             optimizer.step()
-            scheduler.step()
+            #scheduler.step()
             model.zero_grad()
 
     # Save the trained model
@@ -84,5 +86,5 @@ layers_to_tune = [[11], [10, 11]]  # Different layer combinations
 # Train and save models with different parameters
 for model_type in model_types:
     for unfrozen_layers in layers_to_tune:
-        model_save_path = train_and_save_model(index, model_type, unfrozen_layers, text_data, num_epochs=20)
+        model_save_path = train_and_save_model(index, model_type, unfrozen_layers, text_data, 10)
         print(f"Model saved at: {model_save_path}")
