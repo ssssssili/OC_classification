@@ -1,8 +1,9 @@
 import requests
 import openpyxl
 from bs4 import BeautifulSoup
+import pandas as pd
 
-
+"""
 def extract_hyperlinks_from_excel(file_path, sheet_name):
     try:
         wb = openpyxl.load_workbook(file_path)
@@ -63,3 +64,20 @@ with open("isco88index.txt", 'w') as file:
                 collected_text.append(text)
                 file.write(text)
             tmp = url
+
+naf_data = pd.read_pickle('NAF_index')
+naf_text = naf_data['code']+' '+naf_data['desc']+' '+naf_data['desc_long']+' '+naf_data['desc_short']
+naf_text = ' '.join(naf_text.tolist())
+naf_text = naf_text.replace('\n','')
+with open("nafindex.txt", 'w') as file:
+    file.write(naf_text)
+"""
+
+pcs_data = pd.read_excel('PCS_index.xlsx')
+label = ''
+pcs_data['text'] = pcs_data['code_pcs']+pcs_data['profession_txt']
+pcs_text = ' '.join(pcs_data['text'].tolist())
+pcs_text = pcs_text.replace('\n','')
+
+with open('pcsindex.txt', 'w') as file:
+    file.write(pcs_text)

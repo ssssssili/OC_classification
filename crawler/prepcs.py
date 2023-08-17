@@ -8,7 +8,7 @@ def preprocess_text(text, max_length=512):
     text_chunks = [text[i:i + max_length] for i in range(0, len(text), max_length)]
     return text_chunks
 
-def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=10):
+def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs):
     # Preprocess the text
     text_chunks = preprocess_text(text_data)
 

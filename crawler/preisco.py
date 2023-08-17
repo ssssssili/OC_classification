@@ -10,7 +10,7 @@ def preprocess_text(text, max_length=512):
     return text_chunks
 
 
-def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
+def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs):
     # Preprocess the text
     text_chunks = preprocess_text(text_data)
 
