@@ -78,12 +78,9 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
     test_loader = DataLoader(test_dataset, batch_size=batch_size)
 
     # Freeze layers before the specified layers to be unfrozen
-    for param in model.base_model.parameters():
-        param.requires_grad = False
-
-    for layer in unfreeze_layers:
-        for param in model.base_model.encoder.layer[layer].parameters():
-            param.requires_grad = True
+    for layer_num, param in enumerate(model.parameters()):
+        if "classifier" not in param.name_or_path and "pooler" not in param.name_or_path and layer_num not in unfreeze_layers:
+            param.requires_grad = False
 
     # Define optimizer and learning rate scheduler
     optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5)
