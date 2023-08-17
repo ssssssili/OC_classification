@@ -1,5 +1,5 @@
 import torch
-from transformers import BertTokenizer, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup
+from transformers import BertTokenizer, BertModel, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup
 
 
 def preprocess_text(text, max_length=512):
@@ -16,8 +16,8 @@ def train_and_save_model(index, model_type, unfrozen_layers, text_data, num_epoc
 
     # Load the tokenizer and model
     tokenizer = BertTokenizer.from_pretrained(model_type)
-    model = BertForSequenceClassification.from_pretrained(model_type)
-    model.to("cuda")  # Move the model to the GPU
+    model = BertModel.from_pretrained(model_type)
+    #model.to("cuda")  # Move the model to the GPU
 
     # Tokenize the input text chunks and move tensors to GPU
     tokenized_chunks = [tokenizer(chunk, return_tensors="pt", truncation=True, padding=True, max_length=512) for chunk
@@ -51,8 +51,7 @@ def train_and_save_model(index, model_type, unfrozen_layers, text_data, num_epoc
     for epoch in range(num_epochs):
         model.train()
         for inputs in tokenized_chunks:
-            labels = torch.tensor([1]).unsqueeze(0).to(
-                "cuda")  # Replace 1 with the actual label you have for the text data
+            labels = torch.tensor([1]).unsqueeze(0).to("cuda")
 
             # Training step
             outputs = model(**inputs, labels=labels)
@@ -78,9 +77,9 @@ with open(text_file_path, "r", encoding="utf-8") as file:
 
 # Define the model types and layers to tune
 model_type = 'bert-base-multilingual-uncased'
-layers_to_tune = [[11], [10, 11]]  # Different layer combinations
+layers_to_tune = [['classifier'], ['layer.11'], ['layer.10', 'layer.11'], ['bert.pooler']]  # Different layer combinations
 
 # Train and save models with different parameters
 for unfrozen_layers in layers_to_tune:
-    model_save_path = train_and_save_model(index, model_type, unfrozen_layers, text_data, 10)
+    model_save_path = train_and_save_model(index, model_type, unfrozen_layers, text_data, 20)
     print(f"Model saved at: {model_save_path}")
