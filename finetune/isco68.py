@@ -20,11 +20,8 @@ print(len(isco68_data['label'].value_counts()))
 """
 
 layer_configs = [
-    [],                # Unfreeze only the classifier layer
-    [11],            # Unfreeze the classifier and last layer of BERT
-#    [5, 11],
-#    list(range(12)),    # Unfreeze all layers of BERT
-#    [7, 11]          # Unfreeze the classifier and selected middle layers
+    ['classifier', 'pooler'],                       # Unfreeze only the classifier layer
+    ['classifier', 'pooler', 'layer.11']            # Unfreeze the classifier and last layer of BERT
 ]
 
 multilingual_uncased = 'bert-base-multilingual-uncased'
