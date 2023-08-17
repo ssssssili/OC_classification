@@ -10,7 +10,7 @@ def preprocess_text(text, max_length=512):
     return text_chunks
 
 
-def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
+def train_and_save_model(index, model_type, unfrozen_layers, text_data, num_epochs=10):
     # Preprocess the text
     text_chunks = preprocess_text(text_data)
 
@@ -24,12 +24,14 @@ def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
                         in text_chunks]
     tokenized_chunks = [{k: v.to("cuda") for k, v in inputs.items()} for inputs in tokenized_chunks]
 
+    """
     # Determine which layers to unfreeze
     if unfrozen_layers == 'all':
         unfrozen_layers = list(range(len(model.base_model.encoder.layer)))
     else:
         # Convert layer indices to a list if not already a list
         unfrozen_layers = [unfrozen_layers] if isinstance(unfrozen_layers, int) else unfrozen_layers
+    """
 
     # Freeze/unfreeze layers
     for i, layer in enumerate(model.base_model.encoder.layer):
@@ -42,8 +44,8 @@ def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
 
     # Create the optimizer and learning rate scheduler
     optimizer = AdamW(model.parameters(), lr=1e-5)
-    scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0,
-                                                num_training_steps=len(text_chunks) * num_epochs)
+    # scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0,
+    # num_training_steps=len(text_chunks) * num_epochs)
 
     # Train the model
     for epoch in range(num_epochs):
@@ -57,26 +59,28 @@ def train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=3):
             loss = outputs.loss
             loss.backward()
             optimizer.step()
-            scheduler.step()
+            # scheduler.step()
             model.zero_grad()
 
     # Save the trained model
-    model_save_path = f"{model_type}_layers{'_'.join(map(str, unfrozen_layers))}_model.pt"
+    model_save_path = f"{index}_{model_type}_layers{'_'.join(map(str, unfrozen_layers))}_model.pt"
     model.save_pretrained(model_save_path)
 
     return model_save_path
 
-# Load text data from a text file
-text_file_path = "isco88index.txt"
+
+# Load text data from text file
+text_file_path = "nafindex.txt"
+index = 'naf'
 with open(text_file_path, "r", encoding="utf-8") as file:
-    text_data = file.read()
+    text_data = file.readlines()
+    print(text_data)
 
 # Define the model types and layers to tune
-model_types = ['bert-base-uncased', 'bert-base-multilingual-uncased']
-layers_to_tune = [[i for i in range(12)], [-1], [-1, -2]]  # Examples of different layer combinations
+model_type = 'bert-base-multilingual-uncased'
+layers_to_tune = [[11], [10, 11]]  # Different layer combinations
 
 # Train and save models with different parameters
-for model_type in model_types:
-    for unfrozen_layers in layers_to_tune:
-        model_save_path = train_and_save_model(model_type, unfrozen_layers, text_data, num_epochs=15)
-        print(f"Model saved at: {model_save_path}")
+for unfrozen_layers in layers_to_tune:
+    model_save_path = train_and_save_model(index, model_type, unfrozen_layers, text_data, num_epochs=20)
+    print(f"Model saved at: {model_save_path}")

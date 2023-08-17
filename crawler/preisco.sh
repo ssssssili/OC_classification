@@ -6,8 +6,8 @@
 #SBATCH --nodes=1
 #SBATCH --gres=gpu:1
 #SBATCH --time=168:00:0
-#SBATCH --job-name=preber
-#SBATCH --output=/home/bme001/20225898/OC_classification/crawler/preber.out
+#SBATCH --job-name=preisco
+#SBATCH --output=/home/bme001/20225898/OC_classification/crawler/preisco.out
 
 module load cuda11.6/toolkit
 
@@ -16,4 +16,4 @@ source /home/bme001/20225898/miniconda3/etc/profile.d/conda.sh
 conda activate StableDiffusion
 
 cd /home/bme001/20225898/OC_classification/crawler/
-srun python prebert.py
+srun python preisco.py
