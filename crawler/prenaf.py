@@ -1,85 +1,82 @@
+from transformers import BertForMaskedLM, BertTokenizer, AdamW
 import torch
-from transformers import BertTokenizer, BertModel, BertForSequenceClassification, AdamW, get_linear_schedule_with_warmup
 
+# Chunking function
+def process_text_chunks(text, chunk_size=512, overlap=100):
+    chunks = []
+    start = 0
+    while start < len(text):
+        end = min(start + chunk_size, len(text))
+        chunks.append(text[start:end])
+        start += chunk_size - overlap
+    return chunks
 
-def preprocess_text(text, max_length=512):
-    # Lowercase the text
-    text = text.lower()
-    # Split text into chunks of maximum length
-    text_chunks = [text[i:i + max_length] for i in range(0, len(text), max_length)]
-    return text_chunks
+def train_bert_unsupervised(index, model_name, texts, unfreeze_layers, num_epochs=20, learning_rate=2e-5):
+    # Load pre-trained BERT model and tokenizer for MLM
+    model = BertForMaskedLM.from_pretrained(model_name)
+    tokenizer = BertTokenizer.from_pretrained(model_name)
 
+    # Identify which layers to update
+    for name, param in model.named_parameters():
+        param.requires_grad = False
+        for item in unfreeze_layers:
+            if item in name:
+                param.requires_grad = True
+                break
 
-def train_and_save_model(index, model_type, unfrozen_layers, text_data, num_epochs):
-    # Preprocess the text
-    text_chunks = preprocess_text(text_data)
+    # Set up optimizer for selected layers
+    optimizer = AdamW(filter(lambda p: p.requires_grad, model.parameters()), lr=learning_rate)
 
-    # Load the tokenizer and model
-    tokenizer = BertTokenizer.from_pretrained(model_type)
-    model = BertModel.from_pretrained(model_type)
-    #model.to("cuda")  # Move the model to the GPU
+    # Training loop
+    model.train()
 
-    # Tokenize the input text chunks and move tensors to GPU
-    tokenized_chunks = [tokenizer(chunk, return_tensors="pt", truncation=True, padding=True, max_length=512) for chunk
-                        in text_chunks]
-    tokenized_chunks = [{k: v.to("cuda") for k, v in inputs.items()} for inputs in tokenized_chunks]
-
-    """
-    # Determine which layers to unfreeze
-    if unfrozen_layers == 'all':
-        unfrozen_layers = list(range(len(model.base_model.encoder.layer)))
-    else:
-        # Convert layer indices to a list if not already a list
-        unfrozen_layers = [unfrozen_layers] if isinstance(unfrozen_layers, int) else unfrozen_layers
-    """
-
-    # Freeze/unfreeze layers
-    for i, layer in enumerate(model.base_model.encoder.layer):
-        for param in layer.parameters():
-            param.requires_grad = False
-
-    for layer_idx in unfrozen_layers:
-        for param in model.base_model.encoder.layer[layer_idx].parameters():
-            param.requires_grad = True
-
-    # Create the optimizer and learning rate scheduler
-    optimizer = AdamW(model.parameters(), lr=1e-5)
-    # scheduler = get_linear_schedule_with_warmup(optimizer, num_warmup_steps=0,
-    # num_training_steps=len(text_chunks) * num_epochs)
-
-    # Train the model
     for epoch in range(num_epochs):
-        model.train()
-        for inputs in tokenized_chunks:
-            labels = torch.tensor([1]).unsqueeze(0).to("cuda")
+        total_loss = 0.0
 
-            # Training step
-            outputs = model(**inputs, labels=labels)
-            loss = outputs.loss
+        # Process and tokenize the long text
+        text_chunks = process_text_chunks(texts)
+
+        for chunk in text_chunks:
+            encoded_chunk = tokenizer.encode_plus(chunk, add_special_tokens=True, padding='max_length', truncation=True,
+                                                  max_length=512, return_tensors='pt')
+            input_ids = encoded_chunk['input_ids']
+
+            optimizer.zero_grad()
+
+            # Forward pass
+            outputs = model(input_ids=input_ids)
+            loss = torch.nn.functional.cross_entropy(outputs.logits.view(-1, tokenizer.vocab_size), input_ids.view(-1))
+
+            # Backpropagation
             loss.backward()
             optimizer.step()
-            # scheduler.step()
-            model.zero_grad()
 
-    # Save the trained model
-    model_save_path = f"{index}_{model_type}_layers{'_'.join(map(str, unfrozen_layers))}_model.pt"
-    model.save_pretrained(model_save_path)
+            total_loss += loss.item()
 
-    return model_save_path
+        average_loss = total_loss
+        print(f"Average Loss: {average_loss:.4f}")
+        if epoch/5 == 0:
+            path = f'{index}_epoch{epoch}_mlm.pt'
+            model.save_pretrained(path)
+            print(f'the model of epoch {epoch} is saved at {path}')
+
+    model_path = f'{index}_epoch{num_epochs}_mlm.pt'
+    model.save_pretrained(model_path)
+    print(f'the model of epoch {num_epochs} is saved at {model_path}')
 
 
-# Load text data from text file
-text_file_path = "nafindex.txt"
-index = 'naf'
-with open(text_file_path, "r", encoding="utf-8") as file:
-    text_data = file.readlines()
-    text_data = str(text_data)
+model_name = 'bert-base-multilingual-uncased'
 
-# Define the model types and layers to tune
-model_type = 'bert-base-multilingual-uncased'
-layers_to_tune = [['classifier'], ['layer.11'], ['layer.10', 'layer.11'], ['bert.pooler']]  # Different layer combinations
+unfreeze_layers = [
+    ['predictions', 'layer.11', 'layer.10'],
+    ['predictions', 'layer.11']
+]
 
-# Train and save models with different parameters
-for unfrozen_layers in layers_to_tune:
-    model_save_path = train_and_save_model(index, model_type, unfrozen_layers, text_data, 20)
-    print(f"Model saved at: {model_save_path}")
+naf_index = 'naf'
+
+with open("nafindex.txt", "r", encoding="utf-8") as file:
+    naf_texts = file.readlines()
+    naf_texts = str(naf_texts)
+
+for layers in unfreeze_layers:
+    train_bert_unsupervised(naf_index, model_name, naf_texts, layers)
