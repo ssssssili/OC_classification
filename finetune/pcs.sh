@@ -7,7 +7,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --time=168:00:0
 #SBATCH --job-name=pcs
-#SBATCH --output=/home/bme001/20225898/OC_classification/finetune/result/pcs.out
+#SBATCH --output=/home/bme001/20225898/OC_classification/finetune/result/68pcs.out
 
 module load cuda11.6/toolkit
 
