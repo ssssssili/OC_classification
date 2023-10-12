@@ -7,7 +7,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --time=168:00:0
 #SBATCH --job-name=isco68
-#SBATCH --output=/home/bme001/20225898/OC_classification/finetune/result/isco68.out
+#SBATCH --output=/home/bme001/20225898/OC_classification/finetune/isco68.out
 
 module load cuda11.6/toolkit
 
