@@ -18,13 +18,13 @@ eng = 'bert-base-cased'
 
 mul_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type=mul, layer_configs=layer_configs,
-                                batch_size=8, num_epochs=100, max_length=305, num_labels=388, name="isco88mul",
+                                batch_size=16, num_epochs=100, max_length=305, num_labels=388, name="isco88mul",
                                 result_filename='result/isco88_mul_results.txt')
 
 # cased bert
 results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type=eng, layer_configs=layer_configs,
-                                batch_size=8, num_epochs=100, max_length=305, num_labels=388, name="isco88eng",
+                                batch_size=16, num_epochs=100, max_length=305, num_labels=388, name="isco88eng",
                                 result_filename='result/isco88_eng_results.txt')
 
 

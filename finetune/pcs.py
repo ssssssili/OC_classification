@@ -19,12 +19,12 @@ fr = 'dbmdz/bert-base-french-europeana-cased'
 
 mul_results = train_and_evaluate_series_model(pcs_data['feature'], pcs_data['label'],
                                 model_type=mul, layer_configs=layer_configs,
-                                batch_size=8, num_epochs=100, max_length=132, num_labels=495, name="pcsmul",
+                                batch_size=16, num_epochs=100, max_length=132, num_labels=495, name="pcsmul",
                                 result_filename='result/pcs_mul_results.txt')
 
 bert_results = train_and_evaluate_series_model(pcs_data['feature'], pcs_data['label'],
                                 model_type=fr, layer_configs=layer_configs,
-                                batch_size=8, num_epochs=100, max_length=132, num_labels=495, name="pcsfr",
+                                batch_size=16, num_epochs=100, max_length=132, num_labels=495, name="pcsfr",
                                 result_filename='result/pcs_fr_results.txt')
 
 
