@@ -79,6 +79,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
 
     # Freeze layers before the specified layers to be unfrozen
     for name, param in model.named_parameters():
+        print(name, param.size())
         param.requires_grad = False
         for item in unfreeze_layers:
             if item in name:

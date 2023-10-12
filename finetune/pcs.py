@@ -1,7 +1,9 @@
 from finetuneBert import train_and_evaluate_series_model
 import data_preprocess
 import pandas as pd
+import numpy as np
 
+"""
 layer_configs = [
     ['classifier', 'pooler'],                       # Unfreeze only the classifier layer
     ['classifier', 'pooler', 'layer.11'],            # Unfreeze the classifier and last layer of BERT
@@ -17,17 +19,6 @@ lifew_prep = lifew[lifew['bjobcode'].astype(str).str.len()==7]
 isco68_data = data_preprocess.CombineFeature(lifew_prep, column=['bjobnm'], withname= False)
 isco68_data['label'] = isco68_data['bjobcode']
 isco68_data = isco68_data[['feature', 'label']]
-
-"""
-maxnum = []
-for i in isco68_data['feature']:
-    cnt = 0
-    for j in i:
-        cnt += 1
-    maxnum.append(cnt)
-print(max(maxnum))
-print(len(isco68_data['label'].value_counts()))
-"""
 
 multilingual_uncased = 'bert-base-multilingual-uncased'
 multilingual_cased = 'bert-base-multilingual-cased'
@@ -92,13 +83,32 @@ for config, result in bert_results.items():
     print("-----------------------------")
 
 print('*'*10, 'pcs', '*'*10)
-
+"""
 const = pd.read_csv('../data/(French - PCS-NAF) Constances_CPro_MG_Operas_012021.csv')
 const[['code_naf','code_pcs']].dropna(axis=0,how='any')
 pcs_prep = const[const['code_pcs'].str.contains('#') == False]
 pcs_data = data_preprocess.CombineFeature(pcs_prep, column=['profession_txt', 'secteur_txt'], withname= False)
 pcs_data['label'] = pcs_data['code_pcs']
 pcs_data = pcs_data[['feature', 'label']]
+
+print(len(pcs_data))
+exit()
+
+print(len(pcs_data['label'].value_counts()), pcs_data['label'].value_counts().mean(), pcs_data['label'].value_counts().std())
+print(max(pcs_data['label'].value_counts()), min(pcs_data['label'].value_counts()))
+maxnum = []
+for i in pcs_data['feature']:
+    cnt = 0
+    for j in i:
+        cnt += 1
+    maxnum.append(cnt)
+print(max(maxnum), min(maxnum))
+print(np.mean(maxnum), np.std(maxnum))
+print(pd.Series(maxnum).mean(),pd.Series(maxnum).std())
+print(max(pd.Series(maxnum).value_counts()))
+data_preprocess.PlotData(pcs_data['label'])
+data_preprocess.PlotData(pd.Series(maxnum))
+exit()
 
 """
 maxnum = []

@@ -1,17 +1,18 @@
 import string
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import nltk
-nltk.download('stopwords')
-from nltk.corpus import stopwords
-from nltk.stem.snowball import SnowballStemmer
 import torch
 from transformers import RobertaModel, RobertaTokenizer
 from transformers import BertModel, BertTokenizer
 from transformers import DistilBertModel, DistilBertTokenizer
 from sklearn.model_selection import train_test_split
+import xgboost as xgb
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import LabelEncoder
+from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
 
+"""
 def remove_rarewords(text, lan):
     return " ".join([word for word in str(text).split() if word not in stopwords.words(lan)])
 
@@ -31,7 +32,7 @@ def PrepData(dataset, column, lan, lower=bool, punc=bool, stop_word=bool, stemmi
         if stemming:
             df[col] = df[col].astype(str).apply(lambda text: stem_words(text, lan))
     return df
-
+"""
 
 # combine all the feature together into one sentence
 def CombineFeature(dataset, column, withname = bool):
@@ -46,13 +47,14 @@ def CombineFeature(dataset, column, withname = bool):
     return df
 
 # plot the data distribution
-def PlotData(dataset, column):
-    s = dataset[column].value_counts()
+def PlotData(df):
+    s = df.value_counts()
     plt.plot(range(len(s)), s.values)
+    plt.xticks([])
     plt.show()
 
 # embed sentence
-class EmbeddingModel:
+class EmbeddingModelR:
     def __init__(self, model_name):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.tokenizer = RobertaTokenizer.from_pretrained(model_name)
@@ -130,7 +132,7 @@ class EmbeddingModelD:
         return sentence_embeddings.cpu().numpy()
 
 # split dataset into subsets regarding sample size
-def DataSplit(y, thershold, num):
+def BuildSubset(y, thershold, num):
     s = pd.Series(y).value_counts()
     split = s.index[0]
     cnt = 1
@@ -196,3 +198,50 @@ def SplitDataset(x, y, training, test):
         y_train = np.concatenate((y_train, y_sin), axis=0)
 
     return x_train, x_test, x_val, y_train, y_test, y_val
+
+def XGBModel(model, dataset, filename, name):
+    batch_size = 256
+    num_batches = len(dataset) // batch_size + 1
+    le = LabelEncoder()
+    labels = le.fit_transform(dataset['label'])
+    num_class = np.unique(labels)
+    all_parameters = {'objective': 'multi:softmax',
+                      'num_class': num_class,
+                      # 'gamma': 0.3,
+                      # 'learning_rate': 0.03,
+                      # 'n_estimators': 1000,
+                      # 'max_depth': 8,
+                      # 'min_child_weight': 10,
+                      # 'alpha': 1,
+                      'early_stopping_rounds': 10,
+                      # 'scale_pos_weight': 1,
+                      'tree_method': 'gpu_hist',
+                      'eval_metric': ['merror', 'mlogloss'],
+                      'seed': 42}
+    embedding_model = EmbeddingModelB(model)
+    embeddings = []
+    for i in range(num_batches):
+        start_idx = i * batch_size
+        end_idx = start_idx + batch_size
+        batch_texts = dataset['feature'][start_idx:end_idx]
+        batch_embeddings = embedding_model.sentence_embedding(batch_texts)
+        embeddings.append(batch_embeddings)
+    embeddings = np.concatenate(embeddings, axis=0)
+    x_train, x_test, x_val, y_train, y_test, y_val = SplitDataset(embeddings, labels, 0.6, 0.3)
+    xg = xgb.XGBClassifier(**all_parameters)
+    xg.fit(x_train,y_train,verbose=1,eval_set=[(x_train, y_train), (x_val, y_val)])
+
+    y_pred = xg.predict(x_test)
+    print(f'\n------------------ {name} Evaluation Matrix -----------------\n')
+    print('\nAccuracy: {:.4f}'.format(accuracy_score(y_test, y_pred)))
+    print('Micro Precision: {:.4f}'.format(precision_score(y_test, y_pred, average='macro')))
+    print('Micro Recall: {:.4f}'.format(recall_score(y_test, y_pred, average='macro')))
+    print('Micro F1-score: {:.4f}\n'.format(f1_score(y_test, y_pred, average='macro')))
+    print('Cohens Kappa: {:.4f}\n'.format(cohen_kappa_score(y_test, y_pred)))
+
+    print(f'\n--------------- {name} Classification Report ---------------\n')
+    print(classification_report(le.inverse_transform(y_test), le.inverse_transform(y_pred)))
+
+    np.savetxt(filename, np.concatenate((le.inverse_transform(np.array(y_test))[:,np.newaxis],
+                                                           le.inverse_transform(np.array(y_pred))[:,np.newaxis]),axis=1))
+    print('---------------------- XGBoost ----------------------')

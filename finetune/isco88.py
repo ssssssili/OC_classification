@@ -8,6 +8,25 @@ isco88_data = data_preprocess.CombineFeature(asial_prep, column=['occupation_en'
 isco88_data['label'] = isco88_data['isco88_cg_4']
 isco88_data = isco88_data[['feature', 'label']]
 
+print(len(isco88_data))
+exit()
+
+print(len(asial))
+print(len(isco88_data['label'].value_counts()), isco88_data['label'].value_counts().mean(), isco88_data['label'].value_counts().std())
+print(max(isco88_data['label'].value_counts()), min(isco88_data['label'].value_counts()))
+maxnum = []
+for i in isco88_data['feature']:
+    cnt = 0
+    for j in i:
+        cnt += 1
+    maxnum.append(cnt)
+print(max(maxnum), min(maxnum))
+print(pd.Series(maxnum).mean(), pd.Series(maxnum).std())
+data_preprocess.PlotData(isco88_data['label'])
+data_preprocess.PlotData(pd.Series(maxnum))
+
+exit()
+
 """
 maxnum = []
 for i in isco88_data['feature']:
@@ -20,9 +39,10 @@ print(len(isco88_data['label'].value_counts()))
 """
 
 layer_configs = [
-    [0],                # Unfreeze classifier
-    [0, 7, 11]          # Unfreeze the classifier and selected middle layers
+    ['classifier', 'pooler'],                       # Unfreeze only the classifier layer
+    ['classifier', 'pooler', 'layer.11']            # Unfreeze the classifier and last layer of BERT
 ]
+
 
 multilingual_uncased = 'bert-base-multilingual-uncased'
 multilingual_cased = 'bert-base-multilingual-cased'
@@ -35,7 +55,7 @@ isco88_data_un = data_preprocess.PrepData(isco88_data, column=['feature'],
 # multilingual uncased bert
 mul_un_results = train_and_evaluate_series_model(isco88_data_un['feature'], isco88_data_un['label'],
                                 model_type=multilingual_uncased, layer_configs=layer_configs,
-                                batch_size=2, num_epochs=100, max_length=305, num_labels=388, name="isco88mulun",
+                                batch_size=8, num_epochs=100, max_length=305, num_labels=388, name="isco88mulun",
                                 result_filename='result/isco88_mulun_results.txt',
                                 test_labels_filename='result/isco88_mulun_test_labels.txt',
                                 test_predictions_filename='result/isco88_mulun_test_predictions.txt')
@@ -47,7 +67,7 @@ isco88_data_cased = data_preprocess.PrepData(isco88_data, column=['feature'],
 # multilingual cased bert
 mul_results = train_and_evaluate_series_model(isco88_data_cased['feature'], isco88_data_cased['label'],
                                 model_type=multilingual_cased, layer_configs=layer_configs,
-                                batch_size=2, num_epochs=100, max_length=305, num_labels=388, name="isco88mul",
+                                batch_size=8, num_epochs=100, max_length=305, num_labels=388, name="isco88mul",
                                 result_filename='result/isco88_mul_results.txt',
                                 test_labels_filename='result/isco88_mul_test_labels.txt',
                                 test_predictions_filename='result/isco88_mul_test_predictions.txt')
@@ -55,7 +75,7 @@ mul_results = train_and_evaluate_series_model(isco88_data_cased['feature'], isco
 # cased bert
 bert_results = train_and_evaluate_series_model(isco88_data_cased['feature'], isco88_data_cased['label'],
                                 model_type=monolingual_cased, layer_configs=layer_configs,
-                                batch_size=2, num_epochs=100, max_length=305, num_labels=388, name="isco88",
+                                batch_size=8, num_epochs=100, max_length=305, num_labels=388, name="isco88",
                                 result_filename='result/isco88_results.txt',
                                 test_labels_filename='result/isco88_test_labels.txt',
                                 test_predictions_filename='result/isco88_test_predictions.txt')

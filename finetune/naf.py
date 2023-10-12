@@ -1,7 +1,7 @@
 from finetuneBert import train_and_evaluate_series_model
 import data_preprocess
 import pandas as pd
-
+"""
 layer_configs = [
     ['classifier', 'pooler'],                       # Unfreeze only the classifier layer
     ['classifier', 'pooler', 'layer.11'],            # Unfreeze the classifier and last layer of BERT
@@ -17,17 +17,6 @@ asial_prep = asial[~asial['isco88_cg_4'].str.contains('z')]
 isco88_data = data_preprocess.CombineFeature(asial_prep, column=['occupation_en', 'task_en', 'employer_en', 'product_en'], withname=False)
 isco88_data['label'] = isco88_data['isco88_cg_4']
 isco88_data = isco88_data[['feature', 'label']]
-
-"""
-maxnum = []
-for i in isco88_data['feature']:
-    cnt = 0
-    for j in i:
-        cnt += 1
-    maxnum.append(cnt)
-print(max(maxnum))
-print(len(isco88_data['label'].value_counts()))
-"""
 
 multilingual_uncased = 'bert-base-multilingual-uncased'
 multilingual_cased = 'bert-base-multilingual-cased'
@@ -95,13 +84,34 @@ for config, result in bert_results.items():
     print("-----------------------------")
 
 print('*'*10, 'naf', '*'*10)
-
+"""
 const = pd.read_csv('../data/(French - PCS-NAF) Constances_CPro_MG_Operas_012021.csv')
 const[['code_naf','code_pcs']].dropna(axis=0,how='any')
 naf_prep = const[const['code_naf'].str.contains('#') == False]
 naf_data = data_preprocess.CombineFeature(naf_prep, column=['profession_txt', 'secteur_txt'], withname= False)
 naf_data['label'] = naf_data['code_naf']
 naf_data = naf_data[['feature', 'label']]
+
+print(len(naf_data))
+exit()
+
+print(len(const))
+print(len(naf_data['label'].value_counts()), naf_data['label'].value_counts().mean(), naf_data['label'].value_counts().std())
+print(max(naf_data['label'].value_counts()), min(naf_data['label'].value_counts()))
+maxnum = []
+for i in naf_data['feature']:
+    cnt = 0
+    for j in i:
+        cnt += 1
+    maxnum.append(cnt)
+print(max(maxnum), min(maxnum))
+print(pd.Series(maxnum).mean(), pd.Series(maxnum).std())
+print(max(pd.Series(maxnum).value_counts()))
+data_preprocess.PlotData(naf_data['label'])
+data_preprocess.PlotData(pd.Series(maxnum))
+
+exit()
+
 
 """
 maxnum = []
