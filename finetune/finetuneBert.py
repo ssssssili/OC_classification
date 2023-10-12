@@ -6,6 +6,7 @@ from torch.utils.data import DataLoader, Dataset
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
+from data_preprocess import SplitDataset
 
 
 class TextClassificationDataset(Dataset):
@@ -55,10 +56,12 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
     le = LabelEncoder()
     labels = le.fit_transform(label).tolist()
     texts = feature.tolist()
-
+    """
     train_texts, temp_texts, train_labels, temp_labels = train_test_split(texts, labels, test_size=0.4, random_state=42)
     val_texts, test_texts, val_labels, test_labels = train_test_split(temp_texts, temp_labels, test_size=0.75,
                                                                       random_state=42)
+    """
+    train_texts, test_texts, val_texts, train_labels, test_labels, val_labels = SplitDataset(texts, labels, 0.6, 0.3)
 
     # Initialize the BERT model configuration
     config = BertConfig.from_pretrained(model_path, num_labels=num_labels)
@@ -77,12 +80,13 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
     test_loader = DataLoader(test_dataset, batch_size=batch_size)
 
     # Freeze layers before the specified layers to be unfrozen
-    for name, param in model.named_parameters():
-        param.requires_grad = False
-        for item in unfreeze_layers:
-            if item in name:
-                param.requires_grad = True
-                break
+    if unfreeze_layers:
+        for name, param in model.named_parameters():
+            param.requires_grad = False
+            for item in unfreeze_layers:
+                if item in name:
+                    param.requires_grad = True
+                    break
 
     # Define optimizer and learning rate scheduler
     optimizer = torch.optim.AdamW(filter(lambda p: p.requires_grad, model.parameters()), lr=2e-5)
@@ -203,7 +207,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
 
 
 def train_and_evaluate_series_model(feature, label, model_type, layer_configs, batch_size, num_epochs, max_length,
-                                    num_labels, name, result_filename, test_labels_filename, test_predictions_filename):
+                                    num_labels, name, result_filename):
     best_evaluation_results = None
     best_model_name = None
     best_model_config_num = None
@@ -235,7 +239,7 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
             best_model_name = model_name
             best_model_config_num = config_num
 
-    # Save the best-performing model's evaluation results to a file
+    # Print the best-performing model's evaluation results
     print(f"Best Model Configuration: {best_model_config_num}\n")
     print(f"Model Name: {best_model_name}\n")
     print(f"Validation Accuracy: {best_evaluation_results['accuracy']}\n")
@@ -248,10 +252,15 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
     test_true_labels = best_evaluation_results['test_true_labels']
     test_predictions = best_evaluation_results['test_predictions']
 
+    np.savetxt(result_filename, np.concatenate(((np.array(test_true_labels))[:,np.newaxis],
+                                         (np.array(test_predictions))[:,np.newaxis]),axis=1), fmt='%s')
+
+    """
     with open(test_labels_filename, 'w') as file:
         file.write('\n'.join(str(label) for label in test_true_labels))
 
     with open(test_predictions_filename, 'w') as file:
         file.write('\n'.join(str(label) for label in test_predictions))
+    """
 
     return results

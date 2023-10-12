@@ -243,5 +243,5 @@ def XGBModel(model, dataset, filename, name):
     print(classification_report(le.inverse_transform(y_test), le.inverse_transform(y_pred)))
 
     np.savetxt(filename, np.concatenate((le.inverse_transform(np.array(y_test))[:,np.newaxis],
-                                                           le.inverse_transform(np.array(y_pred))[:,np.newaxis]),axis=1))
+                                         le.inverse_transform(np.array(y_pred))[:,np.newaxis]),axis=1), fmt='%s')
     print('---------------------- XGBoost ----------------------')
