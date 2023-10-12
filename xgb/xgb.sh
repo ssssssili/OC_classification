@@ -7,7 +7,7 @@
 #SBATCH --gres=gpu:1
 #SBATCH --time=168:00:0
 #SBATCH --job-name=xgb
-#SBATCH --output=/home/bme001/20225898/OC_classification/xgb/result/xgb.out
+#SBATCH --output=/home/bme001/20225898/OC_classification/xgb/xgb.out
 
 module load cuda11.6/toolkit
 

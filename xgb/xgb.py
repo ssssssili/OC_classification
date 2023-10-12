@@ -29,17 +29,17 @@ pcs_data = data_preprocess.CombineFeature(pcs_prep, column=['profession_txt', 's
 pcs_data['label'] = pcs_data['code_pcs']
 pcs_data = pcs_data[['feature', 'label']]
 
-data_preprocess.XGBModel('bert-base-multilingual-cased', isco68_data, 'isco68-mul-result.txt', 'ISCO68_Mul')
-data_preprocess.XGBModel('GroNLP/bert-base-dutch-cased', isco68_data, 'isco68-mul-result.txt', 'ISCO68_Dutch')
+data_preprocess.XGBModel('bert-base-multilingual-cased', isco68_data, 'result/isco68-mul-result.txt', 'ISCO68_Mul')
+data_preprocess.XGBModel('GroNLP/bert-base-dutch-cased', isco68_data, 'result/isco68-mul-result.txt', 'ISCO68_Dutch')
 
-data_preprocess.XGBModel('bert-base-multilingual-cased', isco88_data, 'isco88-mul-result.txt', 'ISCO88_Mul')
-data_preprocess.XGBModel('bert-base-cased', isco88_data, 'isco88-mul-result.txt', 'ISCO88_Eng')
+data_preprocess.XGBModel('bert-base-multilingual-cased', isco88_data, 'result/isco88-mul-result.txt', 'ISCO88_Mul')
+data_preprocess.XGBModel('bert-base-cased', isco88_data, 'result/isco88-mul-result.txt', 'ISCO88_Eng')
 
-data_preprocess.XGBModel('bert-base-multilingual-cased', naf_data, 'naf-mul-result.txt', 'NAF_Mul')
-data_preprocess.XGBModel('dbmdz/bert-base-french-europeana-cased', naf_data, 'naf-mul-result.txt', 'NAF_Fr')
+data_preprocess.XGBModel('bert-base-multilingual-cased', naf_data, 'result/naf-mul-result.txt', 'NAF_Mul')
+data_preprocess.XGBModel('dbmdz/bert-base-french-europeana-cased', naf_data, 'result/naf-mul-result.txt', 'NAF_Fr')
 
-data_preprocess.XGBModel('bert-base-multilingual-cased', pcs_data, 'pcs-mul-result.txt', 'PCS_Mul')
-data_preprocess.XGBModel('dbmdz/bert-base-french-europeana-cased', pcs_data, 'pcs-mul-result.txt', 'PCS_Fr')
+data_preprocess.XGBModel('bert-base-multilingual-cased', pcs_data, 'result/pcs-mul-result.txt', 'PCS_Mul')
+data_preprocess.XGBModel('dbmdz/bert-base-french-europeana-cased', pcs_data, 'result/pcs-mul-result.txt', 'PCS_Fr')
 
 """
 results = xg.evals_result()

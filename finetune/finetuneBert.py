@@ -6,7 +6,6 @@ from torch.utils.data import DataLoader, Dataset
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
-from torch.optim.lr_scheduler import ExponentialLR
 
 
 class TextClassificationDataset(Dataset):

@@ -8,9 +8,8 @@ isco68_data = data_preprocess.CombineFeature(lifew_prep, column=['bjobnm','bjobd
 isco68_data['label'] = isco68_data['bjobcode']
 isco68_data = isco68_data[['feature', 'label']]
 
+"""
 print(len(isco68_data))
-
-exit()
 print(len(isco68_data['label'].value_counts()), isco68_data['label'].value_counts().mean(), isco68_data['label'].value_counts().std())
 print(max(isco68_data['label'].value_counts()), min(isco68_data['label'].value_counts()))
 maxnum = []
@@ -23,20 +22,6 @@ print(max(maxnum), min(maxnum))
 print(pd.Series(maxnum).mean(), pd.Series(maxnum).std())
 data_preprocess.PlotData(isco68_data['label'])
 data_preprocess.PlotData(pd.Series(maxnum))
-
-
-
-
-
-"""
-maxnum = []
-for i in isco68_data['feature']:
-    cnt = 0
-    for j in i:
-        cnt += 1
-    maxnum.append(cnt)
-print(max(maxnum))
-print(len(isco68_data['label'].value_counts()))
 """
 
 layer_configs = [
@@ -44,9 +29,8 @@ layer_configs = [
     ['classifier', 'pooler', 'layer.11']            # Unfreeze the classifier and last layer of BERT
 ]
 
-multilingual_uncased = 'bert-base-multilingual-uncased'
-multilingual_cased = 'bert-base-multilingual-cased'
-monolingual_cased = 'GroNLP/bert-base-dutch-cased'
+mul = 'bert-base-multilingual-cased'
+dutch = 'GroNLP/bert-base-dutch-cased'
 
 # Preprocess uncased text
 isco68_data_un = data_preprocess.PrepData(isco68_data, column=['feature'], lan='dutch', lower=True, punc=True, stop_word=False, stemming=False)
