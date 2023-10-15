@@ -6,11 +6,7 @@ from transformers import RobertaModel, RobertaTokenizer
 from transformers import BertModel, BertTokenizer
 from transformers import DistilBertModel, DistilBertTokenizer
 from sklearn.model_selection import train_test_split
-import xgboost as xgb
 import matplotlib.pyplot as plt
-from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import classification_report
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
 
 """
 def remove_rarewords(text, lan):

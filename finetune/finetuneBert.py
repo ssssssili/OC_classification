@@ -7,7 +7,9 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 from data_preprocess import SplitDataset
+from sklearn.metrics import classification_report
 
+path = "C:/Users/75581/Desktop/OC_classification-master/"
 
 class TextClassificationDataset(Dataset):
     def __init__(self, texts, labels, tokenizer, max_length):
@@ -41,9 +43,6 @@ class TextClassificationDataset(Dataset):
 
 def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_epochs, max_length, num_labels, name):
 
-    os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
-    os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
-    os.environ["CUDA_LAUNCH_BLOCKING"] = "1"
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -207,7 +206,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
 
 
 def train_and_evaluate_series_model(feature, label, model_type, layer_configs, batch_size, num_epochs, max_length,
-                                    num_labels, name, result_filename):
+                                    num_labels, name):
     best_evaluation_results = None
     best_model_name = None
     best_model_config_num = None
@@ -252,7 +251,12 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
     test_true_labels = best_evaluation_results['test_true_labels']
     test_predictions = best_evaluation_results['test_predictions']
 
-    np.savetxt(result_filename, np.concatenate(((np.array(test_true_labels))[:,np.newaxis],
+    with open(f"{path}result/{name}_report.txt", 'w') as file:
+        report = classification_report(test_true_labels, test_predictions)
+        for line in report:
+            file.write(line)
+
+    np.savetxt(f"{path}result/{name}_result.txt", np.concatenate(((np.array(test_true_labels))[:,np.newaxis],
                                          (np.array(test_predictions))[:,np.newaxis]),axis=1), fmt='%s')
 
     """
