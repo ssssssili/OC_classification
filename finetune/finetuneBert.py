@@ -5,7 +5,6 @@ from transformers import BertForSequenceClassification, BertTokenizer, BertConfi
 from torch.utils.data import DataLoader, Dataset
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, cohen_kappa_score
 from sklearn.preprocessing import LabelEncoder
-from sklearn.model_selection import train_test_split
 from data_preprocess import SplitDataset
 from sklearn.metrics import classification_report
 
@@ -160,7 +159,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
     model.eval()
 
     # Synchronize the GPU before the evaluation
-    torch.cuda.synchronize()
+    #torch.cuda.synchronize()
 
     # Evaluation on the test set
     print("Evaluating on the test set...")
@@ -180,7 +179,7 @@ def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_
             test_true_labels.extend(labels.cpu().tolist())
 
     # Synchronize the GPU after the evaluation
-    torch.cuda.synchronize()
+    #torch.cuda.synchronize()
 
     # Calculate evaluation metrics
     accuracy = accuracy_score(test_true_labels, test_predictions)
@@ -252,7 +251,7 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
     test_predictions = best_evaluation_results['test_predictions']
 
     with open(f"{path}result/{name}_report.txt", 'w') as file:
-        report = classification_report(test_true_labels, test_predictions)
+        report = classification_report(np.array(test_true_labels), np.array(test_predictions))
         for line in report:
             file.write(line)
 

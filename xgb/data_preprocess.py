@@ -159,14 +159,14 @@ def BuildSubset(y, thershold, num):
     return index
 
 # train, test, validation sets split, let training set has all class
-def SplitDataset(x, y, training, test):
+def SplitDataset(x, y, training, test, over_sample = int):
     tem = []
     x_mul = []
     y_mul = []
     x_sin = []
     y_sin = []
     for l in np.unique(y):
-        if pd.Series(y).value_counts()[l] == 1:
+        if pd.Series(y).value_counts()[l] < 3:
             tem.append(l)
 
     for i in range(len(y)):
@@ -194,12 +194,23 @@ def SplitDataset(x, y, training, test):
                                                     test_size=(test / (1 - training)), random_state=42)
 
     if len(x_sin) > 0:
-        x_train = np.concatenate((x_train, x_sin), axis=0)
-        y_train = np.concatenate((y_train, y_sin), axis=0)
+        if over_sample:
+            _,ind = np.unique(y_sin,return_index=True)
+            x_uni = x_sin[np.sort(ind)]
+            y_uni = y_sin[np.sort(ind)]
+            x_train = np.concatenate((x_train, x_sin), axis=0)
+            y_train = np.concatenate((y_train, y_sin), axis=0)
+            x_test = np.concatenate((x_test, x_uni), axis=0)
+            y_test = np.concatenate((y_test, y_uni), axis=0)
+            x_val = np.concatenate((x_val, x_uni), axis=0)
+            y_val = np.concatenate((y_val, y_uni), axis=0)
+        else:
+            x_train = np.concatenate((x_train, x_sin), axis=0)
+            y_train = np.concatenate((y_train, y_sin), axis=0)
 
     return x_train, x_test, x_val, y_train, y_test, y_val
 
-def XGBModel(model, dataset, filename, name):
+def XGBModel(model, dataset, filename, name, over_sample):
     batch_size = 256
     num_batches = len(dataset) // batch_size + 1
     le = LabelEncoder()
@@ -227,7 +238,7 @@ def XGBModel(model, dataset, filename, name):
         batch_embeddings = embedding_model.sentence_embedding(batch_texts)
         embeddings.append(batch_embeddings)
     embeddings = np.concatenate(embeddings, axis=0)
-    x_train, x_test, x_val, y_train, y_test, y_val = SplitDataset(embeddings, labels, 0.6, 0.3)
+    x_train, x_test, x_val, y_train, y_test, y_val = SplitDataset(embeddings, labels, 0.6, 0.3, over_sample)
     xg = xgb.XGBClassifier(**all_parameters)
     xg.fit(x_train,y_train,verbose=1,eval_set=[(x_train, y_train), (x_val, y_val)])
 
@@ -241,6 +252,10 @@ def XGBModel(model, dataset, filename, name):
 
     print(f'\n--------------- {name} Classification Report ---------------\n')
     print(classification_report(le.inverse_transform(y_test), le.inverse_transform(y_pred)))
+    with open(f"result/{name}_report.txt", 'w') as file:
+        report = classification_report(le.inverse_transform(np.array(y_test)), le.inverse_transform(np.array(y_pred)))
+        for line in report:
+            file.write(line)
 
     np.savetxt(filename, np.concatenate((le.inverse_transform(np.array(y_test))[:,np.newaxis],
                                          le.inverse_transform(np.array(y_pred))[:,np.newaxis]),axis=1), fmt='%s')
