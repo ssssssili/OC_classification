@@ -19,9 +19,9 @@ fr = 'dbmdz/bert-base-french-europeana-cased'
 
 mul_results = train_and_evaluate_series_model(naf_data['feature'], naf_data['label'],
                                 model_type=mul, layer_configs=layer_configs,
-                                batch_size=16, num_epochs=100, max_length=132, num_labels=732, name="nafmul")
+                                batch_size=32, num_epochs=50, max_length=132, num_labels=732, name="nafmul")
 
 results = train_and_evaluate_series_model(naf_data['feature'], naf_data['label'],
                                 model_type=fr, layer_configs=layer_configs,
-                                batch_size=16, num_epochs=100, max_length=132, num_labels=732, name="naffr")
+                                batch_size=32, num_epochs=50, max_length=132, num_labels=732, name="naffr")
 
