@@ -250,6 +250,12 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
     test_true_labels = best_evaluation_results['test_true_labels']
     test_predictions = best_evaluation_results['test_predictions']
 
+    for line in np.concatenate(((np.array(test_true_labels))[:,np.newaxis],(np.array(test_predictions))[:,np.newaxis]),axis=1):
+        print(line)
+
+    print(classification_report(np.array(test_true_labels), np.array(test_predictions)))
+
+    """
     with open(f"{path}result/{name}_report.txt", 'w') as file:
         report = classification_report(np.array(test_true_labels), np.array(test_predictions))
         for line in report:
@@ -258,6 +264,7 @@ def train_and_evaluate_series_model(feature, label, model_type, layer_configs, b
     np.savetxt(f"{path}result/{name}_result.txt", np.concatenate(((np.array(test_true_labels))[:,np.newaxis],
                                          (np.array(test_predictions))[:,np.newaxis]),axis=1), fmt='%s')
 
+    """
     """
     with open(test_labels_filename, 'w') as file:
         file.write('\n'.join(str(label) for label in test_true_labels))

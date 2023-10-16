@@ -159,7 +159,7 @@ def BuildSubset(y, thershold, num):
     return index
 
 # train, test, validation sets split, let training set has all class
-def SplitDataset(x, y, training, test, over_sample = int):
+def SplitDataset(x, y, training, test, over_sample = bool):
     tem = []
     x_mul = []
     y_mul = []
