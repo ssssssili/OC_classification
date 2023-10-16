@@ -8,7 +8,7 @@ from sklearn.preprocessing import LabelEncoder
 from data_preprocess import SplitDataset
 from sklearn.metrics import classification_report
 
-path = "C:/Users/75581/Desktop/OC_classification-master/"
+path = ""
 
 class TextClassificationDataset(Dataset):
     def __init__(self, texts, labels, tokenizer, max_length):
