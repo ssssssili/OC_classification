@@ -35,12 +35,12 @@ dutch = 'GroNLP/bert-base-dutch-cased'
 # multilingual
 mul_results = train_and_evaluate_series_model(isco68_data['feature'], isco68_data['label'],
                                 model_type=mul, layer_configs=layer_configs,
-                                batch_size=16, num_epochs=100, max_length=100, num_labels=639, name="isco68mul")
+                                batch_size=32, num_epochs=50, max_length=100, num_labels=639, name="isco68mul")
 
 # cased bert
 results = train_and_evaluate_series_model(isco68_data['feature'], isco68_data['label'],
                                 model_type=dutch, layer_configs=layer_configs,
-                                batch_size=16, num_epochs=100, max_length=100, num_labels=639, name="isco68dutch")
+                                batch_size=32, num_epochs=50, max_length=100, num_labels=639, name="isco68dutch")
 
 """
 print("*"*10, "Summary of results", "*"*10)
