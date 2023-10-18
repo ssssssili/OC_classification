@@ -7,6 +7,7 @@ from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_sc
 from sklearn.preprocessing import LabelEncoder
 from data_preprocess import SplitDataset
 from sklearn.metrics import classification_report
+import random
 
 path = ""
 
@@ -41,9 +42,20 @@ class TextClassificationDataset(Dataset):
         }
 
 def fine_tune_bert(feature, label, model_path, unfreeze_layers, batch_size, num_epochs, max_length, num_labels, name):
-
+    seed = 3072
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+    os.environ['PYTHONHASHSEED'] = str(seed)
+    # os.environ['CUBLAS_WORKSPACE_CONFIG']=':4096:8'
+    torch.use_deterministic_algorithms(True)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    torch.cuda.empty_cache()
 
     """
     print(torch.cuda.current_device())

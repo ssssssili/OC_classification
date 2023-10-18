@@ -49,33 +49,6 @@ def PlotData(df):
     plt.xticks([])
     plt.show()
 
-# embed sentence
-class EmbeddingModelR:
-    def __init__(self, model_name):
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.tokenizer = RobertaTokenizer.from_pretrained(model_name)
-        self.model = RobertaModel.from_pretrained(model_name)
-        self.model.to(self.device)
-        self.model.eval()
-
-    def sentence_embedding(self, sentences):
-        tokens = self.tokenizer.batch_encode_plus(
-            sentences,
-            add_special_tokens=True,
-            padding='longest',
-            truncation=True,
-            return_tensors='pt'
-        )
-        input_ids = tokens['input_ids'].to(self.device)
-        attention_mask = tokens['attention_mask'].to(self.device)
-
-        with torch.no_grad():
-            outputs = self.model(input_ids, attention_mask=attention_mask)
-            sentence_embeddings = outputs.last_hidden_state.mean(dim=1)
-
-        return sentence_embeddings.cpu().numpy()
-
-
 class EmbeddingModelB:
     def __init__(self, model_name):
         self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -101,31 +74,6 @@ class EmbeddingModelB:
 
         return sentence_embeddings.cpu().numpy()
 
-
-class EmbeddingModelD:
-    def __init__(self, model_name):
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.tokenizer = DistilBertTokenizer.from_pretrained(model_name)
-        self.model = DistilBertModel.from_pretrained(model_name)
-        self.model.to(self.device)
-        self.model.eval()
-
-    def sentence_embedding(self, sentences):
-        tokens = self.tokenizer.batch_encode_plus(
-            sentences,
-            add_special_tokens=True,
-            padding='longest',
-            truncation=True,
-            return_tensors='pt'
-        )
-        input_ids = tokens['input_ids'].to(self.device)
-        attention_mask = tokens['attention_mask'].to(self.device)
-
-        with torch.no_grad():
-            outputs = self.model(input_ids, attention_mask=attention_mask)
-            sentence_embeddings = outputs.last_hidden_state.mean(dim=1)
-
-        return sentence_embeddings.cpu().numpy()
 
 # split dataset into subsets regarding sample size
 def BuildSubset(y, thershold, num):
@@ -155,14 +103,14 @@ def BuildSubset(y, thershold, num):
     return index
 
 # train, test, validation sets split, let training set has all class
-def SplitDataset(x, y, training, test, over_sample = bool):
+def SplitDataset(x, y, training, test):
     tem = []
     x_mul = []
     y_mul = []
     x_sin = []
     y_sin = []
     for l in np.unique(y):
-        if pd.Series(y).value_counts()[l] < 3:
+        if pd.Series(y).value_counts()[l] == 1:
             tem.append(l)
 
     for i in range(len(y)):
@@ -190,18 +138,7 @@ def SplitDataset(x, y, training, test, over_sample = bool):
                                                     test_size=(test / (1 - training)), random_state=42)
 
     if len(x_sin) > 0:
-        if over_sample:
-            _,ind = np.unique(y_sin,return_index=True)
-            x_uni = x_sin[np.sort(ind)]
-            y_uni = y_sin[np.sort(ind)]
-            x_train = np.concatenate((x_train, x_sin), axis=0)
-            y_train = np.concatenate((y_train, y_sin), axis=0)
-            x_test = np.concatenate((x_test, x_uni), axis=0)
-            y_test = np.concatenate((y_test, y_uni), axis=0)
-            x_val = np.concatenate((x_val, x_uni), axis=0)
-            y_val = np.concatenate((y_val, y_uni), axis=0)
-        else:
-            x_train = np.concatenate((x_train, x_sin), axis=0)
-            y_train = np.concatenate((y_train, y_sin), axis=0)
+        x_train = np.concatenate((x_train, x_sin), axis=0)
+        y_train = np.concatenate((y_train, y_sin), axis=0)
 
     return x_train, x_test, x_val, y_train, y_test, y_val

@@ -9,8 +9,8 @@ isco88_data['label'] = isco88_data['isco88_cg_4']
 isco88_data = isco88_data[['feature', 'label']]
 
 layer_configs = [
-    [],                                 # No layer frozen
-    ['classifier', 'pooler']            # Unfreeze only the classifier layer
+    []                                 # No layer frozen
+    #['classifier', 'pooler']            # Unfreeze only the classifier layer
 ]
 
 mul = 'bert-base-multilingual-cased'
@@ -18,12 +18,12 @@ eng = 'bert-base-cased'
 
 mul_results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type=mul, layer_configs=layer_configs,
-                                batch_size=32, num_epochs=50, max_length=305, num_labels=388, name="isco88mul")
+                                batch_size=640, num_epochs=50, max_length=305, num_labels=388, name="isco88mul")
 
 # cased bert
 results = train_and_evaluate_series_model(isco88_data['feature'], isco88_data['label'],
                                 model_type=eng, layer_configs=layer_configs,
-                                batch_size=32, num_epochs=50, max_length=305, num_labels=388, name="isco88eng")
+                                batch_size=640, num_epochs=50, max_length=305, num_labels=388, name="isco88eng")
 
 
 
