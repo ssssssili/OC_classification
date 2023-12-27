@@ -1,34 +1,8 @@
 import string
 import pandas as pd
 import numpy as np
-import torch
-from transformers import RobertaModel, RobertaTokenizer
-from transformers import BertModel, BertTokenizer
-from transformers import DistilBertModel, DistilBertTokenizer
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
-
-"""
-def remove_rarewords(text, lan):
-    return " ".join([word for word in str(text).split() if word not in stopwords.words(lan)])
-
-def stem_words(text, lan):
-    return " ".join([SnowballStemmer(language=lan).stem(word) for word in text.split()])
-
-# regular data preprocessing
-def PrepData(dataset, column, lan, lower=bool, punc=bool, stop_word=bool, stemming=bool):
-    df = dataset.copy()
-    for col in column:
-        if lower:
-            df[col] = df[col].astype(str).str.lower()
-        if punc:
-            df[col] = df[col].astype(str).str.translate(str.maketrans('', '', string.punctuation))
-        if stop_word:
-            df[col] = df[col].astype(str).apply(lambda text: remove_rarewords(text, lan))
-        if stemming:
-            df[col] = df[col].astype(str).apply(lambda text: stem_words(text, lan))
-    return df
-"""
 
 # combine all the feature together into one sentence
 def CombineFeature(dataset, column, withname = bool):
@@ -48,59 +22,6 @@ def PlotData(df):
     plt.plot(s.index, s.values)
     plt.xticks()
     plt.show()
-
-class EmbeddingModelB:
-    def __init__(self, model_name):
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        self.tokenizer = BertTokenizer.from_pretrained(model_name)
-        self.model = BertModel.from_pretrained(model_name)
-        self.model.to(self.device)
-        self.model.eval()
-
-    def sentence_embedding(self, sentences):
-        tokens = self.tokenizer.batch_encode_plus(
-            sentences,
-            add_special_tokens=True,
-            padding='longest',
-            truncation=True,
-            return_tensors='pt'
-        )
-        input_ids = tokens['input_ids'].to(self.device)
-        attention_mask = tokens['attention_mask'].to(self.device)
-
-        with torch.no_grad():
-            outputs = self.model(input_ids, attention_mask=attention_mask)
-            sentence_embeddings = outputs.last_hidden_state.mean(dim=1)
-
-        return sentence_embeddings.cpu().numpy()
-
-
-# split dataset into subsets regarding sample size
-def BuildSubset(y, thershold, num):
-    s = pd.Series(y).value_counts()
-    split = s.index[0]
-    cnt = 1
-    index = []
-    tmp = []
-    for val in s.index:
-        if cnt < num:
-            if s[split]/s[val] < thershold:
-                idx = np.where(y == val)[0]
-                tmp.extend(list(idx))
-            else:
-                index.append(tmp)
-                tmp = []
-                split = val
-                cnt += 1
-        else:
-            idx = np.where(y == val)[0]
-            tmp.extend(list(idx))
-    index.append(tmp)
-
-    for i in range(num-cnt):
-        index.append([])
-
-    return index
 
 # train, test, validation sets split, let training set has all class
 def SplitDataset(x, y, training, test):

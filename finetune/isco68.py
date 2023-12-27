@@ -8,6 +8,7 @@ isco68_data = CombineFeature(lifew_prep, column=['bjobnm','bjobdes','bjobco'], w
 isco68_data['label'] = isco68_data['bjobcode']
 isco68_data = isco68_data[['feature', 'label']]
 
+"""
 print(len(isco68_data))
 print(len(isco68_data['label'].value_counts()), isco68_data['label'].value_counts().mean(), isco68_data['label'].value_counts().std())
 print(max(isco68_data['label'].value_counts()), min(isco68_data['label'].value_counts()))
@@ -17,10 +18,8 @@ for i in isco68_data['feature']:
     maxnum.append(len(cnt))
 print(max(maxnum), min(maxnum))
 print(pd.Series(maxnum).mean(), pd.Series(maxnum).std())
-PlotData(pd.Series(maxnum))
 
-exit()
-"""
+PlotData(pd.Series(maxnum))
 print(len(isco68_data))
 print(len(isco68_data['label'].value_counts()), isco68_data['label'].value_counts().mean(), isco68_data['label'].value_counts().std())
 print(max(isco68_data['label'].value_counts()), min(isco68_data['label'].value_counts()))
@@ -37,8 +36,8 @@ data_preprocess.PlotData(pd.Series(maxnum))
 """
 
 layer_configs = [
-    []                                 # No layer frozen
-    #['classifier', 'pooler']            # Unfreeze only the classifier layer
+    [],                                 # No layer frozen
+    ['classifier', 'pooler']            # Unfreeze only the classifier layer
 ]
 
 mul = 'bert-base-multilingual-cased'

@@ -9,20 +9,8 @@ naf_data = CombineFeature(naf_prep, column=['profession_txt', 'secteur_txt'], wi
 naf_data['label'] = naf_data['code_naf']
 naf_data = naf_data[['feature', 'label']]
 
-print(len(naf_data))
-print(len(naf_data['label'].value_counts()), naf_data['label'].value_counts().mean(), naf_data['label'].value_counts().std())
-print(max(naf_data['label'].value_counts()), min(naf_data['label'].value_counts()))
-maxnum = []
-for i in naf_data['feature']:
-    cnt = i.split()
-    maxnum.append(len(cnt))
-print(max(maxnum), min(maxnum))
-print(pd.Series(maxnum).mean(), pd.Series(maxnum).std())
-PlotData(pd.Series(maxnum))
-exit()
-
 layer_configs = [
-    #[]                                 # No layer frozen
+    [],                                 # No layer frozen
     ['classifier', 'pooler']            # Unfreeze only the classifier layer
 ]
 

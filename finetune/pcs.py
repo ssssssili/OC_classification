@@ -9,20 +9,8 @@ pcs_data = CombineFeature(pcs_prep, column=['profession_txt', 'secteur_txt'], wi
 pcs_data['label'] = pcs_data['code_pcs']
 pcs_data = pcs_data[['feature', 'label']]
 
-print(len(pcs_data))
-print(len(pcs_data['label'].value_counts()), pcs_data['label'].value_counts().mean(), pcs_data['label'].value_counts().std())
-print(max(pcs_data['label'].value_counts()), min(pcs_data['label'].value_counts()))
-maxnum = []
-for i in pcs_data['feature']:
-    cnt = i.split()
-    maxnum.append(len(cnt))
-print(max(maxnum), min(maxnum))
-print(pd.Series(maxnum).mean(), pd.Series(maxnum).std())
-PlotData(pd.Series(maxnum))
-exit()
-
 layer_configs = [
-    #[]                                 # No layer frozen
+    [],                                 # No layer frozen
     ['classifier', 'pooler']            # Unfreeze only the classifier layer
 ]
 
