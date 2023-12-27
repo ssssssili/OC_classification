@@ -44,9 +44,9 @@ def CombineFeature(dataset, column, withname = bool):
 
 # plot the data distribution
 def PlotData(df):
-    s = df.value_counts()
-    plt.plot(range(len(s)), s.values)
-    plt.xticks([])
+    s = df.value_counts(sort=False).sort_index()
+    plt.plot(s.index, s.values)
+    plt.xticks()
     plt.show()
 
 class EmbeddingModelB:

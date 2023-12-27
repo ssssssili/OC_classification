@@ -1,5 +1,5 @@
 from finetuneBert import train_and_evaluate_series_model
-from data_preprocess import CombineFeature
+from data_preprocess import CombineFeature,PlotData
 import pandas as pd
 
 lifew = pd.read_csv('../data/(Dutch - ISCO-68) AMIGO_t - Copy.csv', encoding='latin-1')
@@ -8,6 +8,18 @@ isco68_data = CombineFeature(lifew_prep, column=['bjobnm','bjobdes','bjobco'], w
 isco68_data['label'] = isco68_data['bjobcode']
 isco68_data = isco68_data[['feature', 'label']]
 
+print(len(isco68_data))
+print(len(isco68_data['label'].value_counts()), isco68_data['label'].value_counts().mean(), isco68_data['label'].value_counts().std())
+print(max(isco68_data['label'].value_counts()), min(isco68_data['label'].value_counts()))
+maxnum = []
+for i in isco68_data['feature']:
+    cnt = i.split()
+    maxnum.append(len(cnt))
+print(max(maxnum), min(maxnum))
+print(pd.Series(maxnum).mean(), pd.Series(maxnum).std())
+PlotData(pd.Series(maxnum))
+
+exit()
 """
 print(len(isco68_data))
 print(len(isco68_data['label'].value_counts()), isco68_data['label'].value_counts().mean(), isco68_data['label'].value_counts().std())
